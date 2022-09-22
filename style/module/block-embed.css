@@ -1,0 +1,16 @@
+/* 嵌入块 */
+@import url(/appearance/themes/Lite/style/module/config.css);
+
+.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node {
+    /* 嵌入块 */
+    border: none;
+    outline: 1px dotted var(--custom-line-color);
+    background-color: var(--custom-block-embed-background-color) !important;
+    border-radius:5px 5px 5px 5px;
+}
+
+.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node > .protyle-wysiwyg__embed:not(:nth-of-type(2)) {
+    /* 嵌入块间分隔线 */
+    position: relative;
+    border-top: 2px double var(--custom-line-color);
+}

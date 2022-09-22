@@ -1,0 +1,17 @@
+/* 生成 SM-ID 标签 */
+/* REF: https://ld246.com/article/1658220803290 */
+
+div[custom-sm-id]::before {
+    pointer-events: auto;
+    content: "SM#" attr(custom-sm-id) ;
+    background: #0e639c;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    z-index: 99;
+}

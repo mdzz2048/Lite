@@ -1,0 +1,8 @@
+/* 水平分隔线 */
+
+@import url(/appearance/themes/Lite/style/module/config.css);
+
+.b3-typography hr,
+.protyle-wysiwyg [data-node-id].hr>div {
+    border-bottom: 2px double var(--custom-line-color);
+}

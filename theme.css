@@ -1,0 +1,63 @@
+/* 引入各配置模块 */
+/* todo:
+1. 列表隐藏 (https://club.roamedit.com/club/?thread-1493.htm)
+2. 列表备注 (https://club.roamedit.com/club/?thread-1495.htm)
+3. 列表折叠 (配合列表备注使用，折叠后备注不折叠)
+4. 链接方括号和链接区分
+*/
+
+/* 块级元素样式 */
+@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(/appearance/themes/Lite/style/module/block-embed.css);
+@import url(/appearance/themes/Lite/style/module/block-heading.css);
+@import url(/appearance/themes/Lite/style/module/block-hr.css);
+/* @import url(/appearance/themes/Lite/style/module/block-list.css); */
+@import url(/appearance/themes/Lite/style/module/block-paragraph.css);
+@import url(/appearance/themes/Lite/style/module/block-quote.css);
+@import url(/appearance/themes/Lite/style/module/block-super.css);
+
+/* 行内元素样式 */
+@import url(/appearance/themes/Lite/style/module/span-link.css);
+@import url(/appearance/themes/Lite/style/module/span-ref.css);
+@import url(/appearance/themes/Lite/style/module/span-img.css);
+@import url(/appearance/themes/Lite/style/module/span-link-icon.css);
+
+/* 边栏 */
+@import url(/appearance/themes/Lite/style/module/dock.css);
+
+/* 页签栏 */
+@import url(/appearance/themes/Lite/style/module/tab.css);
+
+/* 顶部工具栏 */
+
+
+/* 底部状态栏 */
+
+
+/* 面板 */
+@import url(/appearance/themes/Lite/style/module/panel.css);
+@import url(/appearance/themes/Lite/style/module/panel-editor.css);
+/* @import url(/appearance/themes/Lite/style/module/panel-filetree.css); */
+@import url(/appearance/themes/Lite/style/module/panel-outline.css);
+
+/* 折叠 */
+@import url(/appearance/themes/Lite/style/module/fold.css);
+
+/* 导入自定义功能 */
+@import url(/appearance/themes/Lite/custom/sm-tag/sm-tag.css);
+
+/*引用块弹出框*/
+/* .block__popover--open{
+	border:none;
+	box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px;
+	animation: menu 0.2s ease-in-out;
+}
+.block__edit>.protyle-breadcrumb>.block__icon svg{
+	color:var(--b3-theme-on-surface);
+	width:14px;
+	height:14px;
+	padding: 5px;
+}
+.block__edit>.protyle-breadcrumb>.block__icon{
+	padding: 0px;
+} */

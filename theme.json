@@ -1,0 +1,10 @@
+{
+  "name": "Lite",
+  "author": "mdzz2048",
+  "url": "https://github.com/Vanessa219",
+  "version": "0.0.1",
+  "modes": [
+    "light",
+    "dark"
+  ]
+}

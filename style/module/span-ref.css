@@ -1,0 +1,26 @@
+/* 块引用 */
+
+@import url(/appearance/themes/Lite/style/module/config.css);
+
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"] {
+	color: var(--custom-span-block-ref-color);
+}
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
+	/*前半部分的符号*/
+	content: var(--custom-ref-l);
+	/*修改前半部分颜色*/
+	color: var(--b3-theme-on-surface-light);
+	display: inline-block;
+	text-align: center;
+} 
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
+	/*后半部分的符号*/
+	content: var(--custom-ref-r);
+	/*后改前半部分颜色*/
+	color: var(--b3-theme-on-surface-light);
+    display: inline-block;
+	text-align: center;
+}
+.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]:hover {
+	color:var(--custom-span-block-ref-hover-color);
+}
