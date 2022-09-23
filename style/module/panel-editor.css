@@ -1,16 +1,10 @@
 /* 编辑区面板 */
-/* 
-todo:
-1. 收缩面包屑、页签、顶栏的大小（扩大笔记范围）
-2. 
-*/
 
 @import url(/appearance/themes/Lite/style/module/config.css);
 
 .fn__flex-1.protyle.fullscreen .protyle-content {
     /* 全屏模式编辑区 */
     background-color: var(--custom-editor-background-color);
-    /* backdrop-filter: var(--custom-backdrop-filter); */
 }
 #editor,
 .layout-tab-container {
@@ -23,12 +17,13 @@ todo:
 }
 .protyle-breadcrumb {
     /* 导航栏(面包屑) */
-    background-color: var(--custom-editor-breadcrumb-bar-background-color);
+    background-color: var(--custom-components);
+    border-bottom: 1px solid var(--custom-components-deep);
+    border-top: 1px solid var(--custom-components-deep);
 }
 .protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item {
     /* 导航栏文字 */
     line-height: normal;
-    border: 1px solid var(--b3-theme-on-surface-light);
 }
 .protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child {
     border-color: var(--b3-theme-on-surface);
