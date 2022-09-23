@@ -12,6 +12,8 @@
 	color: var(--b3-theme-on-surface-light);
 	display: inline-block;
 	text-align: center;
+	margin: 0 0 0 0.125em;
+	padding: 0;
 } 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
 	/*后半部分的符号*/
@@ -20,6 +22,8 @@
 	color: var(--b3-theme-on-surface-light);
     display: inline-block;
 	text-align: center;
+	margin: 0 0.125em 0 0;
+	padding: 0;
 }
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]:hover {
 	color:var(--custom-span-block-ref-hover-color);

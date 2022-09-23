@@ -8,21 +8,7 @@
   color: var(--b3-protyle-inline-link-color);
 }
 
-.protyle-wysiwyg [data-node-id] span:not(:empty)[data-type='a']::before {
-  /* 超链接前标志 */
-  content: "";
-  display: inline-block;
-  position: relative;
-  background-image: url(/appearance/themes/Lite/icon/unknown.svg);
-  background-size: 0.875em auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 0.875em;
-  height: 1em;
-  margin: 0.125em 0.125em -0.125em 0;
-  padding: 0;
-}
-
+.protyle-wysiwyg [data-node-id] span:not(:empty)[data-type='a']::before,
 .protyle-wysiwyg [data-node-id] span:not(:empty)[data-type='file-annotation-ref']::before {
   /* 超链接前标志 */
   content: "";

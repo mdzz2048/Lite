@@ -1,4 +1,5 @@
 /* 嵌入块 */
+
 @import url(/appearance/themes/Lite/style/module/config.css);
 
 .protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node {

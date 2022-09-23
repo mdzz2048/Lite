@@ -5,44 +5,42 @@
 3. 列表折叠 (配合列表备注使用，折叠后备注不折叠)
 4. 链接方括号和链接区分
 */
+/* ————————————————————初始设置———————————————————— */
 
-/* 块级元素样式 */
-@import url(/appearance/themes/Lite/style/module/config.css);
-@import url(/appearance/themes/Lite/style/module/block-embed.css);
-@import url(/appearance/themes/Lite/style/module/block-heading.css);
-@import url(/appearance/themes/Lite/style/module/block-hr.css);
-/* @import url(/appearance/themes/Lite/style/module/block-list.css); */
-@import url(/appearance/themes/Lite/style/module/block-paragraph.css);
-@import url(/appearance/themes/Lite/style/module/block-quote.css);
-@import url(/appearance/themes/Lite/style/module/block-super.css);
+/* ————————————————————界面样式———————————————————— */
 
-/* 行内元素样式 */
-@import url(/appearance/themes/Lite/style/module/span-link.css);
-@import url(/appearance/themes/Lite/style/module/span-ref.css);
-@import url(/appearance/themes/Lite/style/module/span-img.css);
-@import url(/appearance/themes/Lite/style/module/span-link-icon.css);
+@import url(style/appearance/breadcrumb.css);
+@import url(style/appearance/dock.css);
+@import url(style/appearance/editor.css);
+/* @import url(style/appearance/file-tree.css); */
+@import url(style/appearance/outline.css);
+@import url(style/appearance/panel.css);
+@import url(style/appearance/separator.css);
+@import url(style/appearance/search.css);
+@import url(style/appearance/status-bar.css);
+@import url(style/appearance/tab-bar.css);
 
-/* 边栏 */
-@import url(/appearance/themes/Lite/style/module/dock.css);
+/* ————————————————————行内元素———————————————————— */
 
-/* 页签栏 */
-@import url(/appearance/themes/Lite/style/module/tab.css);
+@import url(style/inline/img.css);
+@import url(style/inline/link-icon.css);
+@import url(style/inline/link.css);
+@import url(style/inline/ref.css);
 
-/* 顶部工具栏 */
+/* ————————————————————块级元素———————————————————— */
 
+@import url(style/module/config.css);
+@import url(style/block/embed.css);
+@import url(style/block/fold.css);
+@import url(style/block/heading.css);
+@import url(style/block/hr.css);
+/* @import url(style/block/list.css); */
+@import url(style/block/paragraph.css);
+@import url(style/block/quote.css);
+@import url(style/block/super.css);
 
-/* 底部状态栏 */
+/* ————————————————————自定义属性———————————————————— */
 
+/* ————————————————————自定义样式———————————————————— */
 
-/* 面板 */
-@import url(/appearance/themes/Lite/style/module/panel.css);
-@import url(/appearance/themes/Lite/style/module/panel-editor.css);
-/* @import url(/appearance/themes/Lite/style/module/panel-filetree.css); */
-@import url(/appearance/themes/Lite/style/module/panel-outline.css);
-@import url(/appearance/themes/Lite/style/module/panel-separator.css);
-
-/* 折叠 */
-@import url(/appearance/themes/Lite/style/module/fold.css);
-
-/* 导入自定义功能 */
-@import url(/appearance/themes/Lite/custom/sm-tag/sm-tag.css);
+@import url(custom/sm-tag/sm-tag.css);

@@ -1,0 +1,47 @@
+/* 面包屑样式 */
+
+@import url(/appearance/themes/Lite/style/module/config.css);
+
+/* 导航栏图标 */
+.protyle-breadcrumb__item,.protyle-breadcrumb__icon{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* 面包屑毛玻璃效果，REF: https://github.com/UserZYF/zhang-light/blob/main/style/02-appearance/breadcrumb.css#L12-L28 */
+
+/* 01 将面包屑设置为绝对布局 */
+.protyle-breadcrumb {
+    position: absolute;
+    background-color: var(--custom-editor-background-color);
+    border-bottom: 1px solid var(--custom-components-deep);
+    border-top: 1px solid var(--custom-components-deep);
+    z-index: 2;
+    height: 30px;
+    width: 100%;
+}
+
+/* 02 将正文设置为浮动布局 */
+.protyle-content {
+    float: left;
+    padding-top: 30px;
+}
+
+/* 导航栏文字 */
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item {
+    line-height: normal;
+}
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child {
+    border-color: var(--b3-theme-on-surface);
+}
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child,
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis {
+    /* 文档路径完整显示 */
+    max-width: none;
+}
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item .protyle-breadcrumb__text:empty {
+    /* 无内容的面包屑项 */
+    margin-left: 0;
+}

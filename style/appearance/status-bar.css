@@ -1,0 +1,8 @@
+/* 底部状态栏 */
+
+@import url(/appearance/themes/Lite/style/module/config.css);
+
+/* 底部状态栏 */
+#status {
+    background-color: var(--custom-status-bar-background-color);
+}

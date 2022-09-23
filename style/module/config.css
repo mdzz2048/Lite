@@ -268,15 +268,6 @@
     /* 编辑区背景颜色 | The background color of the edit area */
     --custom-editor-background-color: var(--custom-transparent);
 
-    /* 编辑区标题栏背景颜色 | The background color of the edit area title bar */
-    --custom-editor-title-bar-background-color: transparent;
-
-    /* 编辑区导航栏(面包屑)背景颜色 | The background color of the edit area navigation bar (breadcrumbs) */
-    --custom-editor-breadcrumb-bar-background-color: var(--custom-transparent);
-
-    /* 面包屑高度 | breadcrumb height */
-    --custom-breadcrumb-height: 0.5rem;
-
     /* 编辑区页签栏背景颜色 | The background color of the  edit area tab bar */
     --custom-tab-bar-background-color: var(--custom-transparent);
     /* 页签图标大小 | The size of the tab bar icon */
@@ -332,6 +323,13 @@
     --custom-h4-indentation: 2em;
     --custom-h5-indentation: 2.5em;
     --custom-h6-indentation: 3em;
+
+    /* 对话框背景颜色 | Dialog background color */
+    --custom-search-background-color: var(--custom-components);
+
+    /* 搜索对话框尺寸 | The size of the search dialog box. */
+    --custom-search-width: 90vw;
+    --custom-search-height: 90vh;
 }
 
 /* PDF */

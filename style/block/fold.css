@@ -17,8 +17,8 @@
     border-radius: 0;
     margin-top: 0;
 }
- 
-.protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeHeading"] ::before {
+
+.protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeHeading"]::before {
     /* 添加子标题折叠标记 */
     content: var(--custom-h-fold-mark);
     margin-right: 3px;
