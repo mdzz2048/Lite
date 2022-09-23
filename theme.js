@@ -236,5 +236,5 @@ window.theme.changeThemeMode = function (
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/test/listener.js"));
 
 /* 加载自定义功能 */
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/other-theme/other-theme.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/sm-tag/sm-tag.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/other-theme/other-theme.js"));
