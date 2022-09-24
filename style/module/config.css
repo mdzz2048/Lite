@@ -211,6 +211,23 @@
     /* 列表项聚焦颜色 | List item focus color */
     --custom-list-item-color: var(--b3-protyle-inline-link-color);
 
+    /* 列表辅助线弧度 | Rounded arc of list guides line */
+    --custom-list-guides-line-radius: 16px;
+
+    /* 列表辅助线宽度 | The width of list guides line */
+    --custom-list-guides-line-width: 2px;
+
+    /* 列表辅助线颜色 | The color of list guides line */
+    --custom-list-guides-line-color: var(--b3-theme-background-light);
+
+    /* 列表辅助线与上层节点的接缝 | The seams between the list guides line and the upper layer nodes */
+    --custom-list-guides-line-top: -4px;
+
+    /* 列表辅助线与本层节点的接缝 | The seams between the list guides line and the local layer nodes */
+    --custom-list-guides-line-right-t: calc(22px + 5em / 16);
+    --custom-list-guides-line-right-u: calc(22px + 5em / 16);
+    --custom-list-guides-line-right-o: calc(14px + 1em);
+
     /* 标记文字背景颜色 | The background color of the marker text */
     --cusotm-span-mark-background-color: var(--b3-theme-primary-lighter);
 

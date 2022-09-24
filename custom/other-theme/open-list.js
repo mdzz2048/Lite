@@ -352,10 +352,6 @@ function CreatetriggerBlock(e) {
     return triggerBlock;
 }
 
-function showDocumentCreationDate() {
-    setInterval(DocumentCreationDate, 300); /**块级计数 */
-}
-
 setTimeout(() => {
     
     autoOpenList();//自动展开悬浮窗内折叠列表（第一次折叠）
