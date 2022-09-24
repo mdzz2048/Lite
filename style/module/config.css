@@ -214,6 +214,18 @@
     /* 标记文字背景颜色 | The background color of the marker text */
     --cusotm-span-mark-background-color: var(--b3-theme-primary-lighter);
 
+    /* 思源标记颜色 | The color of mark */
+    --custom-span-mark-color: var(--b3-card-info-color);
+
+    /* 标记文字背景颜色 | The background color of the marker text */
+    --cusotm-span-mark-background-color: var(--b3-theme-primary-lighter);
+
+    /* 思源标记阴影颜色 | The shadow color of mark */
+    --custom-span-mark-shadow-color: var(--b3-theme-on-primary);
+
+    /* 思源标记阴影宽度 | The shadow width of mark */
+    --custom-span-mark-shadow-width: 4px;
+
     /* 删除线颜色 | The color of the strikethrough */
     --cusotm-span-strikethrough-color: var(--b3-theme-on-surface);
 
@@ -244,9 +256,6 @@
 
     /* 思源虚拟引用背景颜色 | The background color of virtual block ref */
     --custom-span-virtual-ref-background-color: var(--custom-components-light);
-
-    /* 思源标记颜色 | The color of mark */
-    --custom-span-mark-color: var(--b3-card-info-color);
 
     /* 功能面板间隔距离 | Function panel spacing distance */
     --custom-panel-distance: 3px;

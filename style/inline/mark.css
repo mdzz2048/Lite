@@ -1,0 +1,64 @@
+/*  <mark> 标记
+ *  REF: https://github.com/UserZYF/zhang-light/blob/main/style/03-inline-span/mark.css#L10-L30
+ *  REF: 
+ */
+
+/* -------------------------------高亮------------------------------- */
+.b3-typography mark,
+.protyle-wysiwyg mark,
+.b3-typography span[data-type~=mark],
+.protyle-wysiwyg span[data-type~=mark] {
+  background-color: var(--cusotm-span-mark-background-color);
+}
+.protyle-wysiwyg mark,
+.protyle-wysiwyg span[data-type~=mark] {
+  color: transparent;
+  transition: all 200ms linear 0ms;
+}
+.protyle-wysiwyg mark:hover,
+.protyle-wysiwyg span[data-type~=mark]:hover {
+  background-color: transparent;
+  color: var(--custom-span-mark-color);
+  text-shadow: 0 0 var(--custom-span-mark-shadow-width) var(--custom-span-mark-shadow-color);
+  /* font-weight: bold; */
+}
+
+/* -------------------------------搜索高亮------------------------------- */
+/* 搜索结果列表匹配关键词 */
+.b3-list-item mark {
+    margin: 0 0.125em;
+    border: 1px dotted;
+    padding: 0 0.125em;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* 搜索结果渲染匹配关键词 */
+.protyle-wysiwyg [data-node-id] span[data-type="search-mark"] {
+    animation-name: change;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin: 0 0.125em;
+    padding: 0 0.125em;
+    border-radius: 5px;
+}
+
+/* 块级反链列表定位关键词 */
+.protyle-wysiwyg [data-node-id] span.def--mark {
+    margin: 0 0.125em;
+    border: 1px dotted;
+    padding: 0 0.125em;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* 搜索高亮动画 */
+@keyframes change {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: var(--b3-protyle-search-background);
+    }
+}
