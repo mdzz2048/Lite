@@ -99,7 +99,7 @@ setTimeout(() => {
     showDocumentCreationDate(); /**为打开文档标题下面显示文档创建日期 */
     
     console.log(
-        "other-theme 已执行"
+        "doc-creat-time 已执行"
         );
 }, 500);
         
