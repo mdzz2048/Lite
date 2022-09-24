@@ -3,6 +3,8 @@
  *  REF: 
  */
 
+@import url(/appearance/themes/Lite/style/module/config.css);
+
 /* -------------------------------高亮------------------------------- */
 .b3-typography mark,
 .protyle-wysiwyg mark,

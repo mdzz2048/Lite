@@ -31,6 +31,7 @@
 /* ————————————————————块级元素———————————————————— */
 
 @import url(style/module/config.css);
+@import url(style/block/code.css);
 @import url(style/block/embed.css);
 @import url(style/block/fold.css);
 @import url(style/block/heading.css);
