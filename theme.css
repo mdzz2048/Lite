@@ -22,6 +22,7 @@
 
 /* ————————————————————行内元素———————————————————— */
 
+@import url(style/inline/code.css);
 @import url(style/inline/img.css);
 @import url(style/inline/link-icon.css);
 @import url(style/inline/link.css);
