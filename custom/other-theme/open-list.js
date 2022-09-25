@@ -208,7 +208,7 @@ function collapsedListPreviewEvent() {
 var flag22 = false;
 
 function LIstout(e) {
-    items = Array.from(e.target.children);
+    var items = Array.from(e.target.children);
     flag22 = false;
     for (let index = 0; index < items.length; index++) {
         const element = items[index];
@@ -240,7 +240,7 @@ function LIstIns(e) {
 
         var item = obj.parentElement.parentElement;
         if (item == null) return;
-        items = item.children
+        var items = item.children
         var itemobj = items[items.length - 1];
         if (itemobj != null && itemobj.getAttribute("triggerBlock") != null) {
 
@@ -271,7 +271,7 @@ function LIstIn(e) {
 
     var f = obj.parentElement.parentElement;
     if (!f) return;
-    items = f.children;
+    var items = f.children;
 
     var itemobj = items[items.length - 1];
     if (itemobj != null && itemobj.getAttribute("triggerBlock") != null) return;

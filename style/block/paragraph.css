@@ -35,3 +35,20 @@
     padding-bottom: 0px !important;
     border-bottom: none !important;
 }
+
+/* 列表转表格，取消段落块行线 */
+.protyle-content [custom-type~=table] [data-node-id].li [data-node-id].p,
+.protyle-content [custom-type~="表格"] [data-node-id].li [data-node-id].p {
+    padding-bottom: 0px !important;
+    border-bottom: none !important;
+}
+
+/* 列表转脑图，取消段落块行线 */
+.protyle-content [custom-type~="思维导图"] [data-node-id].li .p,
+.protyle-content [custom-type~="导图"] [data-node-id].li .p,
+.protyle-content [custom-type~="脑图"] [data-node-id].li .p,
+.protyle-content [custom-type~=mind-map] [data-node-id].li .p,
+.protyle-content [custom-type~=map] [data-node-id].li .p {
+    padding-bottom: 0px !important;
+    border-bottom: none !important;
+}
