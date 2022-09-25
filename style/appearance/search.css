@@ -39,14 +39,9 @@
   border: 1px solid var(--custom-components-deep);
 }
 
-/* 关闭按钮 */
-.b3-dialog__container > .b3-dialog__close:hover {
-  background-color: var(--b3-theme-on-surface);
-}
-
-/* 调整搜索框关闭按钮位置, 避免被遮挡 */
-body > div[data-key] > .b3-dialog > .b3-dialog__container > .b3-dialog__close {
-    right: calc((100vw - var(--custom-search-width)) / -2);
+/* 隐藏关闭按钮 */
+.b3-dialog__container > .b3-dialog__close {
+  display: none;
 }
 
 /* 搜索对话框尺寸 */

@@ -7,6 +7,16 @@
   flex-wrap: var(--custom-tab-bar-flex-wrap);
 }
 
+/* 页签项 */
+.layout-tab-bar .item {
+  flex: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid var(--custom-components-deep);
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: none !important;
+}
+
 /* 页签项图标 */
 .layout-tab-bar .item .item__icon {
   padding-right: 0;
@@ -28,15 +38,6 @@
   background-color: var(--b3-theme-on-surface);
 }
 
-/* 多窗口页签项 */
-.layout__wnd--active .layout-tab-bar .item {
-  flex: none;
-  background-color: transparent;
-  box-shadow: none;
-  border: 1px solid var(--custom-components-deep);
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: none !important;
-}
 /* 多窗口被选中的页签项 */
 .layout__wnd--active .layout-tab-bar .item.item--focus {
   background-color: var(--b3-list-hover);
@@ -46,13 +47,7 @@
 /* 集市页签项 */
 .b3-dialog__container .layout-tab-bar .item {
   flex: auto;
-  background-color: transparent;
-  box-shadow: none;
-  border: 1px solid var(--custom-components-deep);
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: none !important;
 }
-
 /* 集市被选中的页签项 */
 .b3-dialog__container .layout-tab-bar .item.item--focus {
   flex: auto;
