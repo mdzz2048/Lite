@@ -200,31 +200,31 @@ window.theme.changeThemeMode = function (
 
 /* 根据当前主题模式加载样式配置文件 */
 // window.theme.changeThemeMode(
-//     `/appearance/themes/Lite/style/color/light.css`,
-//     `/appearance/themes/Lite/style/color/dark.css`,
+//     `/appearance/themes/Lite/style/light.css`,
+//     `/appearance/themes/Lite/style/dark.css`,
 //     `/widgets/custom-light.css`,
 //     `/widgets/custom-dark.css`,
 // );
 
 /* 加载 HTML 块中使用的小工具 */
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/html.js"), "text/javascript", undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/html.js"), "text/javascript", undefined, true);
 
 /* 加载主题功能 */
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/background.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/blockattrs.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/doc.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/dock.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/goto.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/blockattrs.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/doc.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/dock.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/goto.js"), undefined, true);
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/invert.js"), undefined, true);
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/location.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/menu.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/readonly.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/reload.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/style.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/menu.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/readonly.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/reload.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/style.js"), undefined, true);
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/timestamp.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/typewriter.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/typewriter.js"), undefined, true);
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/wheel.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/window.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/window.js"), undefined, true);
 
 /* 加载独立应用 */
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/app/comment/index.js"), undefined, true);
