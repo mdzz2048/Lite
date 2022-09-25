@@ -237,5 +237,7 @@ window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script
 
 /* 加载自定义功能 */
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/other-theme/doc-creat-time.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/other-theme/open-list.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/list-plus/open-list.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/sm-tag/sm-tag.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/calendar/calendar.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/history-edit-doc/history-edit-doc.js"), undefined, true);

@@ -9,5 +9,13 @@
     "not firefox <= 104",
     "not ios_saf <= 15.6",
     "not safari <= 15.6"
-  ]
+  ],
+  "hints": {
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
+      }
+    ]
+  }
 }
