@@ -1,0 +1,100 @@
+/* 弹出菜单 */
+
+@import url(/appearance/themes/Lite/style/module/config.css);
+
+/* 移动端菜单 */
+#model,
+/* 全局右键菜单 */
+#commonMenu {
+    background-color: var(--custom-components-light);
+    background-image: url(../image/background.png);
+}
+
+/* 菜单项 */
+#commonMenu .b3-menu__item {
+  background-color: transparent;
+}
+
+/* 鼠标悬停菜单项 */
+#commonMenu .b3-menu__item.b3-menu__item--current {
+  background-color: var(--b3-theme-background-light) !important;
+}
+
+/* 子菜单 */
+#commonMenu .b3-menu__item > .b3-menu__submenu {
+  background-color: var(--custom-popover-function-menu-background-color);
+
+}
+
+/* 菜单分割线 */
+#commonMenu .b3-menu__separator {
+  height: 2px;
+  background-color: var(--custom-popover-menu-separator-color);
+}
+
+/* 输入框 */
+#commonMenu > *:not(.emojis) input.b3-text-field {
+  min-width: var(--custom-popover-menu-input-min-width);
+}
+
+/* '/' 菜单 */
+.b3-list.b3-list--background.b3-menu.hint--menu {
+  column-count: 4;
+  column-gap: 1em;
+  column-rule: var(--custom-list-guides-line-width) solid var(--b3-border-color);
+  max-height: none !important;
+  background-color: var(--custom-transparent-deep) !important;
+  background-image: url(../image/background.png);
+}
+
+.b3-list.b3-list--background.b3-menu.hint--menu > .b3-list-item.b3-list-item--focus {
+    background-color: var(--b3-list-hover);
+}
+
+/* 表情菜单 */
+.b3-list.b3-list--background.b3-menu.hint--menu > .emojis {
+  /* REF https: //github.com/siyuan-note/siyuan/issues/4575#issuecomment-1152490468 */
+  column-span: all;
+}
+
+/* 分割线 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator {
+  background-color: var(--b3-theme-on-surface);
+}
+
+/* 第1条分割线 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type {
+  height: 35px;
+  background-color: transparent;
+}
+
+/* 一级子标题 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
+  color: var(--custom-h1-color);
+}
+/* 二级子标题 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
+  color: var(--custom-h2-color);
+}
+/* 三级子标题 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
+  color: var(--custom-h3-color);
+}
+/* 四级子标题 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
+  color: var(--custom-h4-color);
+}
+/* 五级子标题 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button + button + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
+  color: var(--custom-h5-color);
+}
+/* 六级子标题 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button + button + button + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
+  color: var(--custom-h6-color);
+}
+
+/* 第4条分割线 */
+.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:nth-of-type(4) {
+  height: 0;
+  background-color: transparent;
+}

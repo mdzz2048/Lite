@@ -25,6 +25,12 @@
   background-color: var(--b3-list-hover);
 }
 
+.layout-tab-container {
+  /* 边栏背景 */
+  background-color: var(--custom-editor-background-color);
+  background-image: url(../../image/background.png);
+}
+
 /*-----------------------------关闭笔记本区域*/
 /*关闭笔记面板和文档树面板分割线*/
 .b3-list:not(.b3-list--background) {

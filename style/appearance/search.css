@@ -7,9 +7,22 @@
 
 /* 搜索结果列表 */
 #searchList,
+/* 搜索结果预览 */
 #searchPreview {
-  background-color: transparent;
   border: 1px solid var(--custom-components-deep);
+  background-color: var(--custom-components-light);
+}
+
+/* 搜索结果列表背景色 */
+#searchList > .b3-list-item {
+  background-color: var(--custom-editor-background-color);
+  background-image: url(../../image/background.png);
+}
+#searchList > .b3-list-item:hover {
+  background-color: var(--custom-components);
+}
+#searchList > .b3-list-item.b3-list-item--focus {
+  background-color: var(--custom-components);
 }
 
 /* 历史容器 */

@@ -163,11 +163,11 @@
     --custom-block-padding: 5px;
 
     /* 透明组件颜色 | Transparent component color */
-    --custom-transparent-lighter: #bfbfbf15;
-    --custom-transparent-light: #bfbfbf20;
-    --custom-transparent: #bfbfbf25;
-    --custom-transparent-deep: #bfbfbf30;
-    --custom-transparent-deeper: #bfbfbf35;
+    --custom-transparent-lighter: #ebeaf015;
+    --custom-transparent-light: #ebeaf045;
+    --custom-transparent: #ebeaf075;
+    --custom-transparent-deep: #ebeaf0a5;
+    --custom-transparent-deeper: #ebeaf0d5;
 
     /* 不透明的组件颜色 | Opaque component color */
     --custom-components-light: #fff;
@@ -190,13 +190,13 @@
     --custom-status-bar-background-color: var(--custom-components);
 
     /* 收集箱内容预览背景颜色 | The background color of inbox contents preview */
-    --custom-inbox-background-color: var(--custom-transparent);
+    --custom-inbox-background-color: var(--custom-transparent-light);
 
     /* 编辑区背景颜色 | The background color of the edit area */
-    --custom-editor-background-color: var(--custom-transparent);
+    --custom-editor-background-color: var(--custom-transparent-light);
 
     /* 编辑区页签栏背景颜色 | The background color of the  edit area tab bar */
-    --custom-tab-bar-background-color: var(--custom-transparent);
+    --custom-tab-bar-background-color: var(--custom-transparent-light);
     /* 页签图标大小 | The size of the tab bar icon */
     --custom-tab-bar-icon-size: 1.25em;
     /** 页签项排列方式 | The wrap style of tab bar
@@ -311,6 +311,29 @@
      * 需要设置为 --custom-panel-distance 的负值 | A negative value of --custom-panel-distance is required
      */
     --custom-separator-distance-compensation: calc(0px - var(--custom-panel-distance));
+
+    /* 弹出菜单 | popover menu */
+    /* 弹出功能菜单背景颜色 | The background color of the popover function menu */
+    --custom-popover-function-menu-background-color: var(--custom-transparent-deep);
+    /* 弹出菜单背景颜色 | The background color of the popover menu */
+    --custom-popover-menu-background-color: var(--custom-transparent-deep);
+    /* 弹出菜单分隔线颜色 | The color of the popover menu */
+    --custom-popover-menu-separator-color: var(--b3-border-color);
+    /* 弹出菜单中块属性字段颜色 | The color of the search menu block attribute field */
+    --custom-popover-menu-attribute-color: var(--b3-card-warning-color);
+    /* 弹出菜单中路径字段颜色 | The color of the path field */
+    --custom-popover-menu-path-color: var(--b3-card-info-color);
+    /* 弹出菜单内边距宽度 | The padding width of the popover menu */
+    --custom-popover-menu-padding-width: 0.25em;
+    /* 弹出菜单轮廓宽度 | The outline width of the popover menu */
+    --custom-popover-menu-outline-width: 1px;
+    /* 弹出菜单轮廓样式 | The outline style of the popover menu */
+    --custom-popover-menu-outline-style: solid;
+    /* 弹出菜单轮廓颜色 | The outline color of the popover menu */
+    --custom-popover-menu-outline-color: var(--b3-scroll-color);
+    /* 弹出菜单输入框最小宽度 | The min width of the popover menu input */
+    /* --custom-popover-menu-input-min-width: 50vw; */
+    --custom-popover-menu-input-min-width: none;
 
     /* 遮罩背景颜色 | Scrim background color */
     --custom-scrim-background-color: var(--custom-transparent-light);

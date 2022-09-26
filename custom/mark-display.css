@@ -1,4 +1,7 @@
 /* 显示标记文本内容 */
+
+@import url(/appearance/themes/Lite/style/module/config.css);
+
 .protyle-wysiwyg mark,
 .protyle-wysiwyg span[data-type="mark"],
 .protyle-wysiwyg mark:hover,

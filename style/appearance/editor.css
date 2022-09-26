@@ -13,15 +13,10 @@
     background-color: var(--custom-editor-background-color);
 }
 
-#editor,
-.layout-tab-container {
-    /* 编辑区 */
+.protyle-content {
+    /*编辑区*/
     background-color: var(--custom-editor-background-color);
     background-image: url(../../image/background.png);
-}
-.protyle {
-    /*编辑区*/
-    background: transparent;
 }
 
 .wysiwygLoading {
@@ -58,11 +53,6 @@
     box-shadow: 4px 0 0 var(--custom-drag-right-shadow-color);
 }
 
-.protyle-preview {
-    /* 内容 */
-    background-color: transparent;
-    /* backdrop-filter: none; */
-}
 .protyle-preview > .b3-typography {
     padding-left: var(--custom-editor-padding-left) !important;
     padding-right: var(--custom-editor-padding-right) !important;
