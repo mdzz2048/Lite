@@ -1,6 +1,6 @@
 :root {
     /* 背景图片 */
-    --custom-background-image: url(../image/background.png);
+    --custom-background-image: url(/appearance/themes/Lite/image/background.png);
     
     /* 透明组件颜色 | Transparent component color */
     --custom-transparent-lighter: #ebeaf015;

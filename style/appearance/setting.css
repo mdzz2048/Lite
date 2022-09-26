@@ -3,7 +3,8 @@
 @import url(../config.css);
 
 /* 设置对话框尺寸 */
-.b3-dialog > .b3-dialog__container {
+body > .b3-dialog > .b3-dialog__container,
+body > .b3-dialog > .b3-dialog__container .fn__flex-column {
   width: var(--custom-search-width) !important;
   height: var(--custom-search-height) !important;
 }
