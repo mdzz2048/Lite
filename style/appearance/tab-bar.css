@@ -1,6 +1,6 @@
 /* 页签 */
 
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 /* 页签 */
 .layout-tab-bar {

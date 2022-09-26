@@ -1,6 +1,6 @@
 /* 顶部工具栏 */
 
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 #toolbar{
     background-color: var(--custom-tool-bar-background-color);

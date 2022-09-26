@@ -159,7 +159,7 @@
     /* 圆角弧度 | Rounded arc */
     --custom-border-radius: 5px;
 
-    /* 超级块内边距 | The inner margin of the superblock */
+    /* 默认块内边距 | The inner margin of the superblock */
     --custom-block-padding: 5px;
 
     /* 透明组件颜色 | Transparent component color */

@@ -1,6 +1,6 @@
 /* 文档面板 */
 
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 .sy__file .b3-list-item__text {
   /* 过长文档名显示样式 */

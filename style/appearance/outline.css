@@ -1,5 +1,5 @@
 /* 大纲面板 */
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 /* 过长子标题名显示样式 */
 .sy__outline .b3-list-item__text {

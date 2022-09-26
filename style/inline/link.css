@@ -1,5 +1,5 @@
 /* 超链接 */
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 .protyle-wysiwyg [data-node-id] span:not(:empty)[data-type='a'] {
   /* 默认样式 */

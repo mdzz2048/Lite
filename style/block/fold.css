@@ -2,7 +2,7 @@
  * REF https://github.com/UserZYF/zhang-light/blob/d309151036bafe324bcf9eb754829ebc93a88d03/theme.css#L1661
  */
 
- @import url(/appearance/themes/Lite/style/module/config.css);
+ @import url(../config.css);
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeHeading"]::before {
     /* 移除子标题折叠原有样式 */

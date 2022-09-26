@@ -5,7 +5,7 @@ todo:
 2. 标题自动标号加入右键菜单
 */
 
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 /* 👇标题自动编号👇 */
 .protyle-wysiwyg,

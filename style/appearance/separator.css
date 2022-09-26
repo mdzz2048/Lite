@@ -1,6 +1,6 @@
 /* 功能区分隔线 */
 
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 .layout__resize:not(.layout__resize--lr) {
   /* 横向分割线 */

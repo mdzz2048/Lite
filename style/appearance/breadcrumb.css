@@ -1,6 +1,6 @@
 /* 面包屑样式 */
 
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 /* 导航栏图标 */
 .protyle-breadcrumb__item,.protyle-breadcrumb__icon{

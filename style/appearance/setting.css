@@ -1,6 +1,6 @@
 /* 设置对话框 */
 
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 /* 设置对话框尺寸 */
 .b3-dialog > .b3-dialog__container {

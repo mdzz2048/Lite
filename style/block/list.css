@@ -1,5 +1,5 @@
 /* 列表 */
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 .protyle-wysiwyg [data-node-id].li > .protyle-action {
   /* 列表标志 */

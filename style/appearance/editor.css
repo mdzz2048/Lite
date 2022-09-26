@@ -1,6 +1,6 @@
 /* 编辑区面板 */
 
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 /* 全屏模式背景 */
 .fn__flex-1.protyle.fullscreen {

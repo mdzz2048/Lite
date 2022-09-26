@@ -1,5 +1,5 @@
 /* 引述块 */
-@import url(/appearance/themes/Lite/style/module/config.css);
+@import url(../config.css);
 
 .b3-typography blockquote,
 .protyle-wysiwyg [data-node-id].bq {
