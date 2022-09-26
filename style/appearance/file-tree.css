@@ -2,10 +2,10 @@
 
 @import url(../config.css);
 
-.sy__file .b3-list-item__text {
-  /* 过长文档名显示样式 */
+/* 过长文档名显示样式 */
+/* .sy__file .b3-list-item__text {
   display: var(--custom-file-display);
-}
+} */
 .sy__file li[data-type="navigation-file"][data-name^="*"] > .b3-list-item__text {
   color: var(--custom-doctree-begin-asterisk-color);
 }
