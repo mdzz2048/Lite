@@ -1,0 +1,19 @@
+:root {
+    /* 透明组件颜色 | Transparent component color */
+    --custom-transparent-lighter: #2a2a2a15;
+    --custom-transparent-light: #2a2a2a45;
+    --custom-transparent: #2a2a2a75;
+    --custom-transparent-deep: #2a2a2aa5;
+    --custom-transparent-deeper: #2a2a2ad5;
+
+    /* 不透明的组件颜色 | Opaque component color */
+    --custom-components-light: #323233;
+    --custom-components: #252526;
+    --custom-components-deep: #1e1e1e;
+
+    /* 编辑区背景颜色 | The background color of the edit area */
+    --custom-editor-background-color: var(--custom-transparent);
+
+    /* 弹出窗口背景颜色 | The background color of the popover */
+    --custom-popover-background-color: var(--custom-transparent-deeper);
+}

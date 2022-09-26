@@ -199,12 +199,12 @@ window.theme.changeThemeMode = function (
 }
 
 /* 根据当前主题模式加载样式配置文件 */
-// window.theme.changeThemeMode(
-//     `/appearance/themes/Lite/style/light.css`,
-//     `/appearance/themes/Lite/style/dark.css`,
-//     `/widgets/custom-light.css`,
-//     `/widgets/custom-dark.css`,
-// );
+window.theme.changeThemeMode(
+    `/appearance/themes/Lite/style/light.css`,
+    `/appearance/themes/Lite/style/dark.css`,
+    `/widgets/custom-light.css`,
+    `/widgets/custom-dark.css`,
+);
 
 /* 加载 HTML 块中使用的小工具 */
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/html.js"), "text/javascript", undefined, true);
