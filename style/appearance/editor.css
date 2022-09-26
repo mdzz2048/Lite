@@ -2,14 +2,22 @@
 
 @import url(/appearance/themes/Lite/style/module/config.css);
 
+/* 全屏模式背景 */
+.fn__flex-1.protyle.fullscreen {
+    background-color: var(--custom-components-light);
+    background-image: url(../../image/background.png);
+}
+
 .fn__flex-1.protyle.fullscreen .protyle-content {
     /* 全屏模式编辑区 */
     background-color: var(--custom-editor-background-color);
 }
+
 #editor,
 .layout-tab-container {
     /* 编辑区 */
     background-color: var(--custom-editor-background-color);
+    background-image: url(../../image/background.png);
 }
 .protyle {
     /*编辑区*/

@@ -5,6 +5,7 @@
 /* 页签 */
 .layout-tab-bar {
   background-color: var(--custom-tab-bar-background-color);
+  background-image: url(../../image/background.png);
   flex-wrap: var(--custom-tab-bar-flex-wrap);
 }
 
