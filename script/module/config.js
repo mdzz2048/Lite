@@ -1707,7 +1707,7 @@ export var config = {
                                 },
                             },
                             {
-                                enable: true,
+                                enable: false,
                                 type: {
                                     NodeDocument: {
                                         enable: true,

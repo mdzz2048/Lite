@@ -25,6 +25,14 @@
   /* font-weight: bold; */
 }
 
+/* 根据自定义属性取消标记效果 */
+.protyle-wysiwyg [custom-mark=display] mark,
+.protyle-wysiwyg [custom-mark=display] span[data-type~=mark] {
+  background-color: var(--cusotm-span-mark-background-color);
+  color: var(--b3-protyle-inline-mark-color);
+  text-shadow: none;
+}
+
 /* -------------------------------搜索高亮------------------------------- */
 /* 搜索结果列表匹配关键词 */
 .b3-list-item mark {
