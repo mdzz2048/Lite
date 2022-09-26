@@ -775,7 +775,7 @@ export var config = {
                     },
                     path: {
                         // 路径
-                        index: `${THEME_PATHNAME}/app/editor/`, // 编辑器路径
+                        index: `${THEME_PATHNAME}/custom/editor/`, // 编辑器路径
                         temp: {
                             // 临时文件路径
                             relative: '/temp/theme/editor/', // 临时文件相对路径
