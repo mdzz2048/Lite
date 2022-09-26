@@ -12,11 +12,18 @@
 
 /* 超级块鼠标悬停时显示边框 */
 .protyle-wysiwyg [data-node-id].sb:hover {
-    outline: 1px dotted var(--b3-theme-on-surface);
+    outline: 1px solid var(--b3-theme-on-surface);
 }
 
 /* 嵌入块中的超级块：取消边距和阴影 */
-.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node > .protyle-wysiwyg__embed > [data-node-id].sb {
+.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node > .protyle-wysiwyg__embed [data-node-id].sb {
+    padding: 0px;
+    margin: 0px;
+    box-shadow: none;
+}
+
+/* 嵌套超级块：取消边距和阴影 */
+.protyle-wysiwyg [data-node-id].sb [data-node-id].sb {
     padding: 0px;
     margin: 0px;
     box-shadow: none;

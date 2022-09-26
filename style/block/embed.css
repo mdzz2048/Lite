@@ -5,7 +5,7 @@
 .protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node {
     /* 嵌入块 */
     border: none;
-    outline: 1px dotted var(--custom-line-color);
+    outline: 1px dotted var(--b3-theme-on-surface);
     background-color: var(--custom-block-embed-background-color) !important;
     border-radius:5px 5px 5px 5px;
 }
