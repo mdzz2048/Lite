@@ -7,6 +7,14 @@
     border-bottom: 1px dashed rgba(46, 33, 50, 0.09);
 }
 
+.p:hover {
+    border-radius: var(--custom-border-radius);
+    background-color: var(--custom-transparent-deep);
+    text-shadow: 1px 1px 2px var(--custom-components-deep);
+    box-shadow: 1px 1px 0px 0px var(--custom-components-deep);
+    transform: scale(1.001);
+}
+
 /* 嵌入块内段落块的行线 */
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed .p {
     padding-bottom: 0px !important;
