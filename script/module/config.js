@@ -745,7 +745,7 @@ export var config = {
                         // 新窗口打开当前块并聚焦, 否则打开当前文档
                         enable: false,
                         toolbar: { // 菜单栏
-                            enable: false,
+                            enable: true,
                             display: true,
                             id: 'toolbar-theme-window-open-block-infocus',
                             hotkey: () => config.theme.hotkeys.window.open.block.infocus,
