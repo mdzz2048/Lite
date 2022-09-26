@@ -12,6 +12,9 @@ import {
 import { globalEventHandler } from './../utils/listener.js';
 import { setDockState } from './../utils/dom.js';
 
+// 为增加隐藏样式引入的内容
+import { styleHandle } from './../utils/misc.js';
+
 var fold = false;
 
 /**
@@ -48,6 +51,14 @@ function toggleDockFoldStatus() {
                     break;
             }
         }
+
+        // 增加隐藏顶栏、侧栏样式
+        styleHandle(
+            undefined,
+            undefined, 
+            config.theme.dock.elements.toolbar.style.href
+        );
+
         saveCustomFile(custom);
     }
     else { // 展开所有打开的面板
@@ -60,6 +71,13 @@ function toggleDockFoldStatus() {
             const icon = barDock.firstElementChild.firstElementChild.getAttribute('xlink:href');
             if (icon === '#iconDock' && custom.theme.dock.dock.fold) barDock.click();
         }
+
+        // 取消隐藏顶栏、侧栏样式
+        styleHandle(
+            undefined,
+            undefined, 
+            undefined
+        );
     }
     toolbarItemChangeStatu(
         config.theme.dock.fold.toolbar.id,

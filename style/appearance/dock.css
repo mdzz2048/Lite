@@ -7,7 +7,7 @@
 .dock#dockLeft,
 .dock#dockRight {
   background-color: var(--custom-dock-background-color);
-  border: 0;
+  border:0;
 }
 .dock#dockTop .dock__item,
 .dock#dockBottom .dock__item {

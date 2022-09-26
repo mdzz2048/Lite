@@ -2,9 +2,9 @@
 
 @import url(/appearance/themes/Lite/style/module/config.css);
 
-/* 顶部工具栏 */
-#toolbar {
+#toolbar{
     background-color: var(--custom-tool-bar-background-color);
+    border-bottom: 1px solid var(--custom-components-deep);
 }
 
 /* 顶部工具栏按钮 */

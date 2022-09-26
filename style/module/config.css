@@ -177,6 +177,36 @@
     /* 边栏背景颜色 */
     --custom-dock-background-color: var(--custom-components);
 
+    /* 顶部工具栏背景颜色 | The background color of the top toolbar */
+    --custom-tool-bar-background-color: var(--custom-components);
+    /* 顶部工具栏被激活控件阴影散布 | The box shadow spread of toolbar item which is activated */
+    --custom-toolbar-tiem-active-box-shadow-spread: 5px;
+    /* 顶部工具栏被激活控件颜色 | The color of toolbar item which is activated */
+    --custom-toolbar-tiem-active-color: var(--b3-theme-on-background);
+    /* 顶部工具栏被激活控件背景颜色 | The background color of toolbar item which is activated */
+    --custom-toolbar-tiem-active-background-color: var(--b3-theme-background-light);
+
+    /* 底部状态栏背景颜色 | The background color of the bottom status bar */
+    --custom-status-bar-background-color: var(--custom-components);
+
+    /* 收集箱内容预览背景颜色 | The background color of inbox contents preview */
+    --custom-inbox-background-color: var(--custom-transparent);
+
+    /* 编辑区背景颜色 | The background color of the edit area */
+    --custom-editor-background-color: var(--custom-transparent);
+
+    /* 编辑区页签栏背景颜色 | The background color of the  edit area tab bar */
+    --custom-tab-bar-background-color: var(--custom-transparent);
+    /* 页签图标大小 | The size of the tab bar icon */
+    --custom-tab-bar-icon-size: 1.25em;
+    /** 页签项排列方式 | The wrap style of tab bar
+        *  wrap: 多行显示
+        *  nowrap: 单行显示
+        */
+    --custom-tab-bar-flex-wrap: wrap;
+    /* 页签纵向排列时最大宽度 | The maximum width of the tabs witch have vertical aligned */
+    --custom-tab-bar-vertical-max-width: 20%;
+
     /* iframe 块背景颜色 | The background color of iframe block */
     --custom-block-iframe-background-color: var(--custom-transparent);
 
@@ -284,27 +314,6 @@
 
     /* 遮罩背景颜色 | Scrim background color */
     --custom-scrim-background-color: var(--custom-transparent-light);
-
-    /* 底部状态栏背景颜色 | The background color of the bottom status bar */
-    --custom-status-bar-background-color: var(--custom-components);
-
-    /* 收集箱内容预览背景颜色 | The background color of inbox contents preview */
-    --custom-inbox-background-color: var(--custom-transparent);
-
-    /* 编辑区背景颜色 | The background color of the edit area */
-    --custom-editor-background-color: var(--custom-transparent);
-
-    /* 编辑区页签栏背景颜色 | The background color of the  edit area tab bar */
-    --custom-tab-bar-background-color: var(--custom-transparent);
-    /* 页签图标大小 | The size of the tab bar icon */
-    --custom-tab-bar-icon-size: 1.25em;
-    /** 页签项排列方式 | The wrap style of tab bar
-        *  wrap: 多行显示
-        *  nowrap: 单行显示
-        */
-    --custom-tab-bar-flex-wrap: wrap;
-    /* 页签纵向排列时最大宽度 | The maximum width of the tabs witch have vertical aligned */
-    --custom-tab-bar-vertical-max-width: 20%;
 
     /* 编辑区内边距 | Padding of editor pannel */
     --custom-editor-padding-left: 24px;

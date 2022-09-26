@@ -121,7 +121,7 @@ export var config = {
                         enable: true,
                         style: {
                             id: 'theme-style-tab-bar-vertical-style',
-                            href: `${THEME_PATHNAME}/custom/tab-bar-vertical.css`, // 样式文件 URL
+                            href: `${THEME_PATHNAME}/custom/bar-plus/tab-bar-vertical.css`, // 样式文件 URL
                         },
                     },
                 },
@@ -862,10 +862,10 @@ export var config = {
             },
         },
         dock: {
-            enable: false, // dock 功能开关
+            enable: true, // dock 功能开关
             fold: {
                 enable: true, // dock 收缩/展开功能面板功能开关
-                dock: false, // 模式开启时是否同时收起侧边停靠栏
+                dock: true, // 模式开启时是否同时收起侧边停靠栏
                 toolbar: { // 菜单栏
                     enable: true,
                     display: true,
@@ -879,6 +879,15 @@ export var config = {
                     index: -2,
                 },
             },
+            elements: {
+                toolbar: {
+                    enable: true,
+                    style: {
+                        id: 'toolbar-theme-dock-fold',
+                        href: `${THEME_PATHNAME}/custom/bar-plus/bar-hidden.css`
+                    }
+                }
+            }
         },
         menu: {
             enable: true, // 菜单功能开关
