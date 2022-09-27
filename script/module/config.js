@@ -1,4 +1,8 @@
 /* 配置文件(可以被 data/widgets/custom.js 覆盖) */
+// 由于配置文件过长，且关闭了部分功能，针对折叠部分做如下解释：
+// 1. 折叠且没有注释：分隔符
+// 2. 折叠且存在注释：关闭的功能
+// 3. 所有 type 均为折叠状态
 
 import { merge } from './../utils/misc.js';
 import {
@@ -79,8 +83,8 @@ export var config = {
             save: {
                 enable: false, // 是否启用保存自定义样式
             },
-            itemtext: {
-                enable: false, // 是否完整显示文本内容
+            itemtext: { // 是否完整显示文本内容
+                enable: false, 
                 toolbar: {
                     enable: false,
                     display: true,
@@ -178,8 +182,8 @@ export var config = {
                     },
                 },
             },
-            render: {
-                enable: false, // 是否启用自定义样式渲染
+            render: {   // 是否启用自定义样式渲染
+                enable: false, 
                 toolbar: { // 菜单栏
                     enable: false,
                     display: true,
@@ -199,8 +203,7 @@ export var config = {
             },
             attribute: 'custom-style', // 自定义块属性名称
         },
-        timestamp: {
-            // 视频/音频时间戳
+        timestamp: {    // 视频/音频时间戳
             enable: false, // 是否启用时间戳
             youtube: { // YouTube 时间戳相关配置
                 // iframe_api: "https://www.youtube.com/iframe_api", // API 工具
@@ -340,8 +343,8 @@ export var config = {
                         index: 7,
                     },
                 },
-                o: {
-                    enable: false, // 有序列表
+                o: {    // 复制为有序列表
+                    enable: false, 
                     toolbar: { // 菜单栏
                         enable: false,
                         display: true,
@@ -355,8 +358,8 @@ export var config = {
                         index: 8,
                     },
                 },
-                t: {
-                    enable: false, // 任务列表
+                t: {    // 复制为任务列表
+                    enable: false, 
                     toolbar: { // 菜单栏
                         enable: false,
                         display: true,
@@ -406,8 +409,8 @@ export var config = {
                     },
                 },
             },
-            delete: {
-                enable: false, // 是否启用当前文档全文删除功能
+            delete: {   // 是否启用当前文档全文删除功能
+                enable: false, 
                 toolbar: { // 菜单栏
                     enable: false,
                     display: true,
@@ -421,8 +424,8 @@ export var config = {
                     index: 14,
                 },
             },
-            cut: {
-                enable: false, // 是否启用当前文档全文剪切功能
+            cut: {  // 是否启用当前文档全文剪切功能
+                enable: false, 
                 toolbar: { // 菜单栏
                     enable: false,
                     display: true,
@@ -474,8 +477,7 @@ export var config = {
                 },
             },
         },
-        invert: {
-            // 反色功能开关
+        invert: {   // 反色功能开关
             enable: false,
             toolbar: { // 菜单栏
                 enable: false,
@@ -525,8 +527,7 @@ export var config = {
                 },
             },
         },
-        background: {
-            // 背景图片功能开关
+        background: {   // 背景图片功能开关
             enable: false,
             image: {
                 enable: false, // 是否启用背景图片更改功能
@@ -706,8 +707,8 @@ export var config = {
             },
             open: {
                 enable: true, // 打开窗口功能开关
-                panel: {
-                    enable: false, // 打开一个新窗口
+                panel: {    // 打开一个新窗口
+                    enable: false, 
                     url: null, // 新窗口的 URL, 值 null 则为 '/stage/build/desktop/'
                     toolbar: { // 菜单栏
                         enable: true,
@@ -741,8 +742,7 @@ export var config = {
                             index: 2,
                         },
                     },
-                    infocus: {
-                        // 新窗口打开当前块并聚焦, 否则打开当前文档
+                    infocus: {  // 新窗口打开当前块并聚焦, 否则打开当前文档
                         enable: false,
                         toolbar: { // 菜单栏
                             enable: true,
@@ -794,8 +794,8 @@ export var config = {
                 },
             },
         },
-        wheel: {
-            enable: false, // 滚轮功能开关
+        wheel: {    // 滚轮功能开关（滚轮缩放）
+            enable: false, 
             zoom: {
                 enable: false, // 滚轮缩放功能开关
                 threshold: 100, // 滚轮缩放阈值
@@ -803,8 +803,8 @@ export var config = {
                 max: 72, // 最大字号(px)
             },
         },
-        location: {
-            enable: false, // 浏览位置开关
+        location: { // 浏览位置开关
+            enable: false, 
             slider: {
                 enable: false, // 滑块功能开关
                 follow: {
@@ -879,7 +879,7 @@ export var config = {
                     index: -2,
                 },
             },
-            elements: {
+            elements: { // 这个是 Lite 主题新增的，引入隐藏顶栏和底栏
                 toolbar: {
                     enable: true,
                     style: {
@@ -905,8 +905,8 @@ export var config = {
                     icon: '#iconMenu',
                     index: -9,
                 },
-                items: [ // 块菜单项
-                    { // 常用字体设置
+                items: [    // 块菜单项
+                    {   // 常用字体设置
                         enable: false, // 是否启用菜单项
                         prefixSeparator: true, // 是否添加前缀分隔线
                         suffixSeparator: false, // 是否添加后缀分隔线
@@ -970,7 +970,7 @@ export var config = {
                             },
                         ],
                     },
-                    { // 其他字体设置
+                    {   // 其他字体设置
                         enable: false,
                         prefixSeparator: false,
                         suffixSeparator: false,
@@ -1014,7 +1014,7 @@ export var config = {
                         items: [
                         ],
                     },
-                    { // jupyter 设置
+                    {   // jupyter 设置
                         enable: false,
                         prefixSeparator: true,
                         suffixSeparator: false,
@@ -1141,7 +1141,7 @@ export var config = {
                             },
                         ],
                     },
-                    { // 发布设置
+                    {   // 发布设置
                         enable: false,
                         prefixSeparator: true,
                         suffixSeparator: false,
@@ -1278,6 +1278,69 @@ export var config = {
                             // },
                         ],
                     },
+                    {   // 复习队列
+                        enable: true,   // 是否启用菜单项
+                        prefixSeparator: true,  // 是否添加前缀分隔线
+                        suffixSeparator: false, // 是否添加后缀分隔线
+                        type: { // 哪些类型的块启用, 值 null 则全部启用
+                            NodeBlockQueryEmbed: { enable: true },
+                            NodeBlockquote: { enable: true },
+                            NodeDocument: { enable: true },
+                            NodeHeading: { enable: true },
+                            NodeList: { enable: true },
+                            NodeListItem: { enable: true },
+                            NodeParagraph: { enable: true },
+                            NodeSuperBlock: { enable: true },
+                            NodeTable: { enable: true },
+                        },
+                        id: 'theme-menu-block-srs',  // 菜单项 ID
+                        mode: "button",  // 菜单项类型
+                        icon: "#iconPin",  // 菜单项图标
+                        label: {  // 菜单项标签
+                            zh_CN: "SRS",
+                            other: "SRS",
+                        },
+                        accelerator: "",  // 菜单项快捷键
+                        click: {  // 菜单项点击事件
+                            enable: false, // 是否启用点击事件
+                        },
+                        itemsLoad: true, // 是否加载子菜单
+                        itemsIcon: "#iconRight",
+                        items: [    //子菜单项列表
+                            {
+                                enable: true,   // 是否启用菜单项
+                                type: { // 哪些类型的块启用, 值 null 则全部启用
+                                    NodeBlockQueryEmbed: { enable: true },
+                                    NodeBlockquote: { enable: true },
+                                    NodeDocument: { enable: true },
+                                    NodeHeading: { enable: true },
+                                    NodeList: { enable: true },
+                                    NodeListItem: { enable: true },
+                                    NodeParagraph: { enable: true },
+                                    NodeSuperBlock: { enable: true },
+                                    NodeTable: { enable: true },
+                                },
+                                mode: "button",  // 菜单项类型
+                                icon: "#iconList",  // 菜单项图标
+                                label: {  // 菜单项标签
+                                    zh_CN: "添加到复习队列",
+                                    other: "Add",
+                                },
+                                click: {  // 菜单项点击事件
+                                    enable: true, // 是否启用点击事件
+                                    callback: null,
+                                    tasks: [
+                                        {
+                                            type: 'srs',
+                                            params: {
+                                                src: true,
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
                     { // 其他功能
                         enable: true,
                         prefixSeparator: true,
@@ -1341,8 +1404,8 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
-                                enable: true,
+                            {   // 新窗口打开资源
+                                enable: false,
                                 type: {
                                     NodeAudio: {
                                         enable: true,
@@ -1440,7 +1503,7 @@ export var config = {
                                 type: null,
                                 mode: "separator",
                             },
-                            {
+                            {   // 固定到顶部
                                 enable: false,
                                 type: {
                                     NodeAudio: { enable: true },
@@ -1484,7 +1547,7 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
+                            {   // 固定到底部
                                 enable: false,
                                 type: {
                                     NodeAudio: { enable: true },
@@ -1528,7 +1591,7 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
+                            {   // 弹幕
                                 enable: false,
                                 type: null,
                                 mode: "button",
@@ -1554,7 +1617,7 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
+                            {   // 滚屏显示
                                 enable: false,
                                 type: null,
                                 mode: "button",
@@ -1580,7 +1643,7 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
+                            {   // 全宽显示
                                 enable: false,
                                 type: {
                                     NodeAudio: {
@@ -1706,7 +1769,7 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
+                            {   // 切换书写模式
                                 enable: false,
                                 type: {
                                     NodeDocument: {
@@ -1778,8 +1841,8 @@ export var config = {
                                 },
                                 mode: "separator",
                             },
-                            {
-                                enable: true, // 是否启用子菜单项
+                            {   // 标题自动编号
+                                enable: false, // 是否启用子菜单项
                                 type: { // 在哪些块启用菜单项
                                     NodeDocument: {
                                         enable: true, // 是否在该块类型启用菜单项
@@ -1809,8 +1872,8 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
-                                enable: true,
+                            {   // 图片自动编号
+                                enable: false,
                                 type: {
                                     NodeDocument: {
                                         enable: true,
@@ -1844,8 +1907,8 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
-                                enable: true,
+                            {   // 表格自动编号
+                                enable: false,
                                 type: {
                                     NodeDocument: {
                                         enable: true,
@@ -1888,7 +1951,7 @@ export var config = {
                                 },
                                 mode: "separator",
                             },
-                            {
+                            {   // 清除浏览位置记录
                                 enable: false,
                                 type: {
                                     NodeDocument: {
@@ -1924,7 +1987,7 @@ export var config = {
                                 },
                                 mode: "separator",
                             },
-                            {
+                            {   // 显示 ID
                                 enable: false,
                                 type: {
                                     NodeDocument: {
@@ -1954,7 +2017,7 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
+                            {   // 显示超链接
                                 enable: false,
                                 type: {
                                     NodeDocument: {
@@ -1993,7 +2056,7 @@ export var config = {
                                 },
                                 mode: "separator",
                             },
-                            {
+                            {   // 显示块序号
                                 enable: false,
                                 type: {
                                     NodeDocument: {
@@ -2023,7 +2086,7 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
+                            {   // 显示块内容
                                 enable: false,
                                 type: {
                                     NodeDocument: {
@@ -2053,7 +2116,7 @@ export var config = {
                                     ],
                                 },
                             },
-                            {
+                            {   // 显示块轮廓
                                 enable: false,
                                 type: {
                                     NodeDocument: {
@@ -2102,6 +2165,41 @@ export var config = {
                                     other: "List Guides",
                                 },
                                 accelerator: "list-guides: 1",
+                                click: {
+                                    enable: true,
+                                    callback: null,
+                                    tasks: [
+                                        {
+                                            type: 'attr-switch',
+                                            params: {
+                                                'custom-list-guides': [
+                                                    '1',
+                                                    null,
+                                                ],
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                enable: true,
+                                type: {
+                                    NodeList: {
+                                        enable: true, // 是否在该块类型启用菜单项
+                                        subtype: { // 是否在该子类型启用菜单项
+                                            u: true,
+                                            o: true,
+                                            t: true,
+                                        },
+                                    },
+                                },
+                                mode: "button",
+                                icon: "#iconList",
+                                label: {
+                                    zh_CN: "隐藏列表圆点",
+                                    other: "List Hidden",
+                                },
+                                accelerator: "list-hidden: 1",
                                 click: {
                                     enable: true,
                                     callback: null,
@@ -2260,7 +2358,7 @@ export var config = {
                             },
                             {
                                 enable: true,
-                                type: {
+                                type: { // 表格
                                     NodeTable: {
                                         enable: true,
                                     },
@@ -2287,7 +2385,7 @@ export var config = {
                             },
                             {
                                 enable: true,
-                                type: {
+                                type: { // 表格
                                     NodeTable: {
                                         enable: true,
                                     },
@@ -2314,7 +2412,7 @@ export var config = {
                             },
                             {
                                 enable: true,
-                                type: {
+                                type: { // 表格
                                     NodeTable: {
                                         enable: true,
                                     },
@@ -2343,8 +2441,8 @@ export var config = {
                     },
                 ],
             },
-            tabbar: {
-                enable: false, // 标签页菜单功能开关
+            tabbar: {   // 标签页菜单功能开关
+                enable: false, 
                 items: [ // 标签页菜单项
                     { // 归档所有打开的标签页
                         enable: true,
@@ -2433,8 +2531,7 @@ export var config = {
                 ],
             },
         },
-        comment: {
-            // 批注功能开关
+        comment: {  // 批注功能开关
             enable: false,
         },
         hotkeys: {
@@ -2477,10 +2574,10 @@ export var config = {
                     key: 'E',
                 },
             },
-            timestamp: {
+            timestamp: {    // 音视频时间戳
                 jump: {
                     // 跳转到指定时间点(Ctrl + 单击)
-                    enable: true,
+                    enable: false,
                     CtrlCmd: true,
                     WinCtrl: false,
                     Shift: false,
@@ -2489,7 +2586,7 @@ export var config = {
                 },
                 create: {
                     // 新建时间戳(Ctrl + 鼠标中键)
-                    enable: true,
+                    enable: false,
                     CtrlCmd: true,
                     WinCtrl: false,
                     Shift: false,
@@ -2588,7 +2685,7 @@ export var config = {
                     },
                     o: {
                         // 复制当前文档大纲(有序列表)至剪贴板(Ctrl + Shift + Alt + O)
-                        enable: true,
+                        enable: false,
                         CtrlCmd: true,
                         WinCtrl: false,
                         Shift: true,
@@ -2597,7 +2694,7 @@ export var config = {
                     },
                     t: {
                         // 复制当前文档大纲(任务列表)至剪贴板(Ctrl + Shift + Alt + T)
-                        enable: true,
+                        enable: false,
                         CtrlCmd: true,
                         WinCtrl: false,
                         Shift: true,
@@ -2617,20 +2714,20 @@ export var config = {
                     key: 'T',
                 },
             },
-            invert: {
+            invert: {   // 反色
                 // 反色开关(Shift + Alt + I)
-                enable: true,
+                enable: false,
                 CtrlCmd: false,
                 WinCtrl: false,
                 Shift: true,
                 Alt: true,
                 key: 'I',
             },
-            background: {
+            background: {   // 背景图
                 image: {
                     web: {
                         // 更换网络背景图片(Shift + Alt + R)
-                        enable: true,
+                        enable: false,
                         CtrlCmd: false,
                         WinCtrl: false,
                         Shift: true,
@@ -2639,7 +2736,7 @@ export var config = {
                     },
                     custom: {
                         // 更换自定义背景图片(Ctrl + Shift + Alt + I)
-                        enable: true,
+                        enable: false,
                         CtrlCmd: true,
                         WinCtrl: false,
                         Shift: true,
@@ -2710,10 +2807,10 @@ export var config = {
                     },
                 },
             },
-            wheel: {
+            wheel: {    // 滚轮
                 zoom: {
                     // 鼠标滚轮缩放(Ctrl + wheel)
-                    enable: true,
+                    enable: false,
                     CtrlCmd: true,
                     WinCtrl: false,
                     Shift: false,
@@ -2721,11 +2818,11 @@ export var config = {
                     type: 'mousewheel',
                 },
             },
-            location: {
+            location: { // 浏览位置记录
                 slider: {
                     goto: {
                         // 跳转到上次浏览位置(鼠标右键单击块滚动条)
-                        enable: true,
+                        enable: false,
                         CtrlCmd: false,
                         WinCtrl: false,
                         Shift: false,
@@ -2735,7 +2832,7 @@ export var config = {
                 },
                 record: {
                     // 记录浏览位置(Shift + Alt + L)
-                    enable: true,
+                    enable: false,
                     CtrlCmd: false,
                     WinCtrl: false,
                     Shift: true,
@@ -2744,7 +2841,7 @@ export var config = {
                 },
                 clear: {
                     // 移除浏览位置(Ctrl + Shift + Alt + L)
-                    enable: true,
+                    enable: false,
                     CtrlCmd: true,
                     WinCtrl: false,
                     Shift: true,

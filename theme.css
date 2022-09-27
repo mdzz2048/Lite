@@ -39,7 +39,7 @@
 @import url(style/block/fold.css);
 @import url(style/block/heading.css);
 @import url(style/block/hr.css);
-/* @import url(style/block/list.css); */
+@import url(style/block/list.css);
 @import url(style/block/paragraph.css);
 @import url(style/block/quote.css);
 @import url(style/block/super.css);
