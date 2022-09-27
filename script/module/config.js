@@ -2189,17 +2189,17 @@ export var config = {
                                         subtype: { // 是否在该子类型启用菜单项
                                             u: true,
                                             o: true,
-                                            t: true,
+                                            t: false,
                                         },
                                     },
                                 },
                                 mode: "button",
                                 icon: "#iconList",
                                 label: {
-                                    zh_CN: "隐藏列表圆点",
+                                    zh_CN: "列表-隐藏子级",
                                     other: "List Hidden",
                                 },
-                                accelerator: "list-hidden: 1",
+                                accelerator: "list-hidden-child: 1",
                                 click: {
                                     enable: true,
                                     callback: null,
@@ -2207,7 +2207,42 @@ export var config = {
                                         {
                                             type: 'attr-switch',
                                             params: {
-                                                'custom-list-guides': [
+                                                'custom-list-hidden-child': [
+                                                    '1',
+                                                    null,
+                                                ],
+                                            },
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                enable: true,
+                                type: {
+                                    NodeList: {
+                                        enable: true, // 是否在该块类型启用菜单项
+                                        subtype: { // 是否在该子类型启用菜单项
+                                            u: true,
+                                            o: true,
+                                            t: false,
+                                        },
+                                    },
+                                },
+                                mode: "button",
+                                icon: "#iconList",
+                                label: {
+                                    zh_CN: "列表-隐藏下级",
+                                    other: "List Hidden All",
+                                },
+                                accelerator: "list-hidden-all: 1",
+                                click: {
+                                    enable: true,
+                                    callback: null,
+                                    tasks: [
+                                        {
+                                            type: 'attr-switch',
+                                            params: {
+                                                'custom-list-hidden-all': [
                                                     '1',
                                                     null,
                                                 ],
