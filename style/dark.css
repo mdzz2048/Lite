@@ -1,4 +1,6 @@
 :root {
+    /* ------------------------思源-midnight------------------------ */
+
     /* 主色 */
     --b3-theme-primary: #1f6feb;
     --b3-theme-primary-light: rgba(31, 111, 235, 0.54);
@@ -143,27 +145,46 @@
     --b3-pdf-background5: #f5539e;
     --b3-pdf-background6: var(--b3-theme-primary);
     --b3-pdf-background7: #944194;
+    
+    /* ------------------------自定义样式------------------------ */
 
-    /* 透明组件颜色 | Transparent component color */
+    /* 透明组件颜色 */
     --custom-transparent-lighter: #2a2a2a15;
     --custom-transparent-light: #2a2a2a45;
     --custom-transparent: #2a2a2a75;
     --custom-transparent-deep: #2a2a2aa5;
     --custom-transparent-deeper: #2a2a2ad5;
 
-    /* 不透明的组件颜色 | Opaque component color */
-    --custom-components-light: #323233;
-    --custom-components: #252526;
-    --custom-components-deep: #1e1e1e;
+    /* 不透明的组件颜色 */
+    --custom-components-light: #585858;
+    --custom-components: #484848;
+    --custom-components-deep: #383838;
 
-    /* 编辑区背景颜色 | The background color of the edit area */
-    --custom-editor-background-color: var(--custom-transparent);
+    /* ------------------------界面样式------------------------ */
 
-    /* 编辑区背景图片 */
-    --custom-editor-background-color: url();
+    /* 背景图片 */
+    --custom-background-color: none;
 
-    /* 弹出窗口背景颜色 | The background color of the popover */
-    --custom-popover-background-color: var(--custom-transparent-deeper);
+    /* 顶部工具栏 */
+    --custom-tool-bar-background-color: var(--custom-transparent-light);
+    --custom-tool-bar-separator-color: none;
+
+    /* 底部状态栏 */
+    --custom-status-bar-background-color: var(--custom-transparent-light);
+    --custom-status-bar-separator-color: none;
+
+    /* ------------------------行内元素------------------------ */
+
+    /* 块引用 */
+    --custom-span-block-ref-color: #70c4c4;
+    --custom-span-block-ref-hover-color: #517b8d;
+
+    /* 内部超链接 */
+    --custom-span-siyuan-link-color: #70c4c4;
+    --custom-span-siyuan-link-hover-color: #517b8d;
+
+    /* ------------------------块级元素------------------------ */
+
 }
 
 /* PDF */

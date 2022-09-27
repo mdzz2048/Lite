@@ -1,14 +1,9 @@
 /* 引入各配置模块 */
-/* todo:
-1. 列表隐藏 (https://club.roamedit.com/club/?thread-1493.htm)
-2. 列表备注 (https://club.roamedit.com/club/?thread-1495.htm)
-3. 列表折叠 (配合列表备注使用，折叠后备注不折叠)
-4. 链接方括号和链接区分
-*/
-/* ————————————————————初始设置———————————————————— */
+/* 配置部分分割线，24个- */
+/* ------------------------初始设置------------------------ */
 @import url(style/config.css);
 
-/* ————————————————————界面样式———————————————————— */
+/* ------------------------界面样式------------------------ */
 
 @import url(style/appearance/breadcrumb.css);
 @import url(style/appearance/dock.css);
@@ -23,7 +18,7 @@
 @import url(style/appearance/tab-bar.css);
 @import url(style/appearance/tool-bar.css);
 
-/* ————————————————————行内元素———————————————————— */
+/* ------------------------行内元素------------------------ */
 
 @import url(style/inline/code.css);
 @import url(style/inline/img.css);
@@ -32,7 +27,7 @@
 @import url(style/inline/mark.css);
 @import url(style/inline/ref.css);
 
-/* ————————————————————块级元素———————————————————— */
+/* ------------------------块级元素------------------------ */
 
 @import url(style/block/code.css);
 @import url(style/block/embed.css);
@@ -44,9 +39,9 @@
 @import url(style/block/quote.css);
 @import url(style/block/super.css);
 
-/* ————————————————————自定义属性———————————————————— */
+/* ------------------------自定义属性------------------------ */
 
-/* ————————————————————自定义样式———————————————————— */
+/* ------------------------自定义样式------------------------ */
 
 @import url(custom/sm-tag/sm-tag.css);
 /* @import url(custom/list-plus/list-guide.css); */

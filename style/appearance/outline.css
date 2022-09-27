@@ -15,12 +15,6 @@
 }
 
 /* 各级子标题 */
-#sidebar [data-type="sidebar-outline"] ul.b3-list.b3-list--background [data-type="NodeDocument"],
-.sy__outline ul.b3-list.b3-list--background [data-type="NodeDocument"],
-#sidebar [data-type="sidebar-outline"] ul.b3-list.b3-list--background [data-type="NodeDocument"] .b3-list-item__text,
-.sy__outline ul.b3-list.b3-list--background [data-type="NodeDocument"] .b3-list-item__text {
-  color: var(--b3-theme-on-background);
-}
 #sidebar [data-type="sidebar-outline"] ul.b3-list.b3-list--background [data-subtype="h1"],
 .sy__outline ul.b3-list.b3-list--background [data-subtype="h1"],
 #sidebar [data-type="sidebar-outline"] ul.b3-list.b3-list--background [data-subtype="h1"] .b3-list-item__text,

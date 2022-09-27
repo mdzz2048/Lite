@@ -1,4 +1,6 @@
 :root {
+    /* ------------------------思源-light------------------------ */
+
     /* 主色 */
     --b3-theme-primary: #0969da;
     --b3-theme-primary-light: rgba(9, 105, 218, 0.54);
@@ -144,24 +146,28 @@
     --b3-pdf-background6: var(--b3-theme-primary);
     --b3-pdf-background7: #944194;
 
-    
-    /* 透明组件颜色 | Transparent component color */
+    /* ------------------------自定义样式------------------------ */
+
+    /* 透明组件颜色 */
     --custom-transparent-lighter: #ebeaf015;
     --custom-transparent-light: #ebeaf045;
     --custom-transparent: #ebeaf075;
     --custom-transparent-deep: #ebeaf0a5;
     --custom-transparent-deeper: #ebeaf0d5;
-    
-    /* 不透明的组件颜色 | Opaque component color */
+
+    /* 不透明的组件颜色 */
     --custom-components-light: #fff;
     --custom-components: #f0f0f0;
     --custom-components-deep: #d9d9d9;
 
-    /* 编辑区背景颜色 | The background color of the edit area */
-    --custom-editor-background-color: var(--custom-transparent);
+    /* ------------------------界面样式------------------------ */
 
-    /* 编辑区背景图片 */
-    --custom-editor-background-image: url(/appearance/themes/Lite/image/background.png);
+    /* 背景图片 */
+    --custom-background-image: url(/appearance/themes/Lite/image/background.png);
+
+    /* ------------------------行内元素------------------------ */
+
+    /* ------------------------块级元素------------------------ */
 }
 
 /* PDF */

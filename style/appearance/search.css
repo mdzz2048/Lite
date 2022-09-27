@@ -5,49 +5,42 @@
 
 @import url(../config.css);
 
+/* 搜索对话框尺寸 */
+body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex > .fn__flex-column {
+  width: var(--custom-search-width) !important;
+  height: var(--custom-search-height) !important;
+}
+
 /* 搜索结果列表 */
 #searchList,
 /* 搜索结果预览 */
 #searchPreview {
-  border: 1px solid var(--custom-components-deep);
-  background-color: var(--custom-components-light);
+  border: 1px solid var(--custom-separator-color);
 }
 
-/* 搜索结果列表背景色 */
-#searchList > .b3-list-item {
-  background-color: var(--custom-editor-background-color);
-  background-image: var(--custom-background-image);
+/* 搜索结果项 */
+#searchList > .b3-list-item,
+#globalSearchList > .b3-list-item {
+  outline: 1px solid var(--custom-separator-color);
 }
-#searchList > .b3-list-item:hover {
-  background-color: var(--custom-components);
+/* 搜索结果鼠标悬浮样式 */
+#searchList > .b3-list-item:hover,
+#globalSearchList > .b3-list-item:hover {
+  background-color: var(--custom-search-hover-color);
 }
-#searchList > .b3-list-item.b3-list-item--focus {
-  background-color: var(--custom-components);
-}
-
-/* 历史容器 */
-#historyContainer > * {
-  background-color: transparent !important;
-}
-
-/* 历史对话框内容框 */
-#historyContainer .history__asset,
-#historyContainer .history__text {
-  background-color: transparent;
-}
-
-/* 对话框遮罩 */
-#historyContainer .b3-dialog__scrim {
-  background-color: var(--custom-search-background-color);
+/* 搜索结果焦点样式 */
+#searchList > .b3-list-item.b3-list-item--focus,
+#globalSearchList > .b3-list-item.b3-list-item--focus {
+  background-color: var(--custom-search-focus-color);
 }
 
 /* 输入框 */
+/* 输入框添加背景色 */
 #searchInput {
-  /* 输入框添加背景色 */
   background: var(--custom-search-background-color);
 }
 .b3-dialog__container .b3-form__icon.search__header {
-  /* 输入框添加外框 */
+/* 输入框添加外框 */
   background: var(--custom-search-background-color);
   border: 1px solid var(--custom-components-deep);
 }
@@ -57,10 +50,18 @@
   display: none;
 }
 
-/* 搜索对话框尺寸 */
-body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex > .fn__flex-column {
-  width: var(--custom-search-width) !important;
-  height: var(--custom-search-height) !important;
+/* 列出条目改为上下排列 */
+.b3-dialog__container #searchList .b3-list-item[data-type="search-item"] {
+  padding-bottom: calc(1.25em + 1px);
+}
+.b3-dialog__container #searchList .b3-list-item[data-type="search-item"] .b3-list-item__text {
+  display:  -webkit-box;
+}
+.b3-dialog__container #searchList .b3-list-item[data-type="search-item"] .b3-list-item__meta {
+  position: absolute;
+  bottom: 0.25em;
+  max-width: calc(100% - 24px);
+  line-height: 1.25em;
 }
 
 /*窗口宽度大于一定尺寸时候，左右排列*/
@@ -75,10 +76,9 @@ body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex > .fn__flex-
       width: 100%;
     }
     /* 搜索结果与搜索结果预览分栏 */
-    body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex-column #searchList,
-    body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex-column #searchPreview {
+    body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex-column #searchList {
       float: left;
-      width: 50% !important;
+      width: 30% !important;
     }
     body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex-column .search__header:first-child + .search__header:is(.fn__none) ~ #searchList,
     body > div[data-key] > .b3-dialog > .b3-dialog__container .fn__flex-column .search__header:first-child + .search__header:is(.fn__none) ~ #searchPreview {

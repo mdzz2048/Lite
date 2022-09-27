@@ -5,7 +5,7 @@
 /* 全屏模式背景 */
 .fn__flex-1.protyle.fullscreen {
     background-color: var(--custom-components-light);
-    background-image: url(../../image/background.png);
+    background-image: var(--custom-background-image);
 }
 
 .fn__flex-1.protyle.fullscreen .protyle-content {
@@ -16,7 +16,7 @@
 .protyle-content {
     /*编辑区*/
     background-color: var(--custom-editor-background-color);
-    background-image: url(../../image/background.png);
+    background-image: var(--custom-background-image);
 }
 
 .wysiwygLoading {

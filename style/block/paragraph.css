@@ -4,7 +4,7 @@
 /* 段落块行线 */
 .p {
     padding-bottom: 0px !important;
-    border-bottom: 1px dashed rgba(46, 33, 50, 0.09);
+    border-bottom: 1px dashed var(--custom-separator-color);
 }
 
 .p:hover {
@@ -18,24 +18,24 @@
 /* 嵌入块内段落块的行线 */
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed .p {
     padding-bottom: 0px !important;
-    border-bottom: 1px solid rgba(46, 33, 50, 0.09) !important;
+    border-bottom: 1px solid var(--custom-separator-color) !important;
 }
 
 /* 引述块内段落块的行线 */
 .protyle-wysiwyg [data-node-id].bq .p {
     padding-bottom: 0px !important;
-    border-bottom: 1px solid rgba(46, 33, 50, 0.09) !important;
+    border-bottom: 1px solid var(--custom-separator-color) !important;
 }
 
 /* 横排超级块内段落块行线 */
 .protyle-wysiwyg [data-sb-layout="col"].sb .p {
     padding-bottom: 0px !important;
-    border-bottom: 1px solid rgba(46, 33, 50, 0.09) !important;
+    border-bottom: 1px solid var(--custom-separator-color) !important;
 }
 
 .protyle-wysiwyg [data-node-id].sb > .p {
     padding-bottom: 0px !important;
-    border-bottom: 1px solid rgba(46, 33, 50, 0.09) !important;
+    border-bottom: 1px solid var(--custom-separator-color) !important;
 }
 
 /* 超级块内引述块，取消段落块行线 */

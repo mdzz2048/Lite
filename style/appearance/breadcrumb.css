@@ -10,24 +10,11 @@
     margin-bottom: 0px;
 }
 
-/* 面包屑毛玻璃效果，REF: https://github.com/UserZYF/zhang-light/blob/main/style/02-appearance/breadcrumb.css#L12-L28 */
-
-/* 01 将面包屑设置为绝对布局 */
 .protyle-breadcrumb {
-    position: absolute;
-    background-color: transparent !important;
+    background-color: var(--custom-editor-background-color);
+    background-image: var(--custom-background-image);
     border-bottom: 1px solid var(--custom-components-deep);
     border-top: 1px solid var(--custom-components-deep);
-    backdrop-filter: blur(5px);
-    z-index: 2;
-    height: 30px;
-    width: 100%;
-}
-
-/* 02 将正文设置为浮动布局 */
-.protyle-content {
-    float: left;
-    padding-top: 30px;
 }
 
 /* 导航栏文字 */

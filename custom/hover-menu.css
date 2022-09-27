@@ -7,7 +7,7 @@
 /* 全局右键菜单 */
 #commonMenu {
     background-color: var(--custom-popover-menu-background-color);
-    background-image: url(../image/background.png);
+    background-image: var(--custom-background-image);
 }
 
 /* 菜单项 */
@@ -17,13 +17,13 @@
 
 /* 鼠标悬停菜单项 */
 #commonMenu .b3-menu__item.b3-menu__item--current {
-  background-color: var(--b3-theme-background-light) !important;
+  background-color: var(--custom-popover-menu-hover-color) !important;
 }
 
 /* 子菜单 */
 #commonMenu .b3-menu__item > .b3-menu__submenu {
   background-color: var(--custom-popover-menu-background-color);
-  background-image: url(../image/background.png);
+  background-image: var(--custom-background-image);
 }
 
 /* 菜单分割线 */
@@ -32,39 +32,34 @@
   background-color: var(--custom-popover-menu-separator-color);
 }
 
-/* 输入框 */
-#commonMenu > *:not(.emojis) input.b3-text-field {
-  min-width: var(--custom-popover-menu-input-min-width);
-}
-
 /* '/' 菜单 */
 .b3-list.b3-list--background.b3-menu.hint--menu {
   /* REF: [第一个子元素在未超过父元素高度的情况下设置margin-top导致出现竖向滚动条的问题_Andrasen的博客-CSDN博客](https://blog.csdn.net/Andrasen/article/details/105676175) */
   padding: var(--custom-popover-menu-padding-width);
   background-color: var(--custom-popover-menu-background-color) !important;
-  background-image: url(../image/background.png);
+  background-image: var(--custom-background-image);
   width: auto !important;
   outline: var(--custom-popover-menu-outline-width) var(--custom-popover-menu-outline-style) var(--custom-popover-menu-outline-color);
   overflow-x: visible !important;
   column-count: 4;
   column-gap: 1em;
-  column-rule: var(--custom-list-guides-line-width) solid var(--b3-border-color);
+  column-rule: var(--custom-popover-menu-separator-width) solid var(--custom-popover-menu-separator-color);
   max-height: none !important;
 }
 /* '/' 菜单项样式 */
 .b3-list.b3-list--background.b3-menu.hint--menu > .b3-list-item.b3-list-item {
   background-color: transparent;
-  outline: 1px solid var(--custom-components-deep);
+  outline: 1px solid var(--custom-separator-color);
 }
 /* '/' 菜单项选中样式 */
 .b3-list.b3-list--background.b3-menu.hint--menu > .b3-list-item.b3-list-item--focus {
-    background-color: var(--b3-theme-background-light);
-    outline: 1px solid var(--custom-components-deep);
+    background-color: var(--custom-popover-menu-focus-color);
+    outline: 1px solid var(--custom-separator-color);
 }
 /* '/' 菜单项鼠标悬浮样式 */
 .b3-list.b3-list--background.b3-menu.hint--menu > .b3-list-item.b3-list-item:hover {
-  background-color: var(--b3-theme-background-light);
-  outline: 1px solid var(--custom-components-deep);
+  background-color: var(--custom-popover-menu-focus-color);
+  outline: 1px solid var(--custom-separator-color);
 }
 
 /* 表情菜单 */
@@ -75,7 +70,7 @@
 
 /* 分割线 */
 .b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator {
-  background-color: var(--b3-theme-on-surface);
+  background-color: var(--custom-popover-menu-separator-color);
 }
 
 /* 第1条分割线 */
