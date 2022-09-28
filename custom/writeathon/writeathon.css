@@ -1,0 +1,18 @@
+/* ------------------------写拉松根级文档样式------------------------ */
+/* 设置自定义属性 custom-writeathon-hook 的文档增加导入 svg */
+.layout__center.fn__flex.fn__flex-1 .layout-tab-container .protyle-content > .protyle-title.protyle-wysiwyg--attr~[custom-writeathon-hook]::after {
+    pointer-events: all;
+    background: #0e639c;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    padding: 2px 5px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    z-index: 99;
+}
+
+/* ------------------------写拉松卡片文档样式------------------------ */
+/* 设置自定义属性 custom-writeathon-id 的文档增加更新 svg */
