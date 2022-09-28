@@ -11,7 +11,8 @@
 /* 自定义属性-隐藏子级列表) */
 /* 隐藏列表图标 */
 .protyle-wysiwyg [custom-list-hidden-child] > .li > .list > .li > .protyle-action > svg {
-  display: none;
+  /* 使用 display 隐藏会影响按键操作：https://ld246.com/article/1664256259101 */
+  opacity: 0;
 }
 /* 缩小隐藏内容的占位 */
 .protyle-wysiwyg [custom-list-hidden-child] > .li > .list > .li > .protyle-action {
@@ -24,7 +25,7 @@
 /* 自定义属性-隐藏下级列表) */
 /* 隐藏列表图标 */
 .protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li .protyle-action > svg {
-  display: none;
+  opacity: 0;
 }
 /* 缩小隐藏内容的占位 */
 .protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li .protyle-action {
@@ -38,8 +39,8 @@
 }
 /* 隐藏列表辅助线 */
 .protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li > [data-node-id].list:before {
-  display: none;
+  opacity: 0;
 }
 .protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li > [data-node-id].p:before {
-  display: none;
+  opacity: 0;
 }
