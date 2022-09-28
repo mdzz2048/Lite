@@ -1282,7 +1282,7 @@ export var config = {
                         ],
                     },
                     {   // 复习队列
-                        enable: true,   // 是否启用菜单项
+                        enable: false,   // 是否启用菜单项
                         prefixSeparator: true,  // 是否添加前缀分隔线
                         suffixSeparator: false, // 是否添加后缀分隔线
                         type: { // 哪些类型的块启用, 值 null 则全部启用
@@ -2483,7 +2483,7 @@ export var config = {
                 enable: false, 
                 items: [ // 标签页菜单项
                     { // 归档所有打开的标签页
-                        enable: true,
+                        enable: false,
                         prefixSeparator: true,
                         suffixSeparator: false,
                         id: 'theme-menu-tabbar-archive',
