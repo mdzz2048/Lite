@@ -2,7 +2,9 @@
  * REF https://github.com/UserZYF/zhang-light/blob/d309151036bafe324bcf9eb754829ebc93a88d03/theme.css#L1661
  */
 
- @import url(../config.css);
+@import url(../config.css);
+
+/* ------------------------标题块折叠------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeHeading"]::before {
     /* 移除子标题折叠原有样式 */
@@ -23,7 +25,30 @@
     content: var(--custom-h-fold-mark);
     margin-right: 3px;
 }
+
+/* ------------------------列表块折叠------------------------ */
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.h1>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h1>[spellcheck])::after,
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.h2>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h2>[spellcheck])::after,
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.h3>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h3>[spellcheck])::after,
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.h4>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h4>[spellcheck])::after,
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.h5>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h5>[spellcheck])::after,
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.h6>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h6>[spellcheck])::after,
+.protyle-wysiwyg [data-node-id].li[fold="1"]>.p>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.p>[spellcheck])::after {
+    content: "​​ ​​ · · ·​​ ​​ ​";
+    font-family: "Trebuchet MS";
+    display: inline;
+    font-weight: bold;
+    vertical-align: 5%;
+    font-size: 75%;
+    color: rgb(95, 99, 104);  
+    word-break: break-all;
+    border: 1px solid rgb(95, 99, 104);
+    margin-left: 9px;
+    border-radius: 5px;
+}
  
+/* ------------------------代码块折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"].code-block > .protyle-action {
     /* 代码块功能按钮 */
     top: 2px;
@@ -36,12 +61,17 @@
     padding-bottom: 2px;
 }
 
+/* ------------------------表格块折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeTable"] {
     text-align: center;
 }
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeTable"] tbody {
     display: none;
 }
+
+/* ------------------------引述块折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeBlockQueryEmbed"] {
     text-align: center;
 }
@@ -53,6 +83,9 @@
     content: "[Query Embed]";
     line-height: 100%;
 }
+
+/* ------------------------数学公式块折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeMathBlock"] {
     text-align: center;
 }
@@ -64,6 +97,9 @@
     content: "[Math]";
     line-height: 100%;
 }
+
+/* ------------------------iframe 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeIFrame"] {
     text-align: center;
 }
@@ -75,6 +111,9 @@
     content: "[IFrame]";
     line-height: 100%;
 }
+
+/* ------------------------挂件折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeWidget"] {
     text-align: center;
 }
@@ -86,6 +125,9 @@
     content: "[Widget]";
     line-height: 100%;
 }
+
+/* ------------------------音频块折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeAudio"] {
     text-align: center;
 }
@@ -97,6 +139,9 @@
     content: "[Audio]";
     line-height: 100%;
 }
+
+/* ------------------------视频块折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeVideo"] {
     text-align: center;
 }
@@ -108,6 +153,9 @@
     content: "[Video]";
     line-height: 100%;
 }
+
+/* ------------------------plantuml 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="plantuml"] {
     text-align: center;
 }
@@ -119,6 +167,9 @@
     content: "[PlantUML]";
     line-height: 100%;
 }
+
+/* ------------------------flowchart 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="flowchart"] {
     text-align: center;
 }
@@ -130,6 +181,9 @@
     content: "[Flow Chart]";
     line-height: 100%;
 }
+
+/* ------------------------echarts 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="echarts"] {
     text-align: center;
 }
@@ -141,6 +195,9 @@
     content: "[Echarts]";
     line-height: 100%;
 }
+
+/* ------------------------mindmap 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="mindmap"] {
     text-align: center;
 }
@@ -152,6 +209,9 @@
     content: "[Mind Map]";
     line-height: 100%;
 }
+
+/* ------------------------mermaid 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="mermaid"] {
     text-align: center;
 }
@@ -163,6 +223,9 @@
     content: "[Mermaid]";
     line-height: 100%;
 }
+
+/* ------------------------graphviz 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="graphviz"] {
     text-align: center;
 }
@@ -174,6 +237,9 @@
     content: "[Graphviz]";
     line-height: 100%;
 }
+
+/* ------------------------abc 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="abc"] {
     text-align: center;
 }
@@ -185,6 +251,9 @@
     content: "[Staff]";
     line-height: 100%;
 }
+
+/* ------------------------mermaid 折叠------------------------ */
+
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="mermaid"][data-content^="flowchart LR"]::before,
 .protyle-wysiwyg .li [data-node-id][fold="1"][data-subtype="mermaid"][data-content^="flowchart LR"] div:first-child:before {
     content: "[Mermaid - Flowchart]";
@@ -246,27 +315,4 @@
     line-height: 100%;
 }
 
- /* 子标题折叠标记缩进 */
- /* .protyle-wysiwyg>.h1[data-node-id][fold="1"]::after {
-    padding-left: var(--custom-h1-indentation);
-}
-.protyle-wysiwyg>.h2[data-node-id][fold="1"]::after {
-    padding-left: var(--custom-h2-indentation);
-}
-.protyle-wysiwyg>.h3[data-node-id][fold="1"]::after {
-    padding-left: var(--custom-h3-indentation);
-}
-.protyle-wysiwyg>.h4[data-node-id][fold="1"]::after {
-    padding-left: var(--custom-h4-indentation);
-}
-.protyle-wysiwyg>.h5[data-node-id][fold="1"]::after {
-    padding-left: var(--custom-h5-indentation);
-}
-.protyle-wysiwyg>.h6[data-node-id][fold="1"]::after {
-    padding-left: var(--custom-h6-indentation);
-} */
- /* 修复代码块折叠样式 */
- /* .protyle-wysiwyg [data-node-id][fold="1"].code-block {
-    height: 26px;
-} */
  

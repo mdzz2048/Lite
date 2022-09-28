@@ -848,6 +848,7 @@ export var config = {
             }
         },
         readonly: {
+            // toolbar 的实现在 readonly.js 中
             enable: true, // 只读功能开关
             toolbar: { // 菜单栏
                 enable: true,
@@ -862,6 +863,7 @@ export var config = {
             },
         },
         dock: {
+            // fold 的实现在 dock.js 中
             enable: true, // dock 功能开关
             fold: {
                 enable: true, // dock 收缩/展开功能面板功能开关
@@ -890,6 +892,7 @@ export var config = {
             }
         },
         menu: {
+            // tasks 的实现在 ui.js 中
             enable: true, // 菜单功能开关
             block: {
                 enable: true, // 块菜单功能开关
