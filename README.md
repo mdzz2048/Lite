@@ -1,5 +1,5 @@
 # Lite
-本主题基于 Dark+ 修改。部分样式、功能参考 Zhang-Light、HBuilderX-Light、notion 等主题。
+本主题基于 Dark+ 修改。部分样式、功能参考 HBuilderX-Light、notion、Zhang-Light 等主题。
 由于作者本人技术有限，仅修改思源部分样式和配色，自定义功能均从其他主题引入。
 
 ## 样式展示
@@ -24,3 +24,4 @@
 - [notion-theme](https://github.com/royc01/notion-theme)
 - [Tsundoku-Dark](https://github.com/Achuan-2/siyuan-themes-tsundoku-dark)
 - [Zhang-Light](https://github.com/UserZYF/zhang-light)
+PS: 排名不分先后
