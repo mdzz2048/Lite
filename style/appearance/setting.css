@@ -3,10 +3,14 @@
 @import url(../config.css);
 
 /* 设置对话框尺寸 */
-body > .b3-dialog > .b3-dialog__container,
-body > .b3-dialog > .b3-dialog__container .fn__flex-column {
+body .b3-dialog > .b3-dialog__container {
   width: var(--custom-search-width) !important;
   height: var(--custom-search-height) !important;
+}
+
+/* 集市主题居中对齐 */
+body .b3-dialog > .b3-dialog__container .fn__flex-column .b3-cards {
+  justify-content: center;
 }
 
 /* 隐藏关闭按钮 */
@@ -30,5 +34,6 @@ body > .b3-dialog > .b3-dialog__container .fn__flex-column {
 /* 左侧的设置列表 */
 .b3-dialog__container .b3-tab-bar.b3-list.b3-list--background {
     height: calc(var(--custom-search-height) - 50px) !important;
+    /* width: 25vw !important; */
     overflow-y: scroll;
 }
