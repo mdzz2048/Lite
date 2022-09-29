@@ -57,3 +57,21 @@
   background-color: var(--custom-transparent-light);
   border-bottom: 1px solid var(--custom-separator-color);
 }
+
+/* ------------------------------侧边栏宽度------------------------------ */
+
+/* 左侧边栏宽度 */
+.fn__flex.fn__flex-1 > .fn__flex-column.fn__flex-shrink:not(.fn__flex-1) {
+  width: auto !important;
+}
+.fn__flex.fn__flex-1 > .fn__flex-column.fn__flex-shrink:not(.fn__flex-1) > .fn__flex-1.fn__flex {
+  width: 240px !important;
+}
+
+/* 右侧边栏宽度 */
+.fn__flex.fn__flex-1 > .fn__flex-column {
+  width: auto !important;
+}
+.fn__flex.fn__flex-1 > .fn__flex-column:not(.fn__flex-1) > .fn__flex-1.fn__flex {
+  width: 305px !important;
+}
