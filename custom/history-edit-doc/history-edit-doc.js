@@ -121,7 +121,9 @@ function init() {
     }
 
     let parentNode = document.querySelector("div#layouts > div.fn__flex.fn__flex-1 >div.layout__center.fn__flex.fn__flex-1");
-    tabs_container_observer.observe(parentNode, config);
+    if (parentNode) {
+        tabs_container_observer.observe(parentNode, config);
+    }
 
     // 【设置】按钮的前面添加一个【历史记录】按钮
     var settingBtn = document.getElementById("barSetting");
