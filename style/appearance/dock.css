@@ -69,8 +69,13 @@
 }
 
 /* 右侧边栏宽度 */
-.fn__flex.fn__flex-1 > .fn__flex-column {
+.fn__flex.fn__flex-1 > .fn__flex-column[style^="width"] {
   width: auto !important;
+}
+.fn__flex.fn__flex-1 > .fn__flex-column[style^="width: 0px"],
+.fn__flex.fn__flex-1 > .fn__flex-column[style^="width: 320px"] {
+  /* 取消内联属性为 320px 时出现的异常情况 */
+  width: 0px !important;
 }
 .fn__flex.fn__flex-1 > .fn__flex-column:not(.fn__flex-1) > .fn__flex-1.fn__flex {
   width: 320px !important;
