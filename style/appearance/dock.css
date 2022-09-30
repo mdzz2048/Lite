@@ -76,6 +76,7 @@
 .fn__flex.fn__flex-1 > .fn__flex-column[style^="width: 320px"] {
   /* 取消内联属性为 320px 时出现的异常情况 */
   width: 0px !important;
+  display: none;
 }
 .fn__flex.fn__flex-1 > .fn__flex-column:not(.fn__flex-1) > .fn__flex-1.fn__flex {
   width: 320px !important;
