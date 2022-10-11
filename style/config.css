@@ -107,8 +107,8 @@
     --custom-line-color: var(--b3-scroll-color);
 
     /* 内部超链接 */
-    --custom-span-siyuan-link-color: var(--b3-protyle-inline-link-color);
-    --custom-span-siyuan-link-hover-color: var(--b3-protyle-inline-mark-color);
+    --custom-span-siyuan-link-color: #1890FF;
+    --custom-span-siyuan-link-hover-color: #1476d1;
 
     /* 块引用 */
     --custom-span-block-ref-color: #1890FF;

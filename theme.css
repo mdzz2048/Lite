@@ -39,8 +39,6 @@
 @import url(style/block/quote.css);
 @import url(style/block/super.css);
 
-/* ------------------------自定义属性------------------------ */
-
 /* ------------------------自定义样式------------------------ */
 
 @import url(custom/sm-tag/sm-tag.css);
