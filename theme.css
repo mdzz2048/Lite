@@ -6,11 +6,13 @@
 /* ------------------------界面样式------------------------ */
 
 @import url(style/appearance/breadcrumb.css);
+/* @import url(style/appearance/button.css); */
 @import url(style/appearance/dock.css);
 @import url(style/appearance/editor.css);
 @import url(style/appearance/file-tree.css);
 @import url(style/appearance/outline.css);
 @import url(style/appearance/panel.css);
+@import url(style/appearance/print.css);
 @import url(style/appearance/separator.css);
 @import url(style/appearance/search.css);
 @import url(style/appearance/setting.css);
