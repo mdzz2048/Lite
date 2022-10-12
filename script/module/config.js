@@ -849,10 +849,10 @@ export var config = {
         },
         readonly: {
             // toolbar 的实现在 readonly.js 中
-            enable: true, // 只读功能开关
+            enable: false, // 只读功能开关
             toolbar: { // 菜单栏
-                enable: true,
-                display: true,
+                enable: false,
+                display: false,
                 id: 'toolbar-theme-readonly',
                 label: {
                     zh_CN: '只读模式',
