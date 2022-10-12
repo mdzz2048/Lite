@@ -236,10 +236,14 @@ window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/test/listener.js"));
 
 /* 加载自定义功能 */
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/sm-tag/sm-tag.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/doc-creat-time.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/calendar/calendar.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/list-plus/open-list.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/doc-creat-time.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/history-edit-doc/history-edit-doc.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/list-plus/open-list.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/sm-tag/sm-tag.js"), undefined, true);
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/sql-hpath/sql-hpath.js"), undefined, true)
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/writeathon/api.js"), undefined, true);
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/writeathon/writeathon.js"), undefined, true);
+
+
+/* ------------------------测试用例------------------------ */
