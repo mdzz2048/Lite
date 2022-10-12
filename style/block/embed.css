@@ -2,16 +2,29 @@
 
 @import url(../config.css);
 
+/* 嵌入块 */
 .protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node {
-    /* 嵌入块 */
     border: none;
     outline: 1px dotted var(--b3-theme-on-surface);
     background-color: var(--custom-block-embed-background-color) !important;
-    border-radius:5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 
+/* 嵌入块间分隔线 */
 .protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node > .protyle-wysiwyg__embed:not(:nth-of-type(2)) {
-    /* 嵌入块间分隔线 */
     position: relative;
     border-top: 2px double var(--custom-line-color);
+}
+
+/* ------------------------ {{ 生成的嵌入块------------------------ */
+
+/* 单个嵌入块无外边框 */
+.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node[data-content^="select * from blocks where id="] {
+    outline: none;
+    padding: 0px;
+}
+
+/* 单个嵌入块鼠标悬浮样式 */
+.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node[data-content^="select * from blocks where id="]:hover {
+    outline: 1px dotted var(--b3-theme-on-surface);
 }
