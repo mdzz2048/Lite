@@ -2,44 +2,44 @@
 
 @import url(../config.css);
 
-/* 全屏模式背景 */
-.fn__flex-1.protyle.fullscreen {
-    background-color: var(--custom-components-light);
-    background-image: var(--custom-background-image);
-}
-
-.fn__flex-1.protyle.fullscreen .protyle-content {
-    /* 全屏模式编辑区 */
-    background-color: var(--custom-editor-background-color);
-}
-
+/*编辑区*/
 .protyle-content {
-    /*编辑区*/
     background-color: var(--custom-editor-background-color);
     background-image: var(--custom-background-image);
 }
 
-.wysiwygLoading {
-    background-color: var(--custom-scrim-background-color) !important;
-}
-
-.protyle-content[data-fullwidth="true"] > .protyle-background > .protyle-background__iconw {
-    /* 文档标志 */
-    left: var(--custom-editor-padding-left) !important;
-}
-.protyle-content[data-fullwidth="true"] > .protyle-title,
-.protyle-content[data-fullwidth="true"] > .protyle-wysiwyg {
+/* 文档标题外边距 */
+.protyle-content[data-fullwidth="true"] > .protyle-title{
     margin-left: var(--custom-editor-padding-left) !important;
     margin-right: var(--custom-editor-padding-right) !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
+/* 编辑区外边距 */
+.protyle-content[data-fullwidth="true"] > .protyle-wysiwyg {
+    margin-left: var(--custom-editor-padding-left);
+    margin-right: var(--custom-editor-padding-right);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* 编辑区遮罩 */
+.wysiwygLoading {
+    background-color: var(--custom-scrim-background-color) !important;
+}
+
+/* 文档标志 */
+.protyle-content[data-fullwidth="true"] > .protyle-background > .protyle-background__iconw {
+    left: var(--custom-editor-padding-left) !important;
+}
+
+/*编辑区文件名*/
 .protyle-content > .protyle-title .protyle-title__input {
-    /*编辑区文件名*/
     background: transparent;
 }
 
+/* 拖拽参考线 */
 .protyle-content > .protyle-wysiwyg .dragover__top {
     box-shadow: 0 -4px 0 var(--custom-drag-top-shadow-color);
 }
@@ -53,7 +53,52 @@
     box-shadow: 4px 0 0 var(--custom-drag-right-shadow-color);
 }
 
-.protyle-preview > .b3-typography {
-    padding-left: var(--custom-editor-padding-left) !important;
-    padding-right: var(--custom-editor-padding-right) !important;
+/* ------------------------编辑器全屏模式------------------------ */
+
+/* 全屏模式背景 */
+.fn__flex-1.protyle.fullscreen {
+    background-color: var(--custom-components-light);
+    background-image: var(--custom-background-image);
+}
+
+/* 全屏模式编辑区 */
+.fn__flex-1.protyle.fullscreen .protyle-content {
+    background-color: var(--custom-editor-background-color);
+}
+
+/* ------------------------编辑器面包屑------------------------ */
+
+/* 面包屑图标 */
+.protyle-breadcrumb__item,.protyle-breadcrumb__icon{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* 面包屑边框 */
+.protyle-breadcrumb {
+    background-color: var(--custom-editor-background-color);
+    background-image: var(--custom-background-image);
+    border-bottom: 1px solid var(--custom-components-deep);
+    border-top: 1px solid var(--custom-components-deep);
+}
+
+/* 面包屑文字 */
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item {
+    line-height: normal;
+}
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child {
+    border-color: var(--b3-theme-on-surface);
+}
+
+/* 文档路径完整显示 */
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child,
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis {
+    max-width: none;
+}
+
+/* 无内容的面包屑项 */
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item .protyle-breadcrumb__text:empty {
+    margin-left: 0;
 }

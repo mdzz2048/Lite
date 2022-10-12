@@ -1,0 +1,85 @@
+/* 反链提及面板 */
+
+@import url(../config.css);
+
+/* ------------------------反链面板------------------------ */
+
+/* 编辑区 */
+.backlinkList .protyle-content > .protyle-wysiwyg {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+/* 为编辑区非面包屑内容设置外边距 */
+.backlinkList .protyle-content > .protyle-wysiwyg > :not(.protyle-breadcrumb__bar) {
+    margin-left: var(--custom-editor-padding-left);
+    margin-right: var(--custom-editor-padding-right);
+}
+
+/* ------------------------提及面板------------------------ */
+
+/* 编辑区 */
+.backlinkMList .protyle-content > .protyle-wysiwyg {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+/* 为编辑区非面包屑内容设置外边距 */
+.backlinkMList .protyle-content > .protyle-wysiwyg > :not(.protyle-breadcrumb__bar) {
+    margin-left: var(--custom-editor-padding-left);
+    margin-right: var(--custom-editor-padding-right);
+}
+
+/* ------------------------反链面板面包屑------------------------ */
+
+/* 面包屑外边框 */
+.backlinkList .protyle-breadcrumb__bar {
+    margin-right: 0px;
+    outline: 1px solid var(--custom-components-deep);
+}
+
+/* 面包屑文字 */
+.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item {
+    line-height: normal;
+}
+.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child {
+    border-color: var(--b3-theme-on-surface);
+}
+
+/* 文档路径完整显示 */
+.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child,
+.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis {
+    max-width: none;
+}
+
+/* 无内容的面包屑项 */
+.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item .protyle-breadcrumb__text:empty {
+    margin-left: 0;
+}
+
+/* ------------------------提及面板面包屑------------------------ */
+
+/* 面包屑外边框 */
+.backlinkMList .protyle-breadcrumb__bar {
+    margin-right: 0px;
+    outline: 1px solid var(--custom-components-deep);
+}
+
+/* 面包屑文字 */
+.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item {
+    line-height: normal;
+}
+.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child {
+    border-color: var(--b3-theme-on-surface);
+}
+
+/* 文档路径完整显示 */
+.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child,
+.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis {
+    max-width: none;
+}
+
+/* 无内容的面包屑项 */
+.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item .protyle-breadcrumb__text:empty {
+    margin-left: 0;
+}
