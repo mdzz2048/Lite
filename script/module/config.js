@@ -722,13 +722,11 @@ export var config = {
                         index: 1,
                     },
                 },
-                block: {
-                    // 新窗口打开当前块, 否则打开当前文档
-                    enable: true,
+                block: {    // 新窗口打开、聚焦当前块, 否则打开当前文档
+                    enable: false,
                     editable: false, // 新窗口默认是否可编辑
-                    outfocus: {
-                        // 新窗口打开当前块, 否则打开当前文档
-                        enable: true,
+                    outfocus: { // 新窗口打开当前块, 否则打开当前文档
+                        enable: false,
                         toolbar: { // 菜单栏
                             enable: true,
                             display: true,
