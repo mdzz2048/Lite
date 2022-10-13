@@ -22,8 +22,9 @@
     right: calc(4px + var(--custom-border-radius)) !important;
 }
 
-/* 改变边际区域中默认图片大小（不包括自定义emoji图片） */
+/* 图片默认大小（不包括自定义emoji图片） */
 .protyle-wysiwyg img:not(img.emoji),
 .b3-typography img:not(img.emoji) {
-    max-width: 50vw;
+    width: 50vw;
+    max-width: 100%;
 }
