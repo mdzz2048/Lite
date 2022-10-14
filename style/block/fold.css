@@ -98,6 +98,16 @@
     line-height: 100%;
 }
 
+/* ------------------------image 折叠------------------------ */
+
+.protyle-wysiwyg [data-node-id][fold="1"].p .img span {
+    display: none;
+}
+.protyle-wysiwyg [data-node-id][fold="1"].p .img::before {
+    content: "[Image]";
+    line-height: 100%;
+}
+
 /* ------------------------iframe 折叠------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeIFrame"] {
