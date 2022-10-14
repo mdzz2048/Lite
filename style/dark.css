@@ -156,22 +156,23 @@
     --custom-transparent-deeper: #2a2a2ad5;
 
     /* 不透明的组件颜色 */
-    --custom-components-light: #585858;
-    --custom-components: #484848;
-    --custom-components-deep: #383838;
+    --custom-components-light: #031c25;
+    --custom-components: #16232f;
+    --custom-components-deep: #293241;
 
     /* ------------------------界面样式------------------------ */
 
     /* 背景图片 */
     --custom-background-color: none;
-
+        
     /* 顶部工具栏 */
-    --custom-tool-bar-background-color: var(--custom-transparent-light);
-    --custom-tool-bar-separator-color: none;
+    --custom-tool-bar-background-color: var(--custom-components-light);
 
     /* 底部状态栏 */
-    --custom-status-bar-background-color: var(--custom-transparent-light);
-    --custom-status-bar-separator-color: none;
+    --custom-status-bar-background-color: var(--custom-components-light);
+
+    /* 边栏 */
+    --custom-dock-background-color: var(--custom-components-light);
 
     /* ------------------------行内元素------------------------ */
 

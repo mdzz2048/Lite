@@ -7,6 +7,7 @@ body > .b3-dialog--open > .b3-dialog > .b3-dialog__container[style="width:80vw"]
   /* container 这个选择器对删除弹窗、属性弹窗也生效，需要通过内联属性进行区分 */
   width: var(--custom-search-width) !important;
   height: var(--custom-search-height) !important;
+  background-color: var(--custom-search-background-color);
 }
 
 /* 集市主题居中对齐 */

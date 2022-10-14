@@ -2,16 +2,30 @@
 
 @import url(../config.css);
 
-/* 页签 */
-.layout-tab-bar {
+/* 页签栏 */
+.layout__center > .fn__flex.fn__flex-1 > .fn__flex-column > .fn__flex:has(.layout-tab-bar) {
   background-color: var(--custom-tab-bar-background-color);
   background-image: var(--custom-background-image);
+  justify-content: space-between;
+}
+
+/* 编辑区页签 */
+.fn__flex.fn__flex-1.layout-tab-bar {
+  background-color: var(--custom-tab-bar-background-color);
   flex-wrap: var(--custom-tab-bar-flex-wrap);
+  flex: 0 1 auto;
+}
+
+/* 页签右侧菜单 */
+.fn__flex.fn__flex-1 + .layout-tab-bar {
+  background-color: var(--custom-tab-bar-background-color);
+  flex-wrap: var(--custom-tab-bar-flex-wrap);
+  flex: none;
 }
 
 /* 页签项 */
 .layout-tab-bar .item {
-  flex: none;
+  flex: inherit;
   background-color: transparent;
   box-shadow: none;
   border: 1px solid var(--custom-components-deep);
@@ -60,6 +74,7 @@
 /* 非钉住标签的非末尾项页签项文本 */
 .layout-tab-bar .item:not(.item--pin) .item__text:not(span:last-child) {
   padding-right: 0;
+  text-overflow: ellipsis;
 }
 
 /* 钉住的标签页文本全部显示 */

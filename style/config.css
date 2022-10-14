@@ -23,12 +23,12 @@
     /* ------------------------界面样式------------------------ */
     
     /* 编辑区 */
-    --custom-editor-background-color: var(--custom-transparent-light);
+    --custom-editor-background-color: var(--custom-components);
     --custom-editor-padding-left: 24px;
     --custom-editor-padding-right: 24px;
     
     /* 页签栏 */
-    --custom-tab-bar-background-color: var(--custom-transparent-light);
+    --custom-tab-bar-background-color: var(--custom-components);
     --custom-tab-bar-icon-size: 1.25em;
     /* 页签项排列方式：wrap: 多行显示; nowrap: 单行显示 */
     --custom-tab-bar-flex-wrap: wrap;
@@ -48,20 +48,20 @@
     --custom-status-bar-separator-color: var(--custom-components-deep);
 
     /* 边栏 */
-    --custom-dock-background-color: var(--custom-transparent-light);
+    --custom-dock-background-color: var(--custom-components);
     --custom-dock-hover-background-color: var(--custom-transparent-deep);
     --custom-dock-hover-box-shadow-color: var(--custom-components-deep);
     --custom-dock-hover-text-shadow-color:var(--b3-theme-on-surface);
 
     /* 收集箱 */
-    --custom-inbox-background-color: var(--custom-transparent-light);
+    --custom-inbox-background-color: var(--custom-components);
     
     /* 搜索对话框 */
     --custom-search-width: 90vw;
     --custom-search-height: 90vh;
     --custom-search-hover-color: var(--custom-components-deep);
     --custom-search-focus-color: var(--custom-components-deep);
-    --custom-search-background-color: var(--custom-transparent-light);
+    --custom-search-background-color: var(--custom-components);
     
     /* 功能面板间隔距离 */
     --custom-panel-distance: 3px;

@@ -157,13 +157,13 @@
 
     /* 不透明的组件颜色 */
     --custom-components-light: #fff;
-    --custom-components: #f0f0f0;
+    --custom-components: #f6f6f6;
     --custom-components-deep: #d9d9d9;
 
     /* ------------------------界面样式------------------------ */
 
     /* 背景图片 */
-    --custom-background-image: url(/appearance/themes/Lite/image/background.png);
+    --custom-background-image: none;
 
     /* ------------------------行内元素------------------------ */
 
