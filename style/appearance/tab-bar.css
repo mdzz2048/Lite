@@ -29,6 +29,7 @@
   background-color: transparent;
   box-shadow: none;
   border: 1px solid var(--custom-components-deep);
+  border-bottom: 0px;
   border-radius: 5px 5px 0px 0px;
   box-shadow: none !important;
 }
