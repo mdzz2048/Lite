@@ -125,11 +125,11 @@ function init() {
         tabs_container_observer.observe(parentNode, config);
     }
 
-    // 【设置】按钮的前面添加一个【历史记录】按钮
-    var settingBtn = document.getElementById("barSetting");
-    settingBtn.insertAdjacentHTML("beforebegin", '<div id="history"class="toolbar__item b3-tooltips b3-tooltips__se" aria-label="历史记录" ></div>');
+    // 【数据历史】按钮的前面添加一个【历史记录】按钮
+    var barHistory = document.getElementById("barHistory");
+    barHistory.insertAdjacentHTML("beforebegin", '<div id="history"class="toolbar__item b3-tooltips b3-tooltips__se" aria-label="历史记录" ></div>');
     // 历史记录面板
-    settingBtn.insertAdjacentHTML("afterend", `
+    barHistory.insertAdjacentHTML("afterend", `
         <div 
             id="myHistory" 
             style="position:fixed;

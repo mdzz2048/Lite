@@ -1,13 +1,13 @@
 // REF: notion-light
 /**----------------日历面板----------------*/
 function initcalendar() {
-    // 把日历图标 放到搜索图标前面
-    var barSearch = document.getElementById("barSearch");
-    barSearch.insertAdjacentHTML("beforebegin", '<div id="calendar"class="toolbar__item b3-tooltips b3-tooltips__se" aria-label="日历" ></div>');
+    // 把日历图标 放到【设置】按钮前面
+    var barSetting = document.getElementById("barSetting");
+    barSetting.insertAdjacentHTML("beforebegin", '<div id="calendar"class="toolbar__item b3-tooltips b3-tooltips__se" aria-label="日历" ></div>');
     let calendarIcon = document.getElementById("calendar");
 
     // 日历面板，这里是插入挂件
-    barSearch.insertAdjacentHTML("afterend", ` <div
+    barSetting.insertAdjacentHTML("afterend", ` <div
         data-node-index="1"
         data-type="NodeWidget"
         class="iframe"
