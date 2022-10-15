@@ -4,6 +4,7 @@
 /* 图片与前后文字之间间隙 */
 .b3-typography span.img,
 .protyle-wysiwyg span.img {
+    width: 55%;
     max-width: none !important;
 }
 

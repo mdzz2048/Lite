@@ -8,6 +8,7 @@
   /* 块背景颜色 */
   background-color: var(--custom-block-code-background-color);
   border-radius: 5px;
+  outline: 1px solid var(--custom-components-deep);
 }
 
 /* 导出预览样式 */
@@ -17,47 +18,54 @@
 }
 
 /* 编辑区样式 */
+/* 功能按钮栏 */
 .protyle-wysiwyg [data-node-id].code-block > .protyle-action {
-  /* 功能按钮栏 */
   left: auto;
-  right: 0;
-  top: 0;
+  right: 1px;
+  top: 1px;
 }
+
+/* 功能按钮 */
 .protyle-wysiwyg [data-node-id].code-block > .protyle-action > span {
-  /* 功能按钮 */
   opacity: unset;
 }
+
+/* 按钮图标 */
 .protyle-wysiwyg [data-node-id].code-block > .protyle-action > span > .protyle-icons {
-  /* 按钮图标 */
   top: 0;
   right: 0;
 }
+
+/* 语言标签 */
 .protyle-wysiwyg [data-node-id].code-block > .protyle-action > span.protyle-action__language {
-  /* 语言标签 */
   margin-left: 0.5em !important;
   margin-right: 0.5em;
   margin-top: -6px;
   font-size: 16px;
   padding-top: 4px;
 }
+
+/* 间隔 */
 .protyle-wysiwyg [data-node-id].code-block > .protyle-action > span.fn__flex-1 {
-  /* 间隔 */
   flex: 0;
 }
+/* 行号标签 */
 .protyle-wysiwyg [data-node-id].code-block > .protyle-linenumber {
-  /* 行号标签 */
   background-color: var(--custom-block-code-background-color);
 }
+
+/* 行号 */
 .protyle-wysiwyg [data-node-id].code-block > .protyle-linenumber__rows {
-  /* 行号 */
   border-right: var(--custom-block-code-linenumber-separator-width) solid var(--custom-block-code-linenumber-separator-color);
   background-color: var(--custom-block-code-linenumber-background-color);
 }
+
+/* 块属性 */
 .protyle-wysiwyg [data-node-id].code-block > .protyle-attr {
-  /* 块属性 */
   top: -16px;
 }
+
+/* 被选中块的行号样式 */
 .protyle-wysiwyg [data-node-id].code-block.protyle-wysiwyg--select > .protyle-linenumber__rows {
-  /* 被选中块的行号样式 */
   background-color: var(--b3-theme-primary-lightest) !important;
 }
