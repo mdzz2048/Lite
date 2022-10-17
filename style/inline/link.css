@@ -1,5 +1,4 @@
 /* 超链接 */
-@import url(../config.css);
 
 /* 超链接 */
 .protyle-wysiwyg [data-node-id] span:not(:empty)[data-type='a'] {

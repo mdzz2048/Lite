@@ -1,5 +1,4 @@
 /* 列表 */
-@import url(../config.css);
 
 /* 已完成任务列表项删除线 */
 .protyle-wysiwyg [data-node-id].li.protyle-task--done > [data-node-id].p {

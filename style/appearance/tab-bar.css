@@ -1,12 +1,9 @@
 /* 页签 */
 
-@import url(../config.css);
-
 /* 页签栏 */
 .layout__center > .fn__flex.fn__flex-1 > .fn__flex-column > .fn__flex:has(.layout-tab-bar) {
   background-color: var(--custom-tab-bar-background-color);
   background-image: var(--custom-background-image);
-  justify-content: space-between;
 }
 
 /* 编辑区页签 */
@@ -16,15 +13,8 @@
   flex: 0 1 auto;
 }
 
-/* 页签右侧菜单 */
-.fn__flex.fn__flex-1 + .layout-tab-bar {
-  background-color: var(--custom-tab-bar-background-color);
-  flex-wrap: var(--custom-tab-bar-flex-wrap);
-  flex: none;
-}
-
 /* 页签项 */
-.layout-tab-bar .item {
+.layout-tab-bar .item:not(.item--readonly) {
   flex: inherit;
   background-color: transparent;
   box-shadow: none;
@@ -36,17 +26,12 @@
 
 /* 页签项图标 */
 .layout-tab-bar .item .item__icon {
-  padding-right: 0;
+  padding-left: 8px;
 }
 .layout-tab-bar .item .item__icon svg,
 .layout-tab-bar .item .item__icon img {
   width: var(--custom-tab-bar-icon-size);
   height: var(--custom-tab-bar-icon-size);
-}
-
-/* 页签项文本 */
-.layout-tab-bar .item .item__text {
-  min-width: 0;
 }
 
 /* 页签项关闭图标 */
@@ -61,15 +46,9 @@
   box-shadow: none !important;
 }
 
-/* 集市页签项 */
-.b3-dialog__container .layout-tab-bar .item {
-  flex: auto;
-}
-/* 集市被选中的页签项 */
-.b3-dialog__container .layout-tab-bar .item.item--focus {
-  flex: auto;
-  background-color: var(--b3-list-hover);
-  box-shadow: none !important;
+/* 页签项文本 */
+.layout-tab-bar .item .item__text {
+  min-width: 0;
 }
 
 /* 非钉住标签的非末尾项页签项文本 */
@@ -88,4 +67,45 @@
 /* 移除控件与文档页签之间的距离 */
 .layout-tab-bar .item:last-child:not(.item--readonly) {
   margin: 0;
+}
+
+/* ------------------------集市页签样式------------------------ */
+
+/* 集市页签项 */
+.b3-dialog__container .layout-tab-bar .item {
+  flex: auto;
+}
+
+/* 集市被选中的页签项 */
+.b3-dialog__container .layout-tab-bar .item.item--focus {
+  flex: auto;
+  background-color: var(--b3-list-hover);
+  box-shadow: none !important;
+}
+
+/* ------------------------页签右侧菜单样式------------------------ */
+
+/* 页签右侧菜单 */
+.fn__flex.fn__flex-1 + .layout-tab-bar {
+  background-color: var(--custom-tab-bar-background-color);
+  flex-wrap: var(--custom-tab-bar-flex-wrap);
+  /* 右侧菜单占满页签项剩余位置 */
+  flex: auto;
+  /* 右侧菜单、页签分列两侧 */
+  /* flex: none; */
+}
+
+/* 页签右侧菜单项分列两侧 */
+.layout-tab-bar .item.item--readonly {
+  border-left: none;
+  justify-content: space-between;
+}
+
+/* 页签右键菜单项 */
+.layout-tab-bar .item.item.item--readonly > .item__close {
+  background-color: transparent;
+  border-radius: 5px;
+  height: 18px !important;
+  width: 18px !important;
+  padding: 6px;
 }

@@ -1,7 +1,5 @@
 /* 功能区分隔线 */
 
-@import url(../config.css);
-
 .layout__resize:not(.layout__resize--lr) {
   /* 横向分割线 */
   cursor: row-resize;

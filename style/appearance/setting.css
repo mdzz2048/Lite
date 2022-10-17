@@ -1,7 +1,5 @@
 /* 设置对话框 */
 
-@import url(../config.css);
-
 /* 设置对话框尺寸 */
 body > .b3-dialog--open > .b3-dialog > .b3-dialog__container[style="width:80vw"] {
   /* container 这个选择器对删除弹窗、属性弹窗也生效，需要通过内联属性进行区分 */

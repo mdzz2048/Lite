@@ -1,0 +1,55 @@
+/* 顶栏、底栏、边栏宽度修改 */
+
+/* 各栏按钮 */
+#toolbar .b3-tooltips,
+#dockTop .b3-tooltips,
+#dockLeft .b3-tooltips,
+#dockRight .b3-tooltips,
+#dockBottom .b3-tooltips,
+#status .b3-tooltips {
+    margin: var(--custom-dock-item-margin-width) !important;
+    padding: var(--custom-dock-item-padding-width) !important;
+    border-radius: var(--custom-border-radius) !important;
+}
+
+/* 各栏按钮图标 */
+#toolbar .b3-tooltips > svg,
+#dockTop .b3-tooltips > svg,
+#dockLeft .b3-tooltips > svg,
+#dockRight .b3-tooltips > svg,
+#dockBottom .b3-tooltips > svg,
+#status .b3-tooltips > svg {
+    width: var(--custom-dock-item-icon-size) !important;
+    height: var(--custom-dock-item-icon-size) !important;
+}
+
+/* 边栏宽度 */
+#dockLeft,
+#dockRight {
+    width: var(--custom-dock-width);
+}
+
+/* 顶栏、底栏、侧边栏高度 */
+#toolbar,
+#dockTop,
+#dockBottom
+#status {
+    height: calc(var(--custom-dock-width) - var(--custom-dock-item-margin-width) * 2);
+}
+
+/* 底部状态栏 */
+#status .status__msg,
+#status .status__counter {
+    line-height: calc(var(--custom-dock-width) - var(--custom-dock-item-margin-width) * 2);
+}
+
+/* 边栏标题栏（"文档树"、"大纲"）高度 */
+.blcok__icons {
+    height: auto;
+}
+
+/* 页签项高度 */
+/* 页签项 */
+.layout-tab-bar .item {
+    min-height: calc(var(--custom-dock-width) - var(--custom-dock-item-margin-width) * 2);
+}

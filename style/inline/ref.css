@@ -1,7 +1,5 @@
 /* 块引用 */
 
-@import url(../config.css);
-
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"] {
 	color: var(--custom-span-block-ref-color);
 }

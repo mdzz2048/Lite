@@ -1,21 +1,9 @@
 /* 顶部工具栏 */
 
-@import url(../config.css);
-
-/* 顶部工具栏背景 */
-#toolbar{
+/* 顶栏 */
+#toolbar {
     background-color: var(--custom-tool-bar-background-color);
     border-bottom: 1px solid var(--custom-status-bar-separator-color);
-}
-
-/* 顶部工具栏按钮 */
-div:not(#windowControls)>.toolbar__item {
-    margin: 0 6px;
-}
-
-/* 顶部工具栏标题 */
-#drag {
-    padding-right: 0 !important;
 }
 
 /* 自定义工具栏 */
@@ -31,12 +19,7 @@ div:not(#windowControls)>.toolbar__item {
     box-shadow: 0 0 var(--custom-tool-bar-tiem-active-box-shadow-spread) var(--custom-box-shadow-color);
 }
 
-/* ------------------------主题特性：隐藏日记、搜索按钮------------------------ */
-
-/* 隐藏日记按钮 */
-#barDailyNote {
-    display: none;
-}
+/* ------------------------主题特性：搜索按钮------------------------ */
 
 /* 隐藏搜索按钮 */
 #barSearch {

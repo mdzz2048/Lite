@@ -1,7 +1,5 @@
 /* 文档面板 */
 
-@import url(../config.css);
-
 /* 过长文档名显示样式 */
 /* .sy__file .b3-list-item__text {
   display: var(--custom-file-display);

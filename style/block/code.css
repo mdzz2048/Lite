@@ -1,7 +1,5 @@
 /* 代码块 */
 
-@import url(../config.css);
-
 /* 编辑区与导出预览共用样式 */
 .b3-typography .code-block,
 .protyle-wysiwyg .code-block {

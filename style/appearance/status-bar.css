@@ -1,7 +1,5 @@
 /* 底部状态栏 */
 
-@import url(../config.css);
-
 /* 底部状态栏 */
 #status {
     background-color: var(--custom-status-bar-background-color);

@@ -34,7 +34,7 @@
     --custom-tab-bar-flex-wrap: wrap;
     /* 页签纵向排列时最大宽度 */
     --custom-tab-bar-vertical-max-width: 15%;
-    
+
     /* 顶部工具栏 */
     --custom-tool-bar-background-color: var(--custom-components);
     --custom-tool-bar-separator-color: var(--custom-components-deep);
@@ -49,9 +49,13 @@
 
     /* 边栏 */
     --custom-dock-background-color: var(--custom-components);
+    --custom-dock-item-margin-width: 4px;
+    --custom-dock-item-padding-width: 6px;
+    --custom-dock-item-icon-size: 16px;
     --custom-dock-hover-background-color: var(--custom-transparent-deep);
     --custom-dock-hover-box-shadow-color: var(--custom-components-deep);
     --custom-dock-hover-text-shadow-color:var(--b3-theme-on-surface);
+    --custom-dock-width: calc(var(--custom-dock-item-icon-size) + var(--custom-dock-item-margin-width) * 2 + var(--custom-dock-item-padding-width) * 2);
 
     /* 收集箱 */
     --custom-inbox-background-color: var(--custom-components);

@@ -6,6 +6,8 @@
 /* ------------------------界面样式------------------------ */
 
 @import url(style/appearance/backlink.css);
+@import url(style/appearance/bar.css);
+@import url(style/appearance/breadcrumb.css);
 /* @import url(style/appearance/button.css); */
 @import url(style/appearance/dock.css);
 @import url(style/appearance/editor.css);

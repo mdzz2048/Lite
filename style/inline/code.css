@@ -1,7 +1,5 @@
 /* 行内代码 */
 
-@import url(../config.css);
-
 .protyle-wysiwyg code:not(.hljs),
 .b3-typography code:not(.hljs),
 .protyle-wysiwyg span[data-type~=code]:not(.hljs),

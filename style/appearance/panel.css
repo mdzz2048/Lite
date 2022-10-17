@@ -1,7 +1,5 @@
 /* 面板全局设置 */
 
-@import url(../config.css);
-
 /* 各区分栏 */
 [data-type='wnd'][data-id] {
     min-height: 0%;
