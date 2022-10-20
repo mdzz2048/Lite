@@ -19,6 +19,7 @@
 #sidebar [data-type="sidebar-outline"] ul.b3-list.b3-list--background [data-subtype="h1"] .b3-list-item__text,
 .sy__outline ul.b3-list.b3-list--background [data-subtype="h1"] .b3-list-item__text {
   color: var(--custom-h1-color);
+  text-overflow: ellipsis;
 }
 #sidebar [data-type="sidebar-outline"] ul.b3-list.b3-list--background [data-subtype="h2"],
 .sy__outline ul.b3-list.b3-list--background [data-subtype="h2"],
