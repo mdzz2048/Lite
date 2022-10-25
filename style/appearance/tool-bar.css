@@ -6,11 +6,6 @@
     border-bottom: 1px solid var(--custom-status-bar-separator-color);
 }
 
-/* 自定义工具栏 */
-#custom-toolbar {
-    transition: all 500ms;
-}
-
 /* 被激活的控件 */
 .block__icon--active,
 .toolbar__item--active {
@@ -24,4 +19,10 @@
 /* 隐藏搜索按钮 */
 #barSearch {
     display: none;
+}
+
+/* ------------------------自定义工具栏------------------------ */
+
+#custom-toolbar {
+    transition: all 500ms;
 }

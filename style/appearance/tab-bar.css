@@ -13,9 +13,20 @@
   flex: 0 1 auto;
 }
 
-/* 页签项 */
+/* 页签多行 */
+.layout-tab-bar {
+  flex-wrap: var(--custom-tab-bar-flex-wrap);
+}
+
+/* 所有页签项 */
+.layout-tab-bar .item {
+  flex: none;
+  box-sizing: border-box;
+  min-height: var(--custom-tab-bar-min-height);
+}
+
+/* 非右侧菜单页签项 */
 .layout-tab-bar .item:not(.item--readonly) {
-  flex: inherit;
   background-color: transparent;
   box-shadow: none;
   border: 1px solid var(--custom-components-deep);
@@ -26,6 +37,7 @@
 
 /* 页签项图标 */
 .layout-tab-bar .item .item__icon {
+  padding: 0px;
   padding-left: 8px;
 }
 .layout-tab-bar .item .item__icon svg,
@@ -35,29 +47,34 @@
 }
 
 /* 页签项关闭图标 */
+.layout-tab-bar .item .item__close {
+  padding: 4px !important;
+}
+.layout-tab-bar .item .item__close[data-type="new"],
+.layout-tab-bar .item .item__close[data-type="more"] {
+  margin: 0 4px;
+}
 .layout-tab-bar .item .item__close svg:hover {
   color: var(--b3-theme-surface);
   background-color: var(--b3-theme-on-surface);
 }
 
-/* 多窗口被选中的页签项 */
-.layout__wnd--active .layout-tab-bar .item.item--focus {
-  background-color: var(--b3-list-hover);
-  box-shadow: none !important;
-}
-
 /* 页签项文本 */
 .layout-tab-bar .item .item__text {
   min-width: 0;
+  mask-image: none;
+  -webkit-mask-image: none;
 }
 
-/* 非钉住标签的非末尾项页签项文本 */
-.layout-tab-bar .item:not(.item--pin) .item__text:not(span:last-child) {
+/* 非钉住的页签项 */
+.layout-tab-bar .item:not(.item--pin) {
+  min-width: var(--custom-tab-bar-item-min-width);
+}
+.layout-tab-bar .item:not(.item--pin) .item__text {
   padding-right: 0;
-  text-overflow: ellipsis;
 }
 
-/* 钉住的标签页文本全部显示 */
+/* 钉住的页签项文本全部显示 */
 .layout-tab-bar .item.item--pin .item__text {
   width: auto;
   max-width: none;
@@ -67,6 +84,22 @@
 /* 移除控件与文档页签之间的距离 */
 .layout-tab-bar .item:last-child:not(.item--readonly) {
   margin: 0;
+}
+
+/* 被选中的页签项 */
+.layout-tab-bar .item.item--focus {
+  background-color: var(--b3-list-hover);
+  box-shadow: none !important;
+}
+/* 取消当前文档页签的下划线 */
+.layout-tab-bar .item.item--focus::after {
+  display: none;
+}
+
+/* 多窗口被选中的页签项 */
+.layout__wnd--active .layout-tab-bar .item.item--focus {
+  background-color: var(--b3-list-hover);
+  box-shadow: none !important;
 }
 
 /* ------------------------集市页签样式------------------------ */
@@ -99,6 +132,7 @@
 .layout-tab-bar .item.item--readonly {
   border-left: none;
   justify-content: space-between;
+  padding-left: 0px;
 }
 
 /* 页签右键菜单项 */

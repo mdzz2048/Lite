@@ -11,6 +11,10 @@
     padding: var(--custom-dock-item-padding-width) !important;
     border-radius: var(--custom-border-radius) !important;
 }
+/* 窗口控件 */
+#windowControls > .b3-tooltips {
+    margin: 0px !important;
+}
 
 /* 各栏按钮图标 */
 #toolbar .b3-tooltips > svg,
@@ -41,15 +45,4 @@
 #status .status__msg,
 #status .status__counter {
     line-height: calc(var(--custom-dock-width) - var(--custom-dock-item-margin-width) * 2);
-}
-
-/* 边栏标题栏（"文档树"、"大纲"）高度 */
-.blcok__icons {
-    height: auto;
-}
-
-/* 页签项高度 */
-/* 页签项 */
-.layout-tab-bar .item {
-    min-height: calc(var(--custom-dock-width) - var(--custom-dock-item-margin-width) * 2);
 }

@@ -29,6 +29,8 @@
     
     /* 页签栏 */
     --custom-tab-bar-background-color: var(--custom-components);
+    --custom-tab-bar-min-height: calc(var(--custom-dock-width));
+    --custom-tab-bar-item-min-width: none;
     --custom-tab-bar-icon-size: 1.25em;
     /* 页签项排列方式：wrap: 多行显示; nowrap: 单行显示 */
     --custom-tab-bar-flex-wrap: wrap;
@@ -177,8 +179,8 @@
     /* 拖拽参考线 */
     --custom-drag-top-shadow-color: var(--b3-theme-primary-lighter);
     --custom-drag-bottom-shadow-color: var(--b3-theme-primary-lighter);
-    --custom-drag-left-shadow-color: var(--b3-font-color12);
-    --custom-drag-right-shadow-color: var(--b3-font-color12);
+    --custom-drag-left-shadow-color: var(--custom-striking-color);
+    --custom-drag-right-shadow-color: var(--custom-striking-color);
 
     /* 子标题序号缩放 */
     --custom-h-num-font-size: 50%;

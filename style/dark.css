@@ -164,6 +164,9 @@
 
     /* 背景图片 */
     --custom-background-color: none;
+
+    /* 拖拽线颜色 */
+    --custom-striking-color: var(--b3-font-color12);
         
     /* 顶部工具栏 */
     --custom-tool-bar-background-color: var(--custom-components-light);
