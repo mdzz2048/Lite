@@ -173,8 +173,6 @@ window.theme.lute = Lute.New();
  * 更换主题模式
  * @params {string} lightStyle 浅色主题配置文件路径
  * @params {string} darkStyle 深色主题配置文件路径
- * @params {string} customLightStyle 浅色主题自定义配置文件路径
- * @params {string} customDarkStyle 深色主题自定义配置文件路径
  */
 window.theme.changeThemeMode = function (
     lightStyle,
@@ -203,37 +201,9 @@ window.theme.changeThemeMode = function (
 window.theme.changeThemeMode(
     `/appearance/themes/Lite/style/light.css`,
     `/appearance/themes/Lite/style/dark.css`,
-    `/widgets/custom-light.css`,
-    `/widgets/custom-dark.css`,
 );
 
 /* ------------------------加载主题功能------------------------ */
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/background.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/blockattrs.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/doc.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/dock.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/goto.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/invert.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/location.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/menu.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/readonly.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/reload.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/style.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/timestamp.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/typewriter.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/wheel.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/window.js"), undefined, true);
-
-/* ------------------------加载独立应用------------------------ */
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/app/comment/index.js"), undefined, true);
-
-/* ------------------------加载自定义配置文件------------------------ */
-// window.theme.loadScript(window.theme.addURLParam("/widgets/custom.js"));
-
-/* ------------------------加载测试模块------------------------ */
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/test/listener.js"));
-
-/* ------------------------加载自定义功能------------------------ */
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"), undefined, true);
 
 
