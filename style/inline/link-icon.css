@@ -14,125 +14,125 @@
 .b3-typography a[href ^="备注"]::before,
 .b3-typography a[title ^="note"]::before,
 .b3-typography a[title ^="备注"]::before {
-    background-image: url(/appearance/themes/Lite/icon/note.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/note.svg) !important;
 }
 
 /* -------------------------------- URL Scheme -------------------------------- */
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="bookxnotepro:"]:not(:empty)::before,
 .b3-typography a[href ^="bookxnotepro:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/bookxnote.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/bookxnote.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="calibre:"]:not(:empty)::before,
 .b3-typography a[href ^="calibre:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/calibre.png) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/calibre.png) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="es:"]:not(:empty)::before,
 .b3-typography a[href ^="es:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/everything.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/everything.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="evernote:"]:not(:empty)::before,
 .b3-typography a[href ^="evernote:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/evernote.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/evernote.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="file:"]:not(:empty)::before,
 .b3-typography a[href ^="file:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/folder.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/folder.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="http:"]:not(:empty)::before,
 .b3-typography a[href ^="http:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/http.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/http.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="https:"]:not(:empty)::before,
 .b3-typography a[href ^="https:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/https.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/https.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="joplin:"]:not(:empty)::before,
 .b3-typography a[href ^="joplin:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/joplin.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/joplin.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="lt:"]:not(:empty)::before,
 .b3-typography a[href ^="lt:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/liquidtext.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/liquidtext.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="mailto:"]:not(:empty)::before,
 .b3-typography a[href ^="mailto:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/mailto.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/mailto.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="marginnote3app:"]:not(:empty)::before,
 .b3-typography a[href ^="marginnote3app:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/marginnote.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/marginnote.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="obsidian:"]:not(:empty)::before,
 .b3-typography a[href ^="obsidian:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/obsidian.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/obsidian.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="onenote:"]:not(:empty)::before,
 .b3-typography a[href ^="onenote:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/onenote.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/onenote.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="quicker:"]:not(:empty)::before,
 .b3-typography a[href ^="quicker:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/quicker.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/quicker.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="runcmd:"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="runpwsh:"]:not(:empty)::before,
 .b3-typography a[href ^="runcmd:"]::before,
 .b3-typography a[href ^="runpwsh:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/pwsh.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/pwsh.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="siyuan:"]:not(:empty)::before,
 .b3-typography a[href ^="siyuan:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/siyuan.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/siyuan.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="sm:"]:not(:empty)::before,
 .b3-typography a[href ^="sm:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/supermemo.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/supermemo.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="ticktick:"]:not(:empty)::before,
 .b3-typography a[href ^="ticktick:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/ticktick.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/ticktick.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="vscode:"]:not(:empty)::before,
 .b3-typography a[href ^="vscode:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/vscode.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/vscode.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="vscode:"][data-href $="/"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="vscode:"][data-href $="\\"]:not(:empty)::before,
 .b3-typography a[href ^="vscode:"][href $="/"]::before,
 .b3-typography a[href ^="vscode:"][href $="\\"]::before {
-    background-image: url(/appearance/themes/Lite/icon/vscode-folder.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/vscode-folder.svg) !important;
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="zotero:"]:not(:empty)::before,
 .b3-typography a[href ^="zotero:"]::before {
-    background-image: url(/appearance/themes/Lite/icon/zotero.ico) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/zotero.ico) !important;
 }
 
 /* -------------------------------- 其他特化超链接 -------------------------------- */
 /* 视频时间戳 */
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-title *="custom-time"]:not(:empty)::before,
 .b3-typography a[title *="custom-time"]::before {
-    background-image: url(/appearance/themes/Lite/icon/timestamp.svg) !important;
+    background-image: url(/appearance/themes/Lite/assets/icon/timestamp.svg) !important;
 }
 
 /* -------------------------------- 静态文件目录 -------------------------------- */
@@ -141,7 +141,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="/assets/"][data-href $="/"]:not(:empty)::before,
 .b3-typography a[href *="assets/"][href $="/"]::before,
 .b3-typography a[href *="/assets/"][href $="/"]::before {
-    background-image: url(/appearance/themes/Lite/icon/assets.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/assets.svg);
 }
 
 /* 表情 */
@@ -149,7 +149,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="/emojis/"]:not(:empty)::before,
 .b3-typography a[href *="emojis/"]::before,
 .b3-typography a[href *="/emojis/"]::before {
-    background-image: url(/appearance/themes/Lite/icon/emojis.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/emojis.svg);
 }
 
 /* 挂件 */
@@ -157,7 +157,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="/widgets/"]:not(:empty)::before,
 .b3-typography a[href *="widgets/"]::before,
 .b3-typography a[href *="/widgets/"]::before {
-    background-image: url(/appearance/themes/Lite/icon/widgets.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/widgets.svg);
 }
 
 /* 外观 */
@@ -165,7 +165,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="/appearance/"]:not(:empty)::before,
 .b3-typography a[href *="appearance/"]::before,
 .b3-typography a[href *="/appearance/"]::before {
-    background-image: url(/appearance/themes/Lite/icon/appearance.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/appearance.svg);
 }
 
 /* 导出 */
@@ -173,7 +173,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="/export/"]:not(:empty)::before,
 .b3-typography a[href *="export/"]::before,
 .b3-typography a[href *="/export/"]::before {
-    background-image: url(/appearance/themes/Lite/icon/export.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/export.svg);
 }
 
 /* -------------------------------- assets -------------------------------- */
@@ -182,7 +182,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="/assets/"]:not(:empty)::before,
 .b3-typography a[href *="assets/"]::before,
 .b3-typography a[href *="/assets/"]::before {
-    background-image: url(/appearance/themes/Lite/icon/asset.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/asset.svg);
 }
 
 /* PDF 文件 */
@@ -190,7 +190,7 @@
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="/assets/"][data-href $=".pdf"]:not(:empty)::before,
 .b3-typography [href *="assets/"][href $=".pdf"]::before,
 .b3-typography [href *="/assets/"][href $=".pdf"]::before {
-    background-image: url(/appearance/themes/Lite/icon/pdf.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/pdf.svg);
 }
 
 /* Word 文件 */
@@ -202,7 +202,7 @@
 .b3-typography [href *="assets/"][href $=".doc"]::before,
 .b3-typography [href *="/assets/"][href $=".docx"]::before,
 .b3-typography [href *="/assets/"][href $=".docx"]::before {
-    background-image: url(/appearance/themes/Lite/icon/word.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/word.svg);
 }
 
 /* Powerpoint 文件 */
@@ -214,7 +214,7 @@
 .b3-typography [href *="assets/"][href $=".ppt"]::before,
 .b3-typography [href *="/assets/"][href $=".pptx"]::before,
 .b3-typography [href *="/assets/"][href $=".pptx"]::before {
-    background-image: url(/appearance/themes/Lite/icon/powerpoint.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/powerpoint.svg);
 }
 
 /* Excel 文件 */
@@ -226,7 +226,7 @@
 .b3-typography [href *="assets/"][href $=".xls"]::before,
 .b3-typography [href *="/assets/"][href $=".xlsx"]::before,
 .b3-typography [href *="/assets/"][href $=".xlsx"]::before {
-    background-image: url(/appearance/themes/Lite/icon/excel.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/excel.svg);
 }
 
 /* 音频文件 */
@@ -285,7 +285,7 @@
 .b3-typography [href *="/assets/"][href $=".ra"]::before,
 .b3-typography [href *="/assets/"][href $=".wav"]::before,
 .b3-typography [href *="/assets/"][href $=".wma"]::before {
-    background-image: url(/appearance/themes/Lite/icon/audio.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/audio.svg);
 }
 
 /* 视频文件 */
@@ -396,7 +396,7 @@
 .b3-typography [href *="/assets/"][href $=".webm"]::before,
 .b3-typography [href *="/assets/"][href $=".wmv"]::before,
 .b3-typography [href *="/assets/"][href $=".yuv"]::before {
-    background-image: url(/appearance/themes/Lite/icon/video.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/video.svg);
 }
 
 /* 图片文件 */
@@ -867,7 +867,7 @@
 .b3-typography [href *="/assets/"][href $=".xcf"]::before,
 .b3-typography [href *="/assets/"][href $=".xpm"]::before,
 .b3-typography [href *="/assets/"][href $=".xwd"]::before {
-    background-image: url(/appearance/themes/Lite/icon/image.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/image.svg);
 }
 
 /* 压缩文件 */
@@ -922,7 +922,7 @@
 .b3-typography [href *="/assets/"][href $=".wim"]::before,
 .b3-typography [href *="/assets/"][href $=".xz"]::before,
 .b3-typography [href *="/assets/"][href $=".zip"]::before {
-    background-image: url(/appearance/themes/Lite/icon/zip.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/zip.svg);
 }
 
 /* drawio 文件 */
@@ -930,443 +930,443 @@
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href ^="/assets/"][data-href $=".drawio"]:not(:empty)::before,
 .b3-typography [href *="assets/"][href $=".drawio"]::before,
 .b3-typography [href *="/assets/"][href $=".drawio"]::before {
-    background-image: url(/appearance/themes/Lite/icon/drawio.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/drawio.svg);
 }
 
 /* -------------------------------- domain -------------------------------- */
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="cnblogs.com"]:not(:empty)::before,
 .b3-typography a[href *="cnblogs.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/cnblogs.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/cnblogs.ico);
     filter: invert(1) hue-rotate(.5turn);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="bilibili.com"]:not(:empty)::before,
 .b3-typography a[href *="bilibili.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/bilibili.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/bilibili.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="zhihu.com"]:not(:empty)::before,
 .b3-typography a[href *="zhihu.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/zhihu.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/zhihu.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="microsoft.com"]:not(:empty)::before,
 .b3-typography a[href *="microsoft.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/microsoft.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/microsoft.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="ld246.com"]:not(:empty)::before,
 .b3-typography a[href *="ld246.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/ld246.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/ld246.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="google.com"]:not(:empty)::before,
 .b3-typography a[href *="google.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/logo_google_icon.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/logo_google_icon.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="chrome.google.com"]:not(:empty)::before,
 .b3-typography a[href *="chrome.google.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/chrome-web-store.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/chrome-web-store.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="taobao.com"]:not(:empty)::before,
 .b3-typography a[href *="taobao.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/taobao.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/taobao.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="jd.com"]:not(:empty)::before,
 .b3-typography a[href *="jd.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/jd.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/jd.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="xiaohongshu.com"]:not(:empty)::before,
 .b3-typography a[href *="xiaohongshu.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/xiaohongshu.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/xiaohongshu.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="pinduoduo.com"]:not(:empty)::before,
 .b3-typography a[href *="pinduoduo.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/pinduoduo.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/pinduoduo.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="alibaba.com"]:not(:empty)::before,
 .b3-typography a[href *="alibaba.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/alibaba.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/alibaba.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="tmall.com"]:not(:empty)::before,
 .b3-typography a[href *="tmall.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/tianmao.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/tianmao.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="amazon.com"]:not(:empty)::before,
 .b3-typography a[href *="amazon.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/amazon.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/amazon.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="iq.com"]:not(:empty)::before,
 .b3-typography a[href *="iq.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/aiqiyi.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/aiqiyi.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="youku.com"]:not(:empty)::before,
 .b3-typography a[href *="youku.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/youku.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/youku.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="lanzoui.com"]:not(:empty)::before,
 .b3-typography a[href *="lanzoui.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/lanzouyun.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/lanzouyun.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="aliyundrive.com"]:not(:empty)::before,
 .b3-typography a[href *="aliyundrive.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/aliyundrive.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/aliyundrive.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="cloud.189.cn"]:not(:empty)::before,
 .b3-typography a[href *="cloud.189.cn"]::before {
-    background-image: url(/appearance/themes/Lite/icon/tianyiyun.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/tianyiyun.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="1drv.ms"]:not(:empty)::before,
 .b3-typography a[href *="1drv.ms"]::before {
-    background-image: url(/appearance/themes/Lite/icon/onedrive.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/onedrive.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="sharepoint.com"]:not(:empty)::before,
 .b3-typography a[href *="sharepoint.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/sharepoint.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/sharepoint.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="weiyun.com"]:not(:empty)::before,
 .b3-typography a[href *="weiyun.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/weiyun.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/weiyun.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="baidu.com"]:not(:empty)::before,
 .b3-typography a[href *="baidu.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/baidu.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/baidu.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="pan.baidu.com"]:not(:empty)::before,
 .b3-typography a[href *="pan.baidu.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/baiduwangpan.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/baiduwangpan.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="tieba.baidu.com"]:not(:empty)::before,
 .b3-typography a[href *="tieba.baidu.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/logo_baidu_tieba_logo.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/logo_baidu_tieba_logo.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="obsidian.md"]:not(:empty)::before,
 .b3-typography a[href *="obsidian.md"]::before {
-    background-image: url(/appearance/themes/Lite/icon/obsidian.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/obsidian.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="yuque.com"]:not(:empty)::before,
 .b3-typography a[href *="yuque.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/yuque.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/yuque.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="blog.csdn.net"]:not(:empty)::before,
 .b3-typography a[href *="blog.csdn.net"]::before {
-    background-image: url(/appearance/themes/Lite/icon/csdn.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/csdn.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="jianshu.com"]:not(:empty)::before,
 .b3-typography a[href *="jianshu.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/jianshu.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/jianshu.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="gitee.com"]:not(:empty)::before,
 .b3-typography a[href *="gitee.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/gitee.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/gitee.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="wikipedia.org"]:not(:empty)::before,
 .b3-typography a[href *="wikipedia.org"]::before {
-    background-image: url(/appearance/themes/Lite/icon/wikipedia.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/wikipedia.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="weixin.qq.com"]:not(:empty)::before,
 .b3-typography a[href *="weixin.qq.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/wechat.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/wechat.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="y.qq.com"]:not(:empty)::before,
 .b3-typography a[href *="y.qq.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/qqmusic.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/qqmusic.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="v.qq.com"]:not(:empty)::before,
 .b3-typography a[href *="v.qq.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/qqvideo.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/qqvideo.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="news.qq.com"]:not(:empty)::before,
 .b3-typography a[href *="news.qq.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/newsqq.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/newsqq.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="163.com"]:not(:empty)::before,
 .b3-typography a[href *="163.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/news163.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/news163.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="music.163.com"]:not(:empty)::before,
 .b3-typography a[href *="music.163.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/netease_music.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/netease_music.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="sohu.com"]:not(:empty)::before,
 .b3-typography a[href *="sohu.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/souhu.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/souhu.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="guancha.cn"]:not(:empty)::before,
 .b3-typography a[href *="guancha.cn"]::before {
-    background-image: url(/appearance/themes/Lite/icon/guancha.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/guancha.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="thepaper.cn"]:not(:empty)::before,
 .b3-typography a[href *="thepaper.cn"]::before {
-    background-image: url(/appearance/themes/Lite/icon/thepaper.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/thepaper.ico);
     filter: invert(1) hue-rotate(.5turn);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="toutiao.com"]:not(:empty)::before,
 .b3-typography a[href *="toutiao.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/toutiao.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/toutiao.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="facebook.com"]:not(:empty)::before,
 .b3-typography a[href *="facebook.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/facebook.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/facebook.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="cctv.com"]:not(:empty)::before,
 .b3-typography a[href *="cctv.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/cctv.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/cctv.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="sspai.com"]:not(:empty)::before,
 .b3-typography a[href *="sspai.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/sspai.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/sspai.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="weibo.com"]:not(:empty)::before,
 .b3-typography a[href *="weibo.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/logo_weibo_icon.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/logo_weibo_icon.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="github.io"]:not(:empty)::before,
 .b3-typography a[href *="github.io"]::before {
-    background-image: url(/appearance/themes/Lite/icon/blog.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/blog.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="github.com"]:not(:empty)::before,
 .b3-typography a[href *="github.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/github_icon.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/github_icon.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="bing.com"]:not(:empty)::before,
 .b3-typography a[href *="bing.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/bing.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/bing.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="sogou.com"]:not(:empty)::before,
 .b3-typography a[href *="sogou.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/sogou.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/sogou.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="so.com"]:not(:empty)::before,
 .b3-typography a[href *="so.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/so.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/so.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="stackoverflow.com"]:not(:empty)::before,
 .b3-typography a[href *="stackoverflow.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/stack-overflow.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/stack-overflow.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="icourse163.org"]:not(:empty)::before,
 .b3-typography a[href *="icourse163.org"]::before {
-    background-image: url(/appearance/themes/Lite/icon/mooc.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/mooc.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="imooc.com"]:not(:empty)::before,
 .b3-typography a[href *="imooc.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/imooc.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/imooc.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="pornhub.com"]:not(:empty)::before,
 .b3-typography a[href *="pornhub.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/pornhub.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/pornhub.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="twitter.com"]:not(:empty)::before,
 .b3-typography a[href *="twitter.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/logo_twitter.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/logo_twitter.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="youtube.com"]:not(:empty)::before,
 .b3-typography a[href *="youtube.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/logo_youtube_play_video_icon.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/logo_youtube_play_video_icon.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="wolai.com"]:not(:empty)::before,
 .b3-typography a[href *="wolai.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/wolai_dark.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/wolai_dark.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="notion."]:not(:empty)::before,
 .b3-typography a[href *="notion."]::before {
-    background-image: url(/appearance/themes/Lite/icon/logo_notion-logo.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/logo_notion-logo.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="douban.com"]:not(:empty)::before,
 .b3-typography a[href *="douban.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/social-douban.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/social-douban.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="ncbi"]:not(:empty)::before,
 .b3-typography a[href *="ncbi"]::before {
-    background-image: url(/appearance/themes/Lite/icon/ncbi.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/ncbi.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="pubmed.ncbi.nlm.nih.gov"]:not(:empty)::before,
 .b3-typography a[href *="pubmed.ncbi.nlm.nih.gov"]::before {
-    background-image: url(/appearance/themes/Lite/icon/pubmed.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/pubmed.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="cell.com"]:not(:empty)::before,
 .b3-typography a[href *="cell.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/cell.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/cell.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="nature.com"]:not(:empty)::before,
 .b3-typography a[href *="nature.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/nature.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/nature.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="discord."]:not(:empty)::before,
 .b3-typography a[href *="discord."]::before {
-    background-image: url(/appearance/themes/Lite/icon/discord.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/discord.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="hust.edu.cn"]:not(:empty)::before,
 .b3-typography a[href *="hust.edu.cn"]::before {
-    background-image: url(/appearance/themes/Lite/icon/hust.jpg);
+    background-image: url(/appearance/themes/Lite/assets/icon/hust.jpg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="coursera.org"]:not(:empty)::before,
 .b3-typography a[href *="coursera.org"]::before {
-    background-image: url(/appearance/themes/Lite/icon/coursera.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/coursera.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="runoob.com"]:not(:empty)::before,
 .b3-typography a[href *="runoob.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/runoob.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/runoob.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="liaoxuefeng.com"]:not(:empty)::before,
 .b3-typography a[href *="liaoxuefeng.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/liaoxuefeng.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/liaoxuefeng.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="juejin.cn"]:not(:empty)::before,
 .b3-typography a[href *="juejin.cn"]::before {
-    background-image: url(/appearance/themes/Lite/icon/juejin.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/juejin.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="vue"]:not(:empty)::before,
 .b3-typography a[href *="liaoxuefeng.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/vue.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/vue.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="52pojie.cn"]:not(:empty)::before,
 .b3-typography a[href *="52pojie.cn"]::before {
-    background-image: url(/appearance/themes/Lite/icon/52pojie.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/52pojie.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="douyin.com"]:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="tiktok.com"]:not(:empty)::before,
 .b3-typography a[href *="douyin.com"]::before,
 .b3-typography a[href *="tiktok.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/douyin.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/douyin.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="segmentfault.com"]:not(:empty)::before,
 .b3-typography a[href *="segmentfault.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/segmentfault.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/segmentfault.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="51cto.com"]:not(:empty)::before,
 .b3-typography a[href *="51cto.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/51cto.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/51cto.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="cloud.tencent.com"]:not(:empty)::before,
 .b3-typography a[href *="cloud.tencent.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/tencentcloud.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/tencentcloud.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="aliyun.com"]:not(:empty)::before,
 .b3-typography a[href *="aliyun.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/aliyun.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/aliyun.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="oschina.net"]:not(:empty)::before,
 .b3-typography a[href *="oschina.net"]::before {
-    background-image: url(/appearance/themes/Lite/icon/oschina.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/oschina.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="v2ex.com"]:not(:empty)::before,
 .b3-typography a[href *="v2ex.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/v2ex.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/v2ex.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="iconfont.cn"]:not(:empty)::before,
 .b3-typography a[href *="iconfont.cn"]::before {
-    background-image: url(/appearance/themes/Lite/icon/iconfont.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/assets/iconfont.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="ruanyifeng.com"]:not(:empty)::before,
 .b3-typography a[href *="ruanyifeng.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/ruanyifeng.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/ruanyifeng.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="getquicker.net"]:not(:empty)::before,
 .b3-typography a[href *="getquicker.net"]::before {
-    background-image: url(/appearance/themes/Lite/icon/Quicker.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/Quicker.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="visualstudio.com"]:not(:empty)::before,
 .b3-typography a[href *="visualstudio.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/visualstudio.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/visualstudio.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="developer.mozilla.org"]:not(:empty)::before,
 .b3-typography a[href *="developer.mozilla.org"]::before {
-    background-image: url(/appearance/themes/Lite/icon/developermozilla.png);
+    background-image: url(/appearance/themes/Lite/assets/icon/developermozilla.png);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="weread.qq.com"]:not(:empty)::before,
 .b3-typography a[href *="weread.qq.com"]::before {
-    background-image: url(/appearance/themes/Lite/icon/weread.ico);
+    background-image: url(/appearance/themes/Lite/assets/icon/weread.ico);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="hypothes.is"]:not(:empty)::before,
 .b3-typography a[href *="hypothes.is"]::before {
-    background-image: url(/appearance/themes/Lite/icon/hypothesis.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/hypothesis.svg);
 }
 
 .protyle-wysiwyg [data-node-id] span[data-type='a'][data-href *="hyp.is"]:not(:empty)::before,
 .b3-typography a[href *="hyp.is"]::before {
-    background-image: url(/appearance/themes/Lite/icon/hypothesis.svg);
+    background-image: url(/appearance/themes/Lite/assets/icon/hypothesis.svg);
 }
 
 /* -------------------------------- custom: 超链接 icon END -------------------------------- */
