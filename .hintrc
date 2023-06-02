@@ -9,5 +9,8 @@
     "not firefox <= 104",
     "not ios_saf <= 15.6",
     "not safari <= 15.6"
-  ]
+  ],
+  "hints": {
+    "detect-css-reflows/composite": "off"
+  }
 }

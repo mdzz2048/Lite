@@ -1,38 +1,24 @@
+/* ------------------------页签------------------------ */
+
 /* 页签 */
-
-/* 页签栏 */
-.layout__center > .fn__flex.fn__flex-1 > .fn__flex-column > .fn__flex:has(.layout-tab-bar) {
+.layout__center [data-type="wnd"][data-id] > .fn__flex:first-child {
+  justify-content: space-between;
   background-color: var(--custom-tab-bar-background-color);
-  background-image: var(--custom-background-image);
 }
 
-/* 编辑区页签 */
-.fn__flex.fn__flex-1.layout-tab-bar {
-  background-color: var(--custom-tab-bar-background-color);
-  flex-wrap: var(--custom-tab-bar-flex-wrap);
-  flex: 0 1 auto;
-}
-
-/* 页签多行 */
+/* 页签多行显示 */
 .layout-tab-bar {
   flex-wrap: var(--custom-tab-bar-flex-wrap);
+  background-color: var(--custom-tab-bar-background-color);
 }
 
-/* 所有页签项 */
+/* 页签项 */
 .layout-tab-bar .item {
   flex: none;
+  border: 1px solid var(--b3-list-hover);
+  border-radius: var(--custom-border-radius);
   box-sizing: border-box;
   min-height: var(--custom-tab-bar-min-height);
-}
-
-/* 非右侧菜单页签项 */
-.layout-tab-bar .item:not(.item--readonly) {
-  background-color: transparent;
-  box-shadow: none;
-  border: 1px solid var(--custom-components-deep);
-  border-bottom: 0px;
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: none !important;
 }
 
 /* 页签项图标 */
@@ -133,6 +119,12 @@
   border-left: none;
   justify-content: space-between;
   padding-left: 0px;
+  background-color: var(--custom-tab-bar-background-color);
+}
+
+/* 页签右侧新建文档 */
+.layout-tab-bar .item.item--readonly span:nth-child(1) {
+  margin: 5px;
 }
 
 /* 页签右键菜单项 */

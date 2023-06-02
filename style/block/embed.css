@@ -1,28 +1,19 @@
-/* 嵌入块 */
-
-/* 嵌入块 */
+/* ------------------------嵌入块------------------------ */
+/* 嵌入块默认样式 */
 .protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node {
-    border: none;
-    outline: 1px dotted var(--b3-theme-on-surface);
+    border-radius: 0px;
     background-color: var(--custom-block-embed-background-color) !important;
-    border-radius: 5px 5px 5px 5px;
+    /* box-shadow: var(--b3-theme-on-surface-light) 0 0 svar(--custom-box-shadow-spread); */
+    border: 2px solid var(--custom-line-color);
 }
 
-/* 嵌入块间分隔线 */
-.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node > .protyle-wysiwyg__embed:not(:nth-of-type(2)) {
-    position: relative;
-    border-top: 2px double var(--custom-line-color);
-}
+/* 两个连续的嵌入块 */
+.protyle-wysiwyg .render-node[data-node-id][data-type="NodeBlockQueryEmbed"] + .render-node[data-node-id][data-type="NodeBlockQueryEmbed"] {
+    margin-top: 0.5em;
+  }
 
-/* ------------------------ {{ 生成的嵌入块------------------------ */
-
-/* 单个嵌入块无外边框 */
-.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node[data-content^="select * from blocks where id="] {
-    outline: none;
-    padding: 0px;
-}
-
-/* 单个嵌入块鼠标悬浮样式 */
-.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node[data-content^="select * from blocks where id="]:hover {
-    outline: 1px dotted var(--b3-theme-on-surface);
+/* 嵌入块鼠标悬浮样式 */
+.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node:hover {
+    border-radius: 0px;
+    border: 2px solid var(--b3-tooltips-color);
 }

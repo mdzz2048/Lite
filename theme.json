@@ -3,6 +3,30 @@
   "author": "mdzz2048",
   "url": "https://github.com/mdzz2048/Lite",
   "version": "0.0.1",
+  "displayName": {
+    "default": "Lite",
+    "zh_CN": "轻"
+  },
+  "description": {
+    "default": "Lightweight",
+    "zh_CN": "轻量"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "i18n": [
+    "en_US",
+    "zh_CN"
+  ],
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": [
+      "https://afdian.net/a/Savor"
+    ]
+  },
   "modes": [
     "light",
     "dark"

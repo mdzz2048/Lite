@@ -1,3 +1,4 @@
+/* ------------------------初始设置------------------------ */
 window.theme = {};
 
 /**
@@ -206,10 +207,7 @@ window.theme.changeThemeMode(
     `/widgets/custom-dark.css`,
 );
 
-/* 加载 HTML 块中使用的小工具 */
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/html.js"), "text/javascript", undefined, true);
-
-/* 加载主题功能 */
+/* ------------------------加载主题功能------------------------ */
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/background.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/blockattrs.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/doc.js"), undefined, true);
@@ -226,23 +224,17 @@ window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/wheel.js"), undefined, true);
 window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/module/window.js"), undefined, true);
 
-/* 加载独立应用 */
+/* ------------------------加载独立应用------------------------ */
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/app/comment/index.js"), undefined, true);
 
-/* 加载自定义配置文件 */
+/* ------------------------加载自定义配置文件------------------------ */
 // window.theme.loadScript(window.theme.addURLParam("/widgets/custom.js"));
 
-/* 加载测试模块 */
+/* ------------------------加载测试模块------------------------ */
 // window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/script/test/listener.js"));
 
-/* 加载自定义功能 */
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/calendar/calendar.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/doc-creat-time.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/history-edit-doc/history-edit-doc.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/folder-plus/open-folder-in-win.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/sm-tag/sm-tag.js"), undefined, true);
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/writeathon/api.js"), undefined, true);
-// window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/writeathon/writeathon.js"), undefined, true);
+/* ------------------------加载自定义功能------------------------ */
+window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"), undefined, true);
 
 
 /* ------------------------测试用例------------------------ */

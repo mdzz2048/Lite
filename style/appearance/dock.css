@@ -1,4 +1,4 @@
-/* 侧边菜单栏 */
+/* ------------------------侧边菜单栏------------------------ */
 
 .dock#dockTop,
 .dock#dockBottom,
@@ -23,8 +23,8 @@
   background-color: var(--custom-dock-background-color);
 }
 
+/* 边栏背景 */
 .layout-tab-container {
-  /* 边栏背景 */
   background-color: var(--custom-dock-background-color);
   background-image: var(--custom-background-image);
 }
@@ -37,24 +37,3 @@
   box-shadow: 1px 1px 0px 0px var(--custom-dock-hover-box-shadow-color);
   /* transform: scale(1.005); */
 }
-
-/* ------------------------------侧边栏分割线------------------------------ */
-
-/* 关闭笔记分割线 */
-.fn__flex-1.fn__flex .fn__flex-column .b3-list:not(.b3-list--background) > .b3-list-item {
-  border-top: 1px solid var(--custom-separator-color);
-  border-bottom: 1px solid var(--custom-separator-color);
-}
-
-/* 提及-反链分割线 */
-.backlinkList+.block__icons {
-  border-top: 1px solid var(--custom-separator-color);
-}
-
-/* 侧边栏各区底部分割线 */
-.block__icons {
-  background-color: var(--custom-transparent-light);
-  border-bottom: 1px solid var(--custom-separator-color);
-}
-
-/* ------------------------------侧边栏使用固定宽度------------------------------ */

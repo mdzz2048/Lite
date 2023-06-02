@@ -1,6 +1,6 @@
-/* 编辑区面板 */
+/* ------------------------编辑区面板------------------------ */
 
-/*编辑区*/
+/* 编辑区 */
 .protyle-content {
     background-color: var(--custom-editor-background-color);
     background-image: var(--custom-background-image);

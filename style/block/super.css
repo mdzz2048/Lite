@@ -2,16 +2,15 @@
 
 /* 超级块默认样式 */
 .protyle-wysiwyg [data-node-id].sb {
-    border-radius: var(--custom-border-radius);
+    background-color: var(--custom-block-super-background-color);
     padding: var(--custom-block-padding);
     margin: var(--custom-block-padding);
-    background-color: var(--custom-block-super-background-color);
-    box-shadow: var(--b3-theme-on-surface-light) 0 0 var(--custom-box-shadow-spread);
+    outline: 1.5px dashed var(--custom-line-color);
 }
 
 /* 超级块鼠标悬停时显示边框 */
 .protyle-wysiwyg [data-node-id].sb:hover {
-    outline: 1px solid var(--b3-theme-on-surface);
+    outline: 1.5px dashed var(--b3-tooltips-color);
 }
 
 /* 嵌入块中的超级块：取消边距和阴影 */
