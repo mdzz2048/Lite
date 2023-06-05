@@ -1,111 +1,92 @@
+/* ------------------------弹出菜单&设置菜单------------------------ */
 /* 弹出菜单 */
-
-@import url(/appearance/themes/Lite/style/module/config.css);
-
-/* 移动端菜单 */
-#model,
-/* 全局右键菜单 */
-#commonMenu {
-    background-color: var(--custom-popover-menu-background-color);
-    background-image: var(--custom-background-image);
-}
-
-/* 菜单项 */
-#commonMenu .b3-menu__item {
-  background-color: transparent;
-}
-
-/* 鼠标悬停菜单项 */
-#commonMenu .b3-menu__item.b3-menu__item--current {
-  background-color: var(--custom-popover-menu-hover-color) !important;
-}
-
-/* 子菜单 */
-#commonMenu .b3-menu__item > .b3-menu__submenu {
+.b3-menu {
   background-color: var(--custom-popover-menu-background-color);
-  background-image: var(--custom-background-image);
 }
-
-/* 菜单分割线 */
-#commonMenu .b3-menu__separator {
-  height: 2px;
-  background-color: var(--custom-popover-menu-separator-color);
-}
-
-/* '/' 菜单 */
-.b3-list.b3-list--background.b3-menu.hint--menu {
-  /* REF: [第一个子元素在未超过父元素高度的情况下设置margin-top导致出现竖向滚动条的问题_Andrasen的博客-CSDN博客](https://blog.csdn.net/Andrasen/article/details/105676175) */
+/* 子菜单 */
+.b3-menu .b3-menu__submenu {
+  background-color: var(--custom-popover-menu-background-color);
   padding: var(--custom-popover-menu-padding-width);
-  background-color: var(--custom-popover-menu-background-color) !important;
-  background-image: var(--custom-background-image);
-  width: auto !important;
-  outline: var(--custom-popover-menu-outline-width) var(--custom-popover-menu-outline-style) var(--custom-popover-menu-outline-color);
-  overflow-x: visible !important;
-  column-count: 4;
-  column-gap: 1em;
-  column-rule: var(--custom-popover-menu-separator-width) solid var(--custom-popover-menu-separator-color);
+}
+/* 菜单项 */
+.b3-menu__item {
+  background-color: var(--custom-popover-menu-background-color);
+}
+.b3-menu__item:hover {
+  background-color: var(--b3-list-hover);
+}
+
+/* ------------------------'/'弹出分栏------------------------*/
+.hint--menu {
+  columns: 50px 4;
+  column-rule: var(--custom-list-guides-line-width) solid var(--b3-border-color);
+  border:none;
+  min-width: 50vw;
   max-height: none !important;
 }
-/* '/' 菜单项样式 */
-.b3-list.b3-list--background.b3-menu.hint--menu > .b3-list-item.b3-list-item {
-  background-color: transparent;
-  outline: 1px solid var(--custom-separator-color);
+.hint--menu .b3-list-item {
+  width: 100%!important;
 }
-/* '/' 菜单项选中样式 */
-.b3-list.b3-list--background.b3-menu.hint--menu > .b3-list-item.b3-list-item--focus {
-    background-color: var(--custom-popover-menu-focus-color);
-    outline: 1px solid var(--custom-separator-color);
+.hint--menu .b3-list-item__text {
+  margin:0 0 0 8px;
+  color:var(--b3-theme-on-background);
 }
-/* '/' 菜单项鼠标悬浮样式 */
-.b3-list.b3-list--background.b3-menu.hint--menu > .b3-list-item.b3-list-item:hover {
-  background-color: var(--custom-popover-menu-focus-color);
-  outline: 1px solid var(--custom-separator-color);
+.hint--menu .b3-list-item__graphic {
+  margin:0px;
+  width:10px;
+  height:12px;
+  border:1px solid var(--b3-border-color);
+}
+.hint--menu > .b3-list-item--two {
+  margin:0;
 }
 
-/* 表情菜单 */
-.b3-list.b3-list--background.b3-menu.hint--menu > .emojis {
-  /* REF https: //github.com/siyuan-note/siyuan/issues/4575#issuecomment-1152490468 */
+.protyle-hint.hint--menu:has(>.emojis) {
+  min-width: 372px;
+  width: 372px !important;
+}
+.protyle-hint.hint--menu>.emojis {
   column-span: all;
+  width: 360px!important;
+}
+.emojis__item {
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 32px;
+  font-size: 18px;
+  margin: 0 4px 4px 0;
+}
+.emojis__item img, .emojis__item svg.custom-icon {
+  margin: 0;
+  width: 18px;
+  height:18px;
+  padding: 7px;
+  display: block;
 }
 
-/* 分割线 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator {
-  background-color: var(--custom-popover-menu-separator-color);
+/* ------------------------引用块弹出框------------------------ */
+/* 块引用搜索菜单 */
+.protyle-hint {
+  width: 30vw
+}
+.protyle-hint > .b3-list-item {
+  width: 100% !important;
 }
 
-/* 第1条分割线 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type {
-  height: 35px;
-  background-color: transparent;
+/* ------------------------模板预览------------------------ */
+/* 悬浮输入文本框 */
+.protyle .protyle-util {
+  background-color: var(--custom-popover-background-color);
 }
-
-/* 一级子标题 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
-  color: var(--custom-h1-color);
+.protyle .protyle-util > .fn__flex > .fn__flex-column + div {
+  width: var(--custom-template-preview-width) !important;
+  min-width: var(--custom-template-preview-min-width);
 }
-/* 二级子标题 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
-  color: var(--custom-h2-color);
-}
-/* 三级子标题 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
-  color: var(--custom-h3-color);
-}
-/* 四级子标题 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
-  color: var(--custom-h4-color);
-}
-/* 五级子标题 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button + button + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
-  color: var(--custom-h5-color);
-}
-/* 六级子标题 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:first-of-type + button + button + button + button + button + button *:is(.b3-list-item__graphic, .b3-list-item__text) {
-  color: var(--custom-h6-color);
-}
-
-/* 第4条分割线 */
-.b3-list.b3-list--background.b3-menu.hint--menu > div.b3-menu__separator:nth-of-type(4) {
-  height: 0;
+.protyle .protyle-util textarea.b3-text-field {
   background-color: transparent;
 }
