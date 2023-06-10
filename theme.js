@@ -58,31 +58,25 @@ window.theme.loadMeta = function (attributes) {
 }
 
 /**
- * 加载脚本文件
- * @params {string} url 脚本地址
- * @params {string} type 脚本类型
- */
-window.theme.loadScript = function (src, type = 'module', async = false, defer = false) {
-    const script = document.createElement('script');
-    if (type) script.type = type;
-    if (async) script.async = true;
-    if (defer) script.defer = true;
-    script.src = src;
-    document.head.appendChild(script);
-}
-
-/**
- * 加载样式文件
+ * 加载样式文件引用
  * @params {string} href 样式地址
  * @params {string} id 样式 ID
+ * @params {string} position 节点插入位置
+ * @params {HTMLElementNode} element 节点插入锚点
  */
-window.theme.loadStyle = function (href, id = null) {
-    let style = document.createElement('link');
-    if (id) style.id = id;
-    style.type = 'text/css';
-    style.rel = 'stylesheet';
-    style.href = href;
-    document.head.appendChild(style);
+window.theme.loadLink = function (
+    href,
+    id = null,
+    position = "afterend",
+    element = document.getElementById('themeStyle'),
+) {
+    let link = document.createElement('link');
+    if (id) link.id = id;
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    link.href = href;
+    // document.head.appendChild(link);
+    element.insertAdjacentElement(position, link);
 }
 
 /**
@@ -96,7 +90,7 @@ window.theme.updateStyle = function (id, href) {
         style.setAttribute('href', href);
     }
     else {
-        window.theme.loadStyle(href, id);
+        window.theme.loadLink(href, id);
     }
 }
 
@@ -108,15 +102,6 @@ window.theme.ID_CUSTOM_STYLE = 'custom-color-style';
  * @return {string} light 或 dark
  */
 window.theme.themeMode = (() => {
-    /* 根据浏览器主题判断颜色模式 */
-    // switch (true) {
-    //     case window.matchMedia('(prefers-color-scheme: light)').matches:
-    //         return 'light';
-    //     case window.matchMedia('(prefers-color-scheme: dark)').matches:
-    //         return 'dark';
-    //     default:
-    //         return null;
-    // }
     /* 根据配置选项判断主题 */
     switch (window.siyuan.config.appearance.mode) {
         case 0:
@@ -204,7 +189,7 @@ window.theme.changeThemeMode(
 );
 
 /* ------------------------加载主题功能------------------------ */
-window.theme.loadScript(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"), undefined, true);
+import(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"));
 
 
 /* ------------------------测试用例------------------------ */

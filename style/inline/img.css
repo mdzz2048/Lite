@@ -1,11 +1,4 @@
-/* 图片样式 */
-
-/* 图片与前后文字之间间隙 */
-.b3-typography span.img,
-.protyle-wysiwyg span.img {
-    width: 55%;
-    max-width: none !important;
-}
+/* ------------------------图片样式------------------------ */
 
 /* 图片样式 */
 .b3-typography span.img img:not(.emoji),
@@ -22,9 +15,9 @@
     right: calc(4px + var(--custom-border-radius)) !important;
 }
 
-/* 图片默认大小（不包括自定义emoji图片） */
+/* 设置图片最大宽度 */
 .protyle-wysiwyg img:not(img.emoji),
 .b3-typography img:not(img.emoji) {
-    width: 50vw;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 50vw;
 }

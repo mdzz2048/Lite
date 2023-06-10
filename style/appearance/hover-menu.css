@@ -3,9 +3,9 @@
 .b3-list {
     /* REF: [第一个子元素在未超过父元素高度的情况下设置margin-top导致出现竖向滚动条的问题_Andrasen的博客-CSDN博客](https://blog.csdn.net/Andrasen/article/details/105676175) */
     padding: var(--custom-popover-menu-padding-width) !important;
-    background-color: transparent !important;
+    background-color: var(--custom-popover-menu-background-color);
     backdrop-filter: none;
-    width: var(--custom-popover-menu-width) !important;
+    width: var(--custom-popover-menu-width);
     outline: var(--custom-popover-menu-outline-width) var(--custom-popover-menu-outline-style) var(--custom-popover-menu-outline-color);
     overflow-x: visible !important;
 }

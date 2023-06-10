@@ -79,7 +79,6 @@
     background-color: var(--custom-editor-background-color);
     background-image: var(--custom-background-image);
     border-bottom: 1px solid var(--custom-components-deep);
-    border-top: 1px solid var(--custom-components-deep);
 }
 
 /* 面包屑文字 */
