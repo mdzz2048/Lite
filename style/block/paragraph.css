@@ -9,9 +9,6 @@
 .p:hover {
     border-radius: var(--custom-border-radius);
     background-color: var(--custom-transparent-light);
-    text-shadow: 1px 1px 2px var(--custom-components-deep);
-    box-shadow: 1px 1px 0px 0px var(--custom-components-deep);
-    /* transform: scale(1.001); */
 }
 
 /* 嵌入块内段落块的行线 */

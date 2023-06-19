@@ -33,7 +33,4 @@
 .fn__flex.fn__flex-1 .fn__flex-column .b3-list.b3-list--background li:hover {
   border-radius: var(--custom-border-radius);
   background-color: var(--custom-dock-hover-background-color);
-  text-shadow: 1px 1px 2px var(--custom-dock-hover-text-shadow-color);
-  box-shadow: 1px 1px 0px 0px var(--custom-dock-hover-box-shadow-color);
-  /* transform: scale(1.005); */
 }
