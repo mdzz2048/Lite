@@ -1,24 +1,29 @@
 /* 功能区分隔线 */
 
+/* 横向分割线 */
 .layout__resize:not(.layout__resize--lr) {
-  /* 横向分割线 */
   cursor: row-resize;
   margin: var(--custom-separator-distance-compensation) 0;
   height: var(--custom-panel-distance);
   width: auto;
 }
+/* 纵向分割线 */
 .layout__resize.layout__resize--lr {
-  /* 纵向分割线 */
   cursor: col-resize;
-  width: var(--custom-panel-distance);
+  /* width: var(--custom-panel-distance); */
   margin: 0 var(--custom-separator-distance-compensation);
   height: auto;
 }
+/* 调整纵向分隔线位置 */
 .layout__resize.layout__resize--lr:hover::after {
-  /* 调整纵向分隔线位置 */
   left: calc(var(--custom-panel-distance) / 2);
 }
+/* 移除原有分隔线 */
 .layout__resize::after {
-  /* 移除原有分隔线 */
   background-color: transparent;
+}
+
+/* 去除编辑器底部滑块 */
+.fn__flex-1 {
+  min-width: auto;
 }
