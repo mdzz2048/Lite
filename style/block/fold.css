@@ -32,7 +32,7 @@
 .protyle-wysiwyg [data-node-id].li[fold="1"]>.h5>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h5>[spellcheck])::after,
 .protyle-wysiwyg [data-node-id].li[fold="1"]>.h6>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h6>[spellcheck])::after,
 .protyle-wysiwyg [data-node-id].li[fold="1"]>.p>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.p>[spellcheck])::after {
-    content: "​​ ​​ · · ·​​ ​​ ​";
+    content: "  · · ·  ";
     font-family: "Trebuchet MS";
     display: inline;
     font-weight: bold;

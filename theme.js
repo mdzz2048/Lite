@@ -190,6 +190,6 @@ window.theme.changeThemeMode(
 
 /* ------------------------加载主题功能------------------------ */
 import(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"));
-
+import(window.theme.addURLParam("/appearance/themes/Lite/custom/fold-list-preview/main.js"))
 
 /* ------------------------测试用例------------------------ */
