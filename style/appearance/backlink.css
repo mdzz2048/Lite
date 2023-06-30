@@ -1,13 +1,19 @@
 /* ------------------------ 反链/提及面板 ------------------------ */
 
+/* 功能区和内容分离 */
+.sy__backlink .block__icons {
+    border-bottom: 1px solid var(--custom-components-deep);
+}
+.sy__backlink .block__icons:not(:first-child) {
+    border-top: 1px solid var(--custom-components-deep);
+}
+
 /* 编辑区取消外边距 */
 .backlinkList .protyle-content > .protyle-wysiwyg, 
 .backlinkMList .protyle-content > .protyle-wysiwyg {
     padding-top: 0 !important;
     margin: 0 !important;
 }
-
-/* 编辑区面包屑默认隐藏 */
 
 /* 反链面板卡片样式 */
 .backlinkList > .b3-list .b3-list-item:has(+.protyle:not(.fn__none)), 
@@ -17,14 +23,12 @@
     outline: solid 1px rgba(237, 236, 233);
     padding-top: 2px !important;
 }
-
 .backlinkList > .b3-list > .protyle, 
 .backlinkMList > .b3-list > .protyle {
     border-radius: 0 0 4px 4px;
     margin-bottom: 6px;
     outline: solid 1px rgba(230, 229, 225);
 }
-
 .backlinkList .protyle-breadcrumb__bar:not(:first-child) {
     padding-top: 3px;
     border-top: 1px solid rgba(237, 236, 233);
