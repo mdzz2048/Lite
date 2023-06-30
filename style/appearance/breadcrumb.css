@@ -25,3 +25,16 @@
 .protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item .protyle-breadcrumb__text:empty {
     margin-left: 0;
 }
+
+/* 退出聚焦按钮 */
+.block__icon--show[data-type="exit-focus"] {
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: var(--custom-button-background-color);
+    color: var(--b3-theme-background) !important;
+    box-shadow: rgb(15 15 15 / 10%) 0px 1px 2px;
+}
+.block__icon--show[data-type="exit-focus"]:hover {
+    border-radius: 5px!important;
+    background-color: var(--custom-button-hover-background-color)!important;
+}

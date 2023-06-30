@@ -177,6 +177,10 @@
     /* 边栏 */
     --custom-dock-background-color: var(--custom-components-light);
 
+    /* 按钮 */
+    --custom-button-background-color: #f55555;
+    --custom-button-hover-background-color: #d44444;
+
     /* ------------------------行内元素------------------------ */
 
     /* 块引用 */

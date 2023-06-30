@@ -168,6 +168,10 @@
     /* 拖拽线颜色 */
     --custom-striking-color: var(--b3-font-color12);
 
+    /* 按钮 */
+    --custom-button-background-color: #f55555;
+    --custom-button-hover-background-color: #d44444;
+
     /* ------------------------行内元素------------------------ */
 
     /* ------------------------块级元素------------------------ */
