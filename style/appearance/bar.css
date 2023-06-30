@@ -16,11 +16,11 @@
 	border-radius: 5px;
 	padding: 0 3px 0 7px;
 	margin: 0px 3px 0 2px;
-	background-color: var(--custom-button-background-color);
+	background-color: var(--custom-button-color-red);
 	box-shadow: 0px 0.3px 0.7px 0px rgb(0 0 0 / 12%), 0px 1.5px 2.8px 0px rgb(0 0 0 / 7%), 0px 4px 9px 0px rgb(0 0 0 / 5%);
 }
 #barWorkspace:hover{
-	background-color: var(--custom-button-hover-background-color) !important;
+	background-color: var(--custom-button-hover-color-red) !important;
 	transition: background-color .5s;
 }
 #barWorkspace .toolbar__text{

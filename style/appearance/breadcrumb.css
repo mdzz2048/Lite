@@ -30,11 +30,11 @@
 .block__icon--show[data-type="exit-focus"] {
     font-weight: 700;
     border-radius: 5px;
-    background-color: var(--custom-button-background-color);
+    background-color: var(--custom-button-color-red);
     color: var(--b3-theme-background) !important;
     box-shadow: rgb(15 15 15 / 10%) 0px 1px 2px;
 }
 .block__icon--show[data-type="exit-focus"]:hover {
     border-radius: 5px!important;
-    background-color: var(--custom-button-hover-background-color)!important;
+    background-color: var(--custom-button-hover-color-red)!important;
 }
