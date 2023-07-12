@@ -1,11 +1,5 @@
 /* ------------------------页签------------------------ */
 
-/* 页签 */
-.layout__center [data-type="wnd"][data-id] > .fn__flex:first-child {
-  justify-content: space-between;
-  background-color: var(--custom-tab-bar-background-color);
-}
-
 /* 页签多行显示 */
 .layout-tab-bar {
   flex-wrap: var(--custom-tab-bar-flex-wrap);
@@ -14,10 +8,9 @@
 
 /* 页签项 */
 .layout-tab-bar .item {
-  flex: none;
-  border: 1px solid var(--b3-list-hover);
-  border-radius: var(--custom-border-radius);
-  box-sizing: border-box;
+  box-shadow: inset 0 0 0 0.5px var(--custom-components-deep);
+  border-top-left-radius: var(--custom-border-radius);
+  border-top-right-radius: var(--custom-border-radius);
   min-height: var(--custom-tab-bar-min-height);
   max-width: none;
 }
@@ -68,11 +61,6 @@
   display: flex !important;
 }
 
-/* 移除控件与文档页签之间的距离 */
-.layout-tab-bar .item:last-child:not(.item--readonly) {
-  margin: 0;
-}
-
 /* 被选中的页签项 */
 .layout-tab-bar .item.item--focus {
   background-color: var(--b3-list-hover);
@@ -117,7 +105,7 @@
 
 /* 页签右侧菜单项分列两侧 */
 .layout-tab-bar .item.item--readonly {
-  border-left: none;
+  border-top-left-radius: 0px;
   justify-content: space-between;
   padding-left: 0px;
   background-color: var(--custom-tab-bar-background-color);

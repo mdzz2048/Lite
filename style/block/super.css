@@ -1,4 +1,4 @@
-/* 超级块 */
+/* ------------------------ 编辑器样式 ------------------------ */
 
 /* 超级块默认样式 */
 .protyle-wysiwyg [data-node-id].sb {
@@ -25,4 +25,18 @@
     padding: 0px;
     margin: 0px;
     box-shadow: none;
+}
+
+/* ------------------------ 导出预览样式 ------------------------ */
+
+/* 导出预览超级块不显示边框 */
+#preview.protyle-wysiwyg [data-node-id].sb {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+/* 保留鼠标悬停显示边框 */
+#preview.protyle-wysiwyg [data-node-id].sb:hover {
+    outline: 1.5px dashed var(--b3-tooltips-color);
 }

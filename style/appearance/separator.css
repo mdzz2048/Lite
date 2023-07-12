@@ -10,7 +10,7 @@
 /* 纵向分割线 */
 .layout__resize.layout__resize--lr {
   cursor: col-resize;
-  /* width: var(--custom-panel-distance); */
+  width: var(--custom-panel-distance);
   margin: 0 var(--custom-separator-distance-compensation);
   height: auto;
 }
