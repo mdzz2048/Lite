@@ -79,9 +79,6 @@
 
     /* 面包屑 */
 
-    /* 弹出窗口 */
-    --custom-popover-background-color: var(--custom-transparent-deeper);
-
     /* 弹出菜单 */
     --custom-popover-menu-background-color: var(--custom-components);
     --custom-popover-menu-hover-color: var(--b3-theme-background-light);

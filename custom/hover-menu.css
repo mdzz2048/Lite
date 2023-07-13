@@ -26,6 +26,7 @@
 }
 .hint--menu .b3-list-item {
   width: 100%!important;
+  padding: 0 4px !important;
 }
 .hint--menu .b3-list-item__text {
   margin:0 0 0 8px;
@@ -70,23 +71,21 @@
 }
 
 /* ------------------------引用块弹出框------------------------ */
-/* 块引用搜索菜单 */
-.protyle-hint {
-  width: 30vw
-}
 .protyle-hint > .b3-list-item {
   width: 100% !important;
+  padding: 3px;
+  margin: 3px 0 !important;
 }
 
 /* ------------------------模板预览------------------------ */
-/* 悬浮输入文本框 */
 .protyle .protyle-util {
-  background-color: var(--custom-popover-background-color);
+  background-color: var(--custom-popover-menu-background-color);
 }
+/* 模板预览展示区 */
 .protyle .protyle-util > .fn__flex > .fn__flex-column + div {
   width: var(--custom-template-preview-width) !important;
   min-width: var(--custom-template-preview-min-width);
 }
-.protyle .protyle-util textarea.b3-text-field {
-  background-color: transparent;
+.protyle .protyle-util .b3-list-item {
+  margin: 3px 0 !important;
 }
