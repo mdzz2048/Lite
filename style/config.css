@@ -1,5 +1,5 @@
 /* 命名方式: custom-位置-css语法 */
-:root {    
+:root {
     /* ------------------------自定义样式------------------------ */
     /* 块引用标记 */
     --custom-ref-l: "[[";
@@ -203,4 +203,10 @@
     /* REF [箭头图案 - Unicode 字符百科](https://unicode-table.com/cn/sets/arrow-symbols/) */
     /* ⭿ ⭱ ⭳ ↥ ↧ ↨ ⭻ ⇞ ⭽ ↕ ⇝ ⬳ ⟿ ⇼ ⮉ ⮋ ... */
     --custom-h-fold-mark: "⭿";
+}
+
+@font-face {
+    font-family: "quote";
+    font-style: normal;
+    src: url(/appearance/themes/Lite/fonts/LXGWWenKaiMono-Regular.ttf);
 }
