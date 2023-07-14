@@ -1,39 +1,17 @@
-/* 设置对话框 */
-
-/* 设置对话框尺寸 */
-body > .b3-dialog--open > .b3-dialog > .b3-dialog__container[style="width:80vw"] {
-  /* container 这个选择器对删除弹窗、属性弹窗也生效，需要通过内联属性进行区分 */
-  width: var(--custom-search-width) !important;
-  height: var(--custom-search-height) !important;
-  background-color: var(--custom-search-background-color);
-}
-
-/* 集市主题居中对齐 */
-body .b3-dialog > .b3-dialog__container .fn__flex-column .b3-cards {
-  justify-content: space-evenly;
-}
+/* ------------------------ 设置面板 ------------------------ */
 
 /* 隐藏关闭按钮 */
 .b3-dialog__container > .b3-dialog__close {
   display: none;
 }
 
-/* 输入框添加背景色 */
-.b3-dialog__container .b3-form__icon.search__header .b3-text-field.b3-form__icon-input {
-    background: var(--custom-search-background-color);
+/* 取消 hover-menu.css 的设置 */
+.b3-dialog__container .b3-list {
+  background-color: inherit;
+  outline: none;
 }
 
-/* 右侧的设置内容 */
-.b3-dialog__container .b3-tab-container {
-    height: calc(var(--custom-search-height) - 50px) !important;
-    overflow-y: scroll;
-    background-color: transparent;
-    border-left: 1px solid var(--custom-components-deep);
-}
-
-/* 左侧的设置列表 */
-.b3-dialog__container .b3-tab-bar.b3-list.b3-list--background {
-    height: calc(var(--custom-search-height) - 50px) !important;
-    /* width: 25vw !important; */
-    overflow-y: scroll;
+/* 左侧列表项 */
+.b3-dialog__container .b3-list-item {
+    margin: 3px 0 !important;
 }
