@@ -1,49 +1,51 @@
 /* ------------------------初始设置------------------------ */
-@import url(/appearance/themes/Lite/style/config.css);
+@import url(style/config.css);
+@import url(style/dark.css);
+@import url(style/light.css);
 
 /* ------------------------界面样式------------------------ */
 
-@import url(/appearance/themes/Lite/style/appearance/backlink.css);
-@import url(/appearance/themes/Lite/style/appearance/bar.css);
-@import url(/appearance/themes/Lite/style/appearance/breadcrumb.css);
-@import url(/appearance/themes/Lite/style/appearance/button.css);
-@import url(/appearance/themes/Lite/style/appearance/dock.css);
-@import url(/appearance/themes/Lite/style/appearance/editor.css);
-@import url(/appearance/themes/Lite/style/appearance/file-tree.css);
-@import url(/appearance/themes/Lite/style/appearance/hover-menu.css);
-@import url(/appearance/themes/Lite/style/appearance/outline.css);
-@import url(/appearance/themes/Lite/style/appearance/panel.css);
-@import url(/appearance/themes/Lite/style/appearance/print.css);
-@import url(/appearance/themes/Lite/style/appearance/separator.css);
-@import url(/appearance/themes/Lite/style/appearance/search.css);
-@import url(/appearance/themes/Lite/style/appearance/setting.css);
-@import url(/appearance/themes/Lite/style/appearance/tab-bar.css);
-@import url(/appearance/themes/Lite/style/appearance/tooltips.css);
+@import url(style/appearance/backlink.css);
+@import url(style/appearance/bar.css);
+@import url(style/appearance/breadcrumb.css);
+@import url(style/appearance/button.css);
+@import url(style/appearance/dock.css);
+@import url(style/appearance/editor.css);
+@import url(style/appearance/file-tree.css);
+@import url(style/appearance/hover-menu.css);
+@import url(style/appearance/outline.css);
+@import url(style/appearance/panel.css);
+@import url(style/appearance/print.css);
+@import url(style/appearance/separator.css);
+@import url(style/appearance/search.css);
+@import url(style/appearance/setting.css);
+@import url(style/appearance/tab-bar.css);
+@import url(style/appearance/tooltips.css);
 
 /* ------------------------行内元素------------------------ */
 
-@import url(/appearance/themes/Lite/style/inline/code.css);
-@import url(/appearance/themes/Lite/style/inline/img.css);
-@import url(/appearance/themes/Lite/style/inline/link-icon.css);
-@import url(/appearance/themes/Lite/style/inline/link.css);
-@import url(/appearance/themes/Lite/style/inline/mark.css);
-@import url(/appearance/themes/Lite/style/inline/ref.css);
+@import url(style/inline/code.css);
+@import url(style/inline/img.css);
+@import url(style/inline/link-icon.css);
+@import url(style/inline/link.css);
+@import url(style/inline/mark.css);
+@import url(style/inline/ref.css);
 
 /* ------------------------块级元素------------------------ */
 
-@import url(/appearance/themes/Lite/style/block/code.css);
-@import url(/appearance/themes/Lite/style/block/embed.css);
-@import url(/appearance/themes/Lite/style/block/fold.css);
-@import url(/appearance/themes/Lite/style/block/heading.css);
-@import url(/appearance/themes/Lite/style/block/hr.css);
-@import url(/appearance/themes/Lite/style/block/list.css);
-@import url(/appearance/themes/Lite/style/block/paragraph.css);
-@import url(/appearance/themes/Lite/style/block/quote.css);
-@import url(/appearance/themes/Lite/style/block/super.css);
+@import url(style/block/code.css);
+@import url(style/block/embed.css);
+@import url(style/block/fold.css);
+@import url(style/block/heading.css);
+@import url(style/block/hr.css);
+@import url(style/block/list.css);
+@import url(style/block/paragraph.css);
+@import url(style/block/quote.css);
+@import url(style/block/super.css);
 
 /* ------------------------自定义样式------------------------ */
 
-@import url(/appearance/themes/Lite/custom/hover-menu.css);
-@import url(/appearance/themes/Lite/custom/bullet/main.css);
+@import url(custom/hover-menu.css);
+@import url(custom/bullet/main.css);
 
 /* ------------------------测试用例------------------------ */

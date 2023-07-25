@@ -4,9 +4,6 @@
     /* 块引用标记 */
     --custom-ref-l: "[[";
     --custom-ref-r: "]]";
-
-    /* 阴影散布宽度 */
-    --custom-box-shadow-spread: 5px;
     
     /* 阴影颜色 */
     --custom-box-shadow-color: var(--b3-theme-on-background);
@@ -203,7 +200,7 @@
 }
 
 @font-face {
-    font-family: "quote";
+    font-family: "Microsoft Yahei";
     font-style: normal;
     src: url(/appearance/themes/Lite/fonts/LXGWWenKaiMono-Regular.ttf);
 }

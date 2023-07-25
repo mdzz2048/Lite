@@ -3,7 +3,6 @@
 .protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node {
     border-radius: 0px;
     background-color: var(--custom-block-embed-background-color) !important;
-    /* box-shadow: var(--b3-theme-on-surface-light) 0 0 svar(--custom-box-shadow-spread); */
     border: 2px solid var(--custom-line-color);
 }
 
