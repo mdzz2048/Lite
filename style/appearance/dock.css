@@ -28,9 +28,3 @@
   background-color: var(--custom-dock-background-color);
   background-image: var(--custom-background-image);
 }
-
-/* 边栏鼠标选择样式 */
-.fn__flex.fn__flex-1 .fn__flex-column .b3-list.b3-list--background li:hover {
-  border-radius: var(--custom-border-radius);
-  background-color: var(--custom-dock-hover-background-color);
-}

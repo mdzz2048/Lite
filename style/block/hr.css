@@ -1,6 +1,6 @@
-/* 水平分隔线 */
+/* ------------------------ 水平分隔线 ------------------------ */
 
 .b3-typography hr,
-.protyle-wysiwyg [data-node-id].hr>div {
+.protyle-wysiwyg [data-node-id].hr > div::after {
     border-bottom: 2px double var(--custom-line-color);
 }
