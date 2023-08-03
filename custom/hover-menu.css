@@ -18,6 +18,10 @@
 
 /* ------------------------'/'弹出分栏------------------------*/
 .hint--menu {
+  width: auto !important;
+}
+
+.hint--menu > div {
   columns: 50px 4;
   column-rule: var(--custom-list-guides-line-width) solid var(--b3-border-color);
   border:none;
@@ -42,14 +46,6 @@
   margin:0;
 }
 
-.protyle-hint.hint--menu:has(>.emojis) {
-  min-width: 372px;
-  width: 372px !important;
-}
-.protyle-hint.hint--menu>.emojis {
-  column-span: all;
-  width: 360px!important;
-}
 .emojis__item {
   height: 32px;
   line-height: 32px;
@@ -83,6 +79,7 @@
 }
 /* 模板预览展示区 */
 .protyle .protyle-util > .fn__flex > .fn__flex-column + div {
+  display: block !important;
   width: var(--custom-template-preview-width) !important;
   min-width: var(--custom-template-preview-min-width);
 }
