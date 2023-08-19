@@ -16,7 +16,6 @@
 @import url(style/appearance/outline.css);
 @import url(style/appearance/panel.css);
 @import url(style/appearance/print.css);
-@import url(style/appearance/separator.css);
 @import url(style/appearance/search.css);
 @import url(style/appearance/setting.css);
 @import url(style/appearance/tab-bar.css);
@@ -47,5 +46,6 @@
 
 @import url(custom/hover-menu.css);
 @import url(custom/bullet/main.css);
+@import url(custom/flashcard.css);
 
 /* ------------------------测试用例------------------------ */
