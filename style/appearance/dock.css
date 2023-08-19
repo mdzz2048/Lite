@@ -1,4 +1,4 @@
-/* ------------------------侧边菜单栏------------------------ */
+/* ------------------------ 侧边菜单栏 ------------------------ */
 
 .dock#dockTop,
 .dock#dockBottom,
@@ -6,6 +6,16 @@
 .dock#dockRight {
   background-color: var(--custom-dock-background-color);
   border:0;
+}
+.dock#dockLeft,
+.dock#dockRight{
+	width: var(--custom-dock-width);
+}
+.dock#dockLeft .dock__item,
+.dock#dockRight .dock__item {
+  margin: 7px var(--custom-dock-item-margin-width);
+  padding: 6px var(--custom-dock-item-padding-width);
+  justify-content: center;
 }
 .dock#dockTop .dock__item,
 .dock#dockBottom .dock__item {
