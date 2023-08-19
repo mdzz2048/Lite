@@ -2,30 +2,18 @@
   "name": "Lite",
   "author": "mdzz2048",
   "url": "https://github.com/mdzz2048/Lite",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "displayName": {
-    "default": "Lite",
-    "zh_CN": "轻"
+    "default": "Grey-Lite",
+    "zh_CN": "灰-"
   },
   "description": {
-    "default": "Lightweight",
-    "zh_CN": "轻量"
+    "default": "A gray-based theme",
+    "zh_CN": "一款以灰色为主色调的主题"
   },
   "readme": {
     "default": "README.md",
     "zh_CN": "README_zh_CN.md"
-  },
-  "i18n": [
-    "en_US",
-    "zh_CN"
-  ],
-  "funding": {
-    "openCollective": "",
-    "patreon": "",
-    "github": "",
-    "custom": [
-      "https://afdian.net/a/Savor"
-    ]
   },
   "modes": [
     "light",
