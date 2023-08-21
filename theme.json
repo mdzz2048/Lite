@@ -8,8 +8,8 @@
     "zh_CN": "灰-"
   },
   "description": {
-    "default": "A gray-based theme",
-    "zh_CN": "一款以灰色为主色调的主题"
+    "default": "This is a two-color theme, does not contain any JS components",
+    "zh_CN": "这是一款双色主题，不包含任何 JS 成分"
   },
   "readme": {
     "default": "README.md",
