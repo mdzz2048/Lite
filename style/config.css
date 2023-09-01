@@ -202,5 +202,6 @@
 @font-face {
     font-family: 'quote';
     font-style: normal;
-    src: url(/appearance/themes/Lite/fonts/LXGWWenKaiMono-Regular.ttf);
+    /* src: url(../fonts/LXGWWenKaiMono-Regular.ttf); */
+    src: url(../fonts/LXGWWenKaiGBScreenR.ttf);
 }
