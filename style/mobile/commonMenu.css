@@ -1,0 +1,6 @@
+/* ------------------------ 文档菜单 ------------------------ */
+
+/* 设置菜单项背景色 */
+#commonMenu .b3-menu__item {
+    background-color: var(--custom-popover-menu-background-color);
+}

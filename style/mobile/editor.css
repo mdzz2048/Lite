@@ -1,0 +1,40 @@
+/* ------------------------ 编辑器 ------------------------ */
+
+/* ------------------------ 移除编辑区外边距 ------------------------ */
+/* body:has(#sidebar) > #editor .protyle-content > .protyle-wysiwyg {
+    margin: 0;
+} */
+
+/* ------------------------ 减少列表缩进距离 ------------------------ */
+/* 小圆点 */
+body:has(#sidebar) > #editor .protyle-wysiwyg [data-node-id].li > .protyle-action {
+    width: 24px;
+}
+
+/* 列表块 */
+body:has(#sidebar) > #editor .protyle-wysiwyg [data-node-id].li > .list {
+    margin-left: 12px !important;
+    padding-left: 0;
+}
+
+/* 列表块内容 */
+body:has(#sidebar) > #editor .protyle-wysiwyg [data-node-id].li > [data-node-id] {
+    margin-left: 24px !important;
+}
+
+/* 列表辅助线 */
+body:has(#sidebar) > #editor .protyle-wysiwyg [data-node-id].li:before {
+    left: 12px;
+}
+
+/* ------------------------ 图片居中显示 ------------------------ */
+body:has(#sidebar) > #editor .b3-typography div > span:has(.img), 
+body:has(#sidebar) > #editor .protyle-wysiwyg div > span:has(.img) {
+    display: flex;
+    justify-content: center;
+}
+
+body:has(#sidebar) > #editor .b3-typography span.img img:not(.emoji),
+body:has(#sidebar) > #editor .protyle-wysiwyg span.img img:not(.emoji) {
+    max-width: 100%;
+}

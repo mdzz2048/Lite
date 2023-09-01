@@ -1,0 +1,6 @@
+/* ------------------------ 右侧边栏 ------------------------ */
+
+/* 设置菜单项背景色 */
+#menu .b3-menu__item {
+    background-color: var(--custom-popover-menu-background-color);
+}

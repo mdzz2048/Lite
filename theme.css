@@ -1,9 +1,9 @@
-/* ------------------------初始设置------------------------ */
+/* ------------------------ 初始设置 ------------------------ */
 @import url(style/config.css);
 @import url(style/dark.css);
 @import url(style/light.css);
 
-/* ------------------------界面样式------------------------ */
+/* ------------------------ 界面样式 ------------------------ */
 
 @import url(style/appearance/backlink.css);
 @import url(style/appearance/bar.css);
@@ -21,7 +21,7 @@
 @import url(style/appearance/tab-bar.css);
 @import url(style/appearance/tooltips.css);
 
-/* ------------------------行内元素------------------------ */
+/* ------------------------ 行内元素 ------------------------ */
 
 @import url(style/inline/code.css);
 @import url(style/inline/img.css);
@@ -30,7 +30,7 @@
 @import url(style/inline/mark.css);
 @import url(style/inline/ref.css);
 
-/* ------------------------块级元素------------------------ */
+/* ------------------------ 块级元素 ------------------------ */
 
 @import url(style/block/code.css);
 @import url(style/block/embed.css);
@@ -42,10 +42,17 @@
 @import url(style/block/quote.css);
 @import url(style/block/super.css);
 
-/* ------------------------自定义样式------------------------ */
+/* ------------------------ 自定义样式 ------------------------ */
 
 @import url(custom/hover-menu.css);
 @import url(custom/bullet/main.css);
 @import url(custom/flashcard.css);
 
-/* ------------------------测试用例------------------------ */
+/* ------------------------ 移动端优化 ------------------------ */
+@import url(style/mobile/commonMenu.css);
+@import url(style/mobile/editor.css);
+@import url(style/mobile/menu.css);
+@import url(style/mobile/sidebar.css);
+@import url(style/mobile/toolbar.css);
+
+/* ------------------------ 测试用例 ------------------------ */

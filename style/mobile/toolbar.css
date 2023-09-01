@@ -1,0 +1,6 @@
+/* ------------------------ 顶栏 ------------------------ */
+
+/* 设置顶部工具栏背景色 */
+body:has(#sidebar) > .toolbar {
+    background-color: var(--custom-editor-background-color);
+}
