@@ -3,22 +3,22 @@
 
 /* ------------------------ 列表聚焦突出显示 ------------------------ */
 /* REF: https://ld246.com/article/1692182461117 */
+/* 隐藏左侧列表标识线 */
 .protyle-wysiwyg > [data-node-id].li:before {
-  /* 隐藏左侧列表标识线 */
   display: none;
 }
+/*默认隐藏子弹头*/
 .protyle-wysiwyg > [data-node-id].li > .protyle-action {
-  /*默认隐藏子弹头*/
   opacity: 0;
 }
+/* 第一级突出显示 */
 .protyle-wysiwyg > [data-node-id].li > :nth-child(2) {
-  /* 第一级突出显示 */
   font-size: 1.5em;
   font-weight: bold;
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
+/* 减少第一级左侧缩进 */
 .protyle-wysiwyg > [data-node-id].li > [data-node-id] {
-  /* 减少第一级左侧缩进 */
   margin-left: 3px !important;
   padding-left: 3px;
 }
