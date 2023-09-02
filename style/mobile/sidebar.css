@@ -5,6 +5,11 @@
     -webkit-line-clamp: 2;
 } */
 
+/* 增大展开按钮点击面积 */
+#sidebar > .b3-list--mobile .b3-list-item__toggle {
+    padding: 8px;
+}
+
 /* ------------------------ 聚焦内容突出显示 ------------------------ */
 
 /* 取消聚焦内容左侧边距 */
@@ -12,7 +17,7 @@
 .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) > 
 span[style]:has(.b3-list-item__arrow--open) {
     /* 仅在展开的时候取消缩进 */
-    padding-left: 4px !important;
+    padding-left: 8px !important;
 }
 
 /* 取消聚焦子集左侧边距 */
