@@ -63,5 +63,5 @@
 
 .protyle-wysiwyg [data-node-id] [spellcheck][contenteditable]:empty:before {
     content: "键入文字";
-    opacity: 0.5;
+    color: var(--b3-theme-on-surface-light);
 }
