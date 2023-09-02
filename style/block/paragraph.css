@@ -1,4 +1,6 @@
-/* 块全局样式 */
+/* ------------------------ 段落块 ------------------------ */
+
+/* ------------------------ 块行线 ------------------------ */
 
 /* 段落块行线 */
 .p {
@@ -55,4 +57,11 @@
 .protyle-content [custom-type~=map] [data-node-id].li .p {
     padding-bottom: 0px !important;
     border-bottom: none !important;
+}
+
+/* ------------------------ 空块提示 ------------------------ */
+
+.protyle-wysiwyg [data-node-id] [spellcheck][contenteditable]:empty:before {
+    content: "键入文字";
+    opacity: 0.5;
 }
