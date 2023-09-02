@@ -1,30 +1,14 @@
-/* 折叠样式
- * REF https://github.com/UserZYF/zhang-light/blob/d309151036bafe324bcf9eb754829ebc93a88d03/theme.css#L1661
- */
+/* ------------------------ 折叠样式 ------------------------ */
 
-/* ------------------------标题块折叠------------------------ */
+/* ------------------------ 标题块折叠 ------------------------ */
 
-.protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeHeading"]::before {
-    /* 移除子标题折叠原有样式 */
-    content: none;
-    height: auto;
-    width: auto;
-    background: none;
-    display: none;
-    position: static;
-    left: auto;
-    top: auto;
-    border-radius: 0;
-    margin-top: 0;
-}
-
-.protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeHeading"]::before {
-    /* 添加子标题折叠标记 */
+/* 添加子标题折叠标记 */
+.protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeHeading"] > [contenteditable][spellcheck]::before {
     content: var(--custom-h-fold-mark);
-    margin-right: 3px;
 }
 
-/* ------------------------列表块折叠------------------------ */
+/* ------------------------ 列表块折叠 ------------------------ */
+
 .protyle-wysiwyg [data-node-id].li[fold="1"]>.h1>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h1>[spellcheck])::after,
 .protyle-wysiwyg [data-node-id].li[fold="1"]>.h2>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h2>[spellcheck])::after,
 .protyle-wysiwyg [data-node-id].li[fold="1"]>.h3>[spellcheck]:not(.fn__flex-1.history__text.protyle  [data-node-id].li[fold="1"]>.h3>[spellcheck])::after,
@@ -45,21 +29,27 @@
     border-radius: 5px;
 }
  
-/* ------------------------代码块折叠------------------------ */
+/* ------------------------ 代码块折叠 ------------------------ */
 
+/* 代码块 */
+.protyle-wysiwyg [data-node-id][fold="1"].code-block {
+    /* 原始高度 25px 最多显示一行内容 */
+    height: 70px !important;
+}
+
+/* 代码块功能按钮 */
 .protyle-wysiwyg [data-node-id][fold="1"].code-block > .protyle-action {
-    /* 代码块功能按钮 */
     top: 2px;
 }
 
+/* 代码块编辑区 */
 .protyle-wysiwyg [data-node-id][fold="1"].code-block > .hljs,
 .protyle-wysiwyg [data-node-id][fold="1"].code-block > .protyle-linenumber__rows {
-    /* 代码块编辑区 */
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
-/* ------------------------表格块折叠------------------------ */
+/* ------------------------ 表格块折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeTable"] {
     text-align: center;
@@ -68,7 +58,7 @@
     display: none;
 }
 
-/* ------------------------引述块折叠------------------------ */
+/* ------------------------ 引述块折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeBlockQueryEmbed"] {
     text-align: center;
@@ -82,7 +72,7 @@
     line-height: 100%;
 }
 
-/* ------------------------数学公式块折叠------------------------ */
+/* ------------------------ 数学公式块折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeMathBlock"] {
     text-align: center;
@@ -96,7 +86,7 @@
     line-height: 100%;
 }
 
-/* ------------------------image 折叠------------------------ */
+/* ------------------------ image 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"].p .img span {
     display: none;
@@ -106,7 +96,7 @@
     line-height: 100%;
 }
 
-/* ------------------------iframe 折叠------------------------ */
+/* ------------------------ iframe 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeIFrame"] {
     text-align: center;
@@ -120,7 +110,7 @@
     line-height: 100%;
 }
 
-/* ------------------------挂件折叠------------------------ */
+/* ------------------------ 挂件折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeWidget"] {
     text-align: center;
@@ -134,7 +124,7 @@
     line-height: 100%;
 }
 
-/* ------------------------音频块折叠------------------------ */
+/* ------------------------ 音频块折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeAudio"] {
     text-align: center;
@@ -148,7 +138,7 @@
     line-height: 100%;
 }
 
-/* ------------------------视频块折叠------------------------ */
+/* ------------------------ 视频块折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeVideo"] {
     text-align: center;
@@ -162,7 +152,7 @@
     line-height: 100%;
 }
 
-/* ------------------------plantuml 折叠------------------------ */
+/* ------------------------ plantuml 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="plantuml"] {
     text-align: center;
@@ -176,7 +166,7 @@
     line-height: 100%;
 }
 
-/* ------------------------flowchart 折叠------------------------ */
+/* ------------------------ flowchart 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="flowchart"] {
     text-align: center;
@@ -190,7 +180,7 @@
     line-height: 100%;
 }
 
-/* ------------------------echarts 折叠------------------------ */
+/* ------------------------ echarts 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="echarts"] {
     text-align: center;
@@ -204,7 +194,7 @@
     line-height: 100%;
 }
 
-/* ------------------------mindmap 折叠------------------------ */
+/* ------------------------ mindmap 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="mindmap"] {
     text-align: center;
@@ -218,7 +208,7 @@
     line-height: 100%;
 }
 
-/* ------------------------mermaid 折叠------------------------ */
+/* ------------------------ mermaid 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="mermaid"] {
     text-align: center;
@@ -232,7 +222,7 @@
     line-height: 100%;
 }
 
-/* ------------------------graphviz 折叠------------------------ */
+/* ------------------------ graphviz 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="graphviz"] {
     text-align: center;
@@ -246,7 +236,7 @@
     line-height: 100%;
 }
 
-/* ------------------------abc 折叠------------------------ */
+/* ------------------------ abc 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="abc"] {
     text-align: center;
@@ -260,7 +250,7 @@
     line-height: 100%;
 }
 
-/* ------------------------mermaid 折叠------------------------ */
+/* ------------------------ mermaid 折叠 ------------------------ */
 
 .protyle-wysiwyg [data-node-id][fold="1"][data-subtype="mermaid"][data-content^="flowchart LR"]::before,
 .protyle-wysiwyg .li [data-node-id][fold="1"][data-subtype="mermaid"][data-content^="flowchart LR"] div:first-child:before {
