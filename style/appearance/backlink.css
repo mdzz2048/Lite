@@ -26,8 +26,8 @@
 }
 
 /* 反链面板卡片样式 */
-.backlinkList > .b3-list .b3-list-item:has(+.protyle:not(.fn__none)), 
-.backlinkMList > .b3-list .b3-list-item:has(+.protyle:not(.fn__none)) {
+.backlinkList > .b3-list .b3-list-item, 
+.backlinkMList > .b3-list .b3-list-item {
     background-color: var(--b3-list-hover);
     border-radius: 4px 4px 0 0;
     outline: solid 1px var(--custom-components-deep);
