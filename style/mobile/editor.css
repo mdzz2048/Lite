@@ -1,41 +1,41 @@
 /* ------------------------ 编辑器 ------------------------ */
 
 /* ------------------------ 编辑区外边距 ------------------------ */
-body:has(#sidebar) > #editor .protyle-content > .protyle-wysiwyg {
+#sidebar ~ #editor .protyle-content > .protyle-wysiwyg {
     margin-left: 18px;
     margin-right: 18px;
 }
 
 /* ------------------------ 减少列表缩进距离 ------------------------ */
 /* 小圆点 */
-body:has(#sidebar) > #editor .protyle-wysiwyg [data-node-id].li > .protyle-action {
+#sidebar ~ #editor .protyle-wysiwyg [data-node-id].li > .protyle-action {
     width: 16px;
 }
 
 /* 列表块 */
-body:has(#sidebar) > #editor .protyle-wysiwyg [data-node-id].li > .list {
+#sidebar ~ #editor .protyle-wysiwyg [data-node-id].li > .list {
     margin-left: 8px !important;
     padding-left: 0;
 }
 
 /* 列表块内容 */
-body:has(#sidebar) > #editor .protyle-wysiwyg [data-node-id].li > [data-node-id] {
+#sidebar ~ #editor .protyle-wysiwyg [data-node-id].li > [data-node-id] {
     margin-left: 16px !important;
 }
 
 /* 列表辅助线 */
-body:has(#sidebar) > #editor .protyle-wysiwyg [data-node-id].li:before {
+#sidebar ~ #editor .protyle-wysiwyg [data-node-id].li:before {
     left: 8px;
 }
 
 /* ------------------------ 图片居中显示 ------------------------ */
-body:has(#sidebar) > #editor .b3-typography div > span:has(.img), 
-body:has(#sidebar) > #editor .protyle-wysiwyg div > span:has(.img) {
+#sidebar ~ #editor .b3-typography div > span:has(.img), 
+#sidebar ~ #editor .protyle-wysiwyg div > span:has(.img) {
     display: flex;
     justify-content: center;
 }
 
-body:has(#sidebar) > #editor .b3-typography span.img img:not(.emoji),
-body:has(#sidebar) > #editor .protyle-wysiwyg span.img img:not(.emoji) {
+#sidebar ~ #editor .b3-typography span.img img:not(.emoji),
+#sidebar ~ #editor .protyle-wysiwyg span.img img:not(.emoji) {
     max-width: 100%;
 }

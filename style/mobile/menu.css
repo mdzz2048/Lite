@@ -1,17 +1,17 @@
 /* ------------------------ 右侧边栏 ------------------------ */
 
 /* 设置菜单项背景色 */
-body:has(#sidebar) > #menu .b3-menu__item {
+#sidebar ~ #menu .b3-menu__item {
     background-color: var(--custom-popover-menu-background-color);
 }
 
-body:has(#sidebar) > #menu > .b3-menu__title {
+#sidebar ~ #menu > .b3-menu__title {
     background-color: var(--custom-popover-menu-background-color);
 }
 
-body:has(#sidebar) > #menu.b3-menu--fullscreen .b3-menu__item:first-child {
+#sidebar ~ #menu.b3-menu--fullscreen .b3-menu__item:first-child {
     border-top: none;
 }
-body:has(#sidebar) > #menu.b3-menu--fullscreen .b3-menu__items {
+#sidebar ~ #menu.b3-menu--fullscreen .b3-menu__items {
     padding: 0;
 }

@@ -1,26 +1,26 @@
 /* ------------------------ 文档菜单 ------------------------ */
 
 /* 设置菜单项背景色 */
-body:has(#sidebar) > #commonMenu .b3-menu__item {
+#sidebar ~ #commonMenu .b3-menu__item {
     background-color: var(--custom-popover-menu-background-color);
 }
 
 /* 设置菜单标题样式 */
-body:has(#sidebar) > #commonMenu > .b3-menu__title {
+#sidebar ~ #commonMenu > .b3-menu__title {
     border-top: 0.5px solid var(--custom-popover-menu-hover-color);
     border-bottom: 0.5px solid var(--custom-popover-menu-hover-color);
 }
 
 /* 半高显示 */
-body:has(#sidebar) > #commonMenu.b3-menu--fullscreen {
+#sidebar ~ #commonMenu.b3-menu--fullscreen {
     height: 50vh;
     transform: translateY(-50vh) !important;
     transition: none
 }
 
-body:has(#sidebar) > #commonMenu.b3-menu--fullscreen .b3-menu__item:first-child {
+#sidebar ~ #commonMenu.b3-menu--fullscreen .b3-menu__item:first-child {
     border-top: none;
 }
-body:has(#sidebar) > #commonMenu.b3-menu--fullscreen .b3-menu__items {
+#sidebar ~ #commonMenu.b3-menu--fullscreen .b3-menu__items {
     padding: 0;
 }
