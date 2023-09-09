@@ -1,5 +1,10 @@
 /* ------------------------ 编辑器 ------------------------ */
 
+/* 取消 [data-node-id] 的默认圆角样式 */
+#sidebar ~ #editor .protyle-wysiwyg [data-node-id].p {
+    border-radius: 0;
+}
+
 /* ------------------------ 编辑区外边距 ------------------------ */
 #sidebar ~ #editor .protyle-content > .protyle-wysiwyg {
     margin-left: 18px;
