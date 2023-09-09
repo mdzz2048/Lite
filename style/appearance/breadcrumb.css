@@ -26,6 +26,12 @@
     margin-left: 0;
 }
 
+/* 面包屑焦点 */
+.protyle-breadcrumb__item:hover, 
+.protyle-breadcrumb__item--active {
+    background-color: var(--custom-list-hover);
+}
+
 /* 退出聚焦按钮 */
 .protyle-breadcrumb__icon[data-type="exit-focus"] {
     font-weight: normal;

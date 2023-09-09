@@ -15,6 +15,11 @@
     border-radius: var(--custom-border-radius);
 }
 
+.b3-list--background .b3-list-item:hover:not(.b3-list-item--focus), 
+.b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
+    background-color: var(--custom-list-hover);
+}
+
 /* ------------------------行内样式选择面板------------------------ */
 /* 设置字体颜色背景色 */
 .color__square[style="color:var(--b3-font-color1)"] {

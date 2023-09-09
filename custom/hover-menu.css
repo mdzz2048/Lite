@@ -13,7 +13,7 @@
   background-color: var(--custom-popover-menu-background-color);
 }
 .b3-menu__item:hover {
-  background-color: var(--b3-list-hover);
+  background-color: var(--custom-list-hover);
 }
 
 /* ------------------------'/'弹出分栏------------------------*/

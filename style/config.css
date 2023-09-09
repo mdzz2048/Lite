@@ -95,6 +95,9 @@
     --custom-template-preview-width: 30vw;
     --custom-template-preview-min-width: none;
 
+    /* 列表聚焦项 */
+    --custom-list-hover: var(--b3-list-hover);
+
     /* ------------------------行内元素------------------------ */
     
     /* 标记 */

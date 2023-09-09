@@ -149,16 +149,16 @@
     /* ------------------------自定义样式------------------------ */
 
     /* 透明组件颜色 */
-    --custom-transparent-lighter: #2a2a2a15;
-    --custom-transparent-light: #2a2a2a45;
-    --custom-transparent: #2a2a2a75;
-    --custom-transparent-deep: #2a2a2aa5;
-    --custom-transparent-deeper: #2a2a2ad5;
+    --custom-transparent-lighter: rgba(42, 42, 42, 0.082);
+    --custom-transparent-light: rgba(42, 42, 42, 0.271);
+    --custom-transparent: rgba(42, 42, 42, 0.459);
+    --custom-transparent-deep: rgba(42, 42, 42, 0.647);
+    --custom-transparent-deeper: rgba(42, 42, 42, 0.835);
 
     /* 不透明的组件颜色 */
-    --custom-components-light: #031c25;
-    --custom-components: #16232f;
-    --custom-components-deep: #293241;
+    --custom-components-light: rgb(22, 35, 47);
+    --custom-components: rgb(2, 37, 53);
+    --custom-components-deep: rgb(43, 47, 49);
 
     /* ------------------------界面样式------------------------ */
 
@@ -178,20 +178,23 @@
     --custom-dock-background-color: var(--custom-components-light);
 
     /* 按钮 */
-    --custom-button-color-red: #f55555;
-    --custom-button-hover-color-red: #d44444;
-    --custom-button-color-blue: #128ddd;
-    --custom-button-hover-color-blue: #017ddd;
+    --custom-button-color-red: rgb(185, 55, 55);
+    --custom-button-hover-color-red: rgb(220, 55, 55);
+    --custom-button-color-blue: rgb(10, 140, 185);
+    --custom-button-hover-color-blue: rgb(10, 140, 220);
+
+    /* 列表聚焦项 */
+    --custom-list-hover: rgba(230, 230, 230, 0.1);
 
     /* ------------------------行内元素------------------------ */
 
     /* 块引用 */
-    --custom-span-block-ref-color: #70c4c4;
-    --custom-span-block-ref-hover-color: #517b8d;
+    --custom-span-block-ref-color: rgb(112, 196, 196);
+    --custom-span-block-ref-hover-color: rgb(81, 123, 141);
 
     /* 内部超链接 */
-    --custom-span-siyuan-link-color: #70c4c4;
-    --custom-span-siyuan-link-hover-color: #517b8d;
+    --custom-span-siyuan-link-color: rgb(112, 196, 196);
+    --custom-span-siyuan-link-hover-color: rgb(81, 123, 141);
 
     /* ------------------------块级元素------------------------ */
 

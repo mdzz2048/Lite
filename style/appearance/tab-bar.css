@@ -63,7 +63,7 @@
 
 /* 被选中的页签项 */
 .layout-tab-bar .item.item--focus {
-  background-color: var(--b3-list-hover);
+  background-color: var(--custom-list-hover);
   box-shadow: none !important;
 }
 /* 取消当前文档页签的下划线 */
@@ -73,7 +73,7 @@
 
 /* 多窗口被选中的页签项 */
 .layout__wnd--active .layout-tab-bar .item.item--focus {
-  background-color: var(--b3-list-hover);
+  background-color: var(--custom-list-hover);
   box-shadow: none !important;
 }
 
@@ -87,7 +87,7 @@
 /* 集市被选中的页签项 */
 .b3-dialog__container .layout-tab-bar .item.item--focus {
   flex: auto;
-  background-color: var(--b3-list-hover);
+  background-color: var(--custom-list-hover);
   box-shadow: none !important;
 }
 
