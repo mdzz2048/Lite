@@ -72,6 +72,12 @@
 	background-image: url(../../assets/icon/bilibili.ico) !important;
 }
 
+/* JinMan */
+.protyle-wysiwyg [data-type="a"][data-href*="18comic.org"]::before, 
+.protyle-wysiwyg [data-type="a"][data-href*="18comic.vip"]::before {
+	background-image: url(../../assets/icon/jinman.ico) !important;
+}
+
 /* GitHub */
 .protyle-wysiwyg [data-type="a"][data-href*="github.com"]::before {
 	background-image: url(../../assets/icon/github.ico) !important;
