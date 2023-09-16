@@ -1,4 +1,4 @@
-/* ------------------------嵌入块------------------------ */
+/* ------------------------ 嵌入块 ------------------------ */
 /* 嵌入块默认样式 */
 .protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node {
     border-radius: 0px;
@@ -15,4 +15,13 @@
 .protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node:hover {
     border-radius: 0px;
     border: 2px solid var(--b3-tooltips-color);
+}
+
+/* ------------------------ 只读模式 ------------------------ */
+/* 显示嵌入块工具栏 */
+.protyle-wysiwyg[custom-sy-readonly="true"] [data-node-id][data-type="NodeBlockQueryEmbed"] > .protyle-icons {
+    opacity: 1;
+}
+.protyle-wysiwyg[custom-sy-readonly="true"] [data-node-id][data-type="NodeBlockQueryEmbed"] > .protyle-icons > .protyle-action__edit {
+    display: none;
 }
