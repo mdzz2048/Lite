@@ -1,0 +1,29 @@
+/* ------------------------ 文档菜单 ------------------------ */
+
+#sidebar ~ #commonMenu {
+    
+    // 设置菜单项背景色
+    .b3-menu__item {
+        background-color: var(--custom-popover-menu-background-color);
+    }
+    
+    // 设置菜单标题样式
+    > .b3-menu__title {
+        border-top: 0.5px solid var(--custom-popover-menu-hover-color);
+        border-bottom: 0.5px solid var(--custom-popover-menu-hover-color);
+    } 
+    
+    // 半高显示
+    &.b3-menu--fullscreen {
+        height: 50vh;
+        transform: translateY(-50vh) !important;
+        transition: none;
+        
+        .b3-menu__item:first-child {
+            border-top: none;
+        }
+        .b3-menu__items {
+            padding: 0;
+        }
+    }
+}
