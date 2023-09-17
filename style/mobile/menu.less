@@ -1,0 +1,24 @@
+/* ------------------------ 右侧边栏 ------------------------ */
+
+#sidebar ~ #menu {
+
+    // 设置菜单项样式
+    .b3-menu__item {
+        background-color: var(--custom-popover-menu-background-color);
+    }
+    // 设置菜单标题样式
+    > .b3-menu__title {
+        background-color: var(--custom-popover-menu-background-color);
+    }
+
+    &.b3-menu--fullscreen {
+        // 取消顶部边距
+        .b3-menu__item:first-child {
+            border-top: none;
+        }
+        // 取消菜单项间距
+        .b3-menu__items {
+            padding: 0;
+        }
+    }
+}
