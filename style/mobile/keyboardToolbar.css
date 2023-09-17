@@ -1,15 +1,10 @@
 /* ------------------------ 按键工具栏 ------------------------ */
-
-/* 设置工具栏菜单栏背景色 */
 #sidebar ~ #keyboardToolbar > .keyboard__util .keyboard__slash-item {
-    background-color: var(--custom-popover-menu-background-color);
+  background-color: var(--custom-popover-menu-background-color);
 }
-
-/* 减小工具栏边距 */
-#sidebar ~ #keyboardToolbar > .keyboard__bar .keyboard__action:not([data-type=done]) svg  {
-    margin: 6px 4px;
+#sidebar ~ #keyboardToolbar > .keyboard__bar .keyboard__action:not([data-type=done]) svg {
+  margin: 6px 4px;
 }
-
-#sidebar ~ #keyboardToolbar > .keyboard__bar .keyboard__action svg.keyboard__svg--big  {
-    margin: 2px 0;
+#sidebar ~ #keyboardToolbar > .keyboard__bar .keyboard__action svg.keyboard__svg--big {
+  margin: 2px 0;
 }
