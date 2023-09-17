@@ -8,23 +8,24 @@
     }
 
     // 聚焦文档突出显示
-    .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
+    .b3-list--background .b3-list-item--focus[data-type="navigation-file"]:not(.dragover):not(.dragover__top):not(.dragover__bottom) {
         
         // 展开子文档时，取消左侧边距
         > span[style]:has(.b3-list-item__arrow--open) {
             padding-left: 8px !important;
         }
-        // 取消子文档左侧边距
-        + ul > .b3-list-item > span[style] {
-            padding-left: 24px !important;
-        }
-
-        // 展开子文档时，增加突出显示框
+        // 展开子文档时，增加突出显示框-上半
         &:has(span[style] > .b3-list-item__arrow--open) {
             border-top: 2px solid var(--custom-popover-menu-outline-color);
         }
-        &[data-type="navigation-file"] + ul {
+        + ul {
+            // 展开子文档时，增加突出显示框-下半
             border-bottom: 2px solid var(--custom-popover-menu-outline-color);
+            
+            // 取消子文档左侧边距
+            > .b3-list-item > span[style] {
+                padding-left: 24px !important;
+            }
         }
     }
 }
