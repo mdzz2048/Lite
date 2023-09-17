@@ -1,0 +1,33 @@
+/* ------------------------ 嵌入块 ------------------------ */
+
+.protyle-wysiwyg {
+    // 编辑模式
+    .render-node[data-node-id][data-type="NodeBlockQueryEmbed"] {
+        // 嵌入块默认样式
+        border-radius: 0px;
+        background-color: var(--custom-block-embed-background-color) !important;
+        border: 2px solid var(--custom-line-color);
+
+        + [data-node-id][data-type="NodeBlockQueryEmbed"] {
+            // 两个连续的嵌入块
+            margin-top: 0.5em;
+        }
+
+        &:hover {
+            // 嵌入块鼠标悬浮样式
+            border: 2px solid var(--b3-theme-on-surface);
+        }
+    }
+}
+
+.protyle-wysiwyg[custom-sy-readonly="true"] {
+    // 只读模式
+    .render-node[data-node-id][data-type="NodeBlockQueryEmbed"] > .protyle-icons {
+        // 只读模式显示嵌入块工具栏
+        opacity: 1;
+    
+        > .protyle-action__edit {
+            display: none;
+        }
+    } 
+}
