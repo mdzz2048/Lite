@@ -1,0 +1,55 @@
+/* ------------------------ 编辑器 ------------------------ */
+
+#editor {
+
+    .protyle-content {
+
+        // 重设编辑区外边距
+        > .protyle-wysiwyg {
+            margin-left: 18px;
+            margin-right: 18px;
+        }
+    }
+
+    .protyle-wysiwyg {
+
+        // 取消 [data-node-id] 的默认圆角样式
+        [data-node-id].p {
+            border-radius: 0;
+        }
+
+        // 减少列表缩进
+        [data-node-id].li {
+            
+            // 小圆点
+            > .protyle-action {
+                width: 16px;
+            }
+            // 列表块
+            > .list {
+                margin-left: 8px !important;
+                padding-left: 0;
+            }
+            // 列表块内容
+            > [data-node-id] {
+                margin-left: 16px !important;
+            }
+            // 列表辅助线
+            &::before {
+                left: 8px;
+            }
+        }
+
+        // 图片居中显示
+        [data-node-id] > [contenteditable][spellcheck] {
+
+            span.img > img:not(.emoji) {
+                max-width: 100%;
+            }
+            &:has(span.img) {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

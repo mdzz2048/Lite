@@ -1,46 +1,28 @@
 /* ------------------------ 编辑器 ------------------------ */
-
-/* 取消 [data-node-id] 的默认圆角样式 */
-#sidebar ~ #editor .protyle-wysiwyg [data-node-id].p {
-    border-radius: 0;
+#editor .protyle-content > .protyle-wysiwyg {
+  margin-left: 18px;
+  margin-right: 18px;
 }
-
-/* ------------------------ 编辑区外边距 ------------------------ */
-#sidebar ~ #editor .protyle-content > .protyle-wysiwyg {
-    margin-left: 18px;
-    margin-right: 18px;
+#editor .protyle-wysiwyg [data-node-id].p {
+  border-radius: 0;
 }
-
-/* ------------------------ 减少列表缩进距离 ------------------------ */
-/* 小圆点 */
-#sidebar ~ #editor .protyle-wysiwyg [data-node-id].li > .protyle-action {
-    width: 16px;
+#editor .protyle-wysiwyg [data-node-id].li > .protyle-action {
+  width: 16px;
 }
-
-/* 列表块 */
-#sidebar ~ #editor .protyle-wysiwyg [data-node-id].li > .list {
-    margin-left: 8px !important;
-    padding-left: 0;
+#editor .protyle-wysiwyg [data-node-id].li > .list {
+  margin-left: 8px !important;
+  padding-left: 0;
 }
-
-/* 列表块内容 */
-#sidebar ~ #editor .protyle-wysiwyg [data-node-id].li > [data-node-id] {
-    margin-left: 16px !important;
+#editor .protyle-wysiwyg [data-node-id].li > [data-node-id] {
+  margin-left: 16px !important;
 }
-
-/* 列表辅助线 */
-#sidebar ~ #editor .protyle-wysiwyg [data-node-id].li:before {
-    left: 8px;
+#editor .protyle-wysiwyg [data-node-id].li::before {
+  left: 8px;
 }
-
-/* ------------------------ 图片居中显示 ------------------------ */
-#sidebar ~ #editor .b3-typography div > span:has(.img), 
-#sidebar ~ #editor .protyle-wysiwyg div > span:has(.img) {
-    display: flex;
-    justify-content: center;
+#editor .protyle-wysiwyg [data-node-id] > [contenteditable][spellcheck] span.img > img:not(.emoji) {
+  max-width: 100%;
 }
-
-#sidebar ~ #editor .b3-typography span.img img:not(.emoji),
-#sidebar ~ #editor .protyle-wysiwyg span.img img:not(.emoji) {
-    max-width: 100%;
+#editor .protyle-wysiwyg [data-node-id] > [contenteditable][spellcheck]:has(span.img) {
+  display: flex;
+  align-items: center;
 }
