@@ -1,42 +1,16 @@
 /* ------------------------ 左侧边栏 ------------------------ */
-
-/* 长文档标题显示两行 */
-/* #sidebar .b3-list--background .b3-list-item__text{
-    -webkit-line-clamp: 2;
-} */
-
-/* 增大展开按钮点击面积 */
 #sidebar > .b3-list--mobile .b3-list-item__toggle {
-    padding: 8px;
+  padding: 8px;
 }
-
-/* ------------------------ 聚焦内容突出显示 ------------------------ */
-
-/* 取消聚焦内容左侧边距 */
-#sidebar .b3-list--background 
-.b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) > 
-span[style]:has(.b3-list-item__arrow--open) {
-    /* 仅在展开的时候取消缩进 */
-    padding-left: 8px !important;
+#sidebar .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) > span[style]:has(.b3-list-item__arrow--open) {
+  padding-left: 8px !important;
 }
-
-/* 取消聚焦子集左侧边距 */
-#sidebar .b3-list--background 
-.b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) + 
-ul > .b3-list-item > span[style] {
-    padding-left: 24px !important;
+#sidebar .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom) + ul > .b3-list-item > span[style] {
+  padding-left: 24px !important;
 }
-
-/* 增加突出显示框 */
-#sidebar .b3-list--background 
-.b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom):has(span[style] > .b3-list-item__arrow--open) {
-    /* 仅在展开的时候添加突出显示框 */
-    border-top: 2px solid var(--custom-popover-menu-outline-color);
+#sidebar .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom):has(span[style] > .b3-list-item__arrow--open) {
+  border-top: 2px solid var(--custom-popover-menu-outline-color);
 }
-
-#sidebar .b3-list--background 
-.b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom)[data-type="navigation-file"] + 
-ul {
-    /* 仅在展开文档时添加突出显示框 */
-    border-bottom: 2px solid var(--custom-popover-menu-outline-color);
+#sidebar .b3-list--background .b3-list-item--focus:not(.dragover):not(.dragover__top):not(.dragover__bottom)[data-type="navigation-file"] + ul {
+  border-bottom: 2px solid var(--custom-popover-menu-outline-color);
 }
