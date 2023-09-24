@@ -65,6 +65,11 @@
 	background-image: url(../../assets/icon/tencentcloud.ico) !important;
 }
 
+/* 豌豆荚 */
+.protyle-wysiwyg [data-type="a"][data-href*="wandoujia.com"]::before {
+	background-image: url(../../assets/icon/wandoujia.ico) !important;
+}
+
 /* 微信读书 */
 .protyle-wysiwyg [data-type="a"][data-href*="weread.qq.com"]::before {
 	background-image: url(../../assets/icon/weread.ico) !important;
@@ -73,6 +78,16 @@
 /* 微信公众号 */
 .protyle-wysiwyg [data-type="a"][data-href*="mp.weixin.qq.com"]::before {
 	background-image: url(../../assets/icon/mp-weixin-qq.ico) !important;
+}
+
+/* 小众软件 */
+.protyle-wysiwyg [data-type="a"][data-href*="appinn.com"]::before {
+	background-image: url(../../assets/icon/xiaozhongruanjian.ico) !important;
+}
+
+/* 异次元 */
+.protyle-wysiwyg [data-type="a"][data-href*="iplaysoft.com"]::before {
+	background-image: url(../../assets/icon/yiciyuan.ico) !important;
 }
 
 /* 知乎 */
