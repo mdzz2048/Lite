@@ -32,9 +32,15 @@
 	padding: 0;
 }
 
-/* ------------------------ 超链接图标 ------------------------ */
-/* 适配链接图标插件 */
+/* ------------------------ 超链接图标（适配链接图标插件） ------------------------ */
 
+/* ------------------------ 1. 软件 URL Scheme------------------------ */
+/* BookxNote */
+.protyle-wysiwyg [data-type="a"][data-href^="bookxnotepro:"]::before {
+	background-image: url(../../assets/icon/bookxnote.ico) !important;
+}
+
+/* ------------------------ 2. 网页 URL ------------------------ */
 /* 博客园 */
 .protyle-wysiwyg [data-type="a"][data-href*="cnblogs.com"]::before {
 	background-image: url(../../assets/icon/cnblogs.ico) !important;
