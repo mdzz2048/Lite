@@ -17,8 +17,8 @@
   content: "";
   height: 0.15em;
   width: 0.15em;
-  opacity: 0.75;
-  margin-left: 5px;
+  opacity: 0.35;
+  margin-left: 3px;
 }
 .protyle-wysiwyg [data-node-id].h2,
 .b3-typography h2 {
@@ -38,8 +38,8 @@
   content: "";
   height: 0.15em;
   width: 0.15em;
-  opacity: 0.75;
-  margin-left: 5px;
+  opacity: 0.35;
+  margin-left: 3px;
 }
 .protyle-wysiwyg [data-node-id].h3,
 .b3-typography h3 {
@@ -59,8 +59,8 @@
   content: "";
   height: 0.15em;
   width: 0.15em;
-  opacity: 0.75;
-  margin-left: 5px;
+  opacity: 0.35;
+  margin-left: 3px;
 }
 .protyle-wysiwyg [data-node-id].h4,
 .b3-typography h4 {
@@ -80,8 +80,8 @@
   content: "";
   height: 0.15em;
   width: 0.15em;
-  opacity: 0.75;
-  margin-left: 5px;
+  opacity: 0.35;
+  margin-left: 3px;
 }
 .protyle-wysiwyg [data-node-id].h5,
 .b3-typography h5 {
@@ -101,8 +101,8 @@
   content: "";
   height: 0.15em;
   width: 0.15em;
-  opacity: 0.75;
-  margin-left: 5px;
+  opacity: 0.35;
+  margin-left: 3px;
 }
 .protyle-wysiwyg [data-node-id].h6,
 .b3-typography h6 {
@@ -122,6 +122,6 @@
   content: "";
   height: 0.15em;
   width: 0.15em;
-  opacity: 0.75;
-  margin-left: 5px;
+  opacity: 0.35;
+  margin-left: 3px;
 }
