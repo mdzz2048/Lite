@@ -1,77 +1,96 @@
 /* ------------------------ 反链/提及面板 ------------------------ */
-
-/* 功能区和内容分离 */
 .sy__backlink .block__icons {
-    border-bottom: 1px solid var(--custom-components-deep);
+  box-shadow: inset 0px -1px 0px 0px var(--custom-components-deep);
 }
 .sy__backlink .block__icons:not(:first-child) {
-    border-top: 1px solid var(--custom-components-deep);
+  box-shadow: inset 0px -1px 0px 0px var(--custom-components-deep), inset 0px 1px 0px 0px var(--custom-components-deep);
 }
-
-/* 反链数量移至左侧 */
 .sy__backlink .block__icons .counter {
-    background-color: var(--custom-components-deep);
-    border-radius: 4px;
-    position: absolute;
-    padding: 0px;
-    width: 20px;
-    text-align: center;
+  background-color: var(--custom-components-deep);
+  border-radius: 4px;
+  position: absolute;
+  padding: 0px;
+  width: 20px;
+  text-align: center;
 }
-
-/* 编辑区取消外边距 */
-.backlinkList .protyle-content > .protyle-wysiwyg, 
+.backlinkList .protyle-content > .protyle-wysiwyg,
 .backlinkMList .protyle-content > .protyle-wysiwyg {
-    padding-top: 0 !important;
-    margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
-
-/* 反链面板卡片样式 */
-.backlinkList > .b3-list .b3-list-item, 
+.backlinkList > .b3-list,
+.backlinkMList > .b3-list {
+  outline: none;
+}
+.backlinkList > .b3-list .b3-list-item,
 .backlinkMList > .b3-list .b3-list-item {
-    background-color: var(--custom-list-hover);
-    border-radius: 4px 4px 0 0;
-    outline: solid 1px var(--custom-components-deep);
-    padding-top: 2px !important;
+  background-color: var(--custom-list-hover);
+  border-radius: 4px 4px 0 0;
+  outline: solid 1px var(--custom-components-deep);
+  padding-top: 2px !important;
 }
-.backlinkList > .b3-list > .protyle, 
+.backlinkList > .b3-list .b3-list-item + :is(.b3-list-item),
+.backlinkMList > .b3-list .b3-list-item + :is(.b3-list-item) {
+  margin-top: 10px !important;
+}
+.backlinkList > .b3-list > .protyle,
 .backlinkMList > .b3-list > .protyle {
-    border-radius: 0 0 4px 4px;
-    margin-bottom: 10px;
-    outline: solid 1px var(--custom-components-deep);
+  border-radius: 0 0 4px 4px;
+  margin-bottom: 10px;
+  outline: solid 1px var(--custom-components-deep);
 }
-.backlinkList .protyle-breadcrumb__bar:not(:first-child) {
-    padding-top: 3px;
-    border-top: 1px solid var(--custom-components-deep);
+.backlinkList .protyle-wysiwyg > [data-node-id],
+.backlinkMList .protyle-wysiwyg > [data-node-id] {
+  margin: 0 10px 0 24px;
 }
-
-/* ------------------------ 反链/提及面板面包屑 ------------------------ */
-
-/* 面包屑设置边距 */
-.backlinkList .protyle-breadcrumb__bar, 
-.backlinkMList .protyle-breadcrumb__bar {
-    padding: 0 4px;
+.backlinkList .protyle-wysiwyg > [data-node-id].li > .protyle-action,
+.backlinkMList .protyle-wysiwyg > [data-node-id].li > .protyle-action {
+  width: 24px;
 }
-
-/* 面包屑文字 */
-.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item, 
-.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item {
-    line-height: normal;
+.backlinkList .protyle-wysiwyg > [data-node-id].li > .list,
+.backlinkMList .protyle-wysiwyg > [data-node-id].li > .list {
+  margin-left: 12px !important;
+  padding-left: 0;
 }
-.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child, 
-.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child {
-    border-color: var(--b3-theme-on-surface);
+.backlinkList .protyle-wysiwyg > [data-node-id].li > [data-node-id],
+.backlinkMList .protyle-wysiwyg > [data-node-id].li > [data-node-id] {
+  margin-left: 24px !important;
 }
-
-/* 文档路径完整显示 */
-.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child,
-.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis, 
-.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child,
-.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis {
-    max-width: none;
+.backlinkList .protyle-wysiwyg > [data-node-id].li::before,
+.backlinkMList .protyle-wysiwyg > [data-node-id].li::before {
+  left: 12px;
 }
-
-/* 无内容的面包屑项 */
-.backlinkList .protyle-breadcrumb__bar .protyle-breadcrumb__item .protyle-breadcrumb__text:empty, 
-.backlinkMList .protyle-breadcrumb__bar .protyle-breadcrumb__item .protyle-breadcrumb__text:empty {
-    margin-left: 0;
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar {
+  padding: 0 3px;
+}
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item {
+  line-height: normal;
+}
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item .protyle-breadcrumb__item:first-child,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item .protyle-breadcrumb__item:first-child,
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis {
+  max-width: none;
+}
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item .protyle-breadcrumb__text:empty,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item .protyle-breadcrumb__text:empty {
+  margin-left: 0;
+}
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item:last-child,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item:last-child {
+  background-color: initial;
+}
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item:last-child:hover,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item:last-child:hover {
+  background-color: var(--custom-list-hover);
+}
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item:last-child .protyle-breadcrumb__text,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item:last-child .protyle-breadcrumb__text {
+  opacity: 0;
+}
+.backlinkList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item:last-child .protyle-breadcrumb__text:hover,
+.backlinkMList .protyle-wysiwyg > .protyle-breadcrumb__bar > .protyle-breadcrumb__item:last-child .protyle-breadcrumb__text:hover {
+  opacity: 1;
 }

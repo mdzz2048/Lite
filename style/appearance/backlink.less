@@ -1,0 +1,113 @@
+/* ------------------------ 反链/提及面板 ------------------------ */
+
+// 面板顶栏
+.sy__backlink .block__icons {
+    // 反链面板顶栏: 添加底部阴影
+    box-shadow: inset 0px -1px 0px 0px var(--custom-components-deep);
+    
+    // 提及面板顶栏: 添加顶部、底部阴影
+    &:not(:first-child) {
+        box-shadow: 
+            inset 0px -1px 0px 0px var(--custom-components-deep), 
+            inset 0px 1px 0px 0px var(--custom-components-deep);
+    }
+
+    // 反链/提及计数移至左侧
+    .counter {
+        background-color: var(--custom-components-deep);
+        border-radius: 4px;
+        position: absolute;
+        padding: 0px;
+        width: 20px;
+        text-align: center;
+    }
+}
+
+// 面板编辑区
+.backlinkList, 
+.backlinkMList {
+    // 取消编辑区外边距
+    .protyle-content > .protyle-wysiwyg {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    // 卡片样式
+    > .b3-list {
+        // 取消 hover-menu 文件设置的 outline
+        outline: none;
+        // 显示文档日期的顶栏
+        .b3-list-item {
+            background-color: var(--custom-list-hover);
+            border-radius: 4px 4px 0 0;
+            outline: solid 1px var(--custom-components-deep);
+            padding-top: 2px !important;
+            // 折叠反链卡片，添加外边距
+            & + :is(.b3-list-item) {
+                margin-top: 10px !important;
+            }
+        }
+        // 反链编辑器
+        > .protyle {
+            border-radius: 0 0 4px 4px;
+            margin-bottom: 10px;
+            outline: solid 1px var(--custom-components-deep);
+        }
+    }
+
+    // 编辑区
+    .protyle-wysiwyg > [data-node-id] {
+        margin: 0 10px 0 24px;
+        // 减少列表缩进
+        &.li {
+            // 小圆点
+            > .protyle-action {
+                width: 24px;
+            }
+            // 列表块
+            > .list {
+                margin-left: 12px !important;
+                padding-left: 0;
+            }
+            // 列表块内容
+            > [data-node-id] {
+                margin-left: 24px !important;
+            }
+            // 列表辅助线
+            &::before {
+                left: 12px;
+            }
+        }
+    }
+
+    // 面包屑
+    .protyle-wysiwyg > .protyle-breadcrumb__bar {
+        padding: 0 3px;
+        
+        > .protyle-breadcrumb__item {
+            line-height: normal;
+            // 文档路径完全显示
+            .protyle-breadcrumb__item:first-child, 
+            .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis {
+                max-width: none;
+            }
+            // 无内容面包屑
+            .protyle-breadcrumb__text:empty {
+                margin-left: 0;
+            }
+            // 面包屑最后一项
+            &:last-child {
+                background-color: initial;
+                &:hover {
+                    background-color: var(--custom-list-hover);
+                }
+                .protyle-breadcrumb__text {
+                    opacity: 0;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
