@@ -1,0 +1,29 @@
+/* ------------------------ 列表 ------------------------ */
+
+/* ------------------------ 列表聚焦突出显示 ------------------------ */
+
+// REF: https://ld246.com/article/1692182461117
+.protyle-content[data-fullwidth] { 
+    // 通过 data-fullwidth 属性排除反链面板
+
+    .protyle-wysiwyg > [data-node-id].li {
+        // 隐藏左侧列表标识线
+        &::before {
+            display: none;
+        }
+        // 默认隐藏子弹头
+        > .protyle-action {
+            opacity: 0;
+        }
+        // 第一级突出显示
+        > :nth-child(2) {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        // 减少第一级左侧缩进
+        > [data-node-id] {
+            margin-left: 3px !important;
+            padding-left: 3px;
+        }
+    }
+}

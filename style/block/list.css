@@ -1,65 +1,16 @@
 /* ------------------------ 列表 ------------------------ */
-
-
 /* ------------------------ 列表聚焦突出显示 ------------------------ */
-/* REF: https://ld246.com/article/1692182461117 */
-/* 隐藏左侧列表标识线 */
-.protyle-wysiwyg > [data-node-id].li:before {
+.protyle-content[data-fullwidth] .protyle-wysiwyg > [data-node-id].li::before {
   display: none;
 }
-/*默认隐藏子弹头*/
-.protyle-wysiwyg > [data-node-id].li > .protyle-action {
+.protyle-content[data-fullwidth] .protyle-wysiwyg > [data-node-id].li > .protyle-action {
   opacity: 0;
 }
-/* 第一级突出显示 */
-.protyle-wysiwyg > [data-node-id].li > :nth-child(2) {
+.protyle-content[data-fullwidth] .protyle-wysiwyg > [data-node-id].li > :nth-child(2) {
   font-size: 1.5em;
   font-weight: bold;
-  /* margin-left: 5px; */
 }
-/* 减少第一级左侧缩进 */
-.protyle-wysiwyg > [data-node-id].li > [data-node-id] {
+.protyle-content[data-fullwidth] .protyle-wysiwyg > [data-node-id].li > [data-node-id] {
   margin-left: 3px !important;
   padding-left: 3px;
-}
-
-
-
-/* ------------------------ 主题特性：自定义属性隐藏列表符号 ------------------------ */
-
-/* 自定义属性-隐藏子级列表) */
-/* 隐藏列表图标 */
-.protyle-wysiwyg [custom-list-hidden-child] > .li > .list > .li > .protyle-action > svg {
-  /* 使用 display 隐藏会影响按键操作：https://ld246.com/article/1664256259101 */
-  opacity: 0;
-}
-/* 缩小隐藏内容的占位 */
-.protyle-wysiwyg [custom-list-hidden-child] > .li > .list > .li > .protyle-action {
-  width: 8.5px;
-}
-.protyle-wysiwyg [custom-list-hidden-child] > .li > .list > .li > .p {
-  margin-left: 8.5px !important;
-}
-
-/* 自定义属性-隐藏下级列表) */
-/* 隐藏列表图标 */
-.protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li .protyle-action > svg {
-  opacity: 0;
-}
-/* 缩小隐藏内容的占位 */
-.protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li .protyle-action {
-  width: 8.5px;
-}
-.protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li .p {
-  margin-left: 8.5px !important;
-}
-.protyle-wysiwyg [custom-list-hidden-all] > .li > .list .list {
-  margin-left: 0px !important;
-}
-/* 隐藏列表辅助线 */
-.protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li > [data-node-id].list:before {
-  opacity: 0;
-}
-.protyle-wysiwyg [custom-list-hidden-all] > .li > .list .li > [data-node-id].p:before {
-  opacity: 0;
 }
