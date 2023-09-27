@@ -1,0 +1,37 @@
+/* ------------------------ 超链接 ------------------------ */
+
+.protyle-wysiwyg [data-node-id] span:not(:empty)[data-type='a'] {
+	color: var(--custom-span-siyuan-link-color);
+
+	&:hover {
+		color: var(--custom-span-siyuan-link-hover-color);
+	}
+}
+
+/* ------------------------ 思源块超链接 ------------------------ */
+.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty)[data-href^="siyuan:"]{
+
+	&::before {
+		/*前半部分的符号*/
+		content: var(--custom-link-l);
+		/*修改前半部分颜色*/
+		color: var(--b3-theme-on-surface-light);
+		display: inline-block;
+		text-align: center;
+		top: 0 !important;
+		width: inherit;
+		margin: 0 0 0 0.125em !important;
+		padding: 0;
+	}
+
+	&::after {
+		/*后半部分的符号*/
+		content: var(--custom-link-r);
+		/*修改前半部分颜色*/
+		color: var(--b3-theme-on-surface-light);
+		display: inline-block;
+		text-align: center;
+		margin: 0 0.125em 0 0 !important;
+		padding: 0;
+	}
+}

@@ -1,163 +1,30 @@
 /* ------------------------ 超链接 ------------------------ */
-
 .protyle-wysiwyg [data-node-id] span:not(:empty)[data-type='a'] {
-	color: var(--custom-span-siyuan-link-color);
+  color: var(--custom-span-siyuan-link-color);
 }
-
 .protyle-wysiwyg [data-node-id] span:not(:empty)[data-type='a']:hover {
-	color: var(--custom-span-siyuan-link-hover-color);
+  color: var(--custom-span-siyuan-link-hover-color);
 }
-
 /* ------------------------ 思源块超链接 ------------------------ */
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty)[data-href^="siyuan:"]::before {
-	/*前半部分的符号*/
-	content: var(--custom-link-l);
-	/*修改前半部分颜色*/
-	color: var(--b3-theme-on-surface-light);
-	display: inline-block;
-	text-align: center;
-	top: 0 !important;
-	width: inherit;
-	margin: 0 0 0 0.125em !important;
-	padding: 0;
+  /*前半部分的符号*/
+  content: var(--custom-link-l);
+  /*修改前半部分颜色*/
+  color: var(--b3-theme-on-surface-light);
+  display: inline-block;
+  text-align: center;
+  top: 0 !important;
+  width: inherit;
+  margin: 0 0 0 0.125em !important;
+  padding: 0;
 }
 .protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty)[data-href^="siyuan:"]::after {
-	/*后半部分的符号*/
-	content: var(--custom-link-r);
-	/*修改前半部分颜色*/
-	color: var(--b3-theme-on-surface-light);
-	display: inline-block;
-	text-align: center;
-	margin: 0 0.125em 0 0 !important;
-	padding: 0;
-}
-
-/* ------------------------ 超链接图标（适配链接图标插件） ------------------------ */
-
-/* ------------------------ 1. 软件 URL Scheme------------------------ */
-/* BookxNote */
-.protyle-wysiwyg [data-type="a"][data-href^="bookxnotepro:"]::before {
-	background-image: url(../../assets/icon/bookxnote.ico) !important;
-}
-
-/* ------------------------ 2. 网页 URL ------------------------ */
-/* 博客园 */
-.protyle-wysiwyg [data-type="a"][data-href*="cnblogs.com"]::before {
-	background-image: url(../../assets/icon/cnblogs.ico) !important;
-}
-
-/* 花瓣 */
-.protyle-wysiwyg [data-type="a"][data-href*="huaban.com"]::before {
-	background-image: url(../../assets/icon/huaban.ico) !important;
-}
-
-/* 简书 */
-.protyle-wysiwyg [data-type="a"][data-href*="jianshu.com"]::before {
-	background-image: url(../../assets/icon/jianshu.ico) !important;
-}
-
-/* 掘金 */
-.protyle-wysiwyg [data-type="a"][data-href*="juejin.cn"]::before {
-	background-image: url(../../assets/icon/juejin.ico) !important;
-}
-
-/* 阮一峰 */
-.protyle-wysiwyg [data-type="a"][data-href*="ruanyifeng.com"]::before {
-	background-image: url(../../assets/icon/ruanyifeng.ico) !important;
-}
-
-/* 腾讯云 */
-.protyle-wysiwyg [data-type="a"][data-href*="cloud.tencent.com"]::before {
-	background-image: url(../../assets/icon/tencentcloud.ico) !important;
-}
-
-/* 豌豆荚 */
-.protyle-wysiwyg [data-type="a"][data-href*="wandoujia.com"]::before {
-	background-image: url(../../assets/icon/wandoujia.ico) !important;
-}
-
-/* 微信读书 */
-.protyle-wysiwyg [data-type="a"][data-href*="weread.qq.com"]::before {
-	background-image: url(../../assets/icon/weread.ico) !important;
-}
-
-/* 微信公众号 */
-.protyle-wysiwyg [data-type="a"][data-href*="mp.weixin.qq.com"]::before {
-	background-image: url(../../assets/icon/mp-weixin-qq.ico) !important;
-}
-
-/* 小众软件 */
-.protyle-wysiwyg [data-type="a"][data-href*="appinn.com"]::before {
-	background-image: url(../../assets/icon/xiaozhongruanjian.ico) !important;
-}
-
-/* 异次元 */
-.protyle-wysiwyg [data-type="a"][data-href*="iplaysoft.com"]::before {
-	background-image: url(../../assets/icon/yiciyuan.ico) !important;
-}
-
-/* 知乎 */
-.protyle-wysiwyg [data-type="a"][data-href*="zhihu.com"]::before {
-	background-image: url(../../assets/icon/zhihu.ico) !important;
-}
-
-/* APIFox */
-.protyle-wysiwyg [data-type="a"][data-href*="apifox.com"]::before {
-	background-image: url(../../assets/icon/apifox.ico) !important;
-}
-
-/* BiliBili */
-.protyle-wysiwyg [data-type="a"][data-href*="bilibili.com"]::before {
-	background-image: url(../../assets/icon/bilibili.ico) !important;
-}
-
-/* FreeCodeCamp */
-.protyle-wysiwyg [data-type="a"][data-href*="freecodecamp.org"]::before {
-	background-image: url(../../assets/icon/freecodecamp.ico) !important;
-}
-
-/* GitHub */
-.protyle-wysiwyg [data-type="a"][data-href*="github.com"]::before {
-	background-image: url(../../assets/icon/github.ico) !important;
-}
-
-/* JinMan */
-.protyle-wysiwyg [data-type="a"][data-href*="18comic.org"]::before, 
-.protyle-wysiwyg [data-type="a"][data-href*="18comic.vip"]::before {
-	background-image: url(../../assets/icon/jinman.ico) !important;
-}
-
-/* Microsoft */
-.protyle-wysiwyg [data-type="a"][data-href*="microsoft.com"]::before {
-	background-image: url(../../assets/icon/microsoft.ico) !important;
-}
-
-/* Pixiv */
-.protyle-wysiwyg [data-type="a"][data-href*="pixiv.net"]::before {
-	background-image: url(../../assets/icon/pixiv.ico) !important;
-}
-
-/* QQ */
-.protyle-wysiwyg [data-type="a"][data-href*="im.qq.com"]::before {
-	background-image: url(../../assets/icon/qq.ico) !important;
-}
-
-/* Stack Flow */
-.protyle-wysiwyg [data-type="a"][data-href*="stackoverflow.com"]::before {
-	background-image: url(../../assets/icon/stack-overflow.ico) !important;
-}
-
-/* Telegram */
-.protyle-wysiwyg [data-type="a"][data-href*="telegram.org"]::before {
-	background-image: url(../../assets/icon/telegram.ico) !important;
-}
-
-/* WikiPedia-EN */
-.protyle-wysiwyg [data-type="a"][data-href*="en.wikipedia.org"]::before {
-	background-image: url(../../assets/icon/wikipedia.ico) !important;
-}
-
-/* YouTube */
-.protyle-wysiwyg [data-type="a"][data-href*="youtube.com"]::before {
-	background-image: url(../../assets/icon/youtube.ico) !important;
+  /*后半部分的符号*/
+  content: var(--custom-link-r);
+  /*修改前半部分颜色*/
+  color: var(--b3-theme-on-surface-light);
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.125em 0 0 !important;
+  padding: 0;
 }
