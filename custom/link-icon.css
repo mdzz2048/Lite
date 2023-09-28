@@ -34,6 +34,9 @@
 .protyle-wysiwyg [data-type="a"][data-href*="microsoft.com"]::before {
   background-image: url(../assets/icon/microsoft.ico) !important;
 }
+.protyle-wysiwyg [data-type="a"][data-href*="writeathon.cn"]::before {
+  background-image: url(../assets/icon/writeathon.ico) !important;
+}
 .protyle-wysiwyg [data-type="a"][data-href*="18comic.org"]::before,
 .protyle-wysiwyg [data-type="a"][data-href*="18comic.vip"]::before {
   background-image: url(../assets/icon/jinman.ico) !important;
