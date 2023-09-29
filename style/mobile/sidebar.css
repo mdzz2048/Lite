@@ -14,3 +14,11 @@
 #sidebar .b3-list--background .b3-list-item--focus[data-type="navigation-file"]:not(.dragover):not(.dragover__top):not(.dragover__bottom) + ul > .b3-list-item > span[style] {
   padding-left: 24px !important;
 }
+#sidebar[style="transform: translateX(0px);"]:has(:not(.fn__none)[data-type="sidebar-backlink"]) {
+  height: 50vh;
+  transform: translateY(50vh) !important;
+}
+#sidebar[style="transform: translateX(0px);"]:has(:not(.fn__none)[data-type="sidebar-backlink"]) > .b3-list--mobile > [data-type="sidebar-backlink"].fn__flex-column {
+  height: 50%;
+  min-height: auto !important;
+}

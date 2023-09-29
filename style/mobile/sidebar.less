@@ -28,4 +28,18 @@
             }
         }
     }
+
+    &[style="transform: translateX(0px);"]:has(:not(.fn__none)[data-type="sidebar-backlink"]) {
+        // 存在 style 属性表示面板打开
+        height: 50vh;
+        transform: translateY(50vh) !important;
+        // 设置反链面板内部样式
+        > .b3-list--mobile > [data-type="sidebar-backlink"] {
+            // 重设反链、提及高度
+            &.fn__flex-column {
+                height: 50%;
+                min-height: auto !important;
+            }
+        }
+    }
 }
