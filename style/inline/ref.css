@@ -1,9 +1,9 @@
 /* 块引用 */
 
-.protyle-wysiwyg [data-node-id] span[data-type="block-ref"] {
+.protyle-wysiwyg [data-node-id] span[data-type~="block-ref"] {
 	color: var(--custom-span-block-ref-color);
 }
-.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
+.protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::before {
 	/*前半部分的符号*/
 	content: var(--custom-ref-l);
 	/*修改前半部分颜色*/
@@ -13,7 +13,7 @@
 	margin: 0 0 0 0.125em;
 	padding: 0;
 } 
-.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::after {
+.protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::after {
 	/*后半部分的符号*/
 	content: var(--custom-ref-r);
 	/*后改前半部分颜色*/
@@ -23,6 +23,6 @@
 	margin: 0 0.125em 0 0;
 	padding: 0;
 }
-.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]:hover {
+.protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]:hover {
 	color:var(--custom-span-block-ref-hover-color);
 }
