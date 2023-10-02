@@ -47,6 +47,9 @@
 .protyle-wysiwyg [data-type="a"][data-href*="huaban.com"]::before {
   background-image: url(../assets/icon/huaban.ico) !important;
 }
+.protyle-wysiwyg [data-type="a"][data-href*="alphacoders.com"]::before {
+  background-image: url(../assets/icon/alphacoders.ico) !important;
+}
 .protyle-wysiwyg [data-type="a"][data-href*="jianshu.com"]::before {
   background-image: url(../assets/icon/jianshu.ico) !important;
 }
