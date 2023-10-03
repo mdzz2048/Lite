@@ -31,6 +31,10 @@
 .protyle-wysiwyg [data-type="a"][data-href*="apifox.com"]::before {
   background-image: url(../assets/icon/apifox.ico) !important;
 }
+.protyle-wysiwyg [data-type="a"][date-href*="hypothes.is"]::before,
+.protyle-wysiwyg [data-type="a"][data-href*="hyp.is"]::before {
+  background-image: url(../assets/icon/hypothesis.ico) !important;
+}
 .protyle-wysiwyg [data-type="a"][data-href*="microsoft.com"]::before {
   background-image: url(../assets/icon/microsoft.ico) !important;
 }
