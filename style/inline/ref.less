@@ -1,0 +1,29 @@
+/* ------------------------ 块引用 ------------------------ */
+
+.protyle-wysiwyg [data-node-id] span[data-type~="block-ref"] {
+	color: var(--custom-span-block-ref-color);
+
+	// 前半部分的符号
+	&::before {
+		content: var(--custom-ref-l);
+		color: var(--b3-theme-on-surface-light);
+		display: inline-block;
+		text-align: center;
+		margin: 0 0 0 0.125em;
+		padding: 0;
+	} 
+
+	// 后半部分的符号
+	&::after {
+		content: var(--custom-ref-r);
+		color: var(--b3-theme-on-surface-light);
+		display: inline-block;
+		text-align: center;
+		margin: 0 0.125em 0 0;
+		padding: 0;
+	}
+
+	&:hover {
+		color:var(--custom-span-block-ref-hover-color);
+	}
+}

@@ -1,28 +1,23 @@
-/* 块引用 */
-
+/* ------------------------ 块引用 ------------------------ */
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"] {
-	color: var(--custom-span-block-ref-color);
+  color: var(--custom-span-block-ref-color);
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::before {
-	/*前半部分的符号*/
-	content: var(--custom-ref-l);
-	/*修改前半部分颜色*/
-	color: var(--b3-theme-on-surface-light);
-	display: inline-block;
-	text-align: center;
-	margin: 0 0 0 0.125em;
-	padding: 0;
-} 
+  content: var(--custom-ref-l);
+  color: var(--b3-theme-on-surface-light);
+  display: inline-block;
+  text-align: center;
+  margin: 0 0 0 0.125em;
+  padding: 0;
+}
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]::after {
-	/*后半部分的符号*/
-	content: var(--custom-ref-r);
-	/*后改前半部分颜色*/
-	color: var(--b3-theme-on-surface-light);
-    display: inline-block;
-	text-align: center;
-	margin: 0 0.125em 0 0;
-	padding: 0;
+  content: var(--custom-ref-r);
+  color: var(--b3-theme-on-surface-light);
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.125em 0 0;
+  padding: 0;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]:hover {
-	color:var(--custom-span-block-ref-hover-color);
+  color: var(--custom-span-block-ref-hover-color);
 }
