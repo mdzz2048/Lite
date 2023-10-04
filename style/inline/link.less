@@ -9,12 +9,11 @@
 }
 
 /* ------------------------ 思源块超链接 ------------------------ */
-.protyle-wysiwyg [data-node-id] span[data-type="a"]:not(:empty)[data-href^="siyuan:"]{
+.protyle-wysiwyg [data-node-id] span[data-type~="a"]:not(:empty)[data-href^="siyuan:"]{
 
+	// 前半部分的符号
 	&::before {
-		/*前半部分的符号*/
 		content: var(--custom-link-l);
-		/*修改前半部分颜色*/
 		color: var(--b3-theme-on-surface-light);
 		display: inline-block;
 		text-align: center;
@@ -24,10 +23,9 @@
 		padding: 0;
 	}
 
+	// 后半部分的符号
 	&::after {
-		/*后半部分的符号*/
 		content: var(--custom-link-r);
-		/*修改前半部分颜色*/
 		color: var(--b3-theme-on-surface-light);
 		display: inline-block;
 		text-align: center;
