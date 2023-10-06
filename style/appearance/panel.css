@@ -1,8 +1,9 @@
-/* 面板全局设置 */
-
-/* 各区分栏 */
-[data-type='wnd'][data-id] {
-    min-height: 0%;
-    margin: var(--custom-panel-distance);
-    border-radius: var(--custom-border-radius);
+/* ------------------------ 面板全局设置 ------------------------ */
+.layout [data-type='wnd'][data-id] {
+  min-height: 0%;
+  margin: var(--custom-panel-distance);
+  border-radius: var(--custom-border-radius);
+}
+.layout.layout__center > div > [data-type='wnd'] {
+  margin: 0;
 }
