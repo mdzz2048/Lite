@@ -1,130 +1,74 @@
 /* ------------------------ 超链接图标 ------------------------ */
 
-/* ------------------------ URL Scheme------------------------ */
+.url(@type, @url, @icon) {
+    .style() {
+        & when (@type = "domain") {        
+            &[data-href*="@{url}"]::before {
+                background-image: @icon !important;
+            }
+        }
 
-.protyle-wysiwyg [data-type="a"] {    
-    // BookxNote
-    &[data-href^="bookxnotepro:"]::before {
-        background-image: url(../assets/icon/bookxnote.ico) !important;
+        & when (@type = "scheme") {
+            &[data-href^="@{url}"]::before {
+                background-image: @icon !important;
+            }
+        }
+    }
+
+    .protyle-wysiwyg [data-node-id] {
+        span[data-type~="a"], 
+        span[data-type~="url"] {
+            .style();
+        }
+    }
+
+    .b3-typography a {
+        .style();
     }
 }
 
+/* ------------------------ URL Scheme------------------------ */
+
+.url("scheme", "bookxnotepro:", url(../assets/icon/bookxnote.ico));
+
 /* ------------------------ Domain Name ------------------------ */
 
-.protyle-wysiwyg [data-type="a"] {
+// ------------ 百科网站 ------------
+.url("domain", "en.wikipedia.org", url(../assets/icon/wikipedia.ico));          // WikiPedia-EN
+// ------------ 包 ------------
+.url("domain", "npmjs.com", url(../assets/icon/npm.ico));                       // NPM
+// ------------ 编程学习 ------------
+.url("domain", "cnblogs.com", url(../assets/icon/cnblogs.ico));                 // 博客园
+.url("domain", "juejin.cn", url(../assets/icon/juejin.ico));                    // 掘金
+.url("domain", "ruanyifeng.com", url(../assets/icon/ruanyifeng.ico));           // 阮一峰
+.url("domain", "cloud.tencent.com", url(../assets/icon/tencentcloud.ico));      // 腾讯云
+.url("domain", "freecodecamp.org", url(../assets/icon/freecodecamp.ico));       // FreeCodeCamp
+// ------------ 工具官网 ------------
 
-    // ------------ 百科网站 ------------
-        // WikiPedia-EN
-        &[data-href*="en.wikipedia.org"]::before {
-            background-image: url(../assets/icon/wikipedia.ico) !important;
-        }
-    // ------------ 编程学习 ------------
-        // 博客园
-        &[data-href*="cnblogs.com"]::before {
-            background-image: url(../assets/icon/cnblogs.ico) !important;
-        }
-        // 掘金
-        &[data-href*="juejin.cn"]::before {
-            background-image: url(../assets/icon/juejin.ico) !important;
-        }
-        // 阮一峰
-        &[data-href*="ruanyifeng.com"]::before {
-            background-image: url(../assets/icon/ruanyifeng.ico) !important;
-        }
-        // 腾讯云
-        &[data-href*="cloud.tencent.com"]::before {
-            background-image: url(../assets/icon/tencentcloud.ico) !important;
-        }
-        // FreeCodeCamp
-        &[data-href*="freecodecamp.org"]::before {
-            background-image: url(../assets/icon/freecodecamp.ico) !important;
-        }
-    // ------------ 工具官网 ------------
-        // 豌豆荚
-        &[data-href*="wandoujia.com"]::before {
-            background-image: url(../assets/icon/wandoujia.ico) !important;
-        }
-        // 微信读书
-        &[data-href*="weread.qq.com"]::before {
-            background-image: url(../assets/icon/weread.ico) !important;
-        }
-        // APIFox
-        &[data-href*="apifox.com"]::before {
-            background-image: url(../assets/icon/apifox.ico) !important;
-        }
-        // Hypothesis
-        &[date-href*="hypothes.is"]::before, 
-        &[data-href*="hyp.is"]::before {
-            background-image: url(../assets/icon/hypothesis.ico) !important;
-        }
-        // Microsoft
-        &[data-href*="microsoft.com"]::before {
-            background-image: url(../assets/icon/microsoft.ico) !important;
-        }
-        // Writeathon
-        &[data-href*="writeathon.cn"]::before {
-            background-image: url(../assets/icon/writeathon.ico) !important;
-        }
-    // ------------ R18 ------------
-        // JinMan
-        &[data-href*="18comic.org"]::before, 
-        &[data-href*="18comic.vip"]::before {
-            background-image: url(../assets/icon/jinman.ico) !important;
-        }
-        // Pixiv
-        &[data-href*="pixiv.net"]::before {
-            background-image: url(../assets/icon/pixiv.ico) !important;
-        }
-    // ------------ 素材网站 ------------
-        // 花瓣
-        &[data-href*="huaban.com"]::before {
-            background-image: url(../assets/icon/huaban.ico) !important;
-        }
-        // AlphaCoders
-        &[data-href*="alphacoders.com"]::before {
-            background-image: url(../assets/icon/alphacoders.ico) !important;
-        }
-    // ------------ 社区/论坛 ------------
-        // 简书
-        &[data-href*="jianshu.com"]::before {
-            background-image: url(../assets/icon/jianshu.ico) !important;
-        }
-        // 微信公众号
-        &[data-href*="mp.weixin.qq.com"]::before {
-            background-image: url(../assets/icon/mp-weixin-qq.ico) !important;
-        }
-        // 小众软件
-        &[data-href*="appinn.com"]::before {
-            background-image: url(../assets/icon/xiaozhongruanjian.ico) !important;
-        }
-        // 异次元
-        &[data-href*="iplaysoft.com"]::before {
-            background-image: url(../assets/icon/yiciyuan.ico) !important;
-        }
-        // 知乎
-        &[data-href*="zhihu.com"]::before {
-            background-image: url(../assets/icon/zhihu.ico) !important;
-        }
-        // Stack Flow
-        &[data-href*="stackoverflow.com"]::before {
-            background-image: url(../assets/icon/stack-overflow.ico) !important;
-        }
-    // ------------ 社交平台 ------------
-        // QQ
-        &[data-href*="im.qq.com"]::before {
-            background-image: url(../assets/icon/qq.ico) !important;
-        }
-        // Telegram
-        &[data-href*="telegram.org"]::before {
-            background-image: url(../assets/icon/telegram.ico) !important;
-        }
-    // ------------ 视频网站 ------------
-        // BiliBili
-        &[data-href*="bilibili.com"]::before {
-            background-image: url(../assets/icon/bilibili.ico) !important;
-        }
-        // YouTube
-        &[data-href*="youtube.com"]::before {
-            background-image: url(../assets/icon/youtube.ico) !important;
-        }
-}
+.url("domain", "wandoujia.com", url(../assets/icon/wandoujia.ico));             // 豌豆荚
+.url("domain", "weread.qq.com", url(../assets/icon/weread.ico));                // 微信读书
+.url("domain", "apifox.com", url(../assets/icon/apifox.ico));                   // APIFox
+.url("domain", "hypothes.is", url(../assets/icon/hypothesis.ico));              // Hypothesis
+.url("domain", "hyp.is", url(../assets/icon/hypothesis.ico));
+.url("domain", "microsoft.com", url(../assets/icon/microsoft.ico));             // Microsoft
+.url("domain", "writeathon.cn", url(../assets/icon/writeathon.ico));            // Writeathon
+// ------------ R18 ------------
+.url("domain", "18comic.org", url(../assets/icon/jinman.ico));                  // JinMan
+.url("domain", "18comic.vip", url(../assets/icon/jinman.ico));
+// ------------ 素材网站 ------------
+.url("domain", "huaban.com", url(../assets/icon/huaban.ico));                   // 花瓣
+.url("domain", "alphacoders.com", url(../assets/icon/alphacoders.ico));         // AlphaCoders
+.url("domain", "pixiv.net", url(../assets/icon/pixiv.ico));                     // Pixiv
+// ------------ 社区/论坛 ------------
+.url("domain", "jianshu.com", url(../assets/icon/jianshu.ico));                 // 简书
+.url("domain", "mp.weixin.qq.com", url(../assets/icon/mp-weixin-qq.ico));       // 微信公众号
+.url("domain", "appinn.com", url(../assets/icon/xiaozhongruanjian.ico));        // 小众软件
+.url("domain", "iplaysoft.com", url(../assets/icon/yiciyuan.ico));              // 异次元
+.url("domain", "zhihu.com", url(../assets/icon/zhihu.ico));                     // 知乎
+.url("domain", "stackoverflow.com", url(../assets/icon/stack-overflow.ico));    // Stack Flow
+// ------------ 社交平台 ------------
+.url("domain", "im.qq.com", url(../assets/icon/qq.ico));                        // QQ
+.url("domain", "telegram.org", url(../assets/icon/telegram.ico));               // Telegram
+// ------------ 视频网站 ------------
+.url("domain", "bilibili.com", url(../assets/icon/bilibili.ico));               // BiliBili
+.url("domain", "youtube.com", url(../assets/icon/youtube.ico));                 // YouTube
