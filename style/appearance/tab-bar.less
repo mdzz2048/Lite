@@ -1,0 +1,90 @@
+/* ------------------------ 页签 ------------------------ */
+
+.layout-tab-bar {
+    // 页签多行显示
+    flex-wrap: var(--custom-tab-bar-flex-wrap);
+    background-color: var(--custom-tab-bar-background-color);
+
+    // 页签项
+    .item {
+        box-shadow: inset 0 0 0 0.5px var(--custom-components-deep);
+        border-top-left-radius: var(--custom-border-radius);
+        border-top-right-radius: var(--custom-border-radius);
+        min-height: var(--custom-tab-bar-min-height);
+        max-width: none;
+
+        // 页签项图标
+        .item__icon {
+            padding: 0px;
+            padding-left: 8px;
+
+            svg, img {
+                width: var(--custom-tab-bar-icon-size);
+                height: var(--custom-tab-bar-icon-size);
+            }
+        }
+
+        // 页签项关闭按钮
+        .item__close {
+            padding: 4px !important;
+        }
+
+        // 页签项文本
+        .item__text {
+            mask-image: none;
+            -webkit-mask-image: none;
+        }
+
+        // 非钉住页签项
+        &:not(.item--pin) {
+            min-width: var(--custom-tab-bar-item-min-width);
+
+            .item__text {
+                padding-right: 0;
+            }
+        }
+
+        &.item--pin {
+            // 钉住页签项文本完全显示
+            .item__text {
+                width: auto;
+                max-width: none;
+                display: flex !important;
+            }
+        }
+
+        // 选中的页签项
+        &.item--focus {
+            background-color: var(--custom-list-hover);
+            box-shadow: none !important;
+
+            // 取消选中页签项下划线
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    // 页签项右侧菜单
+    .item--readonly {
+        border-top-left-radius: 0px;
+        padding-left: 0px;
+
+        // 新建文档
+        span[data-type="new"] {
+            margin: var(--custom-block-padding);
+        }
+    }
+}
+
+/* ------------------------ 新窗口页签 ------------------------ */
+
+.layout.layout__center{
+
+    .layout-tab-bar {
+        // 页签项高度使用默认值
+        .item {
+            min-height: 42px;
+        }
+    }
+}

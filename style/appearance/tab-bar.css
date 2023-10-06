@@ -1,12 +1,8 @@
-/* ------------------------页签------------------------ */
-
-/* 页签多行显示 */
+/* ------------------------ 页签 ------------------------ */
 .layout-tab-bar {
   flex-wrap: var(--custom-tab-bar-flex-wrap);
   background-color: var(--custom-tab-bar-background-color);
 }
-
-/* 页签项 */
 .layout-tab-bar .item {
   box-shadow: inset 0 0 0 0.5px var(--custom-components-deep);
   border-top-left-radius: var(--custom-border-radius);
@@ -14,8 +10,6 @@
   min-height: var(--custom-tab-bar-min-height);
   max-width: none;
 }
-
-/* 页签项图标 */
 .layout-tab-bar .item .item__icon {
   padding: 0px;
   padding-left: 8px;
@@ -25,102 +19,39 @@
   width: var(--custom-tab-bar-icon-size);
   height: var(--custom-tab-bar-icon-size);
 }
-
-/* 页签项关闭图标 */
 .layout-tab-bar .item .item__close {
   padding: 4px !important;
 }
-.layout-tab-bar .item .item__close[data-type="new"],
-.layout-tab-bar .item .item__close[data-type="more"] {
-  margin: 0 4px;
-}
-.layout-tab-bar .item .item__close svg:hover {
-  color: var(--b3-theme-surface);
-  background-color: var(--b3-theme-on-surface);
-}
-
-/* 页签项文本 */
 .layout-tab-bar .item .item__text {
-  min-width: 0;
   mask-image: none;
   -webkit-mask-image: none;
 }
-
-/* 非钉住的页签项 */
 .layout-tab-bar .item:not(.item--pin) {
   min-width: var(--custom-tab-bar-item-min-width);
 }
 .layout-tab-bar .item:not(.item--pin) .item__text {
   padding-right: 0;
 }
-
-/* 钉住的页签项文本全部显示 */
 .layout-tab-bar .item.item--pin .item__text {
   width: auto;
   max-width: none;
   display: flex !important;
 }
-
-/* 被选中的页签项 */
 .layout-tab-bar .item.item--focus {
   background-color: var(--custom-list-hover);
   box-shadow: none !important;
 }
-/* 取消当前文档页签的下划线 */
 .layout-tab-bar .item.item--focus::after {
   display: none;
 }
-
-/* 多窗口被选中的页签项 */
-.layout__wnd--active .layout-tab-bar .item.item--focus {
-  background-color: var(--custom-list-hover);
-  box-shadow: none !important;
-}
-
-/* ------------------------集市页签样式------------------------ */
-
-/* 集市页签项 */
-.b3-dialog__container .layout-tab-bar .item {
-  flex: auto;
-}
-
-/* 集市被选中的页签项 */
-.b3-dialog__container .layout-tab-bar .item.item--focus {
-  flex: auto;
-  background-color: var(--custom-list-hover);
-  box-shadow: none !important;
-}
-
-/* ------------------------页签右侧菜单样式------------------------ */
-
-/* 页签右侧菜单 */
-.fn__flex.fn__flex-1 + .layout-tab-bar {
-  background-color: var(--custom-tab-bar-background-color);
-  flex-wrap: var(--custom-tab-bar-flex-wrap);
-  /* 右侧菜单占满页签项剩余位置 */
-  flex: auto;
-  /* 右侧菜单、页签分列两侧 */
-  /* flex: none; */
-}
-
-/* 页签右侧菜单项分列两侧 */
-.layout-tab-bar .item.item--readonly {
+.layout-tab-bar .item--readonly {
   border-top-left-radius: 0px;
-  justify-content: space-between;
   padding-left: 0px;
-  background-color: var(--custom-tab-bar-background-color);
 }
-
-/* 页签右侧新建文档 */
-.layout-tab-bar .item.item--readonly span:nth-child(1) {
-  margin: 5px;
+.layout-tab-bar .item--readonly span[data-type="new"] {
+  margin: var(--custom-block-padding);
 }
-
-/* 页签右键菜单项 */
-.layout-tab-bar .item.item.item--readonly > .item__close {
-  background-color: transparent;
-  border-radius: 5px;
-  height: 18px !important;
-  width: 18px !important;
-  padding: 6px;
+/* ------------------------ 新窗口页签 ------------------------ */
+.layout.layout__center .layout-tab-bar .item {
+  min-height: 42px;
 }
