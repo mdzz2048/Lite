@@ -1,26 +1,17 @@
-.protyle-wysiwyg .li[data-node-id][custom-riff-decks] {
-    position: relative;
-    display: block;
-    border-left: 0.15em solid #ff6a6a;
-    padding: 0px 0.2em 0.1em 0px !important;
-    box-shadow: 0.1em 0.1em 0.2em #aaaaaa;
-    background-image: none;
-    margin: 0.2em 0em 0em 0em;
+.protyle-wysiwyg [data-node-id][custom-riff-decks] {
+  margin: 0.2em 0;
 }
-
-.protyle-wysiwyg .p[data-node-id][custom-riff-decks] {
-    position: relative;
-    display: block;
-    border-left: 0.15em solid #00c853;
-    box-shadow: 0.1em 0.1em 0.2em #aaaaaa;
-    background-image: none;
-    margin: 0.1em 0em 1em 0em;
+.protyle-wysiwyg [data-node-id][custom-riff-decks].li,
+.protyle-wysiwyg [data-node-id][custom-riff-decks].list {
+  box-shadow: 0.1em 0.1em 0.2em #aaaaaa, inset 0.1em 0 0 #ff6a6a;
 }
-
-.protyle-wysiwyg .sb[data-node-id][custom-riff-decks] {
-    position: relative;
-    border-left: 0.15em solid #7c4dff;
-    box-shadow: 0.1em 0.1em 0.2em #aaaaaa;
-    background-image: none;
-    margin: 0.1em 0em 1em 0em;
+.protyle-wysiwyg [data-node-id][custom-riff-decks].li > .p ~ .p > [spellcheck][contenteditable],
+.protyle-wysiwyg [data-node-id][custom-riff-decks].list > .p ~ .p > [spellcheck][contenteditable] {
+  color: var(--b3-theme-on-surface-light);
+}
+.protyle-wysiwyg [data-node-id][custom-riff-decks].p {
+  box-shadow: 0.1em 0.1em 0.2em #aaaaaa, inset 0.1em 0 0 #00c853;
+}
+.protyle-wysiwyg [data-node-id][custom-riff-decks].sb {
+  box-shadow: 0.1em 0.1em 0.2em #aaaaaa, inset 0.1em 0 0 #7c4dff;
 }
