@@ -15,3 +15,18 @@
 .protyle-wysiwyg [data-node-id][custom-riff-decks].sb {
   box-shadow: 0.1em 0.1em 0.2em #aaaaaa, inset 0.1em 0 0 #7c4dff;
 }
+.protyle-wysiwyg [data-node-id][custom-riff-decks].sb > .p {
+  margin-left: var(--custom-block-padding);
+}
+.card__block.card__block--hidesb.card__block--hideli .sb[custom-riff-decks] > .list:first-child > .li > .list {
+  display: block;
+}
+.card__block.card__block--hidesb.card__block--hideli .sb[custom-riff-decks] > .list:first-child > .li > .list > .li span[data-type~="strong"] {
+  font-weight: normal;
+}
+.card__block .protyle-wysiwyg span[data-type="mark"] {
+  color: transparent;
+}
+.card__block .protyle-wysiwyg span[data-type="mark"]:hover {
+  color: var(--b3-protyle-inline-mark-color);
+}

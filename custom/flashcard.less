@@ -1,4 +1,6 @@
 @flashcard-box-shadow: 0.1em 0.1em 0.2em #aaaaaa;
+@card-sb: .card__block--hidesb;
+@card-li: .card__block--hideli;
 
 .protyle-wysiwyg [data-node-id][custom-riff-decks] {
     margin: 0.2em 0;
@@ -18,5 +20,42 @@
 
     &.sb {
         box-shadow: @flashcard-box-shadow, inset 0.1em 0 0 #7c4dff;
+
+        // 超级块内段落块增加缩进
+        > .p {
+            margin-left: var(--custom-block-padding);
+        }
+    }
+}
+
+.card__block {
+    // 开启超级块制卡
+    &@{card-sb} {
+        
+        &@{card-li} {
+            // 超级块第一个列表子项
+            .sb[custom-riff-decks] > .list:first-child > .li {
+                // 显示列表内容 - 选择题选项
+                > .list {
+                    display: block;
+
+                    > .li {
+                        span[data-type~="strong"] {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // 闪卡界面标记默认隐藏
+    .protyle-wysiwyg span[data-type="mark"] {
+        color: transparent;
+
+        // 悬浮显示内容
+        &:hover {
+            color: var(--b3-protyle-inline-mark-color);
+        }
     }
 }
