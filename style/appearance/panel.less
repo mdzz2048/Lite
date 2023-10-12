@@ -1,3 +1,17 @@
+.background(@important) {
+    & when (@important = 1) {
+        background-color: var(--custom-components) !important;
+    }
+
+    & when (@important = 0) {
+        background-color: var(--custom-components);
+    }
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--b3-theme-surface-lighter);
+}
+
 /* ------------------------ 面板全局设置 ------------------------ */
 
 .layout {
@@ -11,5 +25,198 @@
     &.layout__center > div > [data-type='wnd'] {
         // 新窗口设置边距会导致无法拖动: https://github.com/mdzz2048/Lite/issues/4
         margin: 0;
+    }
+}
+
+.b3-dialog__container {
+    // 隐藏关闭按钮
+    > .b3-dialog__close {
+        display: none;
+    }
+
+    // 取消 hover-menu.css 的设置
+    .b3-list {
+        background-color: inherit;
+        outline: none;
+    }
+}
+
+/* ------------------------ 设置面板 ------------------------ */
+
+.config__panel {
+    border-radius: 12px;
+
+    // 设置页面左侧：页签列表
+    .b3-tab-bar {
+        > .config__tab-title {
+            padding: 0 8px;
+        }
+
+        > .config__tab-hr {
+            margin: 16px 0 0 0;
+        }
+        
+        > .b3-list-item  {
+            margin: 3px 0 !important;
+        }
+    }
+
+    // 设置页面右侧：内容面板
+    .config__tab-wrap {
+
+        // 集市
+        > [data-name="bazaar"] {
+            // 顶部页签
+            .layout-tab-bar {
+                .item {
+                    border-radius: 0;
+                }
+            }
+
+            // 集市内容
+            .layout-tab-bar + div.fn__flex-1 > .bazaarPanel {
+                // 集市卡片宽度
+                .b3-cards {
+                    .b3-card--wrap {
+                        min-width: 300px;
+                    }
+                }
+            
+                // 集市菜单项悬浮
+                .b3-card:hover {
+                    box-shadow: 
+                        var(--b3-theme-primary-light) 0px 0px 0px 1px, 
+                        var(--b3-theme-primary-light) 0px 2px 4px;
+                    background-color: var(--custom-list-hover);
+                    transform: translate(0px, -2px);
+                }
+
+                // 使用的主题
+                .b3-card--current {
+                    box-shadow: inset var(--b3-theme-primary-light) 0px 0px 0px 1px;
+                }
+
+                // 集市按钮位置和其他地方位置有一点偏差
+                .b3-switch {
+
+                    &::after {
+                        transform: translateX(5px) translateY(3.5px);
+                    }
+            
+                    &:checked::after {
+                        transform: translateX(18px) translateY(3.5px);
+                    }
+                }
+            }
+        }
+
+        // 账户
+        > [data-name="account"] {
+            overflow: hidden;
+        }
+    }
+}
+
+/* ------------------------搜索面板------------------------ */
+
+.b3-dialog__container[style="width:80vw;height:90vh"] {
+    // 搜索输入框
+    .search__header {
+        .background(0);
+
+        > #searchInput {
+            .background(0);
+        }
+    }
+
+    // 查询条件
+    #criteria {
+        .border-bottom();
+        .background(1);
+
+        > .b3-chips .b3-chip {
+            border-radius: var(--custom-border-radius);
+
+            // 隐藏“保存查询条件”删除按钮
+            .b3-chip__close {
+                width: 0;
+            }
+
+            &:hover .b3-chip__close {
+                width: 16px;
+            }
+        }
+    }
+
+    // 工具栏
+    .search__header ~ .block__icons {
+        .background(0);
+    }
+
+    // 搜索结果
+    .search__layout {
+
+        .search__list {
+            // 文档路径分行显示
+            > .b3-list-item[data-type="search-item"] {
+                box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px;
+                margin: 3px 0 !important;
+                padding-bottom: calc(1.25em + 1px);
+
+                > .b3-list-item__text {
+                    padding: 3px 0;
+                }
+
+                > .b3-list-item__meta {
+                    bottom: 0px;
+                    margin-left: 2px;
+                    max-width: calc(100% - 12px);
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------ 按钮样式 ------------------------ */
+
+.b3-button {
+    &:not(.b3-button--cancel) {
+        font-weight: normal;
+        background-color: var(--custom-button-color-blue);
+        border-radius: var(--custom-border-radius);
+        color: var(--b3-theme-background);
+        box-shadow: rgb(15 15 15 / 10%) 0px 1px 2px;
+
+        :hover {
+            border-radius: var(--custom-border-radius);
+            background-color: var(--custom-button-hover-color-blue);
+        }
+    }
+}
+
+/* ------------------------ 开关样式 ------------------------ */
+
+.b3-switch {
+    height: 14px;
+
+    &::after {
+        box-shadow: none;
+        width: 12px;
+        height: 12px;
+        transform: translateX(5px) translateY(3px);
+    }
+
+    &::before {
+        display: none !important;
+    }
+
+    &:checked {
+        background-color: var(--b3-theme-primary);
+    }
+
+    &:checked::after {
+        background-color: var(--b3-theme-background);
+        transform: translateX(18px) translateY(3px);
     }
 }
