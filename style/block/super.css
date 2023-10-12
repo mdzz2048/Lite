@@ -1,42 +1,33 @@
-/* ------------------------ 编辑器样式 ------------------------ */
-
-/* 超级块默认样式 */
-.protyle-wysiwyg [data-node-id].sb {
-    background-color: var(--custom-block-super-background-color);
-    padding: var(--custom-block-padding);
-    margin: var(--custom-block-padding);
-    outline: 1.5px dashed var(--custom-line-color);
+/* ------------------------ 超级块 ------------------------ */
+.protyle-wysiwyg .sb[data-node-id] {
+  background-color: var(--custom-block-super-background-color);
+  padding: var(--custom-block-padding);
+  margin: var(--custom-block-padding);
+  outline: 1.5px dashed var(--custom-line-color);
 }
-
-/* 超级块鼠标悬停时显示边框 */
-.protyle-wysiwyg [data-node-id].sb:hover {
-    outline: 1.5px dashed var(--b3-tooltips-color);
+.protyle-wysiwyg .sb[data-node-id]:hover {
+  outline: 1.5px dashed var(--b3-tooltips-color);
 }
-
-/* 嵌入块中的超级块：取消边距和阴影 */
-.protyle-wysiwyg [data-node-id][data-type="NodeBlockQueryEmbed"].render-node > .protyle-wysiwyg__embed [data-node-id].sb {
-    padding: 0px;
-    margin: 0px;
-    box-shadow: none;
+.protyle-wysiwyg .sb[data-node-id] .sb[data-node-id] {
+  padding: 0px;
+  margin: 0px;
 }
-
-/* 嵌套超级块：取消边距和阴影 */
-.protyle-wysiwyg [data-node-id].sb [data-node-id].sb {
-    padding: 0px;
-    margin: 0px;
-    box-shadow: none;
+.protyle-wysiwyg .render-node[data-node-id][data-type="NodeBlockQueryEmbed"] > .protyle-wysiwyg__embed .sb[data-node-id] {
+  padding: 0px;
+  margin: 0px;
 }
-
+.protyle-wysiwyg [data-node-id][custom-riff-decks] {
+  padding: initial;
+  margin: initial;
+  outline: none;
+}
 /* ------------------------ 导出预览样式 ------------------------ */
-
 /* 导出预览超级块不显示边框 */
-#preview.protyle-wysiwyg [data-node-id].sb {
-    padding: 0;
-    margin: 0;
-    outline: none;
+#preview.protyle-wysiwyg .sb[data-node-id] {
+  padding: 0;
+  margin: 0;
+  outline: none;
 }
-
-/* 保留鼠标悬停显示边框 */
-#preview.protyle-wysiwyg [data-node-id].sb:hover {
-    outline: 1.5px dashed var(--b3-tooltips-color);
+#preview.protyle-wysiwyg .sb[data-node-id]:hover {
+  outline: 1.5px dashed var(--b3-tooltips-color);
 }

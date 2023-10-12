@@ -1,0 +1,55 @@
+/* ------------------------ 超级块 ------------------------ */
+
+.protyle-wysiwyg {
+    // 超级块
+    .sb[data-node-id] {
+        background-color: var(--custom-block-super-background-color);
+        padding: var(--custom-block-padding);
+        margin: var(--custom-block-padding);
+        outline: 1.5px dashed var(--custom-line-color);
+
+        &:hover {
+            outline: 1.5px dashed var(--b3-tooltips-color);
+        }
+
+        // 嵌套的超级块
+        .sb[data-node-id] {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    // 嵌入块中的超级块
+    .render-node[data-node-id][data-type="NodeBlockQueryEmbed"] {
+
+        > .protyle-wysiwyg__embed {
+            .sb[data-node-id] {
+                padding: 0px;
+                margin: 0px;
+            }
+        } 
+    }
+
+    // 设置为闪卡的超级块
+    [data-node-id][custom-riff-decks] {
+        padding: initial;
+        margin: initial;
+        outline: none;
+    }
+}
+
+/* ------------------------ 导出预览样式 ------------------------ */
+
+/* 导出预览超级块不显示边框 */
+#preview.protyle-wysiwyg {
+
+    .sb[data-node-id] {
+        padding: 0;
+        margin: 0;
+        outline: none;
+    }
+
+    .sb[data-node-id]:hover {
+        outline: 1.5px dashed var(--b3-tooltips-color);
+    }
+}
