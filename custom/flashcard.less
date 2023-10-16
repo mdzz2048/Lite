@@ -50,12 +50,22 @@
     }
 
     // 闪卡界面标记默认隐藏
-    .protyle-wysiwyg span[data-type="mark"] {
-        color: transparent;
+    .protyle-wysiwyg .p {
 
-        // 悬浮显示内容
-        &:hover {
-            color: var(--b3-protyle-inline-mark-color);
+        span[data-type="mark"] {
+            color: transparent;
+
+            // 悬浮显示内容
+            &:hover {
+                color: var(--b3-protyle-inline-mark-color);
+            }
+        }
+
+        &.block-focus {
+            // 光标移动到该块时，显示内容
+            span[data-type="mark"] {
+                color: var(--b3-protyle-inline-mark-color);
+            }
         }
     }
 }

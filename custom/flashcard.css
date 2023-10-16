@@ -24,9 +24,12 @@
 .card__block.card__block--hidesb.card__block--hideli .sb[custom-riff-decks] > .list:first-child > .li > .list > .li span[data-type~="strong"] {
   font-weight: normal;
 }
-.card__block .protyle-wysiwyg span[data-type="mark"] {
+.card__block .protyle-wysiwyg .p span[data-type="mark"] {
   color: transparent;
 }
-.card__block .protyle-wysiwyg span[data-type="mark"]:hover {
+.card__block .protyle-wysiwyg .p span[data-type="mark"]:hover {
+  color: var(--b3-protyle-inline-mark-color);
+}
+.card__block .protyle-wysiwyg .p.block-focus span[data-type="mark"] {
   color: var(--b3-protyle-inline-mark-color);
 }
