@@ -95,18 +95,6 @@
                 .b3-card--current {
                     box-shadow: inset var(--b3-theme-primary-light) 0px 0px 0px 1px;
                 }
-
-                // 集市按钮位置和其他地方位置有一点偏差
-                .b3-switch {
-
-                    &::after {
-                        transform: translateX(5px) translateY(3.5px);
-                    }
-            
-                    &:checked::after {
-                        transform: translateX(18px) translateY(3.5px);
-                    }
-                }
             }
         }
 
@@ -197,14 +185,19 @@
 
 /* ------------------------ 开关样式 ------------------------ */
 
+// 设置 border 在定位的时候可能存在偏差
+// REF: https://stackoverflow.com/questions/42710882/css-border-1px-appear-as-0-667px-or-1px-depending-on-the-computer-display-res
 .b3-switch {
     height: 14px;
+    border: none;
 
     &::after {
+        border: none;
         box-shadow: none;
-        width: 12px;
-        height: 12px;
-        transform: translateX(5px) translateY(3px);
+        top: 0;
+        width: 10px;
+        height: 10px;
+        transform: translateX(6px) translateY(2px);
     }
 
     &::before {
@@ -217,6 +210,6 @@
 
     &:checked::after {
         background-color: var(--b3-theme-background);
-        transform: translateX(18px) translateY(3px);
+        transform: translateX(20px) translateY(2px);
     }
 }

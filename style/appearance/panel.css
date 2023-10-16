@@ -44,12 +44,6 @@
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-card--current {
   box-shadow: inset var(--b3-theme-primary-light) 0px 0px 0px 1px;
 }
-.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-switch::after {
-  transform: translateX(5px) translateY(3.5px);
-}
-.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-switch:checked::after {
-  transform: translateX(18px) translateY(3.5px);
-}
 .config__panel .config__tab-wrap > [data-name="account"] {
   overflow: hidden;
 }
@@ -105,12 +99,15 @@
 /* ------------------------ 开关样式 ------------------------ */
 .b3-switch {
   height: 14px;
+  border: none;
 }
 .b3-switch::after {
+  border: none;
   box-shadow: none;
-  width: 12px;
-  height: 12px;
-  transform: translateX(5px) translateY(3px);
+  top: 0;
+  width: 10px;
+  height: 10px;
+  transform: translateX(6px) translateY(2px);
 }
 .b3-switch::before {
   display: none !important;
@@ -120,5 +117,5 @@
 }
 .b3-switch:checked::after {
   background-color: var(--b3-theme-background);
-  transform: translateX(18px) translateY(3px);
+  transform: translateX(20px) translateY(2px);
 }
