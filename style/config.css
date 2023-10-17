@@ -106,8 +106,6 @@
     /* 标记 */
     --custom-span-mark-color: var(--b3-card-info-color);
     --cusotm-span-mark-background-color: var(--b3-theme-primary-lighter);
-    --custom-span-mark-shadow-color: var(--b3-theme-on-primary);
-    --custom-span-mark-shadow-width: 4px;
     --custom-span-mark-display-color: var(--b3-protyle-inline-mark-color);
     
     /* 删除线 */
