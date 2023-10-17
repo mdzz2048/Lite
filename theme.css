@@ -42,9 +42,8 @@
 
 @import url(custom/hover-menu.css);
 @import url(custom/bullet/main.css);
-@import url(custom/flashcard.css);
 @import url(custom/link-icon.css);
-@import url(custom/mark-display.css);
+@import url(custom/theme-menu.css);
 
 /* ------------------------ 移动端优化 ------------------------ */
 
