@@ -78,11 +78,25 @@
 .b3-dialog__container[style="width:80vw;height:90vh"] .search__layout .search__list > .b3-list-item[data-type="search-item"] > .b3-list-item__text {
   padding: 3px 0;
 }
+.b3-dialog__container[style="width:80vw;height:90vh"] .search__layout .search__list > .b3-list-item[data-type="search-item"] > .b3-list-item__text > mark {
+  margin: 0 0.125em;
+  box-shadow: inset 0px 0px 0 1px var(--b3-theme-on-surface);
+  padding: 0 0.125em;
+  background-color: transparent;
+  border-radius: var(--custom-border-radius);
+}
 .b3-dialog__container[style="width:80vw;height:90vh"] .search__layout .search__list > .b3-list-item[data-type="search-item"] > .b3-list-item__meta {
   bottom: 0px;
   margin-left: 2px;
   max-width: calc(100% - 12px);
   position: absolute;
+}
+.b3-dialog__container[style="width:80vw;height:90vh"] .search__preview [data-node-id] span[data-type~="search-mark"] {
+  animation-name: change;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  padding: 0 0.125em;
+  border-radius: var(--custom-border-radius);
 }
 /* ------------------------ 按钮样式 ------------------------ */
 .b3-button:not(.b3-button--cancel) {
@@ -118,4 +132,14 @@
 .b3-switch:checked::after {
   background-color: var(--b3-theme-background);
   transform: translateX(20px) translateY(2px);
+}
+/* ------------------------ 动画 ------------------------ */
+/* 搜索高亮动画 */
+@keyframes change {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--b3-protyle-search-background);
+  }
 }

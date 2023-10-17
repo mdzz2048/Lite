@@ -1,0 +1,15 @@
+/* ------------------------ 显示标记文本内容 ------------------------ */
+
+.mark() {
+    mark,
+    span[data-type~="mark"] {
+        background-color: var(--cusotm-span-mark-background-color);
+        border-bottom: 0.1em solid var(--custom-span-mark-display-color);
+        color: var(--custom-span-mark-color);
+    }
+}
+
+.b3-typography,
+.protyle-wysiwyg {
+    .mark();
+}
