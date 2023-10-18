@@ -3,11 +3,11 @@
 .p-line() {
     padding-bottom: 0px;
     border-bottom: 1px dashed var(--custom-separator-color);
-}
 
-.p-hover() {
-    border-radius: var(--custom-border-radius);
-    background-color: var(--custom-transparent-light);
+    &:hover {
+        border-radius: var(--custom-border-radius);
+        background-color: var(--custom-transparent-light);
+    }
 }
 
 // 所见即所得
@@ -16,12 +16,8 @@
     [data-node-id] {
 
         // 段落块行线
-        .p {
+        &.p {
             .p-line();
-    
-            :hover {
-                .p-hover();
-            }
         }
 
         // 空块提示
@@ -38,9 +34,5 @@
 
     p {
         .p-line();
-
-        :hover {
-            .p-hover();
-        }
     }
 }
