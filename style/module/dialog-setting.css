@@ -2,6 +2,9 @@
 .config__panel {
   border-radius: 12px;
 }
+.config__panel .b3-tab-bar {
+  background-color: var(--custom-setting-tab-bar-background-color) !important;
+}
 .config__panel .b3-tab-bar > .config__tab-title {
   padding: 0 8px;
 }
@@ -11,11 +14,17 @@
 .config__panel .b3-tab-bar > .b3-list-item {
   margin: 3px 0 !important;
 }
+.config__panel .config__tab-wrap {
+  background-color: var(--custom-setting-config-tab-background-color);
+}
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar .item {
   border-radius: 0;
 }
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-cards .b3-card--wrap {
   min-width: 300px;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-card {
+  background-color: var(--custom-setting-cards-background-color);
 }
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-card:hover {
   box-shadow: var(--b3-theme-primary-light) 0px 0px 0px 1px, var(--b3-theme-primary-light) 0px 2px 4px;
