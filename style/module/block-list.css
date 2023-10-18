@@ -1,5 +1,4 @@
 /* ------------------------ 列表 ------------------------ */
-/* ------------------------ 列表聚焦突出显示 ------------------------ */
 .protyle-content[data-fullwidth] .protyle-wysiwyg > [data-node-id].li::before {
   display: none;
 }

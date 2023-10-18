@@ -1,0 +1,62 @@
+/* ------------------------ 按钮样式 ------------------------ */
+
+.b3-button {
+    &:not(.b3-button--cancel) {
+        font-weight: normal;
+        background-color: var(--custom-button-color-blue);
+        border-radius: var(--custom-border-radius);
+        color: var(--b3-theme-background);
+        box-shadow: rgb(15 15 15 / 10%) 0px 1px 2px;
+
+        :hover {
+            border-radius: var(--custom-border-radius);
+            background-color: var(--custom-button-hover-color-blue);
+        }
+    }
+}
+
+/* ------------------------ 开关样式 ------------------------ */
+
+// 设置 border 在定位的时候可能存在偏差
+// REF: https://stackoverflow.com/questions/42710882/css-border-1px-appear-as-0-667px-or-1px-depending-on-the-computer-display-res
+.b3-switch {
+    height: 14px;
+    border: none;
+
+    &::after {
+        border: none;
+        box-shadow: none;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        transform: translateX(6px) translateY(2px);
+    }
+
+    &::before {
+        display: none !important;
+    }
+
+    &:checked {
+        background-color: var(--b3-theme-primary);
+    }
+
+    &:checked::after {
+        background-color: var(--b3-theme-background);
+        transform: translateX(20px) translateY(2px);
+    }
+}
+
+/* ------------------------ 面板全局设置 ------------------------ */
+
+.b3-dialog__container {
+    // 隐藏关闭按钮
+    > .b3-dialog__close {
+        display: none;
+    }
+
+    // 取消 hover-menu.css 的设置
+    .b3-list {
+        background-color: inherit;
+        outline: none;
+    }
+}

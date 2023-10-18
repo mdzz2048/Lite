@@ -1,0 +1,43 @@
+/* ------------------------ 按钮样式 ------------------------ */
+.b3-button:not(.b3-button--cancel) {
+  font-weight: normal;
+  background-color: var(--custom-button-color-blue);
+  border-radius: var(--custom-border-radius);
+  color: var(--b3-theme-background);
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 1px 2px;
+}
+.b3-button:not(.b3-button--cancel) :hover {
+  border-radius: var(--custom-border-radius);
+  background-color: var(--custom-button-hover-color-blue);
+}
+/* ------------------------ 开关样式 ------------------------ */
+.b3-switch {
+  height: 14px;
+  border: none;
+}
+.b3-switch::after {
+  border: none;
+  box-shadow: none;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  transform: translateX(6px) translateY(2px);
+}
+.b3-switch::before {
+  display: none !important;
+}
+.b3-switch:checked {
+  background-color: var(--b3-theme-primary);
+}
+.b3-switch:checked::after {
+  background-color: var(--b3-theme-background);
+  transform: translateX(20px) translateY(2px);
+}
+/* ------------------------ 面板全局设置 ------------------------ */
+.b3-dialog__container > .b3-dialog__close {
+  display: none;
+}
+.b3-dialog__container .b3-list {
+  background-color: inherit;
+  outline: none;
+}

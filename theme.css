@@ -5,38 +5,49 @@
 
 /* ------------------------ 界面样式 ------------------------ */
 
-@import url(style/appearance/backlink.css);
+/* 弹窗 */
+@import url(style/module/dialog-search.css);
+@import url(style/module/dialog-setting.css);
+
+/* 全局设置 */
+@import url(style/module/global.css);
+
+/* 面板 */
+@import url(style/module/panel-backlink.css);
+@import url(style/module/panel-outline.css);
+@import url(style/module/panel-separator.css);
+
+/* 页签 */
+@import url(style/module/tab-bar.css);
+
+/* 还没整理好的…… */
 @import url(style/appearance/bar.css);
 @import url(style/appearance/breadcrumb.css);
 @import url(style/appearance/dock.css);
 @import url(style/appearance/editor.css);
 @import url(style/appearance/file-tree.css);
 @import url(style/appearance/hover-menu.css);
-@import url(style/appearance/outline.css);
-@import url(style/appearance/panel.css);
-@import url(style/appearance/print.css);
-@import url(style/appearance/tab-bar.css);
 @import url(style/appearance/tooltips.css);
 
 /* ------------------------ 行内元素 ------------------------ */
 
-@import url(style/inline/code.css);
-@import url(style/inline/img.css);
-@import url(style/inline/link.css);
-@import url(style/inline/mark.css);
-@import url(style/inline/ref.css);
+@import url(style/module/span-code.css);
+@import url(style/module/span-img.css);
+@import url(style/module/span-link.css);
+@import url(style/module/span-mark.css);
+@import url(style/module/span-ref.css);
 
 /* ------------------------ 块级元素 ------------------------ */
 
-@import url(style/block/code.css);
-@import url(style/block/embed.css);
-@import url(style/block/fold.css);
-@import url(style/block/heading.css);
-@import url(style/block/hr.css);
-@import url(style/block/list.css);
-@import url(style/block/paragraph.css);
-@import url(style/block/quote.css);
-@import url(style/block/super.css);
+@import url(style/module/block-code.css);
+@import url(style/module/block-embed.css);
+@import url(style/module/block-fold.css);
+@import url(style/module/block-heading.css);
+@import url(style/module/block-hr.css);
+@import url(style/module/block-list.css);
+@import url(style/module/block-paragraph.css);
+@import url(style/module/block-quote.css);
+@import url(style/module/block-super.css);
 
 /* ------------------------ 自定义样式 ------------------------ */
 

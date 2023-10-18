@@ -1,0 +1,13 @@
+.layout {
+    // 给各分栏增加边距
+    [data-type='wnd'][data-id] {
+        min-height: 0%;
+        margin: var(--custom-panel-distance);
+        border-radius: var(--custom-border-radius);
+    }
+
+    &.layout__center > div > [data-type='wnd'] {
+        // 新窗口设置边距会导致无法拖动: https://github.com/mdzz2048/Lite/issues/4
+        margin: 0;
+    }
+}

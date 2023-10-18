@@ -1,0 +1,98 @@
+/* ------------------------ 代码块 ------------------------ */
+
+// 共用样式
+.b3-typography,
+.protyle-wysiwyg {
+
+    pre,
+    .code-block {
+        background-color: var(--custom-block-code-background-color);
+
+        // 编辑区
+        > .hljs {
+            background-color: transparent;
+        }
+    }
+}
+
+// 导出预览
+.b3-typography {
+
+    .protyle-linenumber__rows,
+    .hljs {
+        padding: 0.5em;
+    }
+}
+
+// 所见即所得
+.protyle-wysiwyg {
+    [data-node-id].code-block {
+        margin: 0.5em 0;
+
+        // 功能按钮栏
+        > .protyle-action {
+            position: sticky;
+            width: 100%;
+            justify-content: end;
+
+            left: 0;
+            top: 0;
+
+            // 功能按钮
+            > span {
+                opacity: unset; // 按钮常显
+
+                // 语言标签
+                &.protyle-action__language {
+                    margin-left: 0.5em !important;
+                    margin-right: 0.5em;
+                    margin-top: -6px;
+
+                    font-size: 16px;
+                    padding-top: 4px;
+                }
+
+                // 间隔
+                &.fn__flex-1 {
+                    flex: 0;
+                }
+            }
+        }
+
+        // 代码块主体
+        > .hljs {
+            background-color: transparent;
+            padding-top: 0;
+        }
+
+        // 行号
+        > .protyle-linenumber__rows {
+            padding-top: 24px;
+            height: unset !important;
+            border-right: var(--custom-block-code-linenumber-separator-width) solid var(--custom-block-code-linenumber-separator-color);
+            background-color: var(--custom-block-code-linenumber-background-color);
+        }
+
+        // 块属性
+        > .protyle-attr {
+            top: -16px;
+        }
+
+        // 高亮的样式
+        &.protyle-wysiwyg--hl,
+        // 被选中的样式
+        &.protyle-wysiwyg--select {
+
+            // 被选中代码块的样式
+            >.hljs,
+            >.protyle-linenumber__rows {
+                background-color: transparent !important;
+            }
+        }
+    }
+}
+
+// 上级块被选中的代码块样式
+.protyle-wysiwyg--hl .code-block .hljs {
+    background-color: transparent !important;
+}

@@ -1,0 +1,21 @@
+/* ------------------------ 段落块 ------------------------ */
+.protyle-wysiwyg [data-node-id] .p {
+  padding-bottom: 0px;
+  border-bottom: 1px dashed var(--custom-separator-color);
+}
+.protyle-wysiwyg [data-node-id] .p :hover {
+  border-radius: var(--custom-border-radius);
+  background-color: var(--custom-transparent-light);
+}
+.protyle-wysiwyg [data-node-id] [spellcheck][contenteditable]:empty:before {
+  content: "键入文字";
+  color: var(--b3-theme-on-surface-light);
+}
+.b3-typography p {
+  padding-bottom: 0px;
+  border-bottom: 1px dashed var(--custom-separator-color);
+}
+.b3-typography p :hover {
+  border-radius: var(--custom-border-radius);
+  background-color: var(--custom-transparent-light);
+}
