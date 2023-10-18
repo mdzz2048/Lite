@@ -152,12 +152,12 @@ const DEFAULT_CONFIG = {
     showMarkDefault: false,
     useCardStyle: false
 }
-getThemeConfig().then(data => CONFIG = data ? data : DEFAULT_CONFIG);
 const MENU_OPTIONS = [
     {
         id: 'showMarkDefault',
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconMark"></use></svg>`,
         label: "标记样式",
+        href: '/appearance/themes/Lite/custom/mark-display.css',
         click: (event) => {
             clickCommonMenu('showMarkDefault', '/appearance/themes/Lite/custom/mark-display.css');
             updateCommonMenu(event);
@@ -171,6 +171,7 @@ const MENU_OPTIONS = [
         id: 'useCardStyle',
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconRiffCard"></use></svg>`,
         label: "闪卡样式",
+        href: '/appearance/themes/Lite/custom/flashcard.css',
         click: (event) => {
             clickCommonMenu('useCardStyle', '/appearance/themes/Lite/custom/flashcard.css');
             updateCommonMenu(event);
@@ -187,14 +188,17 @@ const MENU_OPTIONS = [
  */
 function addThemeButton() {
     const vip = document.getElementById('toolbarVIP');
-    const toolbar = vip.parentElement;
     const themeButton = document.createElement('div');
     themeButton.id = "themeToolbar";
     themeButton.setAttribute("aria-label", "主题设置");
     themeButton.className = "toolbar__item ariaLabel";
     themeButton.innerHTML = `<svg><use xlink:href="#iconTheme"></use></svg>`;
     themeButton.addEventListener('click', addCommonMenu);
-    toolbar.insertBefore(themeButton, vip);
+    vip.insertAdjacentElement("afterend", themeButton);
+    MENU_OPTIONS.forEach(option => {
+        const id = option.id;
+        if (CONFIG[id]) { window.theme.loadLink(option.href, id) }
+    })
 }
 
 /**
@@ -253,13 +257,8 @@ function showToolTip(event) {
  * @param {string} href 样式路径，根目录为工作空间
  */
 function clickCommonMenu(id, href) {
-    // todo: 这里的判断逻辑还需要改进
-    if (CONFIG[id]) {
-        window.theme.updateStyle(id, '');
-    } else {
-        window.theme.loadLink(href, id);
-    }
     CONFIG[id] = !CONFIG[id];
+    window.theme.updateStyle(id, CONFIG[id] ? href: "");
     updateThemeConfig(CONFIG);
 }
 
@@ -361,8 +360,13 @@ const isMobile = () => {
 };
 
 /* ------------------------加载主题功能------------------------ */
+
 import(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"));
 
-addThemeButton();
+getThemeConfig()
+    .then(data => {
+        CONFIG = data ? data : DEFAULT_CONFIG;
+        addThemeButton();
+    });
 
 /* ------------------------测试用例------------------------ */
