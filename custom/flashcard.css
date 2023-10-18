@@ -3,17 +3,18 @@
 }
 .protyle-wysiwyg [data-node-id][custom-riff-decks].li,
 .protyle-wysiwyg [data-node-id][custom-riff-decks].list {
-  box-shadow: 0.1em 0.1em 0.2em #aaaaaa, inset 0.1em 0 0 #ff6a6a;
+  box-shadow: 0.1em 0.1em 0.2em var(--custom-flash-card-box-shadow-color), inset 0.1em 0 0 var(--custom-flash-card-list-color);
 }
 .protyle-wysiwyg [data-node-id][custom-riff-decks].li > .p ~ .p > [spellcheck][contenteditable],
 .protyle-wysiwyg [data-node-id][custom-riff-decks].list > .p ~ .p > [spellcheck][contenteditable] {
   color: var(--b3-theme-on-surface-light);
 }
 .protyle-wysiwyg [data-node-id][custom-riff-decks].p {
-  box-shadow: 0.1em 0.1em 0.2em #aaaaaa, inset 0.1em 0 0 #00c853;
+  box-shadow: 0.1em 0.1em 0.2em var(--custom-flash-card-box-shadow-color), inset 0.1em 0 0 var(--custom-flash-card-p-color);
+  padding-left: var(--custom-block-padding);
 }
 .protyle-wysiwyg [data-node-id][custom-riff-decks].sb {
-  box-shadow: 0.1em 0.1em 0.2em #aaaaaa, inset 0.1em 0 0 #7c4dff;
+  box-shadow: 0.1em 0.1em 0.2em var(--custom-flash-card-box-shadow-color), inset 0.1em 0 0 var(--custom-flash-card-sb-color);
 }
 .protyle-wysiwyg [data-node-id][custom-riff-decks].sb > .p {
   margin-left: var(--custom-block-padding);

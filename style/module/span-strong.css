@@ -1,0 +1,4 @@
+/* ------------------------ 加粗 ------------------------ */
+.protyle-wysiwyg [data-node-id] span[data-type~="strong"] {
+  color: inherit;
+}

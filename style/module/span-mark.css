@@ -11,6 +11,6 @@
 .protyle-wysiwyg mark:hover,
 .b3-typography span[data-type~="mark"]:hover,
 .protyle-wysiwyg span[data-type~="mark"]:hover {
-  background-color: var(--cusotm-span-mark-background-color);
+  background-color: var(--custom-span-mark-background-color);
   color: var(--custom-span-mark-color);
 }

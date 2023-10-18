@@ -21,3 +21,8 @@
 .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"]:hover {
   color: var(--custom-span-block-ref-hover-color);
 }
+.protyle-wysiwyg [data-node-id] span[data-type~="block-ref"].def--mark {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+}

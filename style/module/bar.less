@@ -1,0 +1,57 @@
+/* ------------------------顶栏------------------------ */
+
+#toolbar {
+    background-color: var(--custom-status-bar-background-color);
+    border-bottom: 1px solid var(--custom-components-deep);
+}
+
+// 工作空间下拉菜单
+#barWorkspace {
+	background-color: var(--custom-button-color-red);
+	box-shadow: 0px 0.3px 0.7px 0px rgb(0 0 0 / 12%), 0px 1.5px 2.8px 0px rgb(0 0 0 / 7%), 0px 4px 9px 0px rgb(0 0 0 / 5%);
+    margin: 0 3px;
+
+    &:hover {
+        background-color: var(--custom-button-hover-color-red);
+    }
+
+    .toolbar__svg{
+        color: var(--custom-button-text-color);
+    }
+
+    .toolbar__text{
+        color: var(--custom-button-text-color);
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+/* ------------------------底栏------------------------ */
+
+#status {
+    background-color: var(--custom-status-bar-background-color);
+    border-top: 1px solid var(--custom-components-deep);
+}
+
+/* ------------------------ 侧栏 ------------------------ */
+
+// 左右 Dock
+#dockLeft, 
+#dockRight {
+    background-color: var(--custom-dock-background-color);
+    border: none;
+    width: var(--custom-dock-width);
+
+    .dock__item {
+        margin: 7px 4px;    // 默认 margin 为 7px
+        justify-content: center;
+    }
+}
+
+// 底部 Dock
+#dockBottom {
+    background-color: var(--custom-dock-background-color);
+    border: none;
+    height: var(--custom-dock-width);
+}

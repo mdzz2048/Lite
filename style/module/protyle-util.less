@@ -1,0 +1,52 @@
+/* ------------------------ 工具面板 ------------------------ */
+
+.count(@index) {
+    &::before {
+        content: "@{index}";
+    }
+}
+
+// REF: [Less 循环](https://juejin.cn/post/6993709586314166309)
+.color-square(@index) when (@index > 0) {
+    .color__square[style="color:var(--b3-font-color@{index})"] {
+        background-color: var(e(%("--b3-font-color%a", @index)));
+        .count(@index);
+    }
+    .color__square[style="background-color:var(--b3-font-background@{index})"] {
+        .count(@index);
+    }
+    .color-square(@index - 1);
+}
+
+.protyle-util {
+
+    > .protyle-font {
+        // 给颜色按钮设置背景色
+        .color-square(13);
+
+        // 给颜色按钮添加数字伪元素
+        .color__square {
+
+            &[data-type="color"]:before {
+                position: absolute;
+                font-weight: bold;
+                color: var(--b3-theme-on-primary);
+            }
+
+            &[data-type="backgroundColor"]:before {
+                position: absolute;
+                font-weight: bold;
+                color: var(--b3-theme-on-surface);
+            }
+            
+            // 数字伪元素取反色
+            &[style="color:var(--b3-font-color13)"]:before {
+                color: var(--b3-theme-on-surface);
+            }
+
+            &[style="background-color:var(--b3-font-background13)"]:before {
+                color: var(--b3-theme-on-primary);
+            }
+        }
+    }
+}

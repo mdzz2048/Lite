@@ -1,12 +1,6 @@
 /* 命名方式: custom-位置-css语法 */
 :root {
     /* ------------------------自定义样式------------------------ */
-    /* 块引用标记 */
-    --custom-ref-l: "[[";
-    --custom-ref-r: "]]";
-    /* 块超链标记 */
-    --custom-link-l: "[";
-    --custom-link-r: "]";
     
     /* 阴影颜色 */
     --custom-box-shadow-color: var(--b3-theme-on-background);
@@ -19,6 +13,26 @@
 
     /* 默认分隔线 */
     --custom-separator-color: var(--custom-components-deep);
+
+    /* 自定义线条颜色 */
+    --custom-line-color: var(--b3-scroll-color);
+
+    /* 按钮 */
+    --custom-button-text-color: var(--b3-theme-background);
+    --custom-button-color-red: #f55555;
+    --custom-button-hover-color-red: #d44444;
+    --custom-button-color-blue: #128ddd;
+    --custom-button-hover-color-blue: #017ddd;
+
+    /* 开关 */
+    --custom-switch-backgroud-color: #f5f5f5;
+    --custom-switch-icon-backgrounc-color: #5d5d5d;
+
+    /* 闪卡 */
+    --custom-flash-card-list-color: #ff6a6a;
+    --custom-flash-card-p-color: #00c853;
+    --custom-flash-card-sb-color: #7c4dff;
+    --custom-flash-card-box-shadow-color: #aaaaaa;
     
     /* ------------------------界面样式------------------------ */
     
@@ -27,7 +41,7 @@
     --custom-editor-padding-left: 24px;
     --custom-editor-padding-right: 24px;
     
-    /* 页签栏 */
+    /* 页签 */
     --custom-tab-bar-background-color: var(--custom-components);
     --custom-tab-bar-min-height: calc(var(--custom-dock-width));
     --custom-tab-bar-item-min-width: none;
@@ -36,107 +50,59 @@
     --custom-tab-bar-flex-wrap: wrap;
     /* 页签纵向排列时最大宽度 */
     --custom-tab-bar-vertical-max-width: 15%;
-
-    /* 顶部工具栏 */
-    --custom-tool-bar-background-color: var(--custom-components);
-    --custom-tool-bar-separator-color: var(--custom-components-deep);
-    /* 顶部工具栏被激活控件 */
-    --custom-tool-bar-tiem-active-color: var(--b3-theme-on-background);
-    --custom-tool-bar-tiem-active-background-color: var(--b3-theme-background-light);
-    --custom-tool-bar-tiem-active-box-shadow-spread: 5px;
     
     /* 底部状态栏 */
     --custom-status-bar-background-color: var(--custom-components);
-    --custom-status-bar-separator-color: var(--custom-components-deep);
 
     /* 边栏 */
     --custom-dock-background-color: var(--custom-components);
-    --custom-dock-panel-background-color: var(--custom-components);
     --custom-dock-item-margin-width: 4px;
     --custom-dock-item-padding-width: 6px;
     --custom-dock-item-icon-size: 16px;
-    --custom-dock-hover-background-color: var(--custom-transparent-deep);
-    --custom-dock-hover-box-shadow-color: var(--custom-components-deep);
-    --custom-dock-hover-text-shadow-color:var(--b3-theme-on-surface);
     --custom-dock-width: calc(var(--custom-dock-item-icon-size) + var(--custom-dock-item-margin-width) * 2 + var(--custom-dock-item-padding-width) * 2);
-
-    /* 收集箱 */
-    --custom-inbox-background-color: var(--custom-components);
     
-    /* 搜索对话框 */
-    --custom-search-width: 90vw;
-    --custom-search-height: 90vh;
-    --custom-search-hover-color: var(--custom-components-deep);
-    --custom-search-focus-color: var(--custom-components-deep);
-    --custom-search-background-color: var(--custom-components);
+    /* 布局背景 */
+    --custom-layout-background-color: var(--custom-components);
     
     /* 功能面板间隔距离 */
     --custom-panel-distance: 3px;
-    /* 功能面板分隔线补偿距离, 需要设置为 --custom-panel-distance 的负值 */
-    --custom-separator-distance-compensation: calc(0px - var(--custom-panel-distance));
 
     /* 遮罩 */
     --custom-scrim-background-color: var(--custom-transparent-light);
 
-    /* 面包屑 */
-
     /* 弹出菜单 */
     --custom-popover-menu-background-color: var(--custom-components);
     --custom-popover-menu-hover-color: var(--b3-theme-background-light);
-    --custom-popover-menu-focus-color: var(--b3-theme-background-light);
-    --custom-popover-menu-separator-color: var(--b3-border-color);
-    --custom-popover-menu-separator-width: 1px;
     --custom-popover-menu-padding-width: 0.25em;
-    --custom-popover-menu-outline-width: 1px;
-    --custom-popover-menu-outline-style: solid;
-    --custom-popover-menu-outline-color: var(--b3-scroll-color);
-    /* 弹出菜单中块属性字段颜色 */
-    --custom-popover-menu-attribute-color: var(--b3-card-warning-color);
-    /* 弹出菜单中路径字段颜色 */
-    --custom-popover-menu-path-color: var(--b3-card-info-color);
-
-    /* 模板预览 */
-    --custom-template-preview-width: 30vw;
-    --custom-template-preview-min-width: none;
 
     /* 列表聚焦项 */
     --custom-list-hover: var(--b3-list-hover);
+
+    /* 设置页面 */
+    --custom-setting-cards-background-color: var(--b3-theme-surface);
+    --custom-setting-config-tab-background-color: #fbfbfb;
+    --custom-setting-tab-bar-background-color: #f3f3f3;
 
     /* ------------------------行内元素------------------------ */
     
     /* 标记 */
     --custom-span-mark-color: var(--b3-card-info-color);
-    --cusotm-span-mark-background-color: var(--b3-theme-primary-lighter);
+    --custom-span-mark-background-color: var(--b3-theme-primary-lighter);
     --custom-span-mark-display-color: var(--b3-protyle-inline-mark-color);
-    
-    /* 删除线 */
-    --cusotm-span-strikethrough-color: var(--b3-theme-on-surface);
-
-    /* 自定义线条颜色 */
-    --custom-line-color: var(--b3-scroll-color);
 
     /* 内部超链接 */
+    --custom-link-l: "[";
+    --custom-link-r: "]";
     --custom-span-siyuan-link-color: #1890FF;
     --custom-span-siyuan-link-hover-color: #1476d1;
 
     /* 块引用 */
+    --custom-ref-l: "[[";
+    --custom-ref-r: "]]";
     --custom-span-block-ref-color: #1890FF;
     --custom-span-block-ref-hover-color: #1476d1;
-
-    /* 文件注释引用 */
-    --custom-span-file-ref-color: var(--b3-card-warning-color);
-
-    /* 标签 */
-    --custom-span-tag-color: var(--b3-theme-on-primary);
-    --custom-span-tag-background-color: var(--b3-font-background9);
-
-    /* 虚拟引用 */
-    --custom-span-virtual-ref-background-color: var(--custom-components-light);
     
     /* ------------------------块级元素------------------------ */
-
-    /* iframe 块 */
-    --custom-block-iframe-background-color: var(--custom-transparent);
 
     /* 代码块 */
     --custom-block-code-background-color: var(--custom-components);
@@ -155,35 +121,14 @@
     /* 引述块 */
     --custom-block-quote-background-color: var(--custom-transparent);
 
-    /* 表格块 */
-    --custom-block-table-background-color: transparent;
-    /* 表头 */
-    --custom-block-table-thead-background-color: var(--custom-components-light);
-    /* 奇数行 */
-    --custom-block-table-odd-background-color: var(--custom-transparent-lighter);
-    /* 偶数行 */
-    --custom-block-table-even-background-color: var(--custom-transparent-light);
-    /* 鼠标悬浮行 */
-    --custom-block-table-hover-background-color: var(--custom-components-light);
-
-    /* 列表项聚焦颜色 */
-    --custom-list-item-color: var(--b3-protyle-inline-link-color);
-
     /* 拖拽参考线 */
     --custom-drag-top-shadow-color: var(--b3-theme-primary-lighter);
     --custom-drag-bottom-shadow-color: var(--b3-theme-primary-lighter);
-    --custom-drag-left-shadow-color: var(--custom-striking-color);
-    --custom-drag-right-shadow-color: var(--custom-striking-color);
+    --custom-drag-left-shadow-color: var(--b3-theme-primary-lighter);
+    --custom-drag-right-shadow-color: var(--b3-theme-primary-lighter);
 
     /* 子标题序号缩放 */
     --custom-h-num-font-size: 50%;
-    /* 子标题标记 */
-    --custom-h1-mark: "¹";
-    --custom-h2-mark: "²";
-    --custom-h3-mark: "³";
-    --custom-h4-mark: "⁴";
-    --custom-h5-mark: "⁵";
-    --custom-h6-mark: "⁶";
     /* 子标题及其对应大纲颜色 */
     --custom-h1-color: var(--b3-theme-on-background);
     --custom-h2-color: var(--b3-theme-on-background);
@@ -191,13 +136,6 @@
     --custom-h4-color: var(--b3-theme-on-background);
     --custom-h5-color: var(--b3-theme-on-background);
     --custom-h6-color: var(--b3-theme-on-background);
-    /* 子标题缩进宽度 */
-    --custom-h1-indentation: 0.5em;
-    --custom-h2-indentation: 1em;
-    --custom-h3-indentation: 1.5em;
-    --custom-h4-indentation: 2em;
-    --custom-h5-indentation: 2.5em;
-    --custom-h6-indentation: 3em;
     /* 子标题折叠标记 */
     /* REF [箭头图案 - Unicode 字符百科](https://unicode-table.com/cn/sets/arrow-symbols/) */
     /* ⭿ ⭱ ⭳ ↥ ↧ ↨ ⭻ ⇞ ⭽ ↕ ⇝ ⬳ ⟿ ⇼ ⮉ ⮋ ... */
@@ -205,7 +143,7 @@
 }
 
 @font-face {
-    font-family: 'quote';
+    font-family: 'Helvetica Neue';
     font-style: normal;
     /* src: url(../fonts/LXGWWenKaiMono-Regular.ttf); */
     src: url(../fonts/LXGWWenKaiGBScreenR.ttf);

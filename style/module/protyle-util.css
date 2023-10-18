@@ -1,0 +1,134 @@
+/* ------------------------ 工具面板 ------------------------ */
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color13)"] {
+  background-color: var(--b3-font-color13);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color13)"]::before {
+  content: "13";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background13)"]::before {
+  content: "13";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color12)"] {
+  background-color: var(--b3-font-color12);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color12)"]::before {
+  content: "12";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background12)"]::before {
+  content: "12";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color11)"] {
+  background-color: var(--b3-font-color11);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color11)"]::before {
+  content: "11";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background11)"]::before {
+  content: "11";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color10)"] {
+  background-color: var(--b3-font-color10);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color10)"]::before {
+  content: "10";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background10)"]::before {
+  content: "10";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color9)"] {
+  background-color: var(--b3-font-color9);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color9)"]::before {
+  content: "9";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background9)"]::before {
+  content: "9";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color8)"] {
+  background-color: var(--b3-font-color8);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color8)"]::before {
+  content: "8";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background8)"]::before {
+  content: "8";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color7)"] {
+  background-color: var(--b3-font-color7);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color7)"]::before {
+  content: "7";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background7)"]::before {
+  content: "7";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color6)"] {
+  background-color: var(--b3-font-color6);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color6)"]::before {
+  content: "6";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background6)"]::before {
+  content: "6";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color5)"] {
+  background-color: var(--b3-font-color5);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color5)"]::before {
+  content: "5";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background5)"]::before {
+  content: "5";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color4)"] {
+  background-color: var(--b3-font-color4);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color4)"]::before {
+  content: "4";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background4)"]::before {
+  content: "4";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color3)"] {
+  background-color: var(--b3-font-color3);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color3)"]::before {
+  content: "3";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background3)"]::before {
+  content: "3";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color2)"] {
+  background-color: var(--b3-font-color2);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color2)"]::before {
+  content: "2";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background2)"]::before {
+  content: "2";
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color1)"] {
+  background-color: var(--b3-font-color1);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color1)"]::before {
+  content: "1";
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background1)"]::before {
+  content: "1";
+}
+.protyle-util > .protyle-font .color__square[data-type="color"]:before {
+  position: absolute;
+  font-weight: bold;
+  color: var(--b3-theme-on-primary);
+}
+.protyle-util > .protyle-font .color__square[data-type="backgroundColor"]:before {
+  position: absolute;
+  font-weight: bold;
+  color: var(--b3-theme-on-surface);
+}
+.protyle-util > .protyle-font .color__square[style="color:var(--b3-font-color13)"]:before {
+  color: var(--b3-theme-on-surface);
+}
+.protyle-util > .protyle-font .color__square[style="background-color:var(--b3-font-background13)"]:before {
+  color: var(--b3-theme-on-primary);
+}

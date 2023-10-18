@@ -1,0 +1,25 @@
+/* ------------------------ 面包屑 ------------------------ */
+.protyle-breadcrumb {
+  background-color: var(--custom-editor-background-color);
+  box-shadow: 0 1px var(--custom-separator-color);
+}
+.protyle-breadcrumb > .protyle-breadcrumb__bar .protyle-breadcrumb__item {
+  line-height: normal;
+}
+.protyle-breadcrumb > .protyle-breadcrumb__bar .protyle-breadcrumb__item:hover {
+  background-color: var(--custom-list-hover);
+}
+.protyle-breadcrumb > .protyle-breadcrumb__bar .protyle-breadcrumb__item--active {
+  background-color: var(--custom-list-hover);
+}
+.protyle-breadcrumb > .protyle-breadcrumb__icon[data-type="exit-focus"] {
+  font-weight: normal;
+  border-radius: 5px;
+  color: var(--custom-button-text-color);
+  background-color: var(--custom-button-color-red);
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 1px 2px;
+}
+.protyle-breadcrumb > .protyle-breadcrumb__icon[data-type="exit-focus"]:hover {
+  border-radius: var(--custom-border-radius);
+  background-color: var(--custom-button-hover-color-red);
+}

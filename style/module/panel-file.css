@@ -1,0 +1,7 @@
+/* ------------------------ 文档树 ------------------------ */
+.file-tree.sy__file > .block__icons {
+  box-shadow: inset 0px -1px 0px 0px var(--custom-components-deep);
+}
+.file-tree.sy__file > .fn__flex-1 > .b3-list .b3-list-item {
+  margin: 0;
+}

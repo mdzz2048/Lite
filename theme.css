@@ -14,20 +14,19 @@
 
 /* 面板 */
 @import url(style/module/panel-backlink.css);
+@import url(style/module/panel-file.css);
 @import url(style/module/panel-outline.css);
 @import url(style/module/panel-separator.css);
-
-/* 页签 */
 @import url(style/module/tab-bar.css);
 
-/* 还没整理好的…… */
-@import url(style/appearance/bar.css);
-@import url(style/appearance/breadcrumb.css);
-@import url(style/appearance/dock.css);
-@import url(style/appearance/editor.css);
-@import url(style/appearance/file-tree.css);
-@import url(style/appearance/hover-menu.css);
-@import url(style/appearance/tooltips.css);
+/* 编辑器 */
+@import url(style/module/protyle-breadcrumb.css);
+@import url(style/module/protyle-editor.css);
+@import url(style/module/protyle-menu.css);
+@import url(style/module/protyle-util.css);
+
+/* 页签 */
+@import url(style/module/bar.css);
 
 /* ------------------------ 行内元素 ------------------------ */
 
@@ -36,6 +35,7 @@
 @import url(style/module/span-link.css);
 @import url(style/module/span-mark.css);
 @import url(style/module/span-ref.css);
+@import url(style/module/span-strong.css);
 
 /* ------------------------ 块级元素 ------------------------ */
 
@@ -51,7 +51,6 @@
 
 /* ------------------------ 自定义样式 ------------------------ */
 
-@import url(custom/hover-menu.css);
 @import url(custom/bullet/main.css);
 @import url(custom/link-icon.css);
 @import url(custom/theme-menu.css);

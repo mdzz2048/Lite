@@ -1,0 +1,38 @@
+/* ------------------------ 编辑区面板 ------------------------ */
+.protyle-content {
+  background-color: var(--custom-editor-background-color);
+}
+.protyle-content[data-fullwidth="true"] > .protyle-background > .protyle-background__iconw {
+  left: var(--custom-editor-padding-left) !important;
+}
+.protyle-content[data-fullwidth="true"] > .protyle-title {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: var(--custom-editor-padding-left);
+  padding-right: var(--custom-editor-padding-right);
+}
+.protyle-content[data-fullwidth="true"] > .protyle-wysiwyg {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: var(--custom-editor-padding-left) !important;
+  padding-right: var(--custom-editor-padding-right) !important;
+}
+.protyle-content > .protyle-wysiwyg .dragover__top {
+  box-shadow: 0 -4px 0 var(--custom-drag-top-shadow-color);
+}
+.protyle-content > .protyle-wysiwyg .dragover__bottom {
+  box-shadow: 0 4px 0 var(--custom-drag-bottom-shadow-color);
+}
+.protyle-content > .protyle-wysiwyg .dragover__left {
+  box-shadow: -4px 0 0 var(--custom-drag-left-shadow-color);
+}
+.protyle-content > .protyle-wysiwyg .dragover__right {
+  box-shadow: 4px 0 0 var(--custom-drag-right-shadow-color);
+}
+.protyle-content > .protyle-wysiwyg .protyle-attr--refcount {
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 0 var(--custom-box-shadow-color);
+  right: calc(4px - var(--custom-editor-padding-right));
+  z-index: 1;
+}

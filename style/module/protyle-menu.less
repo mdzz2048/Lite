@@ -1,0 +1,66 @@
+/* ------------------------ 弹出菜单 ------------------------ */
+
+// 弹出菜单: '/' 菜单、'[['菜单等
+.protyle-hint {
+    background-color: var(--custom-popover-menu-background-color);
+    width: auto !important;
+    max-width: 50vw;
+
+    .b3-list-item {
+        width: 100% !important;
+
+        &:first-child {
+            margin-top: 0;
+            min-height: 34px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    > .emojis .emojis__item {
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0;
+        font-size: 18px;
+        margin: 0 4px 4px 0;
+        
+        img, svg.costom-icon {
+            margin: 0;
+            width: 18px;
+            height:18px;
+            padding: 7px;
+            display: block;
+        }
+    }
+}
+  
+// '/'菜单分栏
+.hint--menu {
+    max-height: 450px;
+
+    > div {
+        border:none;
+        columns: 50px 4;
+        column-rule: 1px solid var(--b3-border-color);
+        max-height: none !important;
+    }
+
+    .b3-list-item {
+        width: 100% !important;
+
+        // SVG 图标
+        .hint--menu .b3-list-item__graphic {
+            margin-right: 3px;
+        }
+
+        // 文本
+        .b3-list-item__text {
+            margin-left: 5px;
+        }
+    }   
+}

@@ -1,4 +1,4 @@
-@flashcard-box-shadow: 0.1em 0.1em 0.2em #aaaaaa;
+@flashcard-box-shadow: 0.1em 0.1em 0.2em var(--custom-flash-card-box-shadow-color);
 @card-sb: .card__block--hidesb;
 @card-li: .card__block--hideli;
 
@@ -6,7 +6,7 @@
     margin: 0.2em 0;
 
     &.li, &.list {
-        box-shadow: @flashcard-box-shadow, inset 0.1em 0 0 #ff6a6a;
+        box-shadow: @flashcard-box-shadow, inset 0.1em 0 0 var(--custom-flash-card-list-color);
 
         // 列表项子段落块虚化
         > .p ~ .p > [spellcheck][contenteditable] {
@@ -15,11 +15,12 @@
     }
 
     &.p {
-        box-shadow: @flashcard-box-shadow, inset 0.1em 0 0 #00c853;
+        box-shadow: @flashcard-box-shadow, inset 0.1em 0 0 var(--custom-flash-card-p-color);
+        padding-left: var(--custom-block-padding);
     }
 
     &.sb {
-        box-shadow: @flashcard-box-shadow, inset 0.1em 0 0 #7c4dff;
+        box-shadow: @flashcard-box-shadow, inset 0.1em 0 0 var(--custom-flash-card-sb-color);
 
         // 超级块内段落块增加缩进
         > .p {
