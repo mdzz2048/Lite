@@ -115,7 +115,7 @@ async function getFile(path) {
     const url = '/api/file/getFile';
     const body = { path: path };
     const res = await request(url, JSON.stringify(body));
-    return res?.code === 0 ? res.data : null;
+    return res ? res : null;
 }
 
 async function putFile(path, data, isDir = false) {
