@@ -14,10 +14,13 @@
 .b3-switch {
   height: 14px;
   border: none;
+  background-color: var(--custom-switch-backgroud-color);
+  box-shadow: inset 0 0 0 1px #8a8a8a;
 }
 .b3-switch::after {
   border: none;
   box-shadow: none;
+  background-color: var(--custom-switch-icon-backgrounc-color);
   top: 0;
   width: 10px;
   height: 10px;
@@ -28,6 +31,7 @@
 }
 .b3-switch:checked {
   background-color: var(--b3-theme-primary);
+  box-shadow: none;
 }
 .b3-switch:checked::after {
   background-color: var(--b3-theme-background);
