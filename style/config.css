@@ -51,6 +51,7 @@
 
     /* 边栏 */
     --custom-dock-background-color: var(--custom-components);
+    --custom-dock-panel-background-color: var(--custom-components);
     --custom-dock-item-margin-width: 4px;
     --custom-dock-item-padding-width: 6px;
     --custom-dock-item-icon-size: 16px;

@@ -35,6 +35,6 @@
 
 /* 边栏背景 */
 .layout-tab-container {
-  background-color: var(--custom-dock-background-color);
+  background-color: var(--custom-dock-panel-background-color);
   background-image: var(--custom-background-image);
 }
