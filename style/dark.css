@@ -156,9 +156,9 @@
     --custom-transparent-deeper: rgba(42, 42, 42, 0.835);
 
     /* 不透明的组件颜色 */
-    --custom-components-light: rgb(22, 35, 47);
-    --custom-components: rgb(2, 37, 53);
-    --custom-components-deep: rgb(43, 47, 49);
+    --custom-components-light: #333333;
+    --custom-components: #252526;
+    --custom-components-deep: #1e1e1e;
 
     /* ------------------------界面样式------------------------ */
 
@@ -167,6 +167,7 @@
 
     /* 拖拽线颜色 */
     --custom-striking-color: var(--b3-font-color12);
+    --custom-separator-color: var(--custom-components-light);
         
     /* 顶部工具栏 */
     --custom-tool-bar-background-color: var(--custom-components-light);
@@ -183,8 +184,20 @@
     --custom-button-color-blue: rgb(10, 140, 185);
     --custom-button-hover-color-blue: rgb(10, 140, 220);
 
+    /* 列表 */
+    --custom-popover-menu-background-color: var(--custom-components-light);
+
     /* 列表聚焦项 */
     --custom-list-hover: rgba(230, 230, 230, 0.1);
+
+    /* 开关 */
+    --custom-switch-backgroud-color: inherit;
+    --custom-switch-icon-backgrounc-color: #cecece;
+
+    /* 设置页面 */
+    --custom-setting-cards-background-color: var(--custom-components-light);
+    --custom-setting-config-tab-background-color: #2b2b2b;
+    --custom-setting-tab-bar-background-color: #202020;
 
     /* ------------------------行内元素------------------------ */
 
