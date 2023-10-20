@@ -1,13 +1,18 @@
 # Lite
 
-# Theme Feature
-1. Adaptation Mobile 
-2. Minimal JavaScript code
+# 主题特性
 
-# Change log
+1. 适配移动端
+2. 尽可能少的 JavaScript 代码
+
+**使用建议**
+
+建议搭配 [霞鹜文楷屏幕阅读版](https://github.com/lxgw/LxgwWenKai-Screen) 字体获得更佳的使用体验。
+
+# 更新日志
 
 ## v1.1.0
 
-For the convenience of quickly switching hollowed out and other styles, the introduction of the theme function button, data cache in `工作空间\data\snippets\Lite.config.json`
+为方便快速切换挖空等样式，引入主题功能按钮，数据缓存在 `工作空间\data\snippets\Lite.config.json` 文件内。
 
-Use Less to refactor theme.
+使用 Less 重构主题。
