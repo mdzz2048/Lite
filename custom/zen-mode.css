@@ -1,0 +1,42 @@
+/* ------------------------ 隐藏所有边栏 ------------------------ */
+.toolbar {
+  height: 12px;
+  margin-bottom: -12px;
+  opacity: 0;
+  z-index: 3;
+}
+.toolbar:hover {
+  height: 32px;
+  margin-bottom: -32px;
+  opacity: 1;
+}
+#dockLeft,
+#dockRight,
+#dockBottom {
+  display: none;
+}
+#status {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+#status > #barDock {
+  display: none;
+}
+#status > .status__msg {
+  padding-right: 8px;
+}
+#status > #statusHelp {
+  display: none;
+}
+/* ------------------------ 隐藏非编辑块 ------------------------ */
+.protyle-wysiwyg > [data-node-id]:not(.block-focus) {
+  opacity: 0.2;
+}
+.protyle-wysiwyg > [data-type="NodeBlockquote"]:has(.block-focus),
+.protyle-wysiwyg > [data-type="NodeList"]:has(.block-focus) {
+  opacity: 1;
+}
+.protyle-wysiwyg [data-node-id].block-focus {
+  opacity: 1;
+}

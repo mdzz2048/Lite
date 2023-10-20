@@ -150,7 +150,8 @@ async function request(url, body) {
 let CONFIG = {};
 const DEFAULT_CONFIG = {
     showMarkDefault: false,
-    useCardStyle: false
+    useCardStyle: false,
+    useZenMode: false,
 }
 const MENU_OPTIONS = [
     {
@@ -158,6 +159,7 @@ const MENU_OPTIONS = [
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconMark"></use></svg>`,
         label: "标记样式",
         href: '/appearance/themes/Lite/custom/mark-display.css',
+        load: true,
         click: (event) => {
             clickCommonMenu('showMarkDefault', '/appearance/themes/Lite/custom/mark-display.css');
             updateCommonMenu(event);
@@ -172,6 +174,7 @@ const MENU_OPTIONS = [
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconRiffCard"></use></svg>`,
         label: "闪卡样式",
         href: '/appearance/themes/Lite/custom/flashcard.css',
+        load: true,
         click: (event) => {
             clickCommonMenu('useCardStyle', '/appearance/themes/Lite/custom/flashcard.css');
             updateCommonMenu(event);
@@ -180,6 +183,22 @@ const MENU_OPTIONS = [
             showToolTip(event);
         },
         tooltip: type => type ? "点击禁用" : "点击启用",
+    },
+    {
+        id: 'useZenMode',
+        icon: `<svg class="b3-menu__icon"><use xlink:href="#iconDock"></use></svg>`,
+        label: "Zen 模式",
+        href: '/appearance/themes/Lite/custom/zen-mode.css',
+        load: false,
+        click: (event) => {
+            setZenModeStyle(CONFIG["useZenMode"]);
+            clickCommonMenu('useZenMode', '/appearance/themes/Lite/custom/zen-mode.css');
+            updateCommonMenu();     // 不传入事件，销毁菜单
+        },
+        mouseover: (event) => {
+            showToolTip(event);
+        },
+        tooltip: type => type ? "退出 Zen 模式" : "进入 Zen 模式",
     },
 ]
 
@@ -197,7 +216,9 @@ function addThemeButton() {
     vip.insertAdjacentElement("afterend", themeButton);
     MENU_OPTIONS.forEach(option => {
         const id = option.id;
-        if (CONFIG[id]) { window.theme.loadLink(option.href, id) }
+        const load = option.load;
+        if (CONFIG[id] && load) { window.theme.loadLink(option.href, id) }
+        if (!load) { CONFIG[id] = false }
     })
 }
 
@@ -359,6 +380,34 @@ const isMobile = () => {
     return document.getElementById("sidebar") ? true : false;
 };
 
+const setZenModeStyle = (type) => {
+    const protyle = document.querySelector("#layouts .protyle:not(.fn__none) > .protyle-content");
+    const protyles = document.querySelectorAll("#layouts .protyle > .protyle-content");
+    const isFullWidth = protyle.getAttribute("data-fullwidth");
+    const configFullWidth = window.theme.fullWidth;
+    if (isFullWidth && !type) {
+        protyles.forEach(protyle => {
+            const protyleTitle = protyle.querySelector(".protyle-title");
+            const protyleWysiwyg = protyle.querySelector(".protyle-wysiwyg");
+            protyleTitle.setAttribute("style", "margin: 16px 323px 0px;");
+            protyleWysiwyg.setAttribute("style", "padding: 16px 323px 221.5px;");
+            protyle.removeAttribute("data-fullwidth");
+        })
+        // 这里只是为了方便切换页签的时候确保边距正确，不会改变思源实际配置
+        window.siyuan.config.editor.fullWidth = false;
+    }
+    if (configFullWidth && type) {
+        protyles.forEach(protyle => {
+            const protyleTitle = protyle.querySelector(".protyle-title");
+            const protyleWysiwyg = protyle.querySelector(".protyle-wysiwyg");
+            protyleTitle.setAttribute("style", "margin: 16px 96px 0px;");
+            protyleWysiwyg.setAttribute("style", "padding: 16px 96px 221.5px;");
+            protyle.setAttribute("data-fullwidth", "true");
+        })
+        window.siyuan.config.editor.fullWidth = true;
+    }
+}
+
 /* ------------------------加载主题功能------------------------ */
 
 import(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"));
@@ -366,6 +415,7 @@ import(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js")
 getThemeConfig()
     .then(data => {
         CONFIG = data ? data : DEFAULT_CONFIG;
+        window.theme.fullWidth = window.siyuan.config.editor.fullWidth;
         addThemeButton();
     });
 
