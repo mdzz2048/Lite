@@ -105,11 +105,10 @@
     /* ------------------------块级元素------------------------ */
 
     /* 代码块 */
-    --custom-block-code-background-color: var(--custom-components);
+    --custom-block-code-background-color: var(--custom-transparent-light);
     /* 代码块行号 */
-    --custom-block-code-linenumber-background-color: var(--custom-transparent-light);
+    --custom-block-code-linenumber-background-color: var(--custom-transparent-deep);
     /* 代码块行号与编辑区的分隔线 */
-    --custom-block-code-linenumber-separator-width: 1px;
     --custom-block-code-linenumber-separator-color: var(--b3-border-color);
 
     /* 嵌入块 */
