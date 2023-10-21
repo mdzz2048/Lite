@@ -438,7 +438,7 @@ const setZenModeStyle = (type) => {
  */
 const keyboardEventListener = (event) => {
     if (event.altKey && event.key === "z") {
-        MENU_OPTIONS[2].click();
+        MENU_OPTIONS[3].click();
         // 如果安装了打字机插件，则默认开启打字机模式
         window.siyuan.ws.app.plugins.forEach(plugin => {
             if (plugin.name === "typewriter") {
