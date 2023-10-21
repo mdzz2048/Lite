@@ -187,6 +187,22 @@ const MENU_OPTIONS = [
         tooltip: type => type ? "点击禁用" : "点击启用",
     },
     {
+        id: 'verticalTabBar',
+        icon: `<svg class="b3-menu__icon"><use xlink:href="#iconSort"></use></svg>`,
+        label: "垂直页签",
+        accelerator: "",
+        href: '/appearance/themes/Lite/custom/tab-bar-vertical.css',
+        load: true,
+        click: (event) => {
+            clickCommonMenu('verticalTabBar', '/appearance/themes/Lite/custom/tab-bar-vertical.css');
+            updateCommonMenu(event);
+        },
+        mouseover: (event) => {
+            showToolTip(event);
+        },
+        tooltip: type => type ? "关闭垂直页签" : "打开垂直页签",
+    },
+    {
         id: 'useZenMode',
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconDock"></use></svg>`,
         label: "Zen 模式",

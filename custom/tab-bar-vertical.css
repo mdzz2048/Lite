@@ -1,0 +1,50 @@
+/* ------------------------ 垂直页签 ------------------------ */
+.layout__center [data-type='wnd'][data-id] {
+  display: flex;
+  flex-direction: row;
+}
+.layout__center [data-type='wnd'][data-id] > .fn__flex:not(.layout-tab-container) {
+  flex-direction: column-reverse;
+}
+.layout__center [data-type='wnd'][data-id] > :first-child {
+  justify-content: left;
+  max-width: var(--custom-tab-bar-vertical-max-width);
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar {
+  box-shadow: inset -1px 0 0 0 var(--custom-components-deep);
+  border: none;
+  display: block;
+  flex: 1;
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar .item {
+  border-radius: var(--custom-border-radius);
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar .item .fn__flex-1:first-child {
+  display: none;
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar .item > .item__icon {
+  padding-left: 8px;
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar .item > .item__text {
+  display: -webkit-box;
+  word-break: break-all;
+  white-space: unset;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar .item:not(.item--pin) {
+  justify-content: space-between;
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar--readonly {
+  flex: unset;
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar--readonly > .item--readonly {
+  box-shadow: none;
+  min-height: 30px;
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar--readonly > .item--readonly > [data-type="new"] {
+  margin: 0 var(--custom-block-padding);
+}
+.layout__center [data-type='wnd'][data-id] .layout-tab-bar--readonly > .item--readonly > [data-type="more"] {
+  padding: 0 var(--custom-block-padding);
+}
