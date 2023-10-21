@@ -158,6 +158,7 @@ const MENU_OPTIONS = [
         id: 'showMarkDefault',
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconMark"></use></svg>`,
         label: "标记样式",
+        accelerator: "",
         href: '/appearance/themes/Lite/custom/mark-display.css',
         load: true,
         click: (event) => {
@@ -173,6 +174,7 @@ const MENU_OPTIONS = [
         id: 'useCardStyle',
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconRiffCard"></use></svg>`,
         label: "闪卡样式",
+        accelerator: "",
         href: '/appearance/themes/Lite/custom/flashcard.css',
         load: true,
         click: (event) => {
@@ -188,6 +190,7 @@ const MENU_OPTIONS = [
         id: 'useZenMode',
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconDock"></use></svg>`,
         label: "Zen 模式",
+        accelerator: "Alt+Z",
         href: '/appearance/themes/Lite/custom/zen-mode.css',
         load: false,
         click: (event) => {
@@ -299,7 +302,12 @@ function getMenuItems() {
         menuLabel.className = 'b3-menu__label';
         menuLabel.innerHTML = option.label;
 
+        const menuAccelerator = document.createElement('span');
+        menuAccelerator.className = 'b3-menu__accelerator';
+        menuAccelerator.innerHTML = option.accelerator;
+
         element.appendChild(menuLabel);
+        element.appendChild(menuAccelerator);
         element.addEventListener('click', option.click);
         element.addEventListener('mouseover', option.mouseover);
         element.addEventListener('mouseout', removeTooltip);
@@ -408,6 +416,40 @@ const setZenModeStyle = (type) => {
     }
 }
 
+/**
+ * 添加快捷键监听事件
+ * @param {KeyboardEvent} event 
+ */
+const keyboardEventListener = (event) => {
+    if (event.altKey && event.key === "z") {
+        MENU_OPTIONS[2].click();
+        // 如果安装了打字机插件，则默认开启打字机模式
+        window.siyuan.ws.app.plugins.forEach(plugin => {
+            if (plugin.name === "typewriter") {
+                const enable = plugin.data["global-config"].typewriter.enable;
+                const config = window.theme.typewriter;
+                if (!enable) {  // 关闭，则开启
+                    plugin.data["global-config"].typewriter.enable = !enable;
+                    plugin.toggleEnableState();
+                }
+                if (enable && !config) {    // 开启，且原配置是关着的
+                    plugin.data["global-config"].typewriter.enable = !enable;
+                    plugin.toggleEnableState();
+                }
+            }
+        })
+    }
+}
+
+const cacheConfig = () => {
+    window.theme.fullWidth = window.siyuan.config.editor.fullWidth;
+    window.siyuan.ws.app.plugins.forEach(plugin => {
+        if (plugin.name === "typewriter") {
+            window.theme.typewriter = plugin.data["global-config"].typewriter.enable;
+        }
+    })
+}
+
 /* ------------------------加载主题功能------------------------ */
 
 import(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"));
@@ -415,8 +457,9 @@ import(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js")
 getThemeConfig()
     .then(data => {
         CONFIG = data ? data : DEFAULT_CONFIG;
-        window.theme.fullWidth = window.siyuan.config.editor.fullWidth;
+        cacheConfig();
         addThemeButton();
+        document.addEventListener("keydown", keyboardEventListener);
     });
 
 /* ------------------------测试用例------------------------ */
