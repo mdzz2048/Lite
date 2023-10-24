@@ -33,6 +33,9 @@
     --custom-flash-card-p-color: #00c853;
     --custom-flash-card-sb-color: #7c4dff;
     --custom-flash-card-box-shadow-color: #aaaaaa;
+
+    /* 子弹线 */
+    --custom-list-bullet-color: rgb(70, 110, 220);
     
     /* ------------------------界面样式------------------------ */
     

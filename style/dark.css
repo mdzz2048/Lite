@@ -31,6 +31,9 @@
     /* --custom-flash-card-box-shadow-color: #535353; */
     --custom-flash-card-box-shadow-color: transparent;
 
+    /* 子弹线 */
+    --custom-list-bullet-color: rgb(46, 170, 220);
+
     /* ------------------------界面样式------------------------ */
 
     /* 编辑器 */
