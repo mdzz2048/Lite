@@ -1,0 +1,153 @@
+/* ------------------------ 列表子弹线 ------------------------ */
+
+// 列表小圆点(.protyle-action) 宽度为 34px
+@action-width: 34px;
+@action-height: 34px;
+// 计算子弹线样式宽高
+@bullet-width: @action-width;                   // 小圆点的宽度 (用于撑开内部)
+@bullet-height: @action-height;                 // 小圆点的高度 (用于撑开内部)
+@bullet-line: calc(100% + 5px);                 // 元素高度 + 小圆点半径
+@bullet-top: 0 - (@action-width / 2) - 1px;     // - (小圆点高度的一半 + 子弹线宽度的一半)
+@bullet-left: 0 - (@action-width / 2) - 1px;    // - (小圆点宽度的一半 + 子弹线宽度的一半)
+// 设置判断聚焦的选择器
+// 方案一：使用 js 设置焦点父元素属性 [has-block-focus] | 快速缩进、反向缩进列表会存在视觉残留
+// 方案二：使用 :has([block-focus]) 判断 | 大量使用 :has 选择器，可能存在性能问题
+
+.border(@border-width, @height) {
+    content: "";
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    top: @bullet-top;
+    left: @bullet-left;
+    height: @height;
+    width: @bullet-width;
+    border-style: solid;
+    border-color: var(--custom-list-bullet-color);
+    border-width: @border-width;
+}
+
+.hind-after() {
+    ~ [data-node-id]::after {
+        border-color: transparent;
+    }
+}
+
+// 设置自定义属性: list-bullet 为 false 后，不再设置子弹线样式
+.protyle-wysiwyg:not([custom-list-bullet="false"]) [data-node-id]:has([block-focus]).li {
+    
+    > .protyle-action {
+        color: var(--custom-list-bullet-color);
+
+        + [data-node-id]:not(.p) {
+            &::after {
+                top: 0 - @bullet-top !important;
+                height: calc(100% - (@action-width / 2)) !important;    // 元素高度 - 小圆点高度的一半
+            }
+        }
+    }
+
+    // 存在聚焦项的列表块
+    > .list:has([block-focus]) {
+
+        // 非聚焦列表项
+        > .li:not(:has([block-focus])) {
+            // 提供侧边样式
+            &::after {
+                .border(0 0 0 2px, @bullet-line);
+            }
+        }
+        
+        // 聚焦列表项
+        > .li:has([block-focus]) {
+
+            // 画出子弹线的弯折
+            &::after{
+                .border(0 0 2px 2px, @bullet-height);
+                border-radius: 0 0 0 8px;
+            }
+
+            // 不显示聚焦列表项后的兄弟节点提供的侧边样式
+            .hind-after();
+        }
+    }
+
+    // 存在聚焦项的列表
+    &:has([block-focus]) {
+        // 不显示聚焦内容后面的侧边样式
+        [block-focus] ~ [data-node-id]::after,
+        :has([block-focus]) ~ [data-node-id]::after {
+            border-color: transparent !important;
+        }
+        
+        // todo: 适配列表中可能存在的各种情况
+        > .bq::after {
+            left: @bullet-left - 3px !important;    // 主题 .bq 的 border 对这里有影响
+            .border(0 0 0 2px, @bullet-line);
+        }
+
+        > .p:nth-child(n + 3)::after {
+            .border(0 0 0 2px, @bullet-line);
+        }
+
+        > .list:nth-child(n + 3):not(:has([block-focus])):after {
+            left: -2px !important;      // 列表的 margin 对这里有影响
+            .border(0 0 0 2px, @bullet-line);
+        }
+
+        > .sb:not(:has([block-focus])):after {
+            .border(0 0 0 2px, @bullet-line);
+        }
+    }
+
+    // 存在聚焦项的有序列表
+    &[data-subtype="o"]:has([block-focus]) {
+
+        > .list:has([block-focus]) > .li {
+
+            // 序号实际宽高为 16px，此处留出 2px 富余
+            &::after {
+                top: @bullet-top + 10px;             // 初始高度 - 序号高度的一半 (减少上移)
+                width: @bullet-width - 10px;         // 小圆点宽度 - 序号宽度的一半 (减少撑开宽度)
+            }
+            
+            &:has([block-focus]) {
+                &::after {
+                    height: @bullet-height - 8px;   // 小圆点高度 - 序号高度的一半 (减少撑开高度)
+                }
+                .hind-after();
+            }
+        }
+    }
+
+    // 存在聚焦项的代办列表
+    &[data-subtype="t"]:has([block-focus]) {
+        
+        > .list:has([block-focus]) > .li {
+
+            &::after {
+                top: @bullet-top + 8px;             // 初始高度 - 复选框高度的一半 (减少上移)
+                width: @bullet-width - 8px;         // 小圆点宽度 - 复选框宽度的一半 (减少撑开宽度)
+            }
+            
+            &:has([block-focus]) {
+                &::after {
+                    height: @bullet-height - 8px;   // 小圆点高度 - 复选框高度的一半 (减少撑开高度)
+                }
+                .hind-after();
+            }
+
+        }
+
+        &.protyle-task--done > .list:has([block-focus]) > .li {
+            // 已完成列表子弹线设置为灰色
+            &::after {
+                border-color: var(--b3-theme-on-surface-light);
+            }
+
+            &:has([block-focus]) {
+                .hind-after();
+            }
+        }
+    }
+}
