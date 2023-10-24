@@ -1,7 +1,7 @@
 /* ------------------------ 编辑器 ------------------------ */
 #editor .protyle-content > .protyle-wysiwyg {
-  margin-left: 18px;
-  margin-right: 18px;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
 }
 #editor .protyle-wysiwyg [data-node-id].p {
   border-radius: 0;
