@@ -3,50 +3,6 @@
 window.theme = {};
 
 /**
- * 静态资源请求 URL 添加参数
- * @params {string} url 资源请求 URL
- * @return {string} 返回添加参数后的 URL
- */
-window.theme.addURLParam = function (
-    url,
-    param = {
-        // t: Date.now().toString(),
-        v: window.siyuan.config.appearance.themeVer,
-    },
-) {
-    let new_url;
-    switch (true) {
-        case url.startsWith('//'):
-            new_url = new URL(`https:${url}`);
-            break;
-        case url.startsWith('http://'):
-        case url.startsWith('https://'):
-            new_url = new URL(url);
-            break;
-        case url.startsWith('/'):
-            new_url = new URL(url, window.location.origin);
-            break;
-        default:
-            new_url = new URL(url, window.location.origin + window.location.pathname);
-            break;
-    }
-    for (let [key, value] of Object.entries(param)) {
-        new_url.searchParams.set(key, value);
-    }
-    switch (true) {
-        case url.startsWith('//'):
-            return new_url.href.substring(new_url.protocol.length);
-        case url.startsWith('http://'):
-        case url.startsWith('https://'):
-            return new_url.href;
-        case url.startsWith('/'):
-            return new_url.href.substring(new_url.origin.length);
-        default:
-            return new_url.href.substring((window.location.origin + window.location.pathname).length);
-    }
-}
-
-/**
  * 加载 meta 标签
  * @params {object} attributes 属性键值对
  */
@@ -76,7 +32,6 @@ window.theme.loadLink = function (
     link.type = 'text/css';
     link.rel = 'stylesheet';
     link.href = href;
-    // document.head.appendChild(link);
     element.insertAdjacentElement(position, link);
 }
 
@@ -145,6 +100,52 @@ async function request(url, body) {
     }
 }
 
+/* ------------------------ 列表子弹线 ------------------------ */
+
+/**
+ * 获得焦点所在的块
+ * @return {HTMLElement} 光标所在块
+ * @return {null} 光标不在块内
+ */
+function getFocusedBlock() {
+    let block = document.getSelection()?.focusNode?.parentElement; // 当前光标
+    while (block != null && block.dataset.nodeId == null) block = block.parentElement;
+    return block;
+}
+
+/**
+ * 给焦点块父级元素设置属性
+ * @param {HTMLElement} block 
+ */
+function setFocusAttr(block) {
+    while (block != null && !block.classList.contains('protyle-wysiwyg')) {
+        block.setAttribute('has-block-focus', 'true');
+        block = block.parentElement;
+    }
+}
+
+function focusHandler() {
+    // 获取当前光标所在块
+    let block = getFocusedBlock();
+
+    // 重设父级元素属性
+    // document.querySelectorAll('[has-block-focus]').forEach(element => element.removeAttribute('has-block-focus'));
+    // setFocusAttr(block?.parentElement);
+    
+    // 已设置焦点
+    if (block?.hasAttribute('block-focus')) return;
+
+    // 未设置焦点
+    document.querySelectorAll('[block-focus]').forEach((element) => element.removeAttribute('block-focus'));
+    block.setAttribute('block-focus', 'true');
+}
+
+function bulletMain() {
+    // 跟踪当前所在块
+    window.addEventListener('mouseup', focusHandler, true);
+    window.addEventListener('keyup', focusHandler, true);
+}
+
 /* ------------------------ 主题设置菜单 ------------------------ */
 
 let CONFIG = {};
@@ -201,6 +202,22 @@ const MENU_OPTIONS = [
             showToolTip(event);
         },
         tooltip: type => type ? "关闭垂直页签" : "打开垂直页签",
+    },
+    {
+        id: 'listBullet',
+        icon: `<svg class="b3-menu__icon"><use xlink:href="#iconList"></use></svg>`,
+        label: "列表子弹线",
+        accelerator: "",
+        href: '/appearance/themes/Lite/custom/list-bullet.css',
+        load: true,
+        click: (event) => {
+            clickCommonMenu('listBullet', '/appearance/themes/Lite/custom/list-bullet.css');
+            updateCommonMenu(event);
+        },
+        mouseover: (event) => {
+            showToolTip(event);
+        },
+        tooltip: type => type ? "关闭列表子弹线" : "打开列表子弹线",
     },
     {
         id: 'useZenMode',
@@ -438,7 +455,8 @@ const setZenModeStyle = (type) => {
  */
 const keyboardEventListener = (event) => {
     if (event.altKey && event.key === "z") {
-        MENU_OPTIONS[3].click();
+        const useZenMode = MENU_OPTIONS.find(option => option.id === "useZenMode");
+        useZenMode.click();
         // 如果安装了打字机插件，则默认开启打字机模式
         window.siyuan.ws.app.plugins.forEach(plugin => {
             if (plugin.name === "typewriter") {
@@ -468,14 +486,13 @@ const cacheConfig = () => {
 
 /* ------------------------加载主题功能------------------------ */
 
-import(window.theme.addURLParam("/appearance/themes/Lite/custom/bullet/main.js"));
-
 getThemeConfig()
     .then(data => {
         CONFIG = data ? data : DEFAULT_CONFIG;
         cacheConfig();
         addThemeButton();
         document.addEventListener("keydown", keyboardEventListener);
+        bulletMain();
     });
 
 /* ------------------------测试用例------------------------ */
