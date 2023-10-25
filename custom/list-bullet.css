@@ -67,7 +67,23 @@
   border-color: var(--custom-list-bullet-color);
   border-width: 0 0 0 2px;
 }
-.protyle-wysiwyg:not([custom-list-bullet="false"]) [data-node-id]:has([block-focus]).li:has([block-focus]) > .list:nth-child(n + 3):not(:has([block-focus])):after {
+.protyle-wysiwyg:not([custom-list-bullet="false"]) [data-node-id]:has([block-focus]).li:has([block-focus]) > .p:nth-child(2):not([block-focus])::after {
+  bottom: 0;
+  top: 18px !important;
+  height: auto !important;
+  content: "";
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  top: -18px;
+  left: -18px;
+  height: calc(100% + 5px);
+  width: 34px;
+  border-style: solid;
+  border-color: var(--custom-list-bullet-color);
+  border-width: 0 0 0 2px;
+}
+.protyle-wysiwyg:not([custom-list-bullet="false"]) [data-node-id]:has([block-focus]).li:has([block-focus]) > .list:nth-child(n + 3):not(:has([block-focus]))::after {
   left: -2px !important;
   content: "";
   display: block;
@@ -81,7 +97,7 @@
   border-color: var(--custom-list-bullet-color);
   border-width: 0 0 0 2px;
 }
-.protyle-wysiwyg:not([custom-list-bullet="false"]) [data-node-id]:has([block-focus]).li:has([block-focus]) > .sb:not(:has([block-focus])):after {
+.protyle-wysiwyg:not([custom-list-bullet="false"]) [data-node-id]:has([block-focus]).li:has([block-focus]) > .sb:not(:has([block-focus]))::after {
   content: "";
   display: block;
   position: absolute;

@@ -42,18 +42,18 @@
 .protyle-wysiwyg {
 
     // 弱化顶层的非编辑块
-    > [data-node-id]:not(.block-focus) {
+    > [data-node-id]:not([block-focus]) {
         opacity: 0.2;
     }
 
     // 部分块需要通过子块聚焦情况判断（使用 :has 可能存在性能问题）
-    > [data-type="NodeBlockquote"]:has(.block-focus),
-    > [data-type="NodeList"]:has(.block-focus) {
+    > [data-type="NodeBlockquote"]:has([block-focus]),
+    > [data-type="NodeList"]:has([block-focus]) {
         opacity: 1;
     }
 
     // 显示编辑中的块
-    [data-node-id].block-focus {
+    [data-node-id][block-focus] {
         opacity: 1;
     }
 }

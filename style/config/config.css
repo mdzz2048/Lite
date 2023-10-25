@@ -147,6 +147,5 @@
 @font-face {
     font-family: 'Helvetica Neue';
     font-style: normal;
-    /* src: url(../fonts/LXGWWenKaiMono-Regular.ttf); */
-    src: url(../fonts/LXGWWenKaiGBScreenR.ttf);
+    src: url(../../fonts/LXGWWenKaiGBScreenR.ttf);
 }

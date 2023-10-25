@@ -30,13 +30,13 @@
   display: none;
 }
 /* ------------------------ 隐藏非编辑块 ------------------------ */
-.protyle-wysiwyg > [data-node-id]:not(.block-focus) {
+.protyle-wysiwyg > [data-node-id]:not([block-focus]) {
   opacity: 0.2;
 }
-.protyle-wysiwyg > [data-type="NodeBlockquote"]:has(.block-focus),
-.protyle-wysiwyg > [data-type="NodeList"]:has(.block-focus) {
+.protyle-wysiwyg > [data-type="NodeBlockquote"]:has([block-focus]),
+.protyle-wysiwyg > [data-type="NodeList"]:has([block-focus]) {
   opacity: 1;
 }
-.protyle-wysiwyg [data-node-id].block-focus {
+.protyle-wysiwyg [data-node-id][block-focus] {
   opacity: 1;
 }
