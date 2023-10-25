@@ -2,212 +2,212 @@
 /* ------------------------ URL Scheme------------------------ */
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href^="bookxnotepro:"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href^="bookxnotepro:"]::before {
-  background-image: url(../assets/icon/bookxnote.ico) !important;
+  background-image: url(../../assets//icon/bookxnote.ico) !important;
 }
 .b3-typography a[data-href^="bookxnotepro:"]::before {
-  background-image: url(../assets/icon/bookxnote.ico) !important;
+  background-image: url(../../assets//icon/bookxnote.ico) !important;
 }
 /* ------------------------ Domain Name ------------------------ */
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="en.wikipedia.org"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="en.wikipedia.org"]::before {
-  background-image: url(../assets/icon/wikipedia.ico) !important;
+  background-image: url(../../assets//icon/wikipedia.ico) !important;
 }
 .b3-typography a[data-href*="en.wikipedia.org"]::before {
-  background-image: url(../assets/icon/wikipedia.ico) !important;
+  background-image: url(../../assets//icon/wikipedia.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="npmjs.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="npmjs.com"]::before {
-  background-image: url(../assets/icon/npm.ico) !important;
+  background-image: url(../../assets//icon/npm.ico) !important;
 }
 .b3-typography a[data-href*="npmjs.com"]::before {
-  background-image: url(../assets/icon/npm.ico) !important;
+  background-image: url(../../assets//icon/npm.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="cnblogs.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="cnblogs.com"]::before {
-  background-image: url(../assets/icon/cnblogs.ico) !important;
+  background-image: url(../../assets//icon/cnblogs.ico) !important;
 }
 .b3-typography a[data-href*="cnblogs.com"]::before {
-  background-image: url(../assets/icon/cnblogs.ico) !important;
+  background-image: url(../../assets//icon/cnblogs.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="juejin.cn"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="juejin.cn"]::before {
-  background-image: url(../assets/icon/juejin.ico) !important;
+  background-image: url(../../assets//icon/juejin.ico) !important;
 }
 .b3-typography a[data-href*="juejin.cn"]::before {
-  background-image: url(../assets/icon/juejin.ico) !important;
+  background-image: url(../../assets//icon/juejin.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="ruanyifeng.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="ruanyifeng.com"]::before {
-  background-image: url(../assets/icon/ruanyifeng.ico) !important;
+  background-image: url(../../assets//icon/ruanyifeng.ico) !important;
 }
 .b3-typography a[data-href*="ruanyifeng.com"]::before {
-  background-image: url(../assets/icon/ruanyifeng.ico) !important;
+  background-image: url(../../assets//icon/ruanyifeng.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="cloud.tencent.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="cloud.tencent.com"]::before {
-  background-image: url(../assets/icon/tencentcloud.ico) !important;
+  background-image: url(../../assets//icon/tencentcloud.ico) !important;
 }
 .b3-typography a[data-href*="cloud.tencent.com"]::before {
-  background-image: url(../assets/icon/tencentcloud.ico) !important;
+  background-image: url(../../assets//icon/tencentcloud.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="freecodecamp.org"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="freecodecamp.org"]::before {
-  background-image: url(../assets/icon/freecodecamp.ico) !important;
+  background-image: url(../../assets//icon/freecodecamp.ico) !important;
 }
 .b3-typography a[data-href*="freecodecamp.org"]::before {
-  background-image: url(../assets/icon/freecodecamp.ico) !important;
+  background-image: url(../../assets//icon/freecodecamp.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="wandoujia.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="wandoujia.com"]::before {
-  background-image: url(../assets/icon/wandoujia.ico) !important;
+  background-image: url(../../assets//icon/wandoujia.ico) !important;
 }
 .b3-typography a[data-href*="wandoujia.com"]::before {
-  background-image: url(../assets/icon/wandoujia.ico) !important;
+  background-image: url(../../assets//icon/wandoujia.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="weread.qq.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="weread.qq.com"]::before {
-  background-image: url(../assets/icon/weread.ico) !important;
+  background-image: url(../../assets//icon/weread.ico) !important;
 }
 .b3-typography a[data-href*="weread.qq.com"]::before {
-  background-image: url(../assets/icon/weread.ico) !important;
+  background-image: url(../../assets//icon/weread.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="apifox.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="apifox.com"]::before {
-  background-image: url(../assets/icon/apifox.ico) !important;
+  background-image: url(../../assets//icon/apifox.ico) !important;
 }
 .b3-typography a[data-href*="apifox.com"]::before {
-  background-image: url(../assets/icon/apifox.ico) !important;
+  background-image: url(../../assets//icon/apifox.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="hypothes.is"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="hypothes.is"]::before {
-  background-image: url(../assets/icon/hypothesis.ico) !important;
+  background-image: url(../../assets//icon/hypothesis.ico) !important;
 }
 .b3-typography a[data-href*="hypothes.is"]::before {
-  background-image: url(../assets/icon/hypothesis.ico) !important;
+  background-image: url(../../assets//icon/hypothesis.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="hyp.is"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="hyp.is"]::before {
-  background-image: url(../assets/icon/hypothesis.ico) !important;
+  background-image: url(../../assets//icon/hypothesis.ico) !important;
 }
 .b3-typography a[data-href*="hyp.is"]::before {
-  background-image: url(../assets/icon/hypothesis.ico) !important;
+  background-image: url(../../assets//icon/hypothesis.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="microsoft.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="microsoft.com"]::before {
-  background-image: url(../assets/icon/microsoft.ico) !important;
+  background-image: url(../../assets//icon/microsoft.ico) !important;
 }
 .b3-typography a[data-href*="microsoft.com"]::before {
-  background-image: url(../assets/icon/microsoft.ico) !important;
+  background-image: url(../../assets//icon/microsoft.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="writeathon.cn"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="writeathon.cn"]::before {
-  background-image: url(../assets/icon/writeathon.ico) !important;
+  background-image: url(../../assets//icon/writeathon.ico) !important;
 }
 .b3-typography a[data-href*="writeathon.cn"]::before {
-  background-image: url(../assets/icon/writeathon.ico) !important;
+  background-image: url(../../assets//icon/writeathon.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="18comic.org"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="18comic.org"]::before {
-  background-image: url(../assets/icon/jinman.ico) !important;
+  background-image: url(../../assets//icon/jinman.ico) !important;
 }
 .b3-typography a[data-href*="18comic.org"]::before {
-  background-image: url(../assets/icon/jinman.ico) !important;
+  background-image: url(../../assets//icon/jinman.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="18comic.vip"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="18comic.vip"]::before {
-  background-image: url(../assets/icon/jinman.ico) !important;
+  background-image: url(../../assets//icon/jinman.ico) !important;
 }
 .b3-typography a[data-href*="18comic.vip"]::before {
-  background-image: url(../assets/icon/jinman.ico) !important;
+  background-image: url(../../assets//icon/jinman.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="huaban.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="huaban.com"]::before {
-  background-image: url(../assets/icon/huaban.ico) !important;
+  background-image: url(../../assets//icon/huaban.ico) !important;
 }
 .b3-typography a[data-href*="huaban.com"]::before {
-  background-image: url(../assets/icon/huaban.ico) !important;
+  background-image: url(../../assets//icon/huaban.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="alphacoders.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="alphacoders.com"]::before {
-  background-image: url(../assets/icon/alphacoders.ico) !important;
+  background-image: url(../../assets//icon/alphacoders.ico) !important;
 }
 .b3-typography a[data-href*="alphacoders.com"]::before {
-  background-image: url(../assets/icon/alphacoders.ico) !important;
+  background-image: url(../../assets//icon/alphacoders.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="pixiv.net"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="pixiv.net"]::before {
-  background-image: url(../assets/icon/pixiv.ico) !important;
+  background-image: url(../../assets//icon/pixiv.ico) !important;
 }
 .b3-typography a[data-href*="pixiv.net"]::before {
-  background-image: url(../assets/icon/pixiv.ico) !important;
+  background-image: url(../../assets//icon/pixiv.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="jianshu.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="jianshu.com"]::before {
-  background-image: url(../assets/icon/jianshu.ico) !important;
+  background-image: url(../../assets//icon/jianshu.ico) !important;
 }
 .b3-typography a[data-href*="jianshu.com"]::before {
-  background-image: url(../assets/icon/jianshu.ico) !important;
+  background-image: url(../../assets//icon/jianshu.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="mp.weixin.qq.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="mp.weixin.qq.com"]::before {
-  background-image: url(../assets/icon/mp-weixin-qq.ico) !important;
+  background-image: url(../../assets//icon/mp-weixin-qq.ico) !important;
 }
 .b3-typography a[data-href*="mp.weixin.qq.com"]::before {
-  background-image: url(../assets/icon/mp-weixin-qq.ico) !important;
+  background-image: url(../../assets//icon/mp-weixin-qq.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="appinn.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="appinn.com"]::before {
-  background-image: url(../assets/icon/xiaozhongruanjian.ico) !important;
+  background-image: url(../../assets//icon/xiaozhongruanjian.ico) !important;
 }
 .b3-typography a[data-href*="appinn.com"]::before {
-  background-image: url(../assets/icon/xiaozhongruanjian.ico) !important;
+  background-image: url(../../assets//icon/xiaozhongruanjian.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="iplaysoft.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="iplaysoft.com"]::before {
-  background-image: url(../assets/icon/yiciyuan.ico) !important;
+  background-image: url(../../assets//icon/yiciyuan.ico) !important;
 }
 .b3-typography a[data-href*="iplaysoft.com"]::before {
-  background-image: url(../assets/icon/yiciyuan.ico) !important;
+  background-image: url(../../assets//icon/yiciyuan.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="zhihu.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="zhihu.com"]::before {
-  background-image: url(../assets/icon/zhihu.ico) !important;
+  background-image: url(../../assets//icon/zhihu.ico) !important;
 }
 .b3-typography a[data-href*="zhihu.com"]::before {
-  background-image: url(../assets/icon/zhihu.ico) !important;
+  background-image: url(../../assets//icon/zhihu.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="stackoverflow.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="stackoverflow.com"]::before {
-  background-image: url(../assets/icon/stack-overflow.ico) !important;
+  background-image: url(../../assets//icon/stack-overflow.ico) !important;
 }
 .b3-typography a[data-href*="stackoverflow.com"]::before {
-  background-image: url(../assets/icon/stack-overflow.ico) !important;
+  background-image: url(../../assets//icon/stack-overflow.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="im.qq.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="im.qq.com"]::before {
-  background-image: url(../assets/icon/qq.ico) !important;
+  background-image: url(../../assets//icon/qq.ico) !important;
 }
 .b3-typography a[data-href*="im.qq.com"]::before {
-  background-image: url(../assets/icon/qq.ico) !important;
+  background-image: url(../../assets//icon/qq.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="telegram.org"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="telegram.org"]::before {
-  background-image: url(../assets/icon/telegram.ico) !important;
+  background-image: url(../../assets//icon/telegram.ico) !important;
 }
 .b3-typography a[data-href*="telegram.org"]::before {
-  background-image: url(../assets/icon/telegram.ico) !important;
+  background-image: url(../../assets//icon/telegram.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="bilibili.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="bilibili.com"]::before {
-  background-image: url(../assets/icon/bilibili.ico) !important;
+  background-image: url(../../assets//icon/bilibili.ico) !important;
 }
 .b3-typography a[data-href*="bilibili.com"]::before {
-  background-image: url(../assets/icon/bilibili.ico) !important;
+  background-image: url(../../assets//icon/bilibili.ico) !important;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~="a"][data-href*="youtube.com"]::before,
 .protyle-wysiwyg [data-node-id] span[data-type~="url"][data-href*="youtube.com"]::before {
-  background-image: url(../assets/icon/youtube.ico) !important;
+  background-image: url(../../assets//icon/youtube.ico) !important;
 }
 .b3-typography a[data-href*="youtube.com"]::before {
-  background-image: url(../assets/icon/youtube.ico) !important;
+  background-image: url(../../assets//icon/youtube.ico) !important;
 }
