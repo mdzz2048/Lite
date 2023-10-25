@@ -39,7 +39,14 @@
   background-color: transparent;
   border-radius: var(--custom-border-radius);
 }
-.b3-dialog__container[style="width:80vw;height:90vh"] .search__layout .search__list > .b3-list-item[data-type="search-item"] > .b3-list-item__meta {
+.b3-dialog__container[style="width:80vw;height:90vh"] .search__layout .search__list > .b3-list-item[data-type="search-item"] > .b3-list-item__meta:not(.ariaLabel) {
+  top: 0;
+  right: 0;
+  height: 28px;
+  padding: 3px;
+  position: absolute;
+}
+.b3-dialog__container[style="width:80vw;height:90vh"] .search__layout .search__list > .b3-list-item[data-type="search-item"] > .b3-list-item__meta.ariaLabel {
   bottom: 0px;
   margin-left: 2px;
   max-width: calc(100% - 12px);

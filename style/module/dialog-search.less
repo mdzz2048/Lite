@@ -58,6 +58,7 @@
                 margin: 3px 0 !important;
                 padding-bottom: calc(1.25em + 1px);
 
+                // 文档名
                 > .b3-list-item__text {
                     padding: 3px 0;
 
@@ -70,7 +71,17 @@
                     }
                 }
 
-                > .b3-list-item__meta {
+                // 文档信息 (命名、别名、备注)
+                > .b3-list-item__meta:not(.ariaLabel) {
+                    top: 0;
+                    right: 0;
+                    height: 28px;
+                    padding: 3px;
+                    position: absolute;
+                }
+
+                // 文档路径
+                > .b3-list-item__meta.ariaLabel {
                     bottom: 0px;
                     margin-left: 2px;
                     max-width: calc(100% - 12px);
