@@ -37,6 +37,19 @@
   background-color: var(--b3-theme-background);
   transform: translateX(20px) translateY(2px);
 }
+/* ------------------------ 滚动条样式 ------------------------ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  border: none;
+  box-shadow: none;
+  background-color: var(--custom-sroll-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  border: 1px solid var(--custom-sroll-hover-color);
+}
 /* ------------------------ 面板全局设置 ------------------------ */
 .b3-dialog__container > .b3-dialog__close {
   display: none;

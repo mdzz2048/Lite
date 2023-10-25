@@ -50,6 +50,26 @@
     }
 }
 
+/* ------------------------ 滚动条样式 ------------------------ */
+
+// REF: https://developer.mozilla.org/zh-CN/docs/Web/CSS/::-webkit-scrollbar
+// 整个滚动条
+::-webkit-scrollbar {
+    width : 6px;
+	height: 6px;
+}
+
+// 滚动条滑块
+::-webkit-scrollbar-thumb {
+	border: none;
+    box-shadow: none;
+    background-color: var(--custom-sroll-color);
+
+    &:hover {
+        border: 1px solid var(--custom-sroll-hover-color);
+    }
+}
+
 /* ------------------------ 面板全局设置 ------------------------ */
 
 .b3-dialog__container {

@@ -24,6 +24,10 @@
     --custom-button-color-blue: #069ccd;
     --custom-button-hover-color-blue: #2eaadc;
 
+    /* 滚动条 */
+    --custom-sroll-color: var(--custom-components-light);
+    --custom-sroll-hover-color: rgb(80, 80, 80);
+
     /* 闪卡 */
     --custom-flash-card-list-color: #9d2d2d;
     --custom-flash-card-p-color: #1b551b;

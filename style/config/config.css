@@ -28,6 +28,10 @@
     --custom-switch-backgroud-color: #f5f5f5;
     --custom-switch-icon-backgrounc-color: #5d5d5d;
 
+    /* 滚动条 */
+    --custom-sroll-color: var(--custom-components-deep);
+    --custom-sroll-hover-color: rgb(190, 190, 190);
+    
     /* 闪卡 */
     --custom-flash-card-list-color: #ff6a6a;
     --custom-flash-card-p-color: #00c853;
