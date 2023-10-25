@@ -1,7 +1,8 @@
 /* ------------------------ 初始设置 ------------------------ */
-@import url(style/config.css);
-@import url(style/dark.css);
-@import url(style/light.css);
+@import url(style/config/config.css);
+@import url(style/config/dark.css);
+@import url(style/config/light.css);
+@import url(style/config/theme-menu.css);
 
 /* ------------------------ 界面样式 ------------------------ */
 
@@ -30,6 +31,7 @@
 
 /* ------------------------ 行内元素 ------------------------ */
 
+@import url(style/module/link-icon.css);
 @import url(style/module/span-code.css);
 @import url(style/module/span-img.css);
 @import url(style/module/span-link.css);
@@ -48,11 +50,6 @@
 @import url(style/module/block-paragraph.css);
 @import url(style/module/block-quote.css);
 @import url(style/module/block-super.css);
-
-/* ------------------------ 自定义样式 ------------------------ */
-
-@import url(custom/link-icon.css);
-@import url(custom/theme-menu.css);
 
 /* ------------------------ 移动端优化 ------------------------ */
 
