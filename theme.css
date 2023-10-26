@@ -7,6 +7,7 @@
 /* ------------------------ 界面样式 ------------------------ */
 
 /* 弹窗 */
+@import url(style/module/dialog-move.css);
 @import url(style/module/dialog-search.css);
 @import url(style/module/dialog-setting.css);
 
