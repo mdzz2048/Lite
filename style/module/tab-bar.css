@@ -52,6 +52,18 @@
   margin: var(--custom-block-padding);
 }
 /* ------------------------ 新窗口页签 ------------------------ */
-.layout.layout__center .layout-tab-bar .item {
-  min-height: 42px;
+.layout.layout__center .layout-tab-bar {
+  height: var(--custom-tab-bar-min-height);
+}
+.layout.layout__center .layout-tab-bar--readonly {
+  padding-right: calc(var(--custom-tab-bar-min-height) * 4) !important;
+}
+.layout.layout__center .layout-tab-bar--readonly .item--readonly > span[style] {
+  height: var(--custom-tab-bar-min-height) !important;
+}
+.toolbar__window > .toolbar__item {
+  padding: calc((var(--custom-tab-bar-min-height) - 13.5px) / 2);
+}
+.toolbar__window #closeWindow {
+  padding: calc((var(--custom-tab-bar-min-height) - 13.5px) / 2) calc((var(--custom-tab-bar-min-height) - 10px) / 2);
 }

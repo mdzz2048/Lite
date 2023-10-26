@@ -79,12 +79,39 @@
 
 /* ------------------------ 新窗口页签 ------------------------ */
 
+@tab-bar-height: var(--custom-tab-bar-min-height);
+@svg-height: 13.5px;
+
 .layout.layout__center{
 
+    // 顶栏
     .layout-tab-bar {
-        // 页签项高度使用默认值
-        .item {
-            min-height: 42px;
+        height: @tab-bar-height;
+    }
+
+    // 顶栏功能按钮
+    .layout-tab-bar--readonly {
+        padding-right: calc(@tab-bar-height * 4) !important;
+        
+        // 重设 readonly 页签项内联高度
+        .item--readonly > span[style] {
+            height: @tab-bar-height !important;
         }
+    }
+
+}
+
+.toolbar__window {
+
+    // 钉住、最小化、最大化、关闭
+    > .toolbar__item {
+        padding: calc((@tab-bar-height - @svg-height) / 2);
+    }
+
+    // 关闭图标大小和其他的不一样
+    #closeWindow {
+        padding: 
+            calc((@tab-bar-height - @svg-height) / 2) 
+            calc((@tab-bar-height - 10px) / 2);
     }
 }
