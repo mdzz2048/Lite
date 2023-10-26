@@ -6,26 +6,6 @@
 .protyle-wysiwyg [data-node-id][fold="1"][data-type="NodeHeading"] > [contenteditable][spellcheck]::before {
     content: var(--custom-h-fold-mark);
 }
- 
-/* ------------------------ 代码块折叠 ------------------------ */
-
-/* 代码块 */
-.protyle-wysiwyg [data-node-id][fold="1"].code-block {
-    /* 原始高度 25px 最多显示一行内容 */
-    height: 70px !important;
-}
-
-/* 代码块功能按钮 */
-.protyle-wysiwyg [data-node-id][fold="1"].code-block > .protyle-action {
-    top: 2px;
-}
-
-/* 代码块编辑区 */
-.protyle-wysiwyg [data-node-id][fold="1"].code-block > .hljs,
-.protyle-wysiwyg [data-node-id][fold="1"].code-block > .protyle-linenumber__rows {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
 
 /* ------------------------ 表格块折叠 ------------------------ */
 

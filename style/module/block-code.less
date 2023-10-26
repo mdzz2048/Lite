@@ -90,6 +90,24 @@
             }
         }
     }
+
+    // 折叠样式
+    [data-node-id][fold="1"].code-block {
+        height: 80px !important;    // 原始高度 25px，最多显示一行内容
+
+        > .protyle-action {
+            position: absolute;
+            padding-top: 12px;
+        }
+
+        > .hljs {
+            padding-top: 12px;
+        }
+
+        > .protyle-linenumber__rows {
+            padding-top: 12px;
+        }
+    }
 }
 
 // 上级块被选中的代码块样式

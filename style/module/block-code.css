@@ -57,6 +57,19 @@
 .protyle-wysiwyg [data-node-id].code-block.protyle-wysiwyg--select > .protyle-linenumber__rows {
   background-color: transparent !important;
 }
+.protyle-wysiwyg [data-node-id][fold="1"].code-block {
+  height: 80px !important;
+}
+.protyle-wysiwyg [data-node-id][fold="1"].code-block > .protyle-action {
+  position: absolute;
+  padding-top: 12px;
+}
+.protyle-wysiwyg [data-node-id][fold="1"].code-block > .hljs {
+  padding-top: 12px;
+}
+.protyle-wysiwyg [data-node-id][fold="1"].code-block > .protyle-linenumber__rows {
+  padding-top: 12px;
+}
 .protyle-wysiwyg--hl .code-block .hljs {
   background-color: transparent !important;
 }
