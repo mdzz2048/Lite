@@ -1,8 +1,8 @@
 /* ------------------------ 弹出菜单 ------------------------ */
 .protyle-hint {
   background-color: var(--custom-popover-menu-background-color);
-  width: auto !important;
-  max-width: 50vw;
+  width: 50vw !important;
+  min-width: 450px;
 }
 .protyle-hint .b3-list-item {
   width: 100% !important;
@@ -33,7 +33,7 @@
   display: block;
 }
 .hint--menu {
-  max-height: 450px;
+  max-height: unset;
 }
 .hint--menu > div {
   border: none;
