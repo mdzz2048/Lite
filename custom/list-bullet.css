@@ -136,3 +136,7 @@
 .protyle-wysiwyg:not([custom-list-bullet="false"]) [data-node-id]:has([block-focus]).li[data-subtype="t"]:has([block-focus]).protyle-task--done > .list:has([block-focus]) > .li:has([block-focus]) ~ [data-node-id]::after {
   border-color: transparent;
 }
+/* ------------------------ 适配自定义块样式插件 ------------------------ */
+[custom-block-list-view="board"].list .li:not(:has([block-focus]))::after {
+  height: calc(100% + 10px) !important;
+}

@@ -37,7 +37,7 @@
         // 取消 hover-menu 文件设置的 outline
         outline: none;
         // 显示文档日期的顶栏
-        .b3-list-item {
+        > .b3-list-item {
             background-color: var(--custom-list-hover);
             border-radius: 4px 4px 0 0;
             outline: solid 1px var(--custom-components-deep);
@@ -52,31 +52,6 @@
             border-radius: 0 0 4px 4px;
             margin-bottom: 10px;
             outline: solid 1px var(--custom-components-deep);
-        }
-    }
-
-    // 编辑区
-    .protyle-wysiwyg > [data-node-id] {
-        margin: 0 10px 0 24px;
-        // 减少列表缩进
-        &.li {
-            // 小圆点
-            > .protyle-action {
-                width: 24px;
-            }
-            // 列表块
-            > .list {
-                margin-left: 12px !important;
-                padding-left: 0;
-            }
-            // 列表块内容
-            > [data-node-id] {
-                margin-left: 24px !important;
-            }
-            // 列表辅助线
-            &::before {
-                left: 12px;
-            }
         }
     }
 

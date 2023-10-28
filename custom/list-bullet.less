@@ -163,3 +163,18 @@
         }
     }
 }
+
+/* ------------------------ 适配自定义块样式插件 ------------------------ */
+
+// 看板视图
+[custom-block-list-view="board"].list {
+    // 增加非聚焦列表项提供的侧边样式高度，补全接缝
+    .li:not(:has([block-focus]))::after {
+        // 选择器较短，需要使用 important
+        height: calc(100% + 10px) !important;
+    }
+}
+
+// 脑图视图
+
+// 
