@@ -1,5 +1,12 @@
 /* ------------------------ 编辑区面板 ------------------------ */
 
+.protyle-attr-refcount() {
+    top: 20px;
+    margin: 0 4px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 var(--custom-box-shadow-color);
+}
+
 .protyle-content {
     background-color: var(--custom-editor-background-color);
 
@@ -20,6 +27,22 @@
             margin-right: 0 !important;
             padding-left: var(--custom-editor-padding-left);
             padding-right: var(--custom-editor-padding-right);
+
+            // 文档标题 icon
+            > .protyle-title__icon {
+                left: 0;
+            }
+
+            // 文档标题属性
+            > .protyle-attr {
+                margin-right: var(--custom-editor-padding-right);
+
+                // 文档引用计数
+                > .protyle-attr--refcount {
+                    right: 0;
+                    .protyle-attr-refcount();
+                }
+            }
         }
 
         // 编辑器
@@ -28,6 +51,22 @@
             margin-right: 0;
             padding-left: var(--custom-editor-padding-left) !important;
             padding-right: var(--custom-editor-padding-right) !important;
+        }
+    }
+
+    // 未开启自适应宽度
+    &:not([data-fullwidth="true"]) {
+        // 文档标题
+        > .protyle-title {
+
+            // 文档标题属性
+            > .protyle-attr {
+
+                // 文档引用计数
+                > .protyle-attr--refcount {
+                    .protyle-attr-refcount();
+                }
+            }
         }
     }
 

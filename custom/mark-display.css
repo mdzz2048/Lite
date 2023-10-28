@@ -1,9 +1,0 @@
-/* ------------------------ 显示标记文本内容 ------------------------ */
-.b3-typography mark,
-.protyle-wysiwyg mark,
-.b3-typography span[data-type~="mark"],
-.protyle-wysiwyg span[data-type~="mark"] {
-  background-color: var(--custom-span-mark-background-color);
-  border-bottom: 0.1em solid var(--custom-span-mark-display-color);
-  color: var(--custom-span-mark-color);
-}
