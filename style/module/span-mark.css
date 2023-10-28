@@ -3,14 +3,12 @@
 .protyle-wysiwyg mark,
 .b3-typography span[data-type~="mark"],
 .protyle-wysiwyg span[data-type~="mark"] {
-  background-color: transparent;
+  background-color: var(--custom-span-mark-background-color);
   border-bottom: 0.1em solid var(--custom-span-mark-display-color);
-  color: transparent;
 }
 .b3-typography mark:hover,
 .protyle-wysiwyg mark:hover,
 .b3-typography span[data-type~="mark"]:hover,
 .protyle-wysiwyg span[data-type~="mark"]:hover {
-  background-color: var(--custom-span-mark-background-color);
   color: var(--custom-span-mark-color);
 }

@@ -1,0 +1,25 @@
+/* ------------------------ 显示标记文本内容 ------------------------ */
+
+.b3-typography,
+.protyle-wysiwyg {
+    mark,
+    span[data-type~="mark"] {
+        background-color: transparent;
+        border-bottom: 0.1em solid var(--custom-span-mark-display-color);
+        color: transparent;
+
+        &:hover {
+            color: var(--custom-span-mark-color);
+            background-color: var(--custom-span-mark-background-color);
+        }
+
+        // 未启用标记制卡 || 启用标记制卡后显示
+        .card__block:not(.card__block--hidemark) &,
+        // 启用标记制卡 && 鼠标悬浮
+        .card__block.card__block--hidemark &:hover {
+            // Note: 这里有点绕，& 是当前元素 mark，写在 & 前面的是父级选择器
+            color: var(--custom-span-mark-color) !important;
+            background-color: var(--custom-span-mark-background-color);
+        }
+    }
+}

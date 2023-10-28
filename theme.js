@@ -137,7 +137,7 @@ function focusHandler() {
 
     // 未设置焦点
     document.querySelectorAll('[block-focus]').forEach((element) => element.removeAttribute('block-focus'));
-    block.setAttribute('block-focus', 'true');
+    block?.setAttribute('block-focus', 'true');
 }
 
 function bulletMain() {
@@ -160,16 +160,16 @@ const MENU_OPTIONS = [
         icon: `<svg class="b3-menu__icon"><use xlink:href="#iconMark"></use></svg>`,
         label: "标记样式",
         accelerator: "",
-        href: '/appearance/themes/Lite/custom/mark-display.css',
+        href: '/appearance/themes/Lite/custom/mark-hidden.css',
         load: true,
         click: (event) => {
-            clickCommonMenu('showMarkDefault', '/appearance/themes/Lite/custom/mark-display.css');
+            clickCommonMenu('showMarkDefault', '/appearance/themes/Lite/custom/mark-hidden.css');
             updateCommonMenu(event);
         },
         mouseover: (event) => {
             showToolTip(event);
         },
-        tooltip: type => type ? "点击隐藏标记文本" : "点击显示标记文本",
+        tooltip: type => type ? "点击显示标记文本" : "点击隐藏标记文本",
     },
     {
         id: 'useCardStyle',
