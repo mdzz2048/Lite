@@ -21,6 +21,10 @@
   margin: initial;
   outline: none;
 }
+.protyle-wysiwyg [custom-created-time]::before {
+  content: attr(custom-created-time);
+  font-size: 12px;
+}
 /* ------------------------ 导出预览样式 ------------------------ */
 /* 导出预览超级块不显示边框 */
 #preview.protyle-wysiwyg .sb[data-node-id] {

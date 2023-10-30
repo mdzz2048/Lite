@@ -36,6 +36,11 @@
         margin: initial;
         outline: none;
     }
+
+    [custom-created-time]::before {
+        content: attr(custom-created-time);
+        font-size: 12px;
+    }
 }
 
 /* ------------------------ 导出预览样式 ------------------------ */
