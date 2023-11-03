@@ -1,3 +1,24 @@
+
+
+## [1.1.4](https://github.com/mdzz2048/Lite/compare/v1.1.2...v1.1.4) (2023-11-03)
+
+
+### Features
+
+* :sparkles: 为图片添加高度限制，适配手机截屏图片 ([bb2631b](https://github.com/mdzz2048/Lite/commit/bb2631bbb6bc38e1a6580d36dd21cc76e92cffa3))
+* :sparkles: 为自定义属性 custom-created-time 设置样式 ([b905488](https://github.com/mdzz2048/Lite/commit/b905488e0d1a9d2ebd905aa3ecf749cb031f0472))
+
+
+### Bug Fixes
+
+* :bug: 适配思源 v2.10.13 ([c5be85c](https://github.com/mdzz2048/Lite/commit/c5be85cb240deb2002400f4ef64bb3e4db4cace3))
+* :bug: 调整图片最大高度为屏幕高度 80% ([0945baa](https://github.com/mdzz2048/Lite/commit/0945baa07f33d3c9d4add30fd93ed4b7f39a7013))
+
+
+### Refactors
+
+* :recycle: 更新目录结构 ([7ee0461](https://github.com/mdzz2048/Lite/commit/7ee04619676f083f5cde7a403ce9c8719845ad9d))
+
 ## [1.1.3](https://github.com/mdzz2048/Lite/compare/v1.1.2...v1.1.3) (2023-10-28)
 
 
