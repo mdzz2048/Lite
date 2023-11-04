@@ -8,7 +8,9 @@
 	},
 	"release-it": {
 		"git": {
-			"push": false
+			"commitMessage": "chore: release v${version}",
+			"push": false,
+			"getLatestTagFromAllRefs": true
 		},
 		"npm": {
 			"public": false
