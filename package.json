@@ -1,6 +1,7 @@
 {
 	"scripts": {
-		"release": "npx release-it --no-npm.publish"
+		"release": "npx release-it --no-npm.publish",
+		"make-link": "node --no-warnings ./scripts/make_dev_link.js"
 	},
 	"dependencies": {
 		"@release-it/conventional-changelog": "^7.0.2",
