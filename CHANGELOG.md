@@ -1,5 +1,7 @@
 
 
+## [1.1.5](https://github.com/mdzz2048/Lite/compare/v1.1.4...v1.1.5) (2023-11-06)
+
 ## [1.1.4](https://github.com/mdzz2048/Lite/compare/v1.1.2...v1.1.4) (2023-11-03)
 
 
