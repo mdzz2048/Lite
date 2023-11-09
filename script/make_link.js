@@ -1,32 +1,27 @@
-import fs from 'fs';
-import readline  from 'node:readline';
+import { existsSync, symlinkSync } from 'fs';
+import { createInterface } from 'node:readline';
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
 
 //************************************ Write you dir here ************************************
 
-//Please write the "workspace/data/plugins" directory here
-//请在这里填写你的 "workspace/data/plugins" 目录
 let targetDir = '';
-//Like this
-// const targetDir = `H:\\SiYuanDevSpace\\data\\plugins`;
+let name = 'Lite';
+
 //********************************************************************************************
 
 const log = console.log;
 
 async function getSiYuanDir() {
     let url = 'http://127.0.0.1:6806/api/system/getWorkspaces';
-    let header = {
-        // "Authorization": `Token ${token}`,
-        "Content-Type": "application/json",
-    }
-    let conf = {};
     try {
         let response = await fetch(url, {
-            method: 'POST',
-            headers: header
+            method: 'POST'
         });
         if (response.ok) {
-            conf = await response.json();
+            const conf = await response.json();
+            return conf.data;
         } else {
             log(`HTTP-Error: ${response.status}`);
             return null;
@@ -36,7 +31,6 @@ async function getSiYuanDir() {
         log("Please make sure SiYuan is running!!!");
         return null;
     }
-    return conf.data;
 }
 
 async function chooseTarget(workspaces) {
@@ -47,9 +41,9 @@ async function chooseTarget(workspaces) {
     }
 
     if (count == 1) {
-        return `${workspaces[0].path}/data/plugins`;
+        return `${workspaces[0].path}\\conf\\appearance\\themes`;
     } else {
-        const rl = readline.createInterface({
+        const rl = createInterface({
             input: process.stdin,
             output: process.stdout
         });
@@ -59,16 +53,24 @@ async function chooseTarget(workspaces) {
             });
         });
         rl.close();
-        return `${workspaces[index].path}/data/plugins`;
+        return `${workspaces[index].path}\\conf\\appearance\\themes`;
     }
+}
+
+function getPackageDirectory() {
+    const moduleURL = import.meta.url;
+    const modulePath = fileURLToPath(moduleURL);
+    const packagePath = path.join(dirname(modulePath), '../package.json');
+    const directoryName = path.dirname(packagePath);
+    return directoryName;
 }
 
 if (targetDir === '') {
     log('"targetDir" is empty, try to get SiYuan directory automatically....')
     let res = await getSiYuanDir();
-    
+
     if (res === null) {
-        log('Failed! You can set the plugin directory in scripts/make_dev_link.js and try again');
+        log('Failed! You can set the plugin directory in scripts/make_link.js and try again');
         process.exit(1);
     }
 
@@ -77,41 +79,18 @@ if (targetDir === '') {
 }
 
 //Check
-if (!fs.existsSync(targetDir)) {
+if (!existsSync(targetDir)) {
     log(`Failed! plugin directory not exists: "${targetDir}"`);
     log(`Please set the plugin directory in scripts/make_dev_link.js`);
     process.exit(1);
 }
 
-
-//check if plugin.json exists
-if (!fs.existsSync('./plugin.json')) {
-    console.error('Failed! plugin.json not found');
-    process.exit(1);
-}
-
-//load plugin.json
-const plugin = JSON.parse(fs.readFileSync('./plugin.json', 'utf8'));
-const name = plugin?.name;
-if (!name || name === '') {
-    log('Failed! Please set plugin name in plugin.json');
-    process.exit(1);
-}
-
-//dev directory
-const devDir = `./dev`;
-//mkdir if not exists
-if (!fs.existsSync(devDir)) {
-    fs.mkdirSync(devDir);
-}
-
-const targetPath = `${targetDir}/${name}`;
+const targetPath = `${targetDir}\\${name}`;
 //如果已经存在，就退出
-if (fs.existsSync(targetPath)) {
+if (existsSync(targetPath)) {
     log(`Failed! Target directory  ${targetPath} already exists`);
 } else {
     //创建软链接
-    fs.symlinkSync(`${process.cwd()}/dev`, targetPath, 'junction');
+    symlinkSync(`${process.cwd()}`, targetPath, 'junction');
     log(`Done! Created symlink ${targetPath}`);
 }
-
