@@ -81,32 +81,37 @@
         }
         
         // todo: 适配列表中可能存在的各种情况
+        // 引述块
         > .bq::after {
             left: @bullet-left - 3px !important;    // 主题 .bq 的 border 对这里有影响
             .border(0 0 0 2px, @bullet-line);
         }
-
+        // 代码块
+        > .code-block:not(:has([block-focus]))::after {
+            .border(0 0 0 2px, @bullet-line)
+        }
+        // 公式块
+        > .render-node:not(:has([block-focus]))::after {
+            .border(0 0 0 2px, @bullet-line)
+        }
+        // 列表块
+        > .list:nth-child(n + 3):not(:has([block-focus]))::after {
+            left: -2px !important;      // 列表的 margin 对这里有影响
+            .border(0 0 0 2px, @bullet-line);
+        }
+        // 段落块
         > .p {
-
             &:nth-child(n + 3)::after {
                 .border(0 0 0 2px, @bullet-line);
             }
-            
             &:nth-child(2):not([block-focus])::after {
                 bottom: 0;
                 top: 0 - @bullet-top !important;
                 height: auto !important;
                 .border(0 0 0 2px, @bullet-line);
             }
-            
-
         }
-
-        > .list:nth-child(n + 3):not(:has([block-focus]))::after {
-            left: -2px !important;      // 列表的 margin 对这里有影响
-            .border(0 0 0 2px, @bullet-line);
-        }
-
+        // 超级块
         > .sb:not(:has([block-focus]))::after {
             .border(0 0 0 2px, @bullet-line);
         }
