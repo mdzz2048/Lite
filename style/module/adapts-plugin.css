@@ -1,0 +1,7 @@
+/* ------------------------ 适配插件 ------------------------ */
+[custom-block-list-view="board"].list .li:not(:has([block-focus]))::after {
+  height: calc(100% + 10px) !important;
+}
+.protyle-content .og-hn-container-multiline {
+  width: auto;
+}

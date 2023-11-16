@@ -30,6 +30,9 @@
 /* 页签 */
 @import url(style/module/bar.css);
 
+/* 适配插件 */
+@import url(style/module/adapts-plugin.css);
+
 /* ------------------------ 行内元素 ------------------------ */
 
 @import url(style/module/link-icon.css);

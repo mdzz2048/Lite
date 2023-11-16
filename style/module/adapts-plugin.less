@@ -1,0 +1,24 @@
+/* ------------------------ 适配插件 ------------------------ */
+
+// REF: [Zuoqiu-Yingyi/siyuan-plugin-custom-block](https://github.com/Zuoqiu-Yingyi/siyuan-plugin-custom-block)
+
+// 看板视图
+[custom-block-list-view="board"].list {
+    // 增加非聚焦列表项提供的侧边样式高度，补全接缝
+    .li:not(:has([block-focus]))::after {
+        // 选择器较短，需要使用 important
+        height: calc(100% + 10px) !important;
+    }
+}
+
+// 脑图视图
+
+
+// 表格视图
+
+
+// REF: [OpaqueGlass/syplugin-hierarchyNavigate](https://github.com/OpaqueGlass/syplugin-hierarchyNavigate)
+
+.protyle-content .og-hn-container-multiline {
+    width: auto;
+}
