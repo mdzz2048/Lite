@@ -120,6 +120,10 @@
     // 存在聚焦项的有序列表
     &[data-subtype="o"]:has([block-focus]) {
 
+        &::after {
+            width: @bullet-width - 10px !important; // 小圆点宽度 - 序号宽度的一半 (减少撑开宽度)
+        }
+
         > .list:has([block-focus]) > .li {
 
             // 序号实际宽高为 16px，此处留出 2px 富余
@@ -134,11 +138,32 @@
                 }
                 .hind-after();
             }
+
+        }
+
+        // 修改段落块高度，保证补全并不影响上述修改显示效果
+        > .p:nth-child(2):not([block-focus])::after {
+            top: 0 - @bullet-top + 10px !important;  // 初始高度 - 序号高度的一半 (减少上移)
         }
     }
 
     // 存在聚焦项的代办列表
     &[data-subtype="t"]:has([block-focus]) {
+
+        &::after {
+            width: @bullet-width - 8px !important; // 小圆点宽度 - 序号宽度的一半 (减少撑开宽度)
+        }
+
+        &.protyle-task--done > .list:has([block-focus]) > .li {
+            // 已完成列表子弹线设置为灰色
+            &::after {
+                border-color: var(--b3-theme-on-surface-light);
+            }
+
+            &:has([block-focus]) {
+                .hind-after();
+            }
+        }
         
         > .list:has([block-focus]) > .li {
 
@@ -156,30 +181,9 @@
 
         }
 
-        &.protyle-task--done > .list:has([block-focus]) > .li {
-            // 已完成列表子弹线设置为灰色
-            &::after {
-                border-color: var(--b3-theme-on-surface-light);
-            }
-
-            &:has([block-focus]) {
-                .hind-after();
-            }
+        // 修改段落块高度，保证补全并不影响上述修改显示效果
+        > .p:nth-child(2):not([block-focus])::after {
+            top: 0 - @bullet-top + 8px !important;  // 初始高度 - 序号高度的一半 (减少上移)
         }
     }
 }
-
-/* ------------------------ 适配自定义块样式插件 ------------------------ */
-
-// 看板视图
-[custom-block-list-view="board"].list {
-    // 增加非聚焦列表项提供的侧边样式高度，补全接缝
-    .li:not(:has([block-focus]))::after {
-        // 选择器较短，需要使用 important
-        height: calc(100% + 10px) !important;
-    }
-}
-
-// 脑图视图
-
-// 
