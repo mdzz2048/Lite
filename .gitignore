@@ -1,5 +1,6 @@
 .stfolder
 .vscode
+.stignore
 *.ttf
 node_modules
 pnpm-lock.yaml

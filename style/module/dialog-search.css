@@ -5,7 +5,7 @@
 .b3-dialog__container[style="width:80vw;height:90vh"] .search__header {
   background-color: var(--custom-components);
 }
-.b3-dialog__container[style="width:80vw;height:90vh"] .search__header > #searchInput {
+.b3-dialog__container[style="width:80vw;height:90vh"] .search__header #searchInput {
   background-color: var(--custom-components);
 }
 .b3-dialog__container[style="width:80vw;height:90vh"] #criteria {
