@@ -1,5 +1,21 @@
 
 
+## [1.1.6](https://github.com/mdzz2048/Lite/compare/v1.1.5...v1.1.6) (2023-12-28)
+
+
+### Bug Fixes
+
+* :bug: 清除有序列表、任务列表子弹线毛边 ([701c15a](https://github.com/mdzz2048/Lite/commit/701c15ad258199a16b3e578c213fc0ebfe96c288))
+* :bug: 适配 v2.11.4 设置配置项边距 ([5df7734](https://github.com/mdzz2048/Lite/commit/5df773416ae6991883d4a699c55136fb77dfb739))
+* :bug: 适配部分插件样式 ([c64731e](https://github.com/mdzz2048/Lite/commit/c64731ed87f744b88fa3682d1c0391a45a65ccab))
+* :bug: 搜索框背景色不一致 ([c28b581](https://github.com/mdzz2048/Lite/commit/c28b581b745c31a10e2ea5ebe34867ee5e424ffc))
+* :bug: 修复：列表包含公式块、代码块子弹线显示异常 ([cba24bb](https://github.com/mdzz2048/Lite/commit/cba24bb88fdbcb43a559fc9246e4afeb33896ced)), closes [#6](https://github.com/mdzz2048/Lite/issues/6)
+
+
+### Build System
+
+* :arrow_up: ([70eaf5b](https://github.com/mdzz2048/Lite/commit/70eaf5bb7d026940d3135a83c888442762fd9507))
+
 ## [1.1.5](https://github.com/mdzz2048/Lite/compare/v1.1.4...v1.1.5) (2023-11-06)
 
 ## [1.1.4](https://github.com/mdzz2048/Lite/compare/v1.1.2...v1.1.4) (2023-11-03)
