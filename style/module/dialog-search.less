@@ -14,7 +14,23 @@
 
 /* ------------------------搜索面板------------------------ */
 
-.b3-dialog__container[style^="width:80vw;height:90vh"] {
+.b3-dialog--open[data-key="dialog-globalsearch"] {
+
+    // 搜索面板
+    > .b3-dialog {
+        // 内联属性为 display: block
+        display: flex !important;
+
+        > .b3-dialog__container {
+            // 重新设置宽高和定位
+            width:80vw !important;
+            height:90vh !important;
+            left: 0 !important;
+            top: 0 !important;
+        }
+    }
+
+
     // 搜索输入框
     .search__header {
         .background(0);
