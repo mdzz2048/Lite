@@ -1,0 +1,24 @@
+/* ------------------------ 闪卡管理 ------------------------ */
+
+.b3-dialog--open[data-key="dialog-viewcards"] {
+    
+    [data-type="card-item"] {
+
+        > [data-type="reset"], 
+        > [data-type="remove"] {
+            display: block;
+            opacity: 0;
+
+            :hover {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            > [data-type="reset"], 
+            > [data-type="remove"] {
+                opacity: 1;
+            }
+        }
+    }
+}

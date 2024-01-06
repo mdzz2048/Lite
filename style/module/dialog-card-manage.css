@@ -1,0 +1,14 @@
+/* ------------------------ 闪卡管理 ------------------------ */
+.b3-dialog--open[data-key="dialog-viewcards"] [data-type="card-item"] > [data-type="reset"],
+.b3-dialog--open[data-key="dialog-viewcards"] [data-type="card-item"] > [data-type="remove"] {
+  display: block;
+  opacity: 0;
+}
+.b3-dialog--open[data-key="dialog-viewcards"] [data-type="card-item"] > [data-type="reset"] :hover,
+.b3-dialog--open[data-key="dialog-viewcards"] [data-type="card-item"] > [data-type="remove"] :hover {
+  opacity: 1;
+}
+.b3-dialog--open[data-key="dialog-viewcards"] [data-type="card-item"]:hover > [data-type="reset"],
+.b3-dialog--open[data-key="dialog-viewcards"] [data-type="card-item"]:hover > [data-type="remove"] {
+  opacity: 1;
+}
