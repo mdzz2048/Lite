@@ -18,8 +18,10 @@
   background-color: var(--custom-components);
 }
 .b3-dialog--open[data-key="dialog-search"] .search__header #searchInput,
-.b3-dialog--open[data-key="dialog-globalsearch"] .search__header #searchInput {
-  background-color: var(--custom-components);
+.b3-dialog--open[data-key="dialog-globalsearch"] .search__header #searchInput,
+.b3-dialog--open[data-key="dialog-search"] .search__header #replaceInput,
+.b3-dialog--open[data-key="dialog-globalsearch"] .search__header #replaceInput {
+  background-color: transparent;
 }
 .b3-dialog--open[data-key="dialog-search"] #criteria,
 .b3-dialog--open[data-key="dialog-globalsearch"] #criteria {
