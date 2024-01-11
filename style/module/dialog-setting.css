@@ -20,19 +20,77 @@
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar .item {
   border-radius: 0;
 }
-.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-cards .b3-card--wrap {
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > .fn__hr--b:first-child {
+  height: 8px;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > .fn__hr--b + .fn__flex:nth-child(2) {
+  position: sticky;
+  top: 8px;
+  z-index: 2;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > .fn__hr--b + .fn__flex:nth-child(2)::before {
+  content: "";
+  background-color: var(--custom-setting-config-tab-background-color);
+  width: 100%;
+  height: 46px;
+  position: absolute;
+  top: -8px;
+  z-index: -1;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > .fn__hr--b + .fn__flex:nth-child(2) > .b3-button--outline {
+  background-color: var(--b3-theme-primary-lightest);
+  color: var(--b3-theme-primary);
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > .fn__hr--b + .fn__flex:nth-child(2) [data-type="myPlugin"]:not(.b3-button--outline) ~ .counter {
+  transform: translateX(-44px);
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > #configBazaarDownloaded {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(472px, 1fr));
+  gap: 16px;
+  margin: 8px 32px;
+  width: auto;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > #configBazaarDownloaded > .fn__flex:first-child {
+  grid-column: 1/-1;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > #configBazaarDownloaded > .fn__flex:first-child > [data-type="plugins-enable"] {
+  position: absolute;
+  top: 43px;
+  right: 5px;
+  margin: 8px 16px !important;
+  z-index: 2;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > #configBazaarDownloaded > .b3-card {
+  margin: 0;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel [id*=configBazaar] {
+  width: 100%;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel [id*=configBazaar] .b3-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin: 16px;
+  padding: 8px 16px;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel [id*=configBazaar] .b3-cards .b3-card--wrap {
+  margin: 0;
   min-width: 300px;
 }
-.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-card {
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel [id*=configBazaar] .b3-card {
   background-color: var(--custom-setting-cards-background-color);
 }
-.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-card:hover {
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel [id*=configBazaar] .b3-card:hover {
   box-shadow: var(--b3-theme-primary-light) 0px 0px 0px 1px, var(--b3-theme-primary-light) 0px 2px 4px;
   background-color: var(--custom-list-hover);
   transform: translate(0px, -2px);
 }
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel .b3-card--current {
   box-shadow: inset var(--b3-theme-primary-light) 0px 0px 0px 1px;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] #configBazaarReadme {
+  z-index: 2;
 }
 .config__panel .config__tab-wrap > [data-name="account"] {
   overflow: hidden;

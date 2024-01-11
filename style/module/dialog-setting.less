@@ -35,23 +35,94 @@
 
             // 集市内容
             .layout-tab-bar + div.fn__flex-1 > .bazaarPanel {
-                // 集市卡片宽度
-                .b3-cards { 
-                    .b3-card--wrap {
-                        min-width: 300px;
+                
+                // 选择卡顶部空白占位符
+                > .fn__hr--b:first-child {
+                    height: 8px;
+                }
+                
+                // 选项卡
+                > .fn__hr--b + .fn__flex:nth-child(2) {
+                    position: sticky;
+                    top: 8px;
+                    z-index: 2;
+                    
+                    &::before {
+                        content: "";
+                        background-color: var(--custom-setting-config-tab-background-color);
+                        width: 100%;
+                        height: 46px; // 28px + 8px * 2
+                        position: absolute;
+                        top: -8px;
+                        z-index: -1;
+                    }
+                    
+                    > .b3-button--outline {
+                        background-color: var(--b3-theme-primary-lightest);
+                        color: var(--b3-theme-primary);
+                    }
+
+                    [data-type="myPlugin"]:not(.b3-button--outline) ~ .counter {
+                        transform: translateX(-44px); // 28px + 16px
                     }
                 }
                 
-                // 集市菜单项
-                .b3-card {
-                    background-color: var(--custom-setting-cards-background-color);
+                // 已下载
+                > #configBazaarDownloaded {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(472px, 1fr));
+                    gap: 16px;
+                    margin: 8px 32px;
+                    width: auto;
 
-                    &:hover {
-                        box-shadow: 
-                            var(--b3-theme-primary-light) 0px 0px 0px 1px, 
-                            var(--b3-theme-primary-light) 0px 2px 4px;
-                        background-color: var(--custom-list-hover);
-                        transform: translate(0px, -2px);
+                    // 全部启用/禁用开关
+                    > .fn__flex:first-child {
+                        grid-column: 1/-1;
+
+                        > [data-type="plugins-enable"] {
+                            position: absolute;
+                            top: 43px; // 36px + (28px -14px) / 2
+                            right: 5px; // 滚动条宽度
+                            margin: 8px 16px !important;
+                            z-index: 2;
+                        }
+                    }
+
+                    > .b3-card {
+                        margin: 0;
+                    }
+
+                }
+
+                // 集市
+                [id*=configBazaar] {
+                    width: 100%;
+
+                    // 集市卡片
+                    .b3-cards {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                        gap: 16px;
+                        margin: 16px;
+                        padding: 8px 16px;
+    
+                        .b3-card--wrap {
+                            margin: 0;
+                            min-width: 300px;
+                        }
+                    }
+                    
+                    // 集市菜单项
+                    .b3-card {
+                        background-color: var(--custom-setting-cards-background-color);
+    
+                        &:hover {
+                            box-shadow: 
+                                var(--b3-theme-primary-light) 0px 0px 0px 1px, 
+                                var(--b3-theme-primary-light) 0px 2px 4px;
+                            background-color: var(--custom-list-hover);
+                            transform: translate(0px, -2px);
+                        }
                     }
                 }
 
@@ -59,6 +130,11 @@
                 .b3-card--current {
                     box-shadow: inset var(--b3-theme-primary-light) 0px 0px 0px 1px;
                 }
+            }
+
+            // README
+            #configBazaarReadme {
+                z-index: 2;
             }
         }
 
