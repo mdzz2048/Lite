@@ -46,7 +46,7 @@
 }
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > #configBazaarDownloaded {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(472px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
   margin: 8px 32px;
   width: auto;
@@ -63,6 +63,9 @@
 }
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > #configBazaarDownloaded > .b3-card {
   margin: 0;
+}
+.config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel > #configBazaarDownloaded > .b3-card .b3-card__info {
+  word-break: break-all;
 }
 .config__panel .config__tab-wrap > [data-name="bazaar"] .layout-tab-bar + div.fn__flex-1 > .bazaarPanel [id*=configBazaar] {
   width: 100%;
