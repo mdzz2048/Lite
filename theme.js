@@ -140,10 +140,20 @@ function focusHandler() {
     block?.setAttribute('block-focus', 'true');
 }
 
-function bulletMain() {
+/**
+ * 添加列表子弹线需要监听的事件
+ */
+function addBulletEventListener() {
     // 跟踪当前所在块
-    window.addEventListener('mouseup', focusHandler, true);
-    window.addEventListener('keyup', focusHandler, true);
+    window.addEventListener('mouseup', focusHandler, true)
+    window.addEventListener('keyup', focusHandler, true)
+}
+
+function removeBulletEventListener() {
+    window.removeEventListener('mouseup', focusHandler)
+    window.removeEventListener('keyup', focusHandler)
+    // 移除所有添加的属性
+    document.querySelectorAll('[block-focus]').forEach((element) => element.removeAttribute('block-focus'))
 }
 
 /* ------------------------ 主题设置菜单 ------------------------ */
@@ -256,6 +266,13 @@ function addThemeButton() {
         if (CONFIG[id] && load) { window.theme.loadLink(option.href, id) }
         if (!load) { CONFIG[id] = false }
     })
+}
+
+/**
+ * 移除主题按钮
+ */
+function removeThemeButton() {
+    document.querySelector("#themeToolbar").remove()
 }
 
 /**
@@ -488,11 +505,17 @@ const cacheConfig = () => {
 
 getThemeConfig()
     .then(data => {
-        CONFIG = data ? data : DEFAULT_CONFIG;
-        cacheConfig();
-        addThemeButton();
-        document.addEventListener("keydown", keyboardEventListener);
-        bulletMain();
+        CONFIG = data ? data : DEFAULT_CONFIG
+        cacheConfig()
+        addThemeButton()
+        addBulletEventListener()
+        document.addEventListener('keydown', keyboardEventListener)
     });
 
 /* ------------------------测试用例------------------------ */
+
+window.destroyTheme = () => {
+    removeThemeButton()
+    removeBulletEventListener()
+    document.removeEventListener('keydown', keyboardEventListener)
+}
