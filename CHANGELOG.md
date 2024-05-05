@@ -1,5 +1,17 @@
 
 
+## [1.1.8](https://github.com/mdzz2048/Lite/compare/v1.1.7...v1.1.8) (2024-05-05)
+
+
+### Features
+
+* :sparkles: 添加 window.destroyTheme，适配思源 2.12.6 ([80da4ab](https://github.com/mdzz2048/Lite/commit/80da4ab604656ba361e17fc7c0ca2624eca2de1f))
+
+
+### Bug Fixes
+
+* :bug: 调整文档标题侧间距 ([2f7e1c1](https://github.com/mdzz2048/Lite/commit/2f7e1c113c5e23e8eae789e45502b99926610c8a))
+
 ## [1.1.7](https://github.com/mdzz2048/Lite/compare/v1.1.6...v1.1.7) (2024-01-25)
 
 
