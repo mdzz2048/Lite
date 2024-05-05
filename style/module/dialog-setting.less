@@ -70,7 +70,7 @@
                 // 已下载
                 > #configBazaarDownloaded {
                     display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(472px, 1fr));
+                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                     gap: 16px;
                     margin: 8px 32px;
                     width: auto;
@@ -90,6 +90,10 @@
 
                     > .b3-card {
                         margin: 0;
+
+                        .b3-card__info {
+                            word-break: break-all;
+                        }
                     }
 
                 }
