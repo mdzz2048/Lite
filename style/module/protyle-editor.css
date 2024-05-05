@@ -2,22 +2,25 @@
 .protyle-content {
   background-color: var(--custom-editor-background-color);
 }
-.protyle-content[data-fullwidth="true"] > .protyle-background > .protyle-background__iconw {
-  left: var(--custom-editor-padding-left) !important;
-}
-.protyle-content[data-fullwidth="true"] > .protyle-title {
+.protyle-content[data-fullwidth="true"] > .protyle-top > .protyle-background > .protyle-background__ia {
   margin-left: 0 !important;
   margin-right: 0 !important;
   padding-left: var(--custom-editor-padding-left);
   padding-right: var(--custom-editor-padding-right);
 }
-.protyle-content[data-fullwidth="true"] > .protyle-title > .protyle-title__icon {
+.protyle-content[data-fullwidth="true"] > .protyle-top > .protyle-title {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: var(--custom-editor-padding-left);
+  padding-right: var(--custom-editor-padding-right);
+}
+.protyle-content[data-fullwidth="true"] > .protyle-top > .protyle-title > .protyle-title__icon {
   left: 0;
 }
-.protyle-content[data-fullwidth="true"] > .protyle-title > .protyle-attr {
+.protyle-content[data-fullwidth="true"] > .protyle-top > .protyle-title > .protyle-attr {
   margin-right: var(--custom-editor-padding-right);
 }
-.protyle-content[data-fullwidth="true"] > .protyle-title > .protyle-attr > .protyle-attr--refcount {
+.protyle-content[data-fullwidth="true"] > .protyle-top > .protyle-title > .protyle-attr > .protyle-attr--refcount {
   right: 0;
   top: 20px;
   margin: 0 4px;

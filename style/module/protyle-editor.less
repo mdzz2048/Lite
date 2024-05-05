@@ -13,34 +13,40 @@
     // 开启自适应宽度
     &[data-fullwidth="true"] {
 
-        // 题头图
-        > .protyle-background {
-            // 题头图菜单
-            > .protyle-background__iconw {
-                left: var(--custom-editor-padding-left) !important;
+        > .protyle-top {
+
+            // 题头图
+            > .protyle-background {
+                // 题头图菜单
+                > .protyle-background__ia {
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                    padding-left: var(--custom-editor-padding-left);
+                    padding-right: var(--custom-editor-padding-right);
+                }
             }
-        }
-
-        // 文档标题
-        > .protyle-title {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-            padding-left: var(--custom-editor-padding-left);
-            padding-right: var(--custom-editor-padding-right);
-
-            // 文档标题 icon
-            > .protyle-title__icon {
-                left: 0;
-            }
-
-            // 文档标题属性
-            > .protyle-attr {
-                margin-right: var(--custom-editor-padding-right);
-
-                // 文档引用计数
-                > .protyle-attr--refcount {
-                    right: 0;
-                    .protyle-attr-refcount();
+    
+            // 文档标题
+            > .protyle-title {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                padding-left: var(--custom-editor-padding-left);
+                padding-right: var(--custom-editor-padding-right);
+    
+                // 文档标题 icon
+                > .protyle-title__icon {
+                    left: 0;
+                }
+    
+                // 文档标题属性
+                > .protyle-attr {
+                    margin-right: var(--custom-editor-padding-right);
+    
+                    // 文档引用计数
+                    > .protyle-attr--refcount {
+                        right: 0;
+                        .protyle-attr-refcount();
+                    }
                 }
             }
         }
