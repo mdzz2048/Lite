@@ -1,5 +1,22 @@
 
 
+## [1.1.7](https://github.com/mdzz2048/Lite/compare/v1.1.6...v1.1.7) (2024-01-25)
+
+
+### Features
+
+* :sparkles: 更新集市界面样式 ([267d648](https://github.com/mdzz2048/Lite/commit/267d648e9bed68b3014d164876ae4d058ffc4f3f))
+* :sparkles: 设置集市插件卡片宽度 ([4fc7d75](https://github.com/mdzz2048/Lite/commit/4fc7d75eef75d7cda553d9e437b11032a7241a79))
+
+
+### Bug Fixes
+
+* :bug: 适配 v2.11.4 设置面板 ([bca989f](https://github.com/mdzz2048/Lite/commit/bca989f1eb5dfc0ab5887d78b4cc34472d12cd09))
+* :bug: 适配 v2.12.0 搜索面板 ([489fc7c](https://github.com/mdzz2048/Lite/commit/489fc7c4fbc11a612d05c5e4d50d50e7254c174c))
+* :bug: 适配闪卡复习、闪卡管理弹窗 ([11d0990](https://github.com/mdzz2048/Lite/commit/11d0990aab17440f7780f3a5a40f6f477727da6a))
+* :bug: 适配搜索替换输入框 ([636667f](https://github.com/mdzz2048/Lite/commit/636667f7c76cf6748123a6d5d3361c92ba95382d))
+* :bug: 统一全局搜索、文档搜索样式 ([189064f](https://github.com/mdzz2048/Lite/commit/189064f9b5cd31465d9063d3d020d3a5a9557237))
+
 ## [1.1.6](https://github.com/mdzz2048/Lite/compare/v1.1.5...v1.1.6) (2023-12-28)
 
 
